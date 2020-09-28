@@ -9,7 +9,6 @@ import sys
 import ctypes
 import typing
 import functools
-
 from ctypes import c_int
 from nlpir import PACKAGE_DIR
 
@@ -27,6 +26,10 @@ BIG5_CODE = 2
 GBK_FANTI_CODE = 3
 # UTF8编码
 UTF8_FANTI_CODE = 4
+
+
+class NLPIRException(Exception):
+    pass
 
 
 class NLPIRBase:
@@ -53,8 +56,7 @@ class NLPIRBase:
         """
 
         @functools.wraps(func)
-        def wraps(*args, **kwargs):
-            self = args[0]
+        def wraps(self, *args, **kwargs):
             args = list(args)
             for i, arg in enumerate(args):
                 if isinstance(arg, str):
@@ -62,7 +64,7 @@ class NLPIRBase:
             for k in kwargs:
                 if isinstance(kwargs[k], str):
                     kwargs[k] = kwargs[k].encode(self.encode)
-            return_value = func(*args, **kwargs)
+            return_value = func(self, *args, **kwargs)
             if isinstance(return_value, bytes):
                 return return_value.decode(self.encode)
             else:
@@ -75,7 +77,8 @@ class NLPIRBase:
         # TODO give the statue, remove the hard code
         self.encode = self.encode_map[encode]
         self.encode_nlpir = encode
-        self.init_lib("nlpir", self.encode_nlpir, "")
+        if self.init_lib("nlpir", self.encode_nlpir, "") == 0:
+            raise NLPIRException(self.get_last_error_msg())
 
     def __del__(self):
         # TODO if not exit properly
@@ -91,7 +94,7 @@ class NLPIRBase:
         :param data_path: the location of Data , Data文件夹所在位置
         :param encode: encode code define in NLPIR
         :param license_code: license code for unlimited usage. common user ignore it
-        :return 0 success
+        :return 1 success 0 fail
         """
         raise NotImplementedError
 
@@ -163,7 +166,5 @@ class NLPIRBase:
         logger.debug("NLPIR API function '{}' retrieved.".format(name))
         return func
 
-
-class LicenseError(Exception):
-    """A custom exception for missing/invalid license errors."""
-    pass
+    def get_last_error_msg(self) -> str:
+        raise NotImplementedError
