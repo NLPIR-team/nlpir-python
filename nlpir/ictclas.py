@@ -1,7 +1,6 @@
 # coding=utf-8
 from nlpir.nlpir_base import NLPIRBase
-from ctypes import (c_bool, c_char, c_char_p, c_double, c_int, c_uint,
-                    c_ulong, c_void_p, POINTER, Structure)
+from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, c_void_p, POINTER, Structure
 
 
 class ResultT(Structure):
@@ -41,6 +40,52 @@ class ICTCLAS(NLPIRBase):
     def dll_name(self) -> str:
         return "ICTCLAS"
 
+    @NLPIRBase.byte_str_transform
+    def init_lib(self, data_path: str, encode: int, license_code: str) -> bool:
+        """
+        所有子类都需要实现此方法用于类初始化实例时调用, 由于各个库对应初始化不同,故改变此函数名称
+        /*********************************************************************
+         *
+         *  Func Name  : Init
+         *
+         *  Description: Init NLPIR
+         *               The function must be invoked before any operation listed as following
+         *
+         *  Parameters : const char * sInitDirPath=NULL
+         *				 sDataPath:  Path where Data directory stored.
+         *				 the default value is NULL, it indicates the initial directory is current working directory path
+         *				 encode: encoding code;
+         *				 sLicenseCode: license code for unlimited usage. common user ignore it
+         *  Returns    : success or fail
+         *  Author     : Kevin Zhang
+         *  History    :
+         *              1.create 2013-6-8
+         *********************************************************************/
+         NLPIR_API int NLPIR_Init(const char * sDataPath=0,int encode=GBK_CODE,const char*sLicenceCode=0);
+        """
+        return self.get_func('NLPIR_Init', [c_char_p, c_int, c_char_p], c_bool)(data_path, encode, license_code)
+
+    def exit_lib(self) -> bool:
+        """
+        所有子类都需要实现此方法用于类析构(销毁)实例时调用, 由于各个库对应初始化不同,故改变此函数名称
+        /*********************************************************************
+         *
+         *  Func Name  : NLPIR_Exit
+         *
+         *  Description: Exist NLPIR and free related buffer
+         *               Exit the program and free memory
+         *				 The function must be invoked while you needn't any lexical anlysis
+         *
+         *  Parameters : None
+         *
+         *  Returns    : success or fail
+         *  Author     : Kevin Zhang
+         *  History    :
+         *              1.create 2002-8-6
+         *********************************************************************/"""
+        return self.get_func('NLPIR_Exit', restype=c_bool)()
+
+    @NLPIRBase.byte_str_transform
     def paragraph_process(self, paragraph: str, pos_tagged: int = 1) -> str:
         """
         /*********************************************************************
@@ -65,6 +110,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func('NLPIR_ParagraphProcess', [c_char_p, c_int], c_char_p)(paragraph, pos_tagged)
 
+    @NLPIRBase.byte_str_transform
     def paragraph_process_a(self, paragraph: str, result_count: int, user_dict: bool = True) -> ResultT:
         """
         /*********************************************************************
@@ -89,6 +135,7 @@ class ICTCLAS(NLPIRBase):
             user_dict
         )
 
+    @NLPIRBase.byte_str_transform
     def get_paragraph_process_a_word_count(self, paragraph: str) -> int:
         """
         /*********************************************************************
@@ -109,6 +156,7 @@ class ICTCLAS(NLPIRBase):
         """
         raise NotImplementedError
 
+    @NLPIRBase.byte_str_transform
     def paragraph_process_aw(self, count: int, result: ResultT) -> None:
         """
         /*********************************************************************
@@ -130,6 +178,7 @@ class ICTCLAS(NLPIRBase):
         """
         raise NotImplementedError
 
+    @NLPIRBase.byte_str_transform
     def file_process(self, source_filename: str, result_filename: str, pos_tagged: bool = 1) -> float:
         """
         /*********************************************************************
@@ -157,6 +206,7 @@ class ICTCLAS(NLPIRBase):
             pos_tagged
         )
 
+    @NLPIRBase.byte_str_transform
     def import_user_dict(self, filename: str, overwrite: bool = False) -> int:
         """
         /*********************************************************************
@@ -177,6 +227,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func('NLPIR_ImportUserDict', [c_char_p], c_uint)(filename, overwrite)
 
+    @NLPIRBase.byte_str_transform
     def add_user_word(self, word: str) -> int:
         """
         /*********************************************************************
@@ -199,6 +250,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func('NLPIR_AddUserWord', [c_char_p], c_int)(word)
 
+    @NLPIRBase.byte_str_transform
     def clean_user_word(self) -> int:
         """
         /*********************************************************************
@@ -220,6 +272,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func('NLPIR_CleanUserWord', None, c_int)()
 
+    @NLPIRBase.byte_str_transform
     def save_the_usr_dic(self) -> int:
         """
         /*********************************************************************
@@ -241,6 +294,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func('NLPIR_SaveTheUsrDic', None, c_int)()
 
+    @NLPIRBase.byte_str_transform
     def del_usr_word(self, word: str) -> int:
         """
         /*********************************************************************
@@ -260,6 +314,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func('NLPIR_DelUsrWord', [c_char_p], c_int)(word)
 
+    @NLPIRBase.byte_str_transform
     def get_uni_prob(self, word) -> float:
         """
         /*********************************************************************
@@ -280,7 +335,8 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_GetUniProb", [c_char_p], c_double)(word)
 
-    def is_word(self) -> int:
+    @NLPIRBase.byte_str_transform
+    def is_word(self, word: str) -> int:
         """
         /*********************************************************************
         *
@@ -297,8 +353,9 @@ class ICTCLAS(NLPIRBase):
         *********************************************************************/
         NLPIR_API int NLPIR_IsWord(const char *sWord);
         """
-        return self.get_func("NLPIR_IsWord", None, c_int)()
+        return self.get_func("NLPIR_IsWord", [word], c_int)()
 
+    @NLPIRBase.byte_str_transform
     def is_user_word(self, word: str) -> int:
         """
         /*********************************************************************
@@ -318,6 +375,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_IsUserWord", [c_char_p], c_int)(word)
 
+    @NLPIRBase.byte_str_transform
     def get_word_pos(self, word: str):
         """
         /*********************************************************************
@@ -362,6 +420,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_SetPOSmap")(pos_map)
 
+    @NLPIRBase.byte_str_transform
     def finer_segment(self, line: str) -> str:
         """
         /*********************************************************************
@@ -383,6 +442,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_FinerSegment", [c_char_p], c_char_p)(line)
 
+    @NLPIRBase.byte_str_transform
     def get_eng_word_origin(self, word: str) -> str:
         """
         /*********************************************************************
@@ -401,6 +461,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_GetEngWordOrigin", [c_char_p], c_char_p)(word)
 
+    @NLPIRBase.byte_str_transform
     def word_freq_stat(self, text: str) -> str:
         """
         /*********************************************************************
@@ -420,6 +481,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_WordFreqStat", [c_char_p], c_char_p)(text)
 
+    @NLPIRBase.byte_str_transform
     def file_word_freq_stat(self, filename: str) -> str:
         """
         /*********************************************************************
@@ -439,6 +501,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_FileWordFreqStat", [c_char_p], c_char_p)(filename)
 
+    @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
         /*********************************************************************
