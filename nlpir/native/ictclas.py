@@ -52,14 +52,14 @@ class ICTCLAS(NLPIRBase):
          *               The function must be invoked before any operation listed as following
          *
          *  Parameters : const char * sInitDirPath=NULL
-         *				 sDataPath:  Path where Data directory stored.
-         *				 the default value is NULL, it indicates the initial directory is current working directory path
-         *				 encode: encoding code;
-         *				 sLicenseCode: license code for unlimited usage. common user ignore it
+         *               sDataPath:  Path where Data directory stored.
+         *               the default value is NULL, it indicates the initial directory is current working directory path
+         *               encode: encoding code;
+         *               sLicenseCode: license code for unlimited usage. common user ignore it
          *  Returns    : success or fail
          *  Author     : Kevin Zhang
          *  History    :
-         *              1.create 2013-6-8
+         *               1.create 2013-6-8
          *********************************************************************/
          NLPIR_API int NLPIR_Init(const char * sDataPath=0,int encode=GBK_CODE,const char*sLicenceCode=0);
         """
@@ -74,7 +74,7 @@ class ICTCLAS(NLPIRBase):
          *
          *  Description: Exist NLPIR and free related buffer
          *               Exit the program and free memory
-         *				 The function must be invoked while you needn't any lexical anlysis
+         *               The function must be invoked while you needn't any lexical anlysis
          *
          *  Parameters : None
          *
@@ -94,17 +94,15 @@ class ICTCLAS(NLPIRBase):
          *
          *  Description: Process a paragraph
          *
-         *
          *  Parameters : sParagraph: The source paragraph
-         *
-         *				 bPOStagged:Judge whether need POS tagging, 0 for no tag;default:1
-         *				i.e.  张华平于1978年3月9日出生于江西省波阳县。
-         *					Result: 张华平/nr  于/p  1978年/t  3月/t  9日/t  出生于/v  江西省/ns  波阳县/ns  。/w
+         *               bPOStagged:Judge whether need POS tagging, 0 for no tag;default:1
+         *               i.e.  张华平于1978年3月9日出生于江西省波阳县。
+         *                    Result: 张华平/nr  于/p  1978年/t  3月/t  9日/t  出生于/v  江西省/ns  波阳县/ns  。/w
          *  Returns    : the result buffer pointer
          *
          *  Author     : Kevin Zhang
          *  History    :
-         *              1.create 2003-12-22
+         *               1.create 2003-12-22
          *********************************************************************/
         NLPIR_API const char * NLPIR_ParagraphProcess(const char *sParagraph,int bPOStagged=1);
         """
@@ -119,11 +117,10 @@ class ICTCLAS(NLPIRBase):
          *
          *  Description: Process a paragraph
          *
-         *
          *  Parameters : sParagraph: The source paragraph
          *               pResultCount: pointer to result vector size
          *  Returns    : the pointer of result vector, it is managed by system,user cannot alloc and free it
-         *  Author     :  Kevin Zhang
+         *  Author     : Kevin Zhang
          *  History    :
          *              1.create 2006-10-26
          *********************************************************************/
@@ -143,12 +140,12 @@ class ICTCLAS(NLPIRBase):
          *  Func Name  : NLPIR_GetParagraphProcessAWordCount
          *
          *  Description: Get ProcessAWordCount, API for C#
-         *				 Get word count and it helps us prepare the proper size buffer for result_t vector
+         *               Get word count and it helps us prepare the proper size buffer for result_t vector
          *
          *  Parameters : sParagraph: The source paragraph
          *
          *  Returns    : result vector size
-         *  Author     :  Kevin Zhang
+         *  Author     : Kevin Zhang
          *  History    :
          *              1.create 2007-3-15
          *********************************************************************/
@@ -187,11 +184,10 @@ class ICTCLAS(NLPIRBase):
          *
          *  Description: Process a text file
          *
-         *
          *  Parameters : sSourceFilename: The source file name
          *               sResultFilename: The result file name
-         *				 bPOStagged:Judge whether need POS tagging, 0 for no tag;default:1
-         *  i.e. FileProcess("E:\\Sample\\Corpus_NewPOS\\199802_Org.txt","E:\\Sample\\Corpus_NewPOS\\199802_Org_cla.txt");
+         *               bPOStagged:Judge whether need POS tagging, 0 for no tag;default:1
+         *              i.e. FileProcess("199802_Org.txt","199802_Org_cla.txt");
          *  Returns    : success:
          *               fail:
          *  Author     : Kevin Zhang
@@ -214,11 +210,10 @@ class ICTCLAS(NLPIRBase):
          *  Func Name  : ImportUserDict
          *
          *  Description: Import User-defined dictionary
-         *  Parameters :
-         *				sFilename:Text filename for user dictionary
-         *				bOverwrite: true,  overwrite the existing dictionary
-         *						   false, add to  the existing dictionary
-         *  Returns    : The  number of  lexical entry imported successfully
+         *  Parameters : sFilename:Text filename for user dictionary
+         *               bOverwrite: true, overwrite the existing dictionary
+         *               false, add to the existing dictionary
+         *  Returns    : The number of lexical entry imported successfully
          *  Author     : Kevin Zhang
          *  History    :
          *              1.create 2014-8-3
@@ -234,8 +229,8 @@ class ICTCLAS(NLPIRBase):
         *
         *  Func Name  : NLPIR_AddUserWord
         *
-        *  Description: add a word to the user dictionary ,example:你好
-        *													 i3s	n
+        *  Description: add a word to the user dictionary ,example:
+        *                               你好 i3s n
         *
         *  Parameters : sWord:the word added.
         *
@@ -323,7 +318,6 @@ class ICTCLAS(NLPIRBase):
         *
         *  Description: Get Unigram Probability
         *
-        *
         *  Parameters : sWord: input word
         *  Returns    : The unitary probability of a  word.
         *  Author     : Kevin Zhang
@@ -344,7 +338,6 @@ class ICTCLAS(NLPIRBase):
         *
         *  Description: Judge whether the word is included in the core dictionary
         *
-        *
         *  Parameters : sWord: input word
         *  Returns    :1: exists; 0: no exists
         *  Author     : Kevin Zhang
@@ -364,7 +357,6 @@ class ICTCLAS(NLPIRBase):
         *
         *  Description: Judge whether the word is included in the user-defined dictionary
         *
-        *
         *  Parameters : sWord: input word
         *  Returns    :1: exists; 0: no exists
         *  Author     : Kevin Zhang
@@ -383,7 +375,6 @@ class ICTCLAS(NLPIRBase):
         *  Func Name  : NLPIR_GetWordPOS
         *
         *  Description: Get the word Part-Of-Speech　information
-        *
         *
         *  Parameters : sWord: input word
         *
@@ -409,7 +400,7 @@ class ICTCLAS(NLPIRBase):
         *  Parameters :nPOSmap, ICT_POS_MAP_FIRST  计算所一级标注集
                                 ICT_POS_MAP_SECOND  计算所二级标注集
                                 PKU_POS_MAP_SECOND   北大二级标注集
-                                PKU_POS_MAP_FIRST 	  北大一级标注集
+                                PKU_POS_MAP_FIRST       北大一级标注集
         *  Returns    : 0, failed; else, success
         *
         *  Author     :   
@@ -428,8 +419,8 @@ class ICTCLAS(NLPIRBase):
         *  Func Name  : NLPIR_FinerSegment(const char *sLine)
         *
         *  Description: 当前的切分结果过大时，如“中华人民共和国”
-        *				需要执行该函数，将切分结果细分为“中华 人民 共和国”
-        *				细分粒度最大为三个汉字
+        *                需要执行该函数，将切分结果细分为“中华 人民 共和国”
+        *                细分粒度最大为三个汉字
         *  Parameters : sLine:输入的字符串
         *  Returns    : 返回的细分串，如果不能细分，则返回为空字符串""
         *
@@ -470,9 +461,9 @@ class ICTCLAS(NLPIRBase):
         *
         *  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
         *  Parameters : sText:输入的文本内容
-        *				bStopRemove: true-去除停用词;false-不去除停用词
+        *                bStopRemove: true-去除停用词;false-不去除停用词
         *  Returns    : 返回的是词频统计结果形式如下：
-        *				张华平/nr/10#博士/n/9#分词/n/8
+        *                张华平/nr/10#博士/n/9#分词/n/8
         *  Author     : Kevin Zhang
         *  History    : 
         *              1.create 2014/12/11
@@ -490,9 +481,9 @@ class ICTCLAS(NLPIRBase):
         *
         *  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
         *  Parameters : sFilename 文本文件的全路径
-        *				bStopRemove: true-去除停用词;false-不去除停用词
+        *                bStopRemove: true-去除停用词;false-不去除停用词
         *  Returns    : 返回的是词频统计结果形式如下：
-        *				张华平/nr/10#博士/n/9#分词/n/8
+        *                张华平/nr/10#博士/n/9#分词/n/8
         *  Author     : Kevin Zhang
         *  History    : 
         *              1.create 2014/12/11
@@ -510,11 +501,8 @@ class ICTCLAS(NLPIRBase):
          *
          *  Description: GetLastErrorMessage
          *    
-         *
          *  Parameters : void
-         *               
-         *				  
-         *  Returns    : the result buffer pointer 
+         *  Returns    : the result buffer pointer
          *
          *  Author     : Kevin Zhang  
          *  History    : 
