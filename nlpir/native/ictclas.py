@@ -1,5 +1,5 @@
 # coding=utf-8
-from nlpir.nlpir_base import NLPIRBase
+from nlpir.native.nlpir_base import NLPIRBase
 from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, c_void_p, POINTER, Structure
 
 
@@ -41,7 +41,7 @@ class ICTCLAS(NLPIRBase):
         return "ICTCLAS"
 
     @NLPIRBase.byte_str_transform
-    def init_lib(self, data_path: str, encode: int, license_code: str) -> bool:
+    def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
         所有子类都需要实现此方法用于类初始化实例时调用, 由于各个库对应初始化不同,故改变此函数名称
         /*********************************************************************
@@ -63,7 +63,7 @@ class ICTCLAS(NLPIRBase):
          *********************************************************************/
          NLPIR_API int NLPIR_Init(const char * sDataPath=0,int encode=GBK_CODE,const char*sLicenceCode=0);
         """
-        return self.get_func('NLPIR_Init', [c_char_p, c_int, c_char_p], c_bool)(data_path, encode, license_code)
+        return self.get_func('NLPIR_Init', [c_char_p, c_int, c_char_p], c_int)(data_path, encode, license_code)
 
     def exit_lib(self) -> bool:
         """
@@ -522,4 +522,4 @@ class ICTCLAS(NLPIRBase):
          *********************************************************************/
         NLPIR_API const char * NLPIR_GetLastErrorMsg();
         """
-        return self.get_func("NLPIR_GetLastErrorMsg", None, c_char_p)
+        return self.get_func("NLPIR_GetLastErrorMsg", None, c_char_p)()
