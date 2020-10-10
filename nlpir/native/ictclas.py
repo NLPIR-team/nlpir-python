@@ -5,7 +5,7 @@ import typing
 
 
 class ResultT(Structure):
-    """The NLPIR ``result_t`` structure."""
+    """The NLPIR ``result_t`` structure. copy from pynlpir"""
 
     _fields_ = [
         # The start position of the word in the source Chinese text string.
@@ -30,6 +30,9 @@ class ResultT(Structure):
 
 
 class ICTCLAS(NLPIRBase):
+    """
+    A dynamic link library native class for Chinese Segmentation
+    """
     POS_MAP_NUMBER = 4  # add by qp 2008.11.25
     ICT_POS_MAP_FIRST = 1  # 计算所一级标注集
     ICT_POS_MAP_SECOND = 0  # 计算所二级标注集
@@ -44,88 +47,46 @@ class ICTCLAS(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
-        所有子类都需要实现此方法用于类初始化实例时调用, 由于各个库对应初始化不同,故改变此函数名称
-        /*********************************************************************
-         *
-         *  Func Name  : Init
-         *
-         *  Description: Init NLPIR
-         *               The function must be invoked before any operation listed as following
-         *
-         *  Parameters : const char * sInitDirPath=NULL
-         *               sDataPath:  Path where Data directory stored.
-         *               the default value is NULL, it indicates the initial directory is current working directory path
-         *               encode: encoding code;
-         *               sLicenseCode: license code for unlimited usage. common user ignore it
-         *  Returns    : success or fail
-         *  Author     : Kevin Zhang
-         *  History    :
-         *               1.create 2013-6-8
-         *********************************************************************/
-         NLPIR_API int NLPIR_Init(const char * sDataPath=0,int encode=GBK_CODE,const char*sLicenceCode=0);
+        Call **NLPIR_Init**
+
+        :param str data_path:
+        :param int encode:
+        :param str license_code:
+        :return: 1 success 0 fail
         """
         return self.get_func('NLPIR_Init', [c_char_p, c_int, c_char_p], c_int)(data_path, encode, license_code)
 
     def exit_lib(self) -> bool:
         """
-        所有子类都需要实现此方法用于类析构(销毁)实例时调用, 由于各个库对应初始化不同,故改变此函数名称
-        /*********************************************************************
-         *
-         *  Func Name  : NLPIR_Exit
-         *
-         *  Description: Exist NLPIR and free related buffer
-         *               Exit the program and free memory
-         *               The function must be invoked while you needn't any lexical anlysis
-         *
-         *  Parameters : None
-         *
-         *  Returns    : success or fail
-         *  Author     : Kevin Zhang
-         *  History    :
-         *              1.create 2002-8-6
-         *********************************************************************/"""
+        Call **NLPIR_Exit**
+
+        :return: exit success or not
+        """
         return self.get_func('NLPIR_Exit', restype=c_bool)()
 
     @NLPIRBase.byte_str_transform
     def paragraph_process(self, paragraph: str, pos_tagged: int = 1) -> str:
         """
-        /*********************************************************************
-         *
-         *  Func Name  : ParagraphProcessing
-         *
-         *  Description: Process a paragraph
-         *
-         *  Parameters : sParagraph: The source paragraph
-         *               bPOStagged:Judge whether need POS tagging, 0 for no tag;default:1
-         *               i.e.  张华平于1978年3月9日出生于江西省波阳县。
-         *                    Result: 张华平/nr  于/p  1978年/t  3月/t  9日/t  出生于/v  江西省/ns  波阳县/ns  。/w
-         *  Returns    : the result buffer pointer
-         *
-         *  Author     : Kevin Zhang
-         *  History    :
-         *               1.create 2003-12-22
-         *********************************************************************/
-        NLPIR_API const char * NLPIR_ParagraphProcess(const char *sParagraph,int bPOStagged=1);
+         Call **NLPIR_ParagraphProcessing**
+
+         Chinese word segment, segment paragraph to a string
+
+        :param str paragraph: the string want to be segmented
+        :param int pos_tagged: show the pos tag or not 1-> True, 0-> False
+        :return: segmented string
         """
         return self.get_func('NLPIR_ParagraphProcess', [c_char_p, c_int], c_char_p)(paragraph, pos_tagged)
 
     @NLPIRBase.byte_str_transform
     def paragraph_process_a(self, paragraph: str, user_dict: bool = True) -> typing.Tuple[ResultT, int]:
         """
-        /*********************************************************************
-         *
-         *  Func Name  : ParagraphProcessingA
-         *
-         *  Description: Process a paragraph
-         *
-         *  Parameters : sParagraph: The source paragraph
-         *               pResultCount: pointer to result vector size
-         *  Returns    : the pointer of result vector, it is managed by system,user cannot alloc and free it
-         *  Author     : Kevin Zhang
-         *  History    :
-         *              1.create 2006-10-26
-         *********************************************************************/
-        NLPIR_API const result_t * NLPIR_ParagraphProcessA(const char *sParagraph,int *pResultCount,bool bUserDict=true);
+        Call **ParagraphProcessingA**
+
+        Segment paragraph to an Array of ResultT, get more detail info
+
+        :param str paragraph: the string want to be segmented
+        :param bool user_dict: use user dictionary or not
+        :return: a result of segment, an array of ResultT and the length of the ResultT
         """
         self.logger.warning("not recommended, use paragraph_process instead")
         result_count = c_int()
@@ -138,67 +99,22 @@ class ICTCLAS(NLPIRBase):
 
     @NLPIRBase.byte_str_transform
     def get_paragraph_process_a_word_count(self, paragraph: str) -> int:
-        """
-        /*********************************************************************
-         *
-         *  Func Name  : NLPIR_GetParagraphProcessAWordCount
-         *
-         *  Description: Get ProcessAWordCount, API for C#
-         *               Get word count and it helps us prepare the proper size buffer for result_t vector
-         *
-         *  Parameters : sParagraph: The source paragraph
-         *
-         *  Returns    : result vector size
-         *  Author     : Kevin Zhang
-         *  History    :
-         *              1.create 2007-3-15
-         *********************************************************************/
-         NLPIR_API int NLPIR_GetParagraphProcessAWordCount(const char *sParagraph);
-        """
         raise NotImplementedError("Not recommended, use paragraph_process")
 
     @NLPIRBase.byte_str_transform
     def paragraph_process_aw(self, count: int, result: ResultT) -> None:
-        """
-        /*********************************************************************
-         *
-         *  Func Name  : NLPIR_ParagraphProcessAW
-         *
-         *  Description: Process a paragraph, API for C#
-         *
-         *
-         *  Parameters : nCount: the paragraph word count.
-         *               result_t * result: pointer to result vector size, it is allocated by the invoker
-         *  Returns    : None
-         *  Author     :
-         *  History    :
-         *              1.create 2007-3-15
-         *********************************************************************/
-        NLPIR_API void NLPIR_ParagraphProcessAW(int nCount,result_t * result);
-
-        """
         raise NotImplementedError("Not recommended, use paragraph_process")
 
     @NLPIRBase.byte_str_transform
     def file_process(self, source_filename: str, result_filename: str, pos_tagged: int = 1) -> float:
         """
-        /*********************************************************************
-         *
-         *  Func Name  : NLPIR_FileProcess
-         *
-         *  Description: Process a text file
-         *
-         *  Parameters : sSourceFilename: The source file name
-         *               sResultFilename: The result file name
-         *               bPOStagged:Judge whether need POS tagging, 0 for no tag;default:1
-         *              i.e. FileProcess("199802_Org.txt","199802_Org_cla.txt");
-         *  Returns    : success:
-         *               fail:
-         *  Author     : Kevin Zhang
-         *  History    :
-         *              1.create 2005-11-22
-         *********************************************************************/
-        NLPIR_API double NLPIR_FileProcess(const char *sSourceFilename,const char *sResultFilename,int bPOStagged=1);
+        Call **NLPIR_FileProcess**
+
+        Segment a text file and save to a file.
+
+        :param str source_filename: the path of a text file that want to be segmented
+        :param str result_filename: the path to save the result of segmentation
+        :param int pos_tagged: show the pos tag or not 1->True, 0->False
         """
         return self.get_func('NLPIR_FileProcess', [c_char_p, c_char_p, c_int], c_double)(
             source_filename,
@@ -209,309 +125,206 @@ class ICTCLAS(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def import_user_dict(self, filename: str, overwrite: bool = False) -> int:
         """
-        /*********************************************************************
-         *
-         *  Func Name  : ImportUserDict
-         *
-         *  Description: Import User-defined dictionary
-         *  Parameters : sFilename:Text filename for user dictionary
-         *               bOverwrite: true, overwrite the existing dictionary
-         *               false, add to the existing dictionary
-         *  Returns    : The number of lexical entry imported successfully
-         *  Author     : Kevin Zhang
-         *  History    :
-         *              1.create 2014-8-3
-         *********************************************************************/
-        NLPIR_API unsigned int NLPIR_ImportUserDict(const char *sFilename,bool bOverwrite=false);
+        Call **NLPIR_ImportUserDict**
+
+        Import a user dict to the system, the format of the dict file::
+
+            word1 pos_tag
+            word2 pos_tag
+
+        If you import a user dict to the system, the user dict will save to the system (in Data directory).
+        You cannot delete the word in the user dict from the system use :func:`clean_user_word` or :func:`del_usr_word`.
+
+        **TODO** add more comment for clean the user dict and add the function to the high-level method
+
+        :param str filename: the path of user dict file
+        :param bool overwrite: overwrite the current user dict or not
+        :return: import success or not  1->True 2->False
         """
         return self.get_func('NLPIR_ImportUserDict', [c_char_p], c_uint)(filename, overwrite)
 
     @NLPIRBase.byte_str_transform
     def add_user_word(self, word: str) -> int:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_AddUserWord
-        *
-        *  Description: add a word to the user dictionary ,example:
-        *                               你好 i3s n
-        *
-        *  Parameters : sWord:the word added.
-        *
-        *  Returns    : 1,true ; 0,false
-        *
-        *  Author     :
-        *  History    :
-        *              1.create 11:10:2008
-        *********************************************************************/
-        NLPIR_API int NLPIR_AddUserWord(const char *sWord);
+        Call **NLPIR_AddUserWord**
 
+        Add a word to the user dictionary ,example:
+
+        TODO 弄清楚是添加一个单词还是添加一行::
+            单词 词性
+
+        The added word only add in memory and will not affect the user dict, you can use :func:`clean_user_word` or
+        :func:`del_usr_word` to delete the word or all the words in memory. If you want to save to the user dict ,use
+        :func:`save_the_usr_dic` to save to the *Data* directory.
+
+        :param str word:
+        :return: 1,true ; 0,false
         """
         return self.get_func('NLPIR_AddUserWord', [c_char_p], c_int)(word)
 
     @NLPIRBase.byte_str_transform
     def clean_user_word(self) -> int:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_CleanUserWord
-        *
-        *  Description: Clean all temporary added user words
-        *
-        *  Parameters :
-        *
-        *  Returns    : 1,true ; 0,false
-        *
-        *  Author     :
-        *  History    :
-        *              1.create 2017/2/26
-        *********************************************************************/
-        NLPIR_API int NLPIR_CleanUserWord();
+        Call **NLPIR_CleanUserWord**
 
+        Clean all temporary added user words, more info see :func:`add_user_word`
+
+        :return: 1,true ; 0,false
         """
         return self.get_func('NLPIR_CleanUserWord', None, c_int)()
 
     @NLPIRBase.byte_str_transform
     def save_the_usr_dic(self) -> int:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : Save
-        *
-        *  Description: Save dictionary to file
-        *
-        *  Parameters :
-        *
-        *  Returns    : 1,true; 2,false
-        *
-        *  Author     :
-        *  History    :
-        *              1.create 11:10:2008
-        *********************************************************************/
-        NLPIR_API int NLPIR_SaveTheUsrDic();
+        Call **NLPIR_SaveTheUsrDic**
 
+        Save in-memory dict to user dict, more info see :func:`add_user_word`
+
+        :return: 1,true; 2,false
         """
         return self.get_func('NLPIR_SaveTheUsrDic', None, c_int)()
 
     @NLPIRBase.byte_str_transform
     def del_usr_word(self, word: str) -> int:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_DelUsrWord
-        *
-        *  Description: delete a word from the  user dictionary
-        *
-        *  Parameters : sWord:the word to be delete.
-        *  Returns    : -1, the word not exist in the user dictionary; else, the handle of the word deleted
-        *
-        *  Author     :
-        *  History    :
-        *              1.create 11:10:2008
-        *********************************************************************/
-        NLPIR_API int NLPIR_DelUsrWord(const char *sWord);
+        Call **NLPIR_DelUsrWord**
+
+        Delete a word from the user dictionary, more info see :func:`add_user_word`
+
+        :param str word: the word to be delete
+        :return: -1, the word not exist in the user dictionary; else, the handle of the word deleted
         """
         return self.get_func('NLPIR_DelUsrWord', [c_char_p], c_int)(word)
 
     @NLPIRBase.byte_str_transform
     def get_uni_prob(self, word) -> float:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_GetUniProb
-        *
-        *  Description: Get Unigram Probability
-        *
-        *  Parameters : sWord: input word
-        *  Returns    : The unitary probability of a  word.
-        *  Author     : Kevin Zhang
-        *  History    :
-        *              1.create 2005-11-22
-        *********************************************************************/
-        NLPIR_API double NLPIR_GetUniProb(const char *sWord);
+        Call **NLPIR_GetUniProb**
 
+        Get Unigram Probability
+
+        :param str word: input word
+        :return: The unitary probability of a word.
         """
+
         return self.get_func("NLPIR_GetUniProb", [c_char_p], c_double)(word)
 
     @NLPIRBase.byte_str_transform
     def is_word(self, word: str) -> int:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_IsWord
-        *
-        *  Description: Judge whether the word is included in the core dictionary
-        *
-        *  Parameters : sWord: input word
-        *  Returns    :1: exists; 0: no exists
-        *  Author     : Kevin Zhang
-        *  History    :
-        *              1.create 2005-11-22
-        *********************************************************************/
-        NLPIR_API int NLPIR_IsWord(const char *sWord);
+        Call **NLPIR_IsWord**
+
+        Judge whether the word is included in the core dictionary
+
+        :param str word: input word
+        :return: 1: exists; 0: no exists
         """
         return self.get_func("NLPIR_IsWord", [c_char_p], c_int)(word)
 
     @NLPIRBase.byte_str_transform
     def is_user_word(self, word: str, is_ascii: bool = False) -> int:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_IsUserWord
-        *
-        *  Description: Judge whether the word is included in the user-defined dictionary
-        *
-        *  Parameters : sWord: input word
-        *  Returns    :1: exists; 0: no exists
-        *  Author     : Kevin Zhang
-        *  History    :
-        *              1.create 2016-12-31
-        *********************************************************************/
-        NLPIR_API int NLPIR_IsUserWord(const char *sWord, bool bAnsiCode=false);
+        Call **NLPIR_IsUserWord**
+
+        Judge whether the word is included in the user-defined dictionary
+
+        :param str word: input word
+        :param bool is_ascii: is ascii encode or not
+        :return: 1: exists; 0: no exists
         """
         return self.get_func("NLPIR_IsUserWord", [c_char_p], c_int)(word, is_ascii)
 
     @NLPIRBase.byte_str_transform
     def get_word_pos(self, word: str) -> str:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_GetWordPOS
-        *
-        *  Description: Get the word Part-Of-Speech　information
-        *
-        *  Parameters : sWord: input word
-        *
-        *  Returns    : success:
-        *               fail:
-        *  Author     : Kevin Zhang
-        *  History    :
-        *              1.create 2014-10-10
-        *********************************************************************/
-        NLPIR_API const char * NLPIR_GetWordPOS(const char *sWord);
+        Call **NLPIR_GetWordPOS**
 
+        Get the word Part-Of-Speech information
+
+        :param str word: input word
+        :return: pos tagging
         """
         return self.get_func("NLPIR_GetWordPOS", [c_char_p], c_char_p)(word)
 
     def set_pos_map(self, pos_map: int) -> int:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_SetPOSmap
-        *
-        *  Description: select which pos map will use
-        *
-        *  Parameters :nPOSmap, ICT_POS_MAP_FIRST  计算所一级标注集
-                                ICT_POS_MAP_SECOND  计算所二级标注集
-                                PKU_POS_MAP_SECOND   北大二级标注集
-                                PKU_POS_MAP_FIRST       北大一级标注集
-        *  Returns    : 0, failed; else, success
-        *
-        *  Author     :   
-        *  History    : 
-        *              1.create 11:10:2008
-        *********************************************************************/
-        NLPIR_API int NLPIR_SetPOSmap(int nPOSmap);
+        Call **NLPIR_SetPOSmap**
+
+        Select which pos map will use:
+
+        - :attr:`ICT_POS_MAP_FIRST`   计算所一级标注集
+        - :attr:`ICT_POS_MAP_SECOND`  计算所二级标注集
+        - :attr:`PKU_POS_MAP_SECOND`  北大二级标注集
+        - :attr:`PKU_POS_MAP_FIRST`   北大一级标注集
+
+        Default is :attr:`ICT_POS_MAP_SECOND`
+
+        :param int pos_map:
+        :return: 0, failed; else, success
         """
         return self.get_func("NLPIR_SetPOSmap")(pos_map)
 
     @NLPIRBase.byte_str_transform
     def finer_segment(self, line: str) -> str:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_FinerSegment(const char *sLine)
-        *
-        *  Description: 当前的切分结果过大时，如“中华人民共和国”
-        *                需要执行该函数，将切分结果细分为“中华 人民 共和国”
-        *                细分粒度最大为三个汉字
-        *  Parameters : sLine:输入的字符串
-        *  Returns    : 返回的细分串，如果不能细分，则返回为空字符串""
-        *
-        *  Author     : Kevin Zhang
-        *  History    : 
-        *              1.create 2014/10/10
-        *********************************************************************/
-        NLPIR_API const char*  NLPIR_FinerSegment(const char *sLine);
+        Call **NLPIR_FinerSegment**
 
+        当前的切分结果过大时,如“中华人民共和国”, 需要执行该函数,将切分结果细分为“中华 人民 共和国”
+
+        细分粒度最大为三个汉字,如果不能细分，则返回为空字符串
+
+        :param str line: string need to be segmented
+        :return: segmented string, return null string if line cannot be segmented
         """
         return self.get_func("NLPIR_FinerSegment", [c_char_p], c_char_p)(line)
 
     @NLPIRBase.byte_str_transform
     def get_eng_word_origin(self, word: str) -> str:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_GetEngWordOrign(const char *sWord)
-        *
-        *  Description: 获取各类英文单词的原型，考虑了过去分词、单复数等情况
-        *  Parameters : sWord:输入的单词
-        *  Returns    : 返回的词原型形式
-        *               driven->drive   drives->drive   drove-->drive
-        *  Author     : Kevin Zhang
-        *  History    : 
-        *              1.create 2014/12/11
-        *********************************************************************/
-        NLPIR_API const char*  NLPIR_GetEngWordOrign(const char *sWord);
+        Call **NLPIR_GetEngWordOrign**
+
+        获取各类英文单词的原型，考虑了过去分词、单复数等情况::
+
+            driven->drive   drives->drive   drove-->drive
+
+        :param str word: word to be stemmed
+        :return: the stemmed word
         """
         return self.get_func("NLPIR_GetEngWordOrign", [c_char_p], c_char_p)(word)
 
     @NLPIRBase.byte_str_transform
     def word_freq_stat(self, text: str, stop_word_remove: bool = True) -> str:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_WordFreqStat(const char *sText)
-        *
-        *  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
-        *  Parameters : sText:输入的文本内容
-        *                bStopRemove: true-去除停用词;false-不去除停用词
-        *  Returns    : 返回的是词频统计结果形式如下：
-        *                张华平/nr/10#博士/n/9#分词/n/8
-        *  Author     : Kevin Zhang
-        *  History    : 
-        *              1.create 2014/12/11
-        *********************************************************************/
-        NLPIR_API const char*  NLPIR_WordFreqStat(const char *sText,bool bStopRemove=true);
+        Call **NLPIR_WordFreqStat**
+
+        获取输入文本的词，词性，频统计结果，按照词频大小排序
+
+        :param str text: 输入的文本内容
+        :param bool stop_word_remove: true-去除停用词 false-不去除停用词
+        :return: 返回的是词频统计结果形式如下::
+
+            张华平/nr/10#博士/n/9#分词/n/8
         """
         return self.get_func("NLPIR_WordFreqStat", [c_char_p, c_bool], c_char_p)(text, stop_word_remove)
 
     @NLPIRBase.byte_str_transform
     def file_word_freq_stat(self, filename: str, stop_word_remove: bool = True) -> str:
         """
-        /*********************************************************************
-        *
-        *  Func Name  : NLPIR_FileWordFreqStat(const char *sFilename)
-        *
-        *  Description: 获取输入文本的词，词性，频统计结果，按照词频大小排序
-        *  Parameters : sFilename 文本文件的全路径
-        *                bStopRemove: true-去除停用词;false-不去除停用词
-        *  Returns    : 返回的是词频统计结果形式如下：
-        *                张华平/nr/10#博士/n/9#分词/n/8
-        *  Author     : Kevin Zhang
-        *  History    : 
-        *              1.create 2014/12/11
-        *********************************************************************/
-        NLPIR_API const char*  NLPIR_FileWordFreqStat(const char *sFilename,bool bStopRemove=true);
+        Call **NLPIR_FileWordFreqStat**
+
+        Same as :func:`word_freq_stat`
+
+        :param str filename: path of text file
+        :param bool stop_word_remove: remove stop words or not
+        :return: same as :func:`word_freq_stat`
         """
         return self.get_func("NLPIR_FileWordFreqStat", [c_char_p, c_bool], c_char_p)(filename, stop_word_remove)
 
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
-        /*********************************************************************
-         *
-         *  Func Name  : NLPIR_GetLastErrorMsg
-         *
-         *  Description: GetLastErrorMessage
-         *    
-         *  Parameters : void
-         *  Returns    : the result buffer pointer
-         *
-         *  Author     : Kevin Zhang  
-         *  History    : 
-         *              1.create 2014-2-27
-         *********************************************************************/
-        NLPIR_API const char * NLPIR_GetLastErrorMsg();
+        Call NLPIR_GetLastErrorMsg
+
+        :return: error message
         """
         return self.get_func("NLPIR_GetLastErrorMsg", None, c_char_p)()

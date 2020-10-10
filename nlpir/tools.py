@@ -4,6 +4,13 @@ import requests
 
 
 def download(url, des):
+    """
+    Download a file from url and save to des, use to download license from github
+
+    :param url: url to download
+    :param des: a path to save the data from url
+    :return: None
+    """
     response = requests.get(url)
     if response.status_code != 200:
         print(f"{url} download fail")
@@ -15,7 +22,8 @@ def download(url, des):
 def update_license(data_path=None) -> None:
     """
     update license from NLPIR github repo
-    :param data_path: the path of Data
+
+    :param data_path: the path to save the license, save in Data if None provide
     """
     base_url = "https://github.com/NLPIR-team/NLPIR/raw/master/License/license%20for%20a%20month/"
     key_dict = {
