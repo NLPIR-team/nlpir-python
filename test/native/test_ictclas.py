@@ -55,7 +55,7 @@ def test_paragraph_process_a():
 def test_file_process():
     ictclas = get_ictclas()
     test_result_filename = "native/test_result.txt"
-    ictclas.file_process(test_source_filename, test_result_filename, True)
+    ictclas.file_process(test_source_filename, test_result_filename, 1)
     os.remove(test_result_filename)
 
 
