@@ -180,7 +180,7 @@ class ICTCLAS(NLPIRBase):
         raise NotImplementedError("Not recommended, use paragraph_process")
 
     @NLPIRBase.byte_str_transform
-    def file_process(self, source_filename: str, result_filename: str, pos_tagged: bool = 1) -> float:
+    def file_process(self, source_filename: str, result_filename: str, pos_tagged: int = 1) -> float:
         """
         /*********************************************************************
          *
@@ -353,7 +353,7 @@ class ICTCLAS(NLPIRBase):
         return self.get_func("NLPIR_IsWord", [c_char_p], c_int)(word)
 
     @NLPIRBase.byte_str_transform
-    def is_user_word(self, word: str) -> int:
+    def is_user_word(self, word: str, is_ascii: bool = False) -> int:
         """
         /*********************************************************************
         *
@@ -369,10 +369,10 @@ class ICTCLAS(NLPIRBase):
         *********************************************************************/
         NLPIR_API int NLPIR_IsUserWord(const char *sWord, bool bAnsiCode=false);
         """
-        return self.get_func("NLPIR_IsUserWord", [c_char_p], c_int)(word)
+        return self.get_func("NLPIR_IsUserWord", [c_char_p], c_int)(word, is_ascii)
 
     @NLPIRBase.byte_str_transform
-    def get_word_pos(self, word: str):
+    def get_word_pos(self, word: str) -> str:
         """
         /*********************************************************************
         *
@@ -393,7 +393,7 @@ class ICTCLAS(NLPIRBase):
         """
         return self.get_func("NLPIR_GetWordPOS", [c_char_p], c_char_p)(word)
 
-    def set_pos_map(self, pos_map) -> int:
+    def set_pos_map(self, pos_map: int) -> int:
         """
         /*********************************************************************
         *
@@ -457,7 +457,7 @@ class ICTCLAS(NLPIRBase):
         return self.get_func("NLPIR_GetEngWordOrign", [c_char_p], c_char_p)(word)
 
     @NLPIRBase.byte_str_transform
-    def word_freq_stat(self, text: str) -> str:
+    def word_freq_stat(self, text: str, stop_word_remove: bool = True) -> str:
         """
         /*********************************************************************
         *
@@ -474,10 +474,10 @@ class ICTCLAS(NLPIRBase):
         *********************************************************************/
         NLPIR_API const char*  NLPIR_WordFreqStat(const char *sText,bool bStopRemove=true);
         """
-        return self.get_func("NLPIR_WordFreqStat", [c_char_p], c_char_p)(text)
+        return self.get_func("NLPIR_WordFreqStat", [c_char_p, c_bool], c_char_p)(text, stop_word_remove)
 
     @NLPIRBase.byte_str_transform
-    def file_word_freq_stat(self, filename: str) -> str:
+    def file_word_freq_stat(self, filename: str, stop_word_remove: bool = True) -> str:
         """
         /*********************************************************************
         *
@@ -494,7 +494,7 @@ class ICTCLAS(NLPIRBase):
         *********************************************************************/
         NLPIR_API const char*  NLPIR_FileWordFreqStat(const char *sFilename,bool bStopRemove=true);
         """
-        return self.get_func("NLPIR_FileWordFreqStat", [c_char_p], c_char_p)(filename)
+        return self.get_func("NLPIR_FileWordFreqStat", [c_char_p, c_bool], c_char_p)(filename, stop_word_remove)
 
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:

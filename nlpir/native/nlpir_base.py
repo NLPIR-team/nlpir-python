@@ -105,7 +105,14 @@ class NLPIRBase:
         """
         raise NotImplementedError
 
-    def get_dll_path(self, platform, lib_dir, is_64bit):
+    def get_dll_path(self, platform: str, lib_dir: str, is_64bit: bool) -> str:
+        """
+        :param str platform: sys.platform
+        :param str lib_dir: path to lib
+        :param bool is_64bit: is 64bit or not
+        :return: the abspath of dll
+        :rtype: str
+        """
 
         def get_dll_prefix(prefix, suffix):
             return os.path.join(lib_dir, prefix + self.dll_name + suffix)
@@ -127,7 +134,12 @@ class NLPIRBase:
         self.logger.debug("Using {} file for {}".format(lib, platform))
         return lib
 
-    def load_library(self, platform, is_64bit=None, lib_dir=LIB_DIR) -> typing.Tuple[ctypes.CDLL, str]:
+    def load_library(
+            self,
+            platform: str,
+            is_64bit: typing.Optional[bool] = None,
+            lib_dir: typing.Optional[str] = None
+    ) -> typing.Tuple[ctypes.CDLL, str]:
         """Loads the NLPIR library appropriate for the user's system.
         This function is called automatically when create a instance.
         :param str platform: The platform identifier for the user's system.
@@ -138,6 +150,8 @@ class NLPIRBase:
 
         :raises RuntimeError: The user's platform is not supported by NLPIR.
         """
+        if lib_dir is None:
+            lib_dir = self.LIB_DIR
         self.logger.debug("Loading NLPIR library file from '{}'".format(lib_dir))
         if is_64bit is None:
             is_64bit = sys.maxsize > 2 ** 32
@@ -146,7 +160,12 @@ class NLPIRBase:
         self.logger.debug("{} library file '{}' loaded.".format(self.dll_name, lib))
         return lib_nlpir, lib
 
-    def get_func(self, name, argtypes=None, restype: typing.Any = c_int):
+    def get_func(
+            self,
+            name: str,
+            argtypes: typing.Optional[list] = None,
+            restype: typing.Any = c_int
+    ) -> typing.Callable:
         """Retrieves the corresponding NLPIR function.
         :param str name: The name of the NLPIR function to get.
         :param list argtypes: A list of :mod:`ctypes` data types that correspond
