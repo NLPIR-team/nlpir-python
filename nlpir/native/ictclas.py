@@ -1,6 +1,7 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
-from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, c_void_p, POINTER, Structure
+from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref
+import typing
 
 
 class ResultT(Structure):
@@ -109,7 +110,7 @@ class ICTCLAS(NLPIRBase):
         return self.get_func('NLPIR_ParagraphProcess', [c_char_p, c_int], c_char_p)(paragraph, pos_tagged)
 
     @NLPIRBase.byte_str_transform
-    def paragraph_process_a(self, paragraph: str, result_count: int, user_dict: bool = True) -> ResultT:
+    def paragraph_process_a(self, paragraph: str, user_dict: bool = True) -> typing.Tuple[ResultT, int]:
         """
         /*********************************************************************
          *
@@ -126,11 +127,14 @@ class ICTCLAS(NLPIRBase):
          *********************************************************************/
         NLPIR_API const result_t * NLPIR_ParagraphProcessA(const char *sParagraph,int *pResultCount,bool bUserDict=true);
         """
-        return self.get_func('NLPIR_ParagraphProcessA', [c_char_p, c_void_p, c_bool], POINTER(ResultT))(
+        self.logger.warning("not recommended, use paragraph_process instead")
+        result_count = c_int()
+        result = self.get_func('NLPIR_ParagraphProcessA', [c_char_p, POINTER(c_int), c_bool], POINTER(ResultT))(
             paragraph,
-            result_count,
+            byref(result_count),
             user_dict
         )
+        return result, result_count.value
 
     @NLPIRBase.byte_str_transform
     def get_paragraph_process_a_word_count(self, paragraph: str) -> int:
@@ -151,7 +155,7 @@ class ICTCLAS(NLPIRBase):
          *********************************************************************/
          NLPIR_API int NLPIR_GetParagraphProcessAWordCount(const char *sParagraph);
         """
-        raise NotImplementedError
+        raise NotImplementedError("Not recommended, use paragraph_process")
 
     @NLPIRBase.byte_str_transform
     def paragraph_process_aw(self, count: int, result: ResultT) -> None:
@@ -173,7 +177,7 @@ class ICTCLAS(NLPIRBase):
         NLPIR_API void NLPIR_ParagraphProcessAW(int nCount,result_t * result);
 
         """
-        raise NotImplementedError
+        raise NotImplementedError("Not recommended, use paragraph_process")
 
     @NLPIRBase.byte_str_transform
     def file_process(self, source_filename: str, result_filename: str, pos_tagged: bool = 1) -> float:
@@ -346,7 +350,7 @@ class ICTCLAS(NLPIRBase):
         *********************************************************************/
         NLPIR_API int NLPIR_IsWord(const char *sWord);
         """
-        return self.get_func("NLPIR_IsWord", [word], c_int)()
+        return self.get_func("NLPIR_IsWord", [c_char_p], c_int)(word)
 
     @NLPIRBase.byte_str_transform
     def is_user_word(self, word: str) -> int:
@@ -450,7 +454,7 @@ class ICTCLAS(NLPIRBase):
         *********************************************************************/
         NLPIR_API const char*  NLPIR_GetEngWordOrign(const char *sWord);
         """
-        return self.get_func("NLPIR_GetEngWordOrigin", [c_char_p], c_char_p)(word)
+        return self.get_func("NLPIR_GetEngWordOrign", [c_char_p], c_char_p)(word)
 
     @NLPIRBase.byte_str_transform
     def word_freq_stat(self, text: str) -> str:

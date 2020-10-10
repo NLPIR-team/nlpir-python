@@ -12,8 +12,6 @@ import functools
 from ctypes import c_int
 from nlpir import PACKAGE_DIR
 
-logger = logging.getLogger('nlpir.api')
-
 # 如果是各种编码混合，设置为-1，系统自动检测，并内部转换。会多耗费时间，不推荐使用
 UNKNOWN_CODE = -1
 # 默认支持GBK编码
@@ -33,6 +31,8 @@ class NLPIRException(Exception):
 
 
 class NLPIRBase:
+    logger = logging.getLogger('nlpir.naive')
+
     LIB_DIR = os.path.join(PACKAGE_DIR, 'lib')
 
     encode_map = {
@@ -73,11 +73,12 @@ class NLPIRBase:
         return wraps
 
     def __init__(self, encode=UTF8_CODE):
-        self.lib_nlpir = self.load_library(sys.platform)
+        self.lib_nlpir, self.lib_path = self.load_library(sys.platform)
         # TODO give the statue, remove the hard code
         self.encode = self.encode_map[encode]
         self.encode_nlpir = encode
-        if self.init_lib("nlpir", self.encode_nlpir, "") == 0:
+        data_path = os.path.join("nlpir", PACKAGE_DIR)
+        if self.init_lib(data_path, self.encode_nlpir, "") == 0:
             raise NLPIRException(self.get_last_error_msg())
 
     def __del__(self):
@@ -123,10 +124,10 @@ class NLPIRBase:
         else:
             raise RuntimeError("Platform '{}' is not supported.".format(
                 platform))
-        logger.debug("Using {} file for {}".format(lib, platform))
+        self.logger.debug("Using {} file for {}".format(lib, platform))
         return lib
 
-    def load_library(self, platform, is_64bit=None, lib_dir=LIB_DIR) -> ctypes.CDLL:
+    def load_library(self, platform, is_64bit=None, lib_dir=LIB_DIR) -> typing.Tuple[ctypes.CDLL, str]:
         """Loads the NLPIR library appropriate for the user's system.
         This function is called automatically when create a instance.
         :param str platform: The platform identifier for the user's system.
@@ -137,13 +138,13 @@ class NLPIRBase:
 
         :raises RuntimeError: The user's platform is not supported by NLPIR.
         """
-        logger.debug("Loading NLPIR library file from '{}'".format(lib_dir))
+        self.logger.debug("Loading NLPIR library file from '{}'".format(lib_dir))
         if is_64bit is None:
             is_64bit = sys.maxsize > 2 ** 32
         lib = self.get_dll_path(platform, lib_dir, is_64bit)
         lib_nlpir = ctypes.cdll.LoadLibrary(lib)
-        logger.debug("{} library file '{}' loaded.".format(self.dll_name, lib))
-        return lib_nlpir
+        self.logger.debug("{} library file '{}' loaded.".format(self.dll_name, lib))
+        return lib_nlpir, lib
 
     def get_func(self, name, argtypes=None, restype: typing.Any = c_int):
         """Retrieves the corresponding NLPIR function.
@@ -156,14 +157,14 @@ class NLPIRBase:
         :returns: The exported function. It can be called like any other Python
             callable.
         """
-        logger.debug("Getting NLPIR API function: 'name': '{}', 'argtypes': '{}',"
-                     " 'restype': '{}'.".format(name, argtypes, restype))
+        self.logger.debug("Getting NLPIR API function: 'name': '{}', 'argtypes': '{}',"
+                          " 'restype': '{}'.".format(name, argtypes, restype))
         func = getattr(self.lib_nlpir, name)
         if argtypes is not None:
             func.arg_types = argtypes
         if restype is not c_int:
             func.restype = restype
-        logger.debug("NLPIR API function '{}' retrieved.".format(name))
+        self.logger.debug("NLPIR API function '{}' retrieved.".format(name))
         return func
 
     def get_last_error_msg(self) -> str:
