@@ -1,8 +1,4 @@
 # coding=utf-8
-"""Provides a low-level Python interface to NLPIR.
-
-Most of code in this model is copy/inspired from pynlpir
-"""
 import os
 import logging
 import sys
@@ -12,6 +8,8 @@ import functools
 from ctypes import c_int
 from nlpir import PACKAGE_DIR
 
+# All available encoding, according to the header(.h) file
+# 根据对应头文件,NLPIR可设置的编码格式
 # 如果是各种编码混合，设置为-1，系统自动检测，并内部转换。会多耗费时间，不推荐使用
 UNKNOWN_CODE = -1
 # 默认支持GBK编码
@@ -31,9 +29,21 @@ class NLPIRException(Exception):
 
 
 class NLPIRBase:
-    logger = logging.getLogger('nlpir.naive')
+    """
+    抽象类,作为各种NLPIR组件的基类,提供加载DLL等功能,大部分代码借鉴于pynlpir项目
+    Provides a low-level Python interface for NLPIR.
+    Most of code in this model is copy/inspired from pynlpir
 
-    LIB_DIR = os.path.join(PACKAGE_DIR, 'lib')
+    继承此类必须实现虚方法,实现对应不同组件的初始化和销毁动作.
+    为了使得类可以加载对应DLL,需要制定DLL名称,名称符合一般的操作系统对于动态链接库的命名规则::
+
+    linux: lib{Dll_name}32.so lib{Dll_name}64.so
+    macOS: lib{Dll_name}darwin.so 此处macOS与linux动态库命名方式一致,为了区分故加入darwin
+    windows: {Dll_name}32.dll, {Dll_name}64.dll
+
+    """
+    #: A logger using for all native nlpir functions
+    logger = logging.getLogger('nlpir.naive')
 
     encode_map = {
         UNKNOWN_CODE: "utf-8",
@@ -45,14 +55,19 @@ class NLPIRBase:
     }
 
     @staticmethod
-    def byte_str_transform(func):
+    def byte_str_transform(func: typing.Callable) -> typing.Callable:
         """
+        一个包装器,作为装饰器使用,会自动将使用装饰器的函数的参数中的str转换为bytes, 在返回值中将bytes转换为str
+
+        此包装器只能在这个类的子类函数成员中使用,目的是简化动态链接库调用的编码转换问题
+
         A wraps that automatically detect str parameter , transform to bytes
         and transform return value from bytes to str if it's bytes.
 
         This function is used for call the function from dynamic lib.
-
         This function can only use in NLPIRBase's sub class
+
+        :param func: function
         """
 
         @functools.wraps(func)
@@ -73,8 +88,12 @@ class NLPIRBase:
         return wraps
 
     def __init__(self, encode=UTF8_CODE):
+        """
+        :param int encode: An encoding code provide from NLPIR's header , defined in this package
+        :raises NLPIRException: Init the dynamic link library fail, can get an error message from dll
+        """
+        self.LIB_DIR = os.path.join(PACKAGE_DIR, 'lib')
         self.lib_nlpir, self.lib_path = self.load_library(sys.platform)
-        # TODO give the statue, remove the hard code
         self.encode = self.encode_map[encode]
         self.encode_nlpir = encode
         data_path = os.path.join("nlpir", PACKAGE_DIR)
@@ -82,20 +101,23 @@ class NLPIRBase:
             raise NLPIRException(self.get_last_error_msg())
 
     def __del__(self):
-        # TODO if not exit properly
         self.exit_lib()
 
     @property
     def dll_name(self):
+        """
+        :return: The name of dynamic link library, more info in class description
+        """
         raise NotImplementedError
 
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
         所有子类都需要实现此方法用于类初始化实例时调用, 由于各个库对应初始化不同,故改变此函数名称
-        :param data_path: the location of Data , Data文件夹所在位置
+
+        :param str data_path: the location of Data , Data文件夹所在位置
         :param encode: encode code define in NLPIR
-        :param license_code: license code for unlimited usage. common user ignore it
-        :return 1 success 0 fail
+        :param str license_code: license code for unlimited usage. common user ignore it
+        :return: 1 success 0 fail
         """
         raise NotImplementedError
 
@@ -142,12 +164,13 @@ class NLPIRBase:
     ) -> typing.Tuple[ctypes.CDLL, str]:
         """Loads the NLPIR library appropriate for the user's system.
         This function is called automatically when create a instance.
+
         :param str platform: The platform identifier for the user's system.
         :param bool is_64bit: Whether or not the user's system is 64-bit.
         :param str lib_dir: The directory that contains the library files
             (defaults to :data:`LIB_DIR`).
         :return: a dynamic lib object
-
+        :rtype: tuple(ctypes.CDLL, str)
         :raises RuntimeError: The user's platform is not supported by NLPIR.
         """
         if lib_dir is None:
@@ -167,14 +190,16 @@ class NLPIRBase:
             restype: typing.Any = c_int
     ) -> typing.Callable:
         """Retrieves the corresponding NLPIR function.
+
         :param str name: The name of the NLPIR function to get.
         :param list argtypes: A list of :mod:`ctypes` data types that correspond
             to the function's argument types.
-        :param restype: A :mod:`ctypes` data type that corresponds to the
+        :param ctypes restype: A :mod:`ctypes` data type that corresponds to the
             function's return type (only needed if the return type isn't
             :class:`ctypes.c_int`).
-        :returns: The exported function. It can be called like any other Python
+        :return: The exported function. It can be called like any other Python
             callable.
+        :rtype: Callable Function
         """
         self.logger.debug("Getting NLPIR API function: 'name': '{}', 'argtypes': '{}',"
                           " 'restype': '{}'.".format(name, argtypes, restype))
@@ -187,4 +212,7 @@ class NLPIRBase:
         return func
 
     def get_last_error_msg(self) -> str:
+        """
+        对应每个组件获取异常信息的函数
+        """
         raise NotImplementedError
