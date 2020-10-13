@@ -18,14 +18,16 @@ jobs:
         python-version: [3.6, 3.7, 3.8]
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout github repo
+      uses: actions/checkout@v2
+      with:
+        lfs: true
+    - name: Checkout LFS objects
+      run: git lfs checkout
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-        lfs: true
-    - name: Checkout LFS objects
-      run: git lfs checkout
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
