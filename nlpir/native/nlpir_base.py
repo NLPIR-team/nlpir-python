@@ -35,11 +35,11 @@ class NLPIRBase:
     Most of code in this model is copy/inspired from pynlpir
 
     继承此类必须实现虚方法,实现对应不同组件的初始化和销毁动作.
-    为了使得类可以加载对应DLL,需要制定DLL名称,名称符合一般的操作系统对于动态链接库的命名规则::
+    为了使得类可以加载对应DLL,需要制定DLL名称,名称符合一般的操作系统对于动态链接库的命名规则:
 
-    linux: lib{Dll_name}32.so lib{Dll_name}64.so
-    macOS: lib{Dll_name}darwin.so 此处macOS与linux动态库命名方式一致,为了区分故加入darwin
-    windows: {Dll_name}32.dll, {Dll_name}64.dll
+    - linux: lib{Dll_name}32.so lib{Dll_name}64.so
+    - macOS: lib{Dll_name}darwin.so 此处macOS与linux动态库命名方式一致,为了区分故加入darwin
+    - windows: {Dll_name}32.dll, {Dll_name}64.dll
 
     """
     #: A logger using for all native nlpir functions
