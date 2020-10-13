@@ -12,8 +12,8 @@
 #
 import os
 import sys
-from .. import nlpir
 sys.path.insert(0, os.path.abspath('../'))
+import nlpir
 
 
 # -- Project information -----------------------------------------------------
