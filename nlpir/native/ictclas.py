@@ -151,6 +151,7 @@ class ICTCLAS(NLPIRBase):
         Add a word to the user dictionary ,example:
 
         TODO 弄清楚是添加一个单词还是添加一行::
+
             单词 词性
 
         The added word only add in memory and will not affect the user dict, you can use :func:`clean_user_word` or
@@ -301,7 +302,9 @@ class ICTCLAS(NLPIRBase):
 
         :param str text: 输入的文本内容
         :param bool stop_word_remove: true-去除停用词 false-不去除停用词
-        :return: 返回的是词频统计结果形式如下::
+        :return: 返回的是词频统计结果形式如下
+
+        ::
 
             张华平/nr/10#博士/n/9#分词/n/8
         """
