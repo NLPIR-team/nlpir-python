@@ -1,23 +1,27 @@
 #!/usr/bin/env python3
 # coding : utf-8
-from setuptools import setup
+from setuptools import setup, find_packages
 import nlpir
 
+with open("README.md") as f:
+    readme = f.read()
 dependencies = [
 ]
 setup(
-    name='NLPIR-python',
+    name='nlpir-python',
     version=nlpir.__version__,
-    packages=['nlpir'],
+    packages=find_packages(),
     url='',
-    license='',
+    license='MIT',
     author='yangyaofei, LingJoin Co.,Ltd.',
     author_email='yangyaofei@gmail.com',
-    description='',
+    description='NLPIR-python A python wrapper and toolkit for NLPIR',
+    long_description=readme,
+    long_description_content_type="text/markdown",
     python_requires='>=3.6',
     install_requires=dependencies,
     include_package_data=True,
-    package_data={'nlpir': ['Data/*.*', 'Data/*/*', 'libs/*']},
+    package_data={'nlpir': ['Data/*.*', 'Data/*/*', 'lib/*']},
     keywords=['nlpir', 'nlp', 'Chinese word segmentation', 'ictclas', 'CWS'],
     test_suite='tests',
     platforms=[
