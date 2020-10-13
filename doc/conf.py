@@ -12,14 +12,14 @@
 #
 import os
 import sys
-import nlpir
+from .. import nlpir
 sys.path.insert(0, os.path.abspath('../'))
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'nlpir-python'
-copyright = '2020, yangyaofei'
+copyright = '2020, LingJoin Co.,Ltd.'
 author = 'yangyaofei, LingJoin Co.,Ltd.'
 
 # The full version, including alpha/beta/rc tags
