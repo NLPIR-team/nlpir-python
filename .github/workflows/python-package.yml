@@ -25,7 +25,10 @@ jobs:
     - name: Checkout LFS objects
       run: git lfs checkout
     - name: show the dir
-      run: tree
+      run:
+        ls -la
+        ls -la nlpir
+        ls -la nlpir/lib
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
