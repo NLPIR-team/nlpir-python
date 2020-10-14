@@ -1,6 +1,6 @@
 # coding=utf-8
 from nlpir.native import ICTCLAS
-from nlpir import native, PACKAGE_DIR
+from nlpir import native, PACKAGE_DIR, tools
 import os
 import re
 import logging
@@ -10,7 +10,11 @@ test_str = "法国启蒙思想家孟德斯鸠曾说过：“一切有权力的�
            "他在其名著《社会契约论》中写道：“任何国家权力无不是以民众的权力（权利）让渡与公众认可作为前提的”。"
 test_str_1st = "法国启蒙思想家孟德斯鸠曾说过"
 test_str_2nd = "另一法国启蒙思想家卢梭从社会契约论的观点出发，认为国家权力是公民让渡其全部“自然权利”而获得的"
-test_source_filename = "native/test.txt"
+test_source_filename = os.path.join(os.path.dirname(__file__), "test.txt")
+test_result_filename = os.path.join(os.path.dirname(__file__), "test_result.txt")
+user_dict_path = os.path.join(os.path.dirname(__file__), "tmp_user_dict.txt")
+
+tools.update_license()
 
 
 def get_ictclas(encode=native.UTF8_CODE):
@@ -55,7 +59,6 @@ def test_paragraph_process_a():
 
 def test_file_process():
     ictclas = get_ictclas()
-    test_result_filename = "native/test_result.txt"
     ictclas.file_process(os.path.abspath(test_source_filename), os.path.abspath(test_result_filename), 1)
     os.remove(test_result_filename)
 
@@ -81,8 +84,7 @@ def test_import_user_dict():
     test_str_seg_with_dict = '另/rz 一/m 法国/nsf 启蒙/vn 思想家/n 卢梭/user 从/p 社会契约论/user 的/ude1 观点/n 出发/vi ，/wd' \
                              ' 认为/v 国家/n 权力/n 是/vshi 公民/n 让/v 渡/v 其/rz 全部/m “/wyz 自然/n 权利/n ”/wyy 而/cc 获得/v 的/ude1 '
     user_dict = """卢梭 user\n社会契约论 user\n"""
-    user_dict_path = "native/tmp_user_dict.txt"
-    with open("native/tmp_user_dict.txt", "w") as f:
+    with open(user_dict_path, "w") as f:
         f.write(user_dict)
     assert test_str_seg == ictclas.paragraph_process(test_str_2nd)
     # 导入词典对应文件为FieldDict.pdat FieldDict.pos 初始状态下位空,可以删除 这里测试是导入测试后将其删除
@@ -140,10 +142,9 @@ def test_frq_count():
                    '启蒙/vn/2#一/m/2#社会/n/2#变/v/1#经验/n/1#直到/v/1#用到/v/1#极限/n/1#休止/vi/1#卢/nr1/1#梭/ng/1#千古/n/1#' \
                    '滥用/v/1#观点/n/1#出发/vi/1#认为/v/1#容易/ad/1#公民/n/1#说/v/1#鸠/n/1#全部/m/1#自然/n/1#孟德斯/nrf/1#' \
                    '获得/v/1#名著/n/1#论/v/1#写道/v/1#民众/n/1#公众/n/1#认可/vi/1#前提/n/1#'
-
     ictclas = get_ictclas()
-    assert test_str_frq == ictclas.word_freq_stat(test_str)
-    assert ictclas.file_word_freq_stat(test_source_filename)
+    assert re.match(r".+/[a-z0-9]+/[0-9]+", ictclas.word_freq_stat(test_str))
+    assert re.match(r".+/[a-z0-9]+/[0-9]+", ictclas.file_word_freq_stat(test_source_filename))
 
 
 def test_get_eng_word_origin():
