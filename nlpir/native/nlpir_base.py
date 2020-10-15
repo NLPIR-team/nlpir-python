@@ -87,17 +87,27 @@ class NLPIRBase:
 
         return wraps
 
-    def __init__(self, encode=UTF8_CODE):
+    def __init__(
+            self,
+            encode: int = UTF8_CODE,
+            lib_path: typing.Optional[int] = None,
+            data_path: typing.Optional[str] = None,
+            license_code: str = ''
+    ):
         """
         :param int encode: An encoding code provide from NLPIR's header , defined in this package
+        :param str lib_path: The location of custom dynamic link library, None if use build-in lib
+        :param str data_path: The location of custom Data directory, None if use build-in Data directory.
+        Can bu used in custom dictionary but dont want to change the build-in Data directory
+        :param str license_code: for license
         :raises NLPIRException: Init the dynamic link library fail, can get an error message from dll
         """
-        self.LIB_DIR = os.path.join(PACKAGE_DIR, 'lib')
+        self.LIB_DIR = os.path.join(PACKAGE_DIR, 'lib') if lib_path is None else lib_path
         self.lib_nlpir, self.lib_path = self.load_library(sys.platform)
         self.encode = self.encode_map[encode]
         self.encode_nlpir = encode
-        data_path = os.path.join("nlpir", PACKAGE_DIR)
-        if self.init_lib(data_path, self.encode_nlpir, "") == 0:
+        data_path = os.path.join("nlpir", PACKAGE_DIR) if data_path is None else data_path
+        if self.init_lib(data_path, self.encode_nlpir, license_code) == 0:
             raise NLPIRException(self.get_last_error_msg())
 
     def __del__(self):
