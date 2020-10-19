@@ -7,6 +7,7 @@ import typing
 import functools
 from ctypes import c_int
 from nlpir import PACKAGE_DIR
+from nlpir import NLPIRException
 
 # All available encoding, according to the header(.h) file
 # 根据对应头文件,NLPIR可设置的编码格式
@@ -22,10 +23,6 @@ BIG5_CODE = 2
 GBK_FANTI_CODE = 3
 # UTF8编码
 UTF8_FANTI_CODE = 4
-
-
-class NLPIRException(Exception):
-    pass
 
 
 class NLPIRBase:
