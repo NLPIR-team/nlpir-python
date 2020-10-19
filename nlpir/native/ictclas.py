@@ -148,11 +148,13 @@ class ICTCLAS(NLPIRBase):
         """
         Call **NLPIR_AddUserWord**
 
-        Add a word to the user dictionary ,example:
-
-        TODO 弄清楚是添加一个单词还是添加一行::
+        Add a word to the user dictionary ,example::
 
             单词 词性
+
+        or::
+
+            单词 (default n)
 
         The added word only add in memory and will not affect the user dict, you can use :func:`clean_user_word` or
         :func:`del_usr_word` to delete the word or all the words in memory. If you want to save to the user dict ,use
@@ -169,7 +171,7 @@ class ICTCLAS(NLPIRBase):
         Call **NLPIR_CleanUserWord**
 
         Clean all temporary added user words, more info see :func:`add_user_word`
-
+        TODO figure out the return value
         :return: 1,true ; 0,false
         """
         return self.get_func('NLPIR_CleanUserWord', None, c_int)()
