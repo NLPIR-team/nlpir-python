@@ -4,29 +4,12 @@ nlpir.native package
 Submodules
 ----------
 
-nlpir.native.ictclas module
----------------------------
+.. toctree::
+   :maxdepth: 4
 
-.. automodule:: nlpir.native.ictclas
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-nlpir.native.new\_word\_finder module
--------------------------------------
-
-.. automodule:: nlpir.native.new_word_finder
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-nlpir.native.nlpir\_base module
--------------------------------
-
-.. automodule:: nlpir.native.nlpir_base
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   nlpir.native.ictclas
+   nlpir.native.new_word_finder
+   nlpir.native.nlpir_base
 
 Module contents
 ---------------

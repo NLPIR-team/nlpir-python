@@ -1,6 +1,6 @@
 # coding=utf-8
 from nlpir.native import ICTCLAS
-from nlpir import native, PACKAGE_DIR, tools
+from nlpir import native, PACKAGE_DIR, tools, clean_logs
 import os
 import re
 import logging
@@ -24,6 +24,7 @@ def get_ictclas(encode=native.UTF8_CODE):
 def test_init_exit():
     ictclas = get_ictclas()
     ictclas.exit_lib()
+    clean_logs(include_current=True)
 
 
 def test_paragraph_process():
@@ -45,22 +46,21 @@ def test_paragraph_process():
 
     assert test_str_seg == ictclas.paragraph_process(test_str, 0)
     assert test_str_seg_pos == ictclas.paragraph_process(test_str, 1)
-
-    # ictclas.paragraph_process_a(test_str, result_count, user_dict)
-    # ictclas.get_paragraph_process_a_word_count(paragraph)
-    # ictclas.paragraph_process_aw(count, result)
+    clean_logs(include_current=True)
 
 
 def test_paragraph_process_a():
     ictclas = get_ictclas()
     result, result_count = ictclas.paragraph_process_a(test_str, True)
     assert result_count == 110
+    clean_logs(include_current=True)
 
 
 def test_file_process():
     ictclas = get_ictclas()
     ictclas.file_process(os.path.abspath(test_source_filename), os.path.abspath(test_result_filename), 1)
     os.remove(test_result_filename)
+    clean_logs(include_current=True)
 
 
 def test_import_user_dict():
@@ -97,6 +97,7 @@ def test_import_user_dict():
         os.remove(os.path.join(PACKAGE_DIR, "Data/UserDefinedDict.lst"))
     except FileNotFoundError as e:
         logging.warning(e)
+    clean_logs(include_current=True)
 
 
 def test_user_dict():
@@ -107,8 +108,9 @@ def test_user_dict():
     for word in test_word_list:
         ictclas.get_uni_prob(word)
         ictclas.is_word(word)
-        # ictclas.is_user_word(word)
+        ictclas.is_user_word(word)
         ictclas.get_word_pos(word)
+    clean_logs(include_current=True)
 
 
 def test_pos_map():
@@ -129,22 +131,21 @@ def test_pos_map():
     assert test_str_ict_1st == ictclas.paragraph_process(test_str_2nd)
     ictclas.set_pos_map(ICTCLAS.ICT_POS_MAP_SECOND)
     assert test_str_ict_2nd == ictclas.paragraph_process(test_str_2nd)
+    clean_logs(include_current=True)
 
 
 def test_finer_segment():
     test_str_seg = '另 一 法国 启蒙 思想家 卢 梭 从 社会 契约 论 的 观点 出发 ， 认为 国家 权力 是 公民 让 渡 其 全部 “ 自然 权利 ” 而 获得 的 '
     ictclas = get_ictclas()
     assert test_str_seg == ictclas.finer_segment(test_str_2nd)
+    clean_logs(include_current=True)
 
 
 def test_frq_count():
-    test_str_frq = '权力/n/7#是/vshi/3#思想家/n/2#权利/n/2#渡/v/2#让/v/2#有/vyou/2#法国/nsf/2#人/n/2#国家/n/2#契约/n/2#' \
-                   '启蒙/vn/2#一/m/2#社会/n/2#变/v/1#经验/n/1#直到/v/1#用到/v/1#极限/n/1#休止/vi/1#卢/nr1/1#梭/ng/1#千古/n/1#' \
-                   '滥用/v/1#观点/n/1#出发/vi/1#认为/v/1#容易/ad/1#公民/n/1#说/v/1#鸠/n/1#全部/m/1#自然/n/1#孟德斯/nrf/1#' \
-                   '获得/v/1#名著/n/1#论/v/1#写道/v/1#民众/n/1#公众/n/1#认可/vi/1#前提/n/1#'
     ictclas = get_ictclas()
     assert re.match(r".+/[a-z0-9]+/[0-9]+", ictclas.word_freq_stat(test_str))
     assert re.match(r".+/[a-z0-9]+/[0-9]+", ictclas.file_word_freq_stat(test_source_filename))
+    clean_logs(include_current=True)
 
 
 def test_get_eng_word_origin():
@@ -157,9 +158,12 @@ def test_get_eng_word_origin():
     ictclas = get_ictclas()
     for w, r in zip(test_str_eng.split(), test_str_eng_result.split()):
         assert r == ictclas.get_eng_word_origin(w)
+    clean_logs(include_current=True)
 
 
 def test_last_error_msg():
     msg = get_ictclas().get_last_error_msg()
     logging.info(msg)
     assert msg is not None
+    clean_logs(include_current=True)
+
