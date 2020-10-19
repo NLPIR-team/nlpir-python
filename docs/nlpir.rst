@@ -12,13 +12,11 @@ Subpackages
 Submodules
 ----------
 
-nlpir.tools module
-------------------
+.. toctree::
+   :maxdepth: 4
 
-.. automodule:: nlpir.tools
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   nlpir.ictclas
+   nlpir.tools
 
 Module contents
 ---------------
