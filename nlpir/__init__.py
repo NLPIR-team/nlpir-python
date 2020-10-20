@@ -46,11 +46,11 @@ def get_instance(func: callable) -> callable:
 
     直接使用单层装饰器时,此装饰器会在import module的时候直接被调用,
     生成对应的函数,导致对应的类实例过早初始化.
-    为了让类实例真正在函数调用时才初始化,使用下面的 :func:functions.warps(),
+    为了让类实例真正在函数调用时才初始化,使用下面的 :func:`functions.warps`,
     此方法在直接import的时候不会被调用(因为初始化时仅仅为函数没有函数参数),故使用
     这种方式.
 
-    让函数在真正执行时才进行类实例初始化的原因是为了使 :func:init_setting 可以被使用,
+    让函数在真正执行时才进行类实例初始化的原因是为了使 :func:`init_setting` 可以被使用,
     类似于 :func:logging.basicConfig 方法,可以在import对应module后可以有一次修改初始化
     参数的可能.
 

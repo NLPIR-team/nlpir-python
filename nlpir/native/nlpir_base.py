@@ -11,17 +11,17 @@ from nlpir import NLPIRException
 
 # All available encoding, according to the header(.h) file
 # 根据对应头文件,NLPIR可设置的编码格式
-# 如果是各种编码混合，设置为-1，系统自动检测，并内部转换。会多耗费时间，不推荐使用
+#: 如果是各种编码混合，设置为-1，系统自动检测，并内部转换。会多耗费时间，不推荐使用
 UNKNOWN_CODE = -1
-# 默认支持GBK编码
+#: 默认支持GBK编码
 GBK_CODE = 0
-# UTF8编码
+#: UTF8编码
 UTF8_CODE = 1
-# BIG5编码
+#: BIG5编码
 BIG5_CODE = 2
-# GBK编码，里面包含繁体字
+#: GBK编码，里面包含繁体字
 GBK_FANTI_CODE = 3
-# UTF8编码
+#: UTF8编码
 UTF8_FANTI_CODE = 4
 
 
@@ -106,7 +106,7 @@ class NLPIRBase:
             raise NLPIRException(self.get_last_error_msg())
 
     def __del__(self):
-        self.exit_lib()
+        return self.exit_lib()
 
     @property
     def dll_name(self):
