@@ -6,7 +6,7 @@ import logging
 import sys
 import functools
 
-__version__ = "0.0.1b"
+__version__ = "0.0.1"
 PACKAGE_DIR = os.path.abspath(os.path.dirname(__file__))
 logger = logging.getLogger("nlpir")
 
