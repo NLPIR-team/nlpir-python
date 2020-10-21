@@ -31,10 +31,10 @@ def update_license(data_path=None) -> None:
         "keyScan.user": "KeyScanner九眼智能扫描授权/keyScan.user",
         "deepclassifier.usr": "classifier深度学习分类授权/deepclassifier.user",
         "KeyExtract.user": "KeyExtract关键词提取授权/keyExtract.user",
-        "NewWordFinder.usr": "NewWordFinder新词发现授权/NewWordFinder.user",
-        "summary.usr": "Summary自动摘要提取授权/summary.user",
-        "DocExtractor.usr": "DocExtractor文档提取授权/DocExtractor.user",
-        "sentiment.usr": "SentimentNew情感分析授权/sentiment.user"
+        "NewWordFinder.user": "NewWordFinder新词发现授权/NewWordFinder.user",
+        "summary.user": "Summary自动摘要提取授权/summary.user",
+        "DocExtractor.user": "DocExtractor文档提取授权/DocExtractor.user",
+        "sentiment.user": "SentimentNew情感分析授权/sentiment.user"
     }
     if data_path is None:
         destination = os.path.join(os.path.dirname(__file__), "Data")
