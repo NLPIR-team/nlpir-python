@@ -5,8 +5,8 @@ nlpir-python 是一个 [NLPIR](https://github.com/NLPIR-team/NLPIR>) 的python�
 nlpir-python is a python wrapper for NLPIR modules.
 
 [![Documentation Status](https://readthedocs.org/projects/nlpir-python/badge/?version=latest)](https://nlpir-python.readthedocs.io/en/latest/?badge=latest)
-
-
+[![PyPI version](https://badge.fury.io/py/nlpir-python.svg)](https://badge.fury.io/py/nlpir-python)
+![Test](https://github.com/yangyaofei/nlpir-python/workflows/test/badge.svg)
 - Documentation: https://nlpir-python.rtfd.io
 - Github: https://github.com/yangyaofei/nlpir-python
 - Support: https://github.com/yangyaofei/nlpir-python/issues
