@@ -1,15 +1,16 @@
 # coding=utf-8
 """
 Tested function:
-    def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
-    def exit_lib(self) -> bool:
-   def get_keywords(self, line: str, max_key_limit: int = 50, weight_out: bool = False) -> str:
-    def import_user_dict(self, filename: str, overwrite: bool = False):
-    def add_user_word(self, word: str) -> int:
-    def clean_user_word(self) -> int:
-    def save_the_usr_dict(self) -> int:
-    def del_usr_word(self, word: str) -> int:
-    def import_key_blacklist(self, filename: str, pos_blacklist: typing.Optional[str] = None) -> int:
+
+- :func:`nlpir.native.key_extract.KeyExtract.init_lib`
+- :func:`nlpir.native.key_extract.KeyExtract.exit_lib`
+- :func:`nlpir.native.key_extract.KeyExtract.get_keywords`
+- :func:`nlpir.native.key_extract.KeyExtract.import_user_dict`
+- :func:`nlpir.native.key_extract.KeyExtract.add_user_word`
+- :func:`nlpir.native.key_extract.KeyExtract.clean_user_word`
+- :func:`nlpir.native.key_extract.KeyExtract.save_the_usr_dict`
+- :func:`nlpir.native.key_extract.KeyExtract.del_usr_word`
+- :func:`nlpir.native.key_extract.KeyExtract.get_last_error_msg`
 """
 from nlpir.native import KeyExtract
 from nlpir import native, PACKAGE_DIR, clean_logs
