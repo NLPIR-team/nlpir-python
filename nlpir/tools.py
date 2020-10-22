@@ -30,7 +30,7 @@ def update_license(data_path=None) -> None:
         "NLPIR.user": "NLPIR-ICTCLAS分词系统授权/NLPIR.user",
         "keyScan.user": "KeyScanner九眼智能扫描授权/keyScan.user",
         "deepclassifier.usr": "classifier深度学习分类授权/deepclassifier.user",
-        "KeyExtract.user": "KeyExtract关键词提取授权/keyExtract.user",
+        "keyExtract.user": "KeyExtract关键词提取授权/keyExtract.user",
         "NewWordFinder.user": "NewWordFinder新词发现授权/NewWordFinder.user",
         "summary.user": "Summary自动摘要提取授权/summary.user",
         "DocExtractor.user": "DocExtractor文档提取授权/DocExtractor.user",
