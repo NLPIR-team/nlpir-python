@@ -1,4 +1,26 @@
 # coding=utf-8
+"""
+Tested Function:
+
+- :func:`nlpir.native.ictclas.ICTCLAS.exit_lib`
+- :func:`nlpir.native.ictclas.ICTCLAS.paragraph_process`
+- :func:`nlpir.native.ictclas.ICTCLAS.ictclas.paragraph_process_a`
+- :func:`nlpir.native.ictclas.ICTCLAS.file_process`
+- :func:`nlpir.native.ictclas.ICTCLAS.add_user_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.del_usr_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.clean_user_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.import_user_dict`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_uni_prob`
+- :func:`nlpir.native.ictclas.ICTCLAS.is_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.is_user_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_word_pos`
+- :func:`nlpir.native.ictclas.ICTCLAS.set_pos_map`
+- :func:`nlpir.native.ictclas.ICTCLAS.finer_segment`
+- :func:`nlpir.native.ictclas.ICTCLAS.word_freq_stat`
+- :func:`nlpir.native.ictclas.ICTCLAS.file_word_freq_stat`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_eng_word_origin`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_last_error_msg`
+"""
 from nlpir.native import ICTCLAS
 from nlpir import native, PACKAGE_DIR, clean_logs
 import os
