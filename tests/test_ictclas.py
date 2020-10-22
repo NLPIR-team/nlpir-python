@@ -1,11 +1,9 @@
-from nlpir import ictclas, tools
+from nlpir import ictclas
 import nlpir
-
-tools.update_license()
 
 
 def test_segment():
-    from tests.native.test_ictclas import test_str
+    from tests.strings import test_str
     test_str_seg_pos = '法国/nsf 启蒙/vn 思想家/n 孟德斯/nrf 鸠/n 曾/d 说/v 过/uguo ：/wm “/wyz 一切/rz 有/vyou 权力/n ' \
                        '的/ude1 人/n 都/d 容易/ad 滥用/v 权力/n ，/wd 这/rzv 是/vshi 一/m 条/q 千古/n 不/d 变/v 的/ude1 经' \
                        '验/n 。/wj 有/vyou 权力/n 的/ude1 人/n 直到/v 把/pba 权力/n 用到/v 极限/n 方可/d 休止/vi 。/wj ”/wyy' \
@@ -47,7 +45,7 @@ def test_segment():
 
 
 def test_dict():
-    from tests.native.test_ictclas import test_str_1st, test_str_2nd
+    from tests.strings import test_str_1st, test_str_2nd
     # test add and delete single word
     test_str_seg = '法国/nsf 启蒙/vn 思想家/n 孟德斯/nrf 鸠/n 曾/d 说/v 过/vf '
     test_str_seg_with_dict = '法国/nsf 启蒙/vn 思想家/n 孟德斯鸠/n 曾/d 说/v 过/vf '
@@ -75,7 +73,7 @@ def test_dict():
 
 
 def test_file_segment():
-    from tests.native.test_ictclas import test_source_filename, test_result_filename
+    from tests.strings import test_source_filename, test_result_filename
     import os
     ictclas.file_segment(os.path.abspath(test_source_filename), os.path.abspath(test_result_filename))
     os.remove(test_result_filename)
