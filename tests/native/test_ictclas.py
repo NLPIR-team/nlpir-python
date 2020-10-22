@@ -1,20 +1,32 @@
 # coding=utf-8
+"""
+Tested Function:
+
+- :func:`nlpir.native.ictclas.ICTCLAS.exit_lib`
+- :func:`nlpir.native.ictclas.ICTCLAS.paragraph_process`
+- :func:`nlpir.native.ictclas.ICTCLAS.ictclas.paragraph_process_a`
+- :func:`nlpir.native.ictclas.ICTCLAS.file_process`
+- :func:`nlpir.native.ictclas.ICTCLAS.add_user_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.del_usr_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.clean_user_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.import_user_dict`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_uni_prob`
+- :func:`nlpir.native.ictclas.ICTCLAS.is_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.is_user_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_word_pos`
+- :func:`nlpir.native.ictclas.ICTCLAS.set_pos_map`
+- :func:`nlpir.native.ictclas.ICTCLAS.finer_segment`
+- :func:`nlpir.native.ictclas.ICTCLAS.word_freq_stat`
+- :func:`nlpir.native.ictclas.ICTCLAS.file_word_freq_stat`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_eng_word_origin`
+- :func:`nlpir.native.ictclas.ICTCLAS.get_last_error_msg`
+"""
 from nlpir.native import ICTCLAS
-from nlpir import native, PACKAGE_DIR, tools, clean_logs
+from nlpir import native, PACKAGE_DIR, clean_logs
 import os
 import re
 import logging
-
-test_str = "法国启蒙思想家孟德斯鸠曾说过：“一切有权力的人都容易滥用权力，这是一条千古不变的经验。有权力的人直到把权力用到" \
-           "极限方可休止。”另一法国启蒙思想家卢梭从社会契约论的观点出发，认为国家权力是公民让渡其全部“自然权利”而获得的，" \
-           "他在其名著《社会契约论》中写道：“任何国家权力无不是以民众的权力（权利）让渡与公众认可作为前提的”。"
-test_str_1st = "法国启蒙思想家孟德斯鸠曾说过"
-test_str_2nd = "另一法国启蒙思想家卢梭从社会契约论的观点出发，认为国家权力是公民让渡其全部“自然权利”而获得的"
-test_source_filename = os.path.join(os.path.dirname(__file__), "test.txt")
-test_result_filename = os.path.join(os.path.dirname(__file__), "test_result.txt")
-user_dict_path = os.path.join(os.path.dirname(__file__), "tmp_user_dict.txt")
-
-tools.update_license()
+from ..strings import test_str, test_str_1st, test_str_2nd, test_source_filename, test_result_filename, user_dict_path
 
 
 def get_ictclas(encode=native.UTF8_CODE):
@@ -166,4 +178,3 @@ def test_last_error_msg():
     logging.info(msg)
     assert msg is not None
     clean_logs(include_current=True)
-
