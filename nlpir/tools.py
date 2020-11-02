@@ -34,7 +34,8 @@ def update_license(data_path=None) -> None:
         "NewWordFinder.user": "NewWordFinder新词发现授权/NewWordFinder.user",
         "summary.user": "Summary自动摘要提取授权/summary.user",
         "DocExtractor.user": "DocExtractor文档提取授权/DocExtractor.user",
-        "sentiment.user": "SentimentNew情感分析授权/sentiment.user"
+        "sentiment.user": "SentimentNew情感分析授权/sentiment.user",
+        "classifier.user": "classifier规则分类授权/classifier.user",
     }
     if data_path is None:
         destination = os.path.join(os.path.dirname(__file__), "Data")
