@@ -1,6 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
-from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref
+from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref, create_string_buffer
 import typing
 
 
@@ -111,7 +111,7 @@ class SentimentNew(NLPIRBase):
         :param sentence:
         :return:
         """
-        return self.get_func("ST_GetSentimentPoint", [c_char_p], c_char_p)(sentence)
+        return self.get_func("ST_GetSentimentPoint", [c_char_p], c_double)(sentence)
 
     """
 
@@ -197,8 +197,8 @@ class SentimentAnalysis(NLPIRBase):
         :param paragraph:
         :return:
         """
-        result = c_char_p()
-        result_bool = self.get_func("LJST_GetParagraphSent", [c_char_p, c_char_p], c_bool)(paragraph, byref(result))
+        result = create_string_buffer(10240)
+        result_bool = self.get_func("LJST_GetParagraphSent", [c_char_p, c_char_p], c_bool)(paragraph, result)
         return result_bool, result.value
 
     @NLPIRBase.byte_str_transform
