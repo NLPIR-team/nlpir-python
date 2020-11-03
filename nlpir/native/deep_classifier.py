@@ -8,7 +8,7 @@ class DeepClassifier(NLPIRBase):
     """
     A dynamic link library native class for Classify using deep learning
     """
-    FEATURE_COUNT = 1000
+    FEATURE_COUNT = 800
 
     @property
     def dll_name(self):
@@ -106,9 +106,10 @@ class DeepClassifier(NLPIRBase):
         :param feature_count:
         :return:
         """
-        return self.get_func("DC_NewInstance", [c_int], POINTER)(feature_count)
+        return self.get_func("DC_NewInstance", [c_int], POINTER(c_int))(feature_count)
 
-    def delete_instance(self, instance: POINTER):
+    @NLPIRBase.byte_str_transform
+    def delete_instance(self, instance: POINTER(c_int)):
         """
         Func Name  : DC_DeleteInstance
 
@@ -123,9 +124,10 @@ class DeepClassifier(NLPIRBase):
         :param instance:
         :return:
         """
-        return self.get_func("DC_DeleteInstance", [POINTER], c_int)(instance)
+        return self.get_func("DC_DeleteInstance", [POINTER(c_int)], c_int)(instance)
 
-    def add_train(self, classname: str, text: str, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def add_train(self, classname: str, text: str, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_AddTrain
 
@@ -143,9 +145,10 @@ class DeepClassifier(NLPIRBase):
         :param handler:
         :return:
         """
-        return self.get_func("DC_AddTrain", [c_char_p, c_char_p, POINTER], c_bool)(classname, text, handler)
+        return self.get_func("DC_AddTrain", [c_char_p, c_char_p, POINTER(c_int)], c_bool)(classname, text, handler)
 
-    def add_train_file(self, classname: str, filename: str, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def add_train_file(self, classname: str, filename: str, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_AddTrainFile
 
@@ -163,9 +166,11 @@ class DeepClassifier(NLPIRBase):
         :param handler:
         :return:
         """
-        return self.get_func("DC_AddTrainFile", [c_char_p, c_char_p, POINTER], c_int)(classname, filename, handler)
+        return self.get_func("DC_AddTrainFile", [c_char_p, c_char_p, POINTER(c_int)], c_int)(classname, filename,
+                                                                                             handler)
 
-    def train(self, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def train(self, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_Train
 
@@ -182,9 +187,10 @@ class DeepClassifier(NLPIRBase):
         :param handler:
         :return:
         """
-        return self.get_func("DC_Train", [POINTER], c_int)(handler)
+        return self.get_func("DC_Train", [POINTER(c_int)], c_int)(handler)
 
-    def load_train_result(self, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def load_train_result(self, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_LoadTrainResult
 
@@ -201,7 +207,8 @@ class DeepClassifier(NLPIRBase):
         """
         return self.get_func("DC_LoadTrainResult", None, c_int)(handler)
 
-    def export_features(self, filename: str, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def export_features(self, filename: str, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_ExportFeatures
 
@@ -219,7 +226,8 @@ class DeepClassifier(NLPIRBase):
         """
         return self.get_func("DC_ExportFeatures", None, c_int)(filename, handler)
 
-    def classify(self, text: str, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def classify(self, text: str, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_Classify
 
@@ -236,9 +244,10 @@ class DeepClassifier(NLPIRBase):
         :param handler:
         :return:
         """
-        return self.get_func("DC_Classify", [c_char_p, POINTER], c_char_p)(text, handler)
+        return self.get_func("DC_Classify", [c_char_p, POINTER(c_int)], c_char_p)(text, handler)
 
-    def classify_ex(self, text: str, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def classify_ex(self, text: str, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_ClassifyEx
 
@@ -259,9 +268,10 @@ class DeepClassifier(NLPIRBase):
         :param handler:
         :return:
         """
-        return self.get_func("DC_ClassifyEx", [c_char_p, POINTER], c_char_p)(text, handler)
+        return self.get_func("DC_ClassifyEx", [c_char_p, POINTER(c_int)], c_char_p)(text, handler)
 
-    def classify_file(self, filename: str, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def classify_file(self, filename: str, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_ClassifyFile
 
@@ -280,9 +290,10 @@ class DeepClassifier(NLPIRBase):
         :param handler:
         :return:
         """
-        return self.get_func("DC_ClassifyFile", [c_char_p, POINTER], c_char_p)(filename, handler)
+        return self.get_func("DC_ClassifyFile", [c_char_p, POINTER(c_int)], c_char_p)(filename, handler)
 
-    def classify_file_ex(self, filename: str, handler: POINTER = 0):
+    @NLPIRBase.byte_str_transform
+    def classify_file_ex(self, filename: str, handler: POINTER(c_int) = 0):
         """
         Func Name  : DC_ClassifyExFile
 

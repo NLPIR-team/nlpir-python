@@ -2,9 +2,11 @@
 from nlpir.native.nlpir_base import NLPIRBase
 from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref, c_float
 import typing
+import os
 
 
 class Summary(NLPIRBase):
+    load_mode = os.RTLD_LAZY
 
     @property
     def dll_name(self):
@@ -60,7 +62,7 @@ class Summary(NLPIRBase):
         :return:
         """
         return self.get_func("DS_SingleDoc", [c_char_p, c_float, c_int, c_int], c_char_p)(
-            text, sum_rate, sum_len, html_tag_remove
+            text, c_float(sum_rate), sum_len, html_tag_remove
         )
 
     @NLPIRBase.byte_str_transform
