@@ -66,6 +66,8 @@ easier to use.
 
 **NOTE**: This module only support python3.6+
 
+**NOTE**: This repo use the git-lfs, please install lfs when pull this repo
+
 
 ## TODO feature
 
