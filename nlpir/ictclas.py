@@ -87,82 +87,59 @@ def process_to_generator(text: str, pos_tag: bool) -> typing.Generator:
 
 
 @__get_instance__
+def test():
+    print(__instance__)
+
+
+@__get_instance__
 def import_dict(word_list: list) -> list:
     """
-    Temporary add word as dictionary, will loss it when restart the Program.
-    Can use :func:`save_user_dict` to make persistence, :func:`clean_user_dict` to
-    delete all temporary words or :func:`delete_user_word` to delete part of them.
-
-    The persistent dict cannot be clean by using method above. :func:`clean_saved_user_dict`
-    will be used in this situation. But it will delete all user dict include saved dict in the past.
-
-    Every word in `word_list` can be a single word and the POS will be `n`. The custom POS can be added
-    as `word pos` in `word_list`.
+    See :func:`nlpir.import_dict`
 
     :param word_list: list of words want to add to NLPIR
     :return: the word fail to add to the NLPIR
     """
-    fail_list = list()
-    for word in word_list:
-        if 0 != __instance__.add_user_word(word):
-            fail_list.append(word_list)
-    return fail_list
+    return nlpir.import_dict(word_list=word_list, instance=__instance__)
 
 
 @__get_instance__
 def clean_user_dict() -> bool:
     """
-    Clean all temporary dictionary, more information shows in :func:`import_dict`
+    See :func:'nlpir.clean_user_dict'
 
     :return: success or not
     """
-    return __instance__.clean_user_word() == 0
+    return nlpir.clean_user_dict(instance=__instance__)
 
 
 @__get_instance__
 def delete_user_word(word_list: list):
     """
-    Delete words in temporary dictionary, more information shows in :func:`import_dict`
+    See :func:`delete_user_word`
 
     :param word_list: list of words want to delete
     """
-    for word in word_list:
-        __instance__.del_usr_word(word)
+    return nlpir.delete_user_word(word_list=word_list, instance=__instance__)
 
 
 @__get_instance__
 def save_user_dict() -> bool:
     """
-    Save temporary dictionary to Data, more information shows in :func:`import_dict`
+    See :func:`save_user_dict`
+
     :return: Success or not
     """
-    return 1 == __instance__.save_the_usr_dic()
+    return nlpir.save_user_dict(instance=__instance__)
 
 
 @__get_instance__
 def clean_saved_user_dict():
     """
-    Delete user dict from disk, which is :
-
-    1. ``Data/FieldDict.pdat``
-    2. ``Data/FieldDict.pos``
-    3. ``Data/FieldDict.wordlist``
-    4. ``Data/UserDefinedDict.lst``
+    See :func:`clean_saved_user_dict`
 
     :return: Delete success or not
     """
-    try:
-        with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.pdat"), 'w') as f:
-            f.write("")
-        with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.pos"), 'w') as f:
-            f.write("")
-        with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.wordlist"), 'w') as f:
-            f.write("")
-        with open(os.path.join(PACKAGE_DIR, "Data/UserDefinedDict.lst"), 'w') as f:
-            f.write("")
-        return True
-    except OSError:
-        return False
+    nlpir.clean_saved_user_dict()
 
 
 @__get_instance__
