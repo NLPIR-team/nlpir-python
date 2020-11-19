@@ -2,11 +2,11 @@
 """
 high-level toolbox for Chinese Word Segmentation
 """
-from nlpir import get_instance as __get_instance__
-from nlpir import native, PACKAGE_DIR
-import typing
 import re
-import os
+import typing
+import nlpir
+from nlpir import get_instance as __get_instance__
+from nlpir import native
 
 # class and class instance
 __cls__ = native.ictclas.ICTCLAS

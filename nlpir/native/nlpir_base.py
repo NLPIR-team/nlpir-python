@@ -7,7 +7,7 @@ import typing
 import functools
 from ctypes import c_int
 from nlpir import PACKAGE_DIR
-from nlpir import NLPIRException
+from nlpir.exception import NLPIRException
 
 # All available encoding, according to the header(.h) file
 # 根据对应头文件,NLPIR可设置的编码格式
