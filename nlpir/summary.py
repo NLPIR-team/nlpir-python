@@ -34,7 +34,7 @@ def get_native_instance() -> native.Summary:
 @__get_instance__
 def summarization(content: str, sum_rate: float = 0.0, sum_len: int = 250, html_tag_remove: bool = True) -> str:
     """
-    摘要生成, 摘要长度受`sum_rate', `sun_len`影响
+    摘要生成, 摘要长度受 `sum_rate` , `sum_len` 影响
 
     :param content: 文档内容 text content
     :param sum_rate: 文档摘要占原文百分比(为0.00则不限制）
