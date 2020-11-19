@@ -1,7 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
-from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref, c_float
-import typing
+from ctypes import c_bool, c_char_p, c_int, POINTER, Structure, c_float
 
 
 class StDoc(Structure):
@@ -55,7 +54,7 @@ class Classifier(NLPIRBase):
         //       iType 默认值为0
         // 返回值：主题类别串  各类之间用\t隔开，类名按照置信度从高到低排序
         :param data:
-        :param type:
+        :param out_type:
         :return:
         """
         return self.get_func("classifier_exec1", [POINTER(StDoc), c_int], c_char_p)(data, out_type)
