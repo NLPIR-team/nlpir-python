@@ -25,8 +25,24 @@ nlpir.native.new\_word\_finder module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.summary module
+-------------------------------------
+
+.. automodule:: nlpir.native.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nlpir.native.key\_extract module
+-------------------------------------
+
+.. automodule:: nlpir.native.key_extract
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.native.nlpir\_base module
--------------------------------
+---------------------------------------
 
 .. automodule:: nlpir.native.nlpir_base
    :members:

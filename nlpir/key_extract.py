@@ -47,7 +47,7 @@ def import_dict(word_list: list) -> list:
 @__get_instance__
 def clean_user_dict() -> bool:
     """
-    See :func:'nlpir.clean_user_dict'
+    See :func:`nlpir.clean_user_dict`
 
     :return: success or not
     """
@@ -57,7 +57,7 @@ def clean_user_dict() -> bool:
 @__get_instance__
 def delete_user_word(word_list: list):
     """
-    See :func:`delete_user_word`
+    See :func:`nlpir.delete_user_word`
 
     :param word_list: list of words want to delete
     """
@@ -67,7 +67,7 @@ def delete_user_word(word_list: list):
 @__get_instance__
 def save_user_dict() -> bool:
     """
-    See :func:`save_user_dict`
+    See :func:`nlpir.save_user_dict`
 
     :return: Success or not
     """
@@ -77,7 +77,7 @@ def save_user_dict() -> bool:
 @__get_instance__
 def clean_saved_user_dict():
     """
-    See :func:`clean_saved_user_dict`
+    See :func:`nlpir.clean_saved_user_dict`
 
     :return: Delete success or not
     """
@@ -90,19 +90,19 @@ def import_blacklist(filename: str, pos_blacklist=list) -> bool:
     Import Blacklist to system
 
     This function will permanently import blacklist words to system not to the memory .
-    If you want to delete the blacklist words, you should run :fun:`clean_blacklist` to delete
+    If you want to delete the blacklist words, you should run :func:`clean_blacklist` to delete
     blacklist form system .
 
-    此函数将会把词永久性保存在NLPIR中,和保存用户词典类似.这里删除使用的是 :fun:`clean_blacklist` .
+    此函数将会把词永久性保存在NLPIR中,和保存用户词典类似.这里删除使用的是 :func:`clean_blacklist` .
 
     停用词表,Format of stop word::
         word1 n1
         word2 n2
         word3 n3
 
-    若 `pos_blacklist` 为: ``['n1', `n2`]`` 则 `word1`, `word2` 将会进入屏蔽列表
+    若 `pos_blacklist` 为: ``['n1', 'n2']`` 则 `word1`, `word2` 将会进入屏蔽列表
 
-    If `pos_blacklist` : ``['n1', `n2`]`` Then `word1`, `word2` will be in the blacklist
+    If `pos_blacklist` : ``['n1', 'n2']`` Then `word1`, `word2` will be in the blacklist
 
     :param filename: A word list that the words want to import to the blacklist (stop word list),
         一个停用词词表,里面为想进行屏蔽的词,也可以包括别的词,是否不进行抽取是按照词表中的词性来确定的.
@@ -129,6 +129,10 @@ def import_blacklist(filename: str, pos_blacklist=list) -> bool:
 
 @__get_instance__
 def clean_blacklist() -> bool:
+    """
+    TODO
+    :return:
+    """
     try:
         os.rename(
             os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak"),
@@ -141,3 +145,4 @@ def clean_blacklist() -> bool:
 
 def get_key_words():
     pass
+# TODO

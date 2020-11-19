@@ -87,11 +87,6 @@ def process_to_generator(text: str, pos_tag: bool) -> typing.Generator:
 
 
 @__get_instance__
-def test():
-    print(__instance__)
-
-
-@__get_instance__
 def import_dict(word_list: list) -> list:
     """
     See :func:`nlpir.import_dict`
@@ -105,7 +100,7 @@ def import_dict(word_list: list) -> list:
 @__get_instance__
 def clean_user_dict() -> bool:
     """
-    See :func:'nlpir.clean_user_dict'
+    See :func:`nlpir.clean_user_dict`
 
     :return: success or not
     """
@@ -115,7 +110,7 @@ def clean_user_dict() -> bool:
 @__get_instance__
 def delete_user_word(word_list: list):
     """
-    See :func:`delete_user_word`
+    See :func:`nlpir.delete_user_word`
 
     :param word_list: list of words want to delete
     """
@@ -125,7 +120,7 @@ def delete_user_word(word_list: list):
 @__get_instance__
 def save_user_dict() -> bool:
     """
-    See :func:`save_user_dict`
+    See :func:`nlpir.save_user_dict`
 
     :return: Success or not
     """
@@ -135,7 +130,7 @@ def save_user_dict() -> bool:
 @__get_instance__
 def clean_saved_user_dict():
     """
-    See :func:`clean_saved_user_dict`
+    See :func:`nlpir.clean_saved_user_dict`
 
     :return: Delete success or not
     """
