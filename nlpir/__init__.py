@@ -5,14 +5,11 @@ import re
 import logging
 import sys
 import functools
+from .exception import NLPIRException
 
 __version__ = "0.0.1"
 PACKAGE_DIR = os.path.abspath(os.path.dirname(__file__))
 logger = logging.getLogger("nlpir")
-
-
-class NLPIRException(Exception):
-    pass
 
 
 def clean_logs(data_path: typing.Optional[str] = None, include_current: bool = False):
