@@ -41,4 +41,9 @@ setup(
         'Topic :: Text Processing :: Linguistic',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
+    entry_points={
+        'console_scripts': [
+            'nlpir_update = nlpir.tools:update_license'
+        ]
+    }
 )
