@@ -7,7 +7,7 @@ import sys
 import functools
 from .exception import NLPIRException
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 PACKAGE_DIR = os.path.abspath(os.path.dirname(__file__))
 logger = logging.getLogger("nlpir")
 
