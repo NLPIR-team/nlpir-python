@@ -17,27 +17,14 @@ class DeepClassifier(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
-            *
-            *  Func Name  : DC_Init
-            *
-            *  Description: Init DeepClassifier
-            *               The function must be invoked before any operation listed as following
-            *
-            *  Parameters : const char * sInitDirPath=NULL
-            *				 sDataPath:  Path where Data directory stored.
-            *				 the default value is NULL, it indicates the initial directory is current working directory path
-            *				 encode: encoding code;
-            *				 nFeathureCount: feature count
-            *				 sLicenseCode: license code for unlimited usage. common user ignore it
-            *
-            *  Returns    : success or fail
-            *  Author     : Kevin Zhang
-            *  History    :
-            *              1.create 2013-6-8
-            :param data_path:
-            :param encode:
-            :param license_code:
-            :return:
+        Call **DC_Init**
+
+        Init DeepClassifier
+
+        :param data_path:
+        :param encode:
+        :param license_code:
+        :return:
         """
         return self.get_func("DC_Init", [c_char_p, c_int, c_int, c_int, c_char_p], c_int)(
             data_path,
@@ -49,267 +36,166 @@ class DeepClassifier(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def exit_lib(self) -> bool:
         """
-            *  Func Name  : DC_Init
-            *
-            *  Description: Init DeepClassifier
-            *               The function must be invoked before any operation listed as following
-            *
-            *  Parameters : const char * sInitDirPath=NULL
-            *				 sDataPath:  Path where Data directory stored.
-            *				 the default value is NULL, it indicates the initial directory is current working directory path
-            *				 encode: encoding code;
-            *				 nFeathureCount: feature count
-            *				 sLicenseCode: license code for unlimited usage. common user ignore it
-            *
-            *  Returns    : success or fail
-            *  Author     : Kevin Zhang
-            *  History    :
-            *              1.create 2013-6-8
-            :return:
+        Call **DC_Init**
+
+        :return:
         """
         return self.get_func("DC_Exit", None, c_int)()
 
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
-            *
-            *  Func Name  : DC_GetLastErrorMsg
-            *
-            *  Description: GetLastErrorMessage
-            *
-            *
-            *  Parameters : none
-            *
-            *
-            *  Returns    : the result buffer pointer
-            *
-            *  Author     : Kevin Zhang
-            *  History    :
-            *              1.create 2014-2-27
+        Call **DC_GetLastErrorMsg**
+
         :return:
         """
         return self.get_func("DC_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
-    def new_instance(self, feature_count: int):
+    def new_instance(self, feature_count: int) -> int:
         """
-            *  Func Name  : DC_NewInstance
-            *
-            *  Description: New a  DeepClassifier Instance
-            *               The function must be invoked before mulitiple classifiers
-            *
-            *  Parameters : int nFeatureCount: Feature count
-            *  Returns    : DC_HANDLE , DeepClassifier Handle if success; otherwise return -1;
-            *  Author     : Kevin Zhang
-            *  History    :
-            *              1.create 2015-9-22
-        :param feature_count:
-        :return:
+        Call **DC_NewInstance**
+
+        New a DeepClassifier Instance. This function must be invoked before classify,
+        and need be deleted when exit the process. Delete instance can use the function
+        :func:`delete_instance`
+
+        :param feature_count: Feature count
+        :return: DeepClassifier Handle if success; otherwise return -1;
         """
         return self.get_func("DC_NewInstance", [c_int], POINTER(c_int))(feature_count)
 
     @NLPIRBase.byte_str_transform
-    def delete_instance(self, instance: POINTER(c_int)):
+    def delete_instance(self, instance: int) -> int:
         """
-        Func Name  : DC_DeleteInstance
+        Call **DC_DeleteInstance**
 
-        Description: Delete a  DeepClassifier Instance with handle
-                   The function must be invoked before release a specific classifier
+        Delete a DeepClassifier Instance with handle. The function must be invoked before
+        release a specific classifier. The instance can be retrieve by :func:`new_instance`
 
-        Parameters : None
-        Returns    : DC_HANDLE , DeepClassifier Handle
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2015-9-22
-        :param instance:
+        :param instance: DeepClassifier Handle
         :return:
         """
         return self.get_func("DC_DeleteInstance", [POINTER(c_int)], c_int)(instance)
 
     @NLPIRBase.byte_str_transform
-    def add_train(self, classname: str, text: str, handler: POINTER(c_int) = 0):
+    def add_train(self, classname: str, text: str, handler: int = 0) -> bool:
         """
-        Func Name  : DC_AddTrain
+        Call **DC_AddTrain**
 
-        Description: DeepClassifier Training on given text in Memory
+        DeepClassifier add train dataset on given text in Memory
 
-        Parameter:   const char * sClassName: class name
-                     sText: text content
-                   handle: classifier handle
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-        :param classname:
-        :param text:
-        :param handler:
-        :return:
+        :param classname: class name
+        :param text: text content
+        :param handler: classifier handler
+        :return: add success or not
         """
         return self.get_func("DC_AddTrain", [c_char_p, c_char_p, POINTER(c_int)], c_bool)(classname, text, handler)
 
     @NLPIRBase.byte_str_transform
-    def add_train_file(self, classname: str, filename: str, handler: POINTER(c_int) = 0):
+    def add_train_file(self, classname: str, filename: str, handler: int = 0) -> int:
         """
-        Func Name  : DC_AddTrainFile
+        Call **DC_AddTrainFile**
 
-        Description: DeepClassifier Training on given text in file
+        DeepClassifier add train dataset on given text in file
 
-        Parameter:   const char * sClassName: class name
-                     sFilename: text file name
-
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-        :param classname:
-        :param filename:
-        :param handler:
-        :return:
+        :param classname: class name
+        :param filename: text file name
+        :param handler: classifier handler
+        :return: success or fail
         """
-        return self.get_func("DC_AddTrainFile", [c_char_p, c_char_p, POINTER(c_int)], c_int)(classname, filename,
-                                                                                             handler)
+        return self.get_func("DC_AddTrainFile", [c_char_p, c_char_p, POINTER(c_int)], c_int)(
+            classname, filename, handler)
 
     @NLPIRBase.byte_str_transform
-    def train(self, handler: POINTER(c_int) = 0):
+    def train(self, handler: int = 0) -> int:
         """
-        Func Name  : DC_Train
+        Call **DC_Train**
 
-        Description: DeepClassifier Training on given text in Memory
-                     After training, the training result will stored.
-                    Then the classifier can load it with DC_LoadTrainResult at any time(offline or online).
-        Parameter:   const char * sClassName: class name
-                     sFilename: text file name
+        DeepClassifier Training on given text in Memory.
+        After training, the training result will stored.
+        Then the classifier can load it with :func:`load_train_result` (offline or online).
 
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-        :param handler:
-        :return:
+        :param handler: classifier handler
+        :return: success or not
         """
         return self.get_func("DC_Train", [POINTER(c_int)], c_int)(handler)
 
     @NLPIRBase.byte_str_transform
-    def load_train_result(self, handler: POINTER(c_int) = 0):
+    def load_train_result(self, handler: int = 0) -> int:
         """
-        Func Name  : DC_LoadTrainResult
+        Call **DC_LoadTrainResult**
 
-        Description: DeepClassifier Load already training data
+        DeepClassifier Load already training data
 
-        Parameter:   None
-
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-        :param handler:
-        :return:
+        :param handler: classifier handler
+        :return: success or not
         """
         return self.get_func("DC_LoadTrainResult", None, c_int)(handler)
 
     @NLPIRBase.byte_str_transform
-    def export_features(self, filename: str, handler: POINTER(c_int) = 0):
+    def export_features(self, filename: str, handler: int = 0) -> int:
         """
-        Func Name  : DC_ExportFeatures
+        Call **DC_ExportFeatures**
 
-        Description: DeepClassifier Exports Features after training
+        DeepClassifier Exports Features after training
 
-        Parameter:   None
-
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-        :param filename:
-        :param handler:
-        :return:
+        :param filename: save path
+        :param handler: classifier handler
+        :return: success or not
         """
         return self.get_func("DC_ExportFeatures", None, c_int)(filename, handler)
 
     @NLPIRBase.byte_str_transform
-    def classify(self, text: str, handler: POINTER(c_int) = 0):
+    def classify(self, text: str, handler: int = 0) -> str:
         """
-        Func Name  : DC_Classify
+        Call **DC_Classify**
 
-        Description: DeepClassifier Classify on given text in Memory
+        DeepClassifier Classify on given text in Memory
 
-        Parameter:   const char * sClassName: class name
-                     sFilename: text file name
-
-        Returns    : the best class name
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-        :param text:
-        :param handler:
-        :return:
+        :param text: text
+        :param handler: classifier handler
+        :return: classify result , a class name
         """
         return self.get_func("DC_Classify", [c_char_p, POINTER(c_int)], c_char_p)(text, handler)
 
     @NLPIRBase.byte_str_transform
     def classify_ex(self, text: str, handler: POINTER(c_int) = 0):
         """
-        Func Name  : DC_ClassifyEx
+        Call **DC_ClassifyEx**
 
-        Description: DeepClassifier Classify on given text in Memory
-                    return multiple class with weights, sorted by weights
-        Parameter:   const char * sClassName: class name
-                     sFilename: text file name
+        DeepClassifier Classify on given text in Memory,
+        return multiple class with weights, sorted by weights
 
-        Returns    : multiple class name with weights, sorted by weights
-                   For instance: 政治/1.20##经济/1.10
-                bookyzjs/7.00##bookxkfl/6.00##booktslx/5.00##bookny-xyfl/4.00##booksy/3.00##bookdwpz/2.00##booknyjj/1.00##
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-
-        DEEP_CLASSIFIER_API const char * DC_ClassifyEx(const char *sText, DC_HANDLE handle = 0);
-        :param text:
-        :param handler:
-        :return:
+        :param text: text
+        :param handler: classifier handler
+        :return: result with weight, For instance: ``政治/1.20##经济/1.10,``
+            ``bookyzjs/7.00##bookxkfl/6.00##booktslx/5.00##bookny-xyfl/4.00##``
         """
         return self.get_func("DC_ClassifyEx", [c_char_p, POINTER(c_int)], c_char_p)(text, handler)
 
     @NLPIRBase.byte_str_transform
-    def classify_file(self, filename: str, handler: POINTER(c_int) = 0):
+    def classify_file(self, filename: str, handler: int = 0):
         """
-        Func Name  : DC_ClassifyFile
+        Call **DC_ClassifyFile**
 
-        Description: DeepClassifier Classify on given text in file
+        DeepClassifier Classify on given text in file
 
-        Parameter:   const char * sClassName: class name
-                     sFilename: text file name
-
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-
-        DEEP_CLASSIFIER_API const char * DC_ClassifyFile(const char *sFilename,DC_HANDLE handle=0);
-        :param filename:
-        :param handler:
-        :return:
+        :param filename: file name of text
+        :param handler: classifier handler
+        :return: result same as :func:`classify`
         """
         return self.get_func("DC_ClassifyFile", [c_char_p, POINTER(c_int)], c_char_p)(filename, handler)
 
     @NLPIRBase.byte_str_transform
-    def classify_file_ex(self, filename: str, handler: POINTER(c_int) = 0):
+    def classify_file_ex(self, filename: str, handler: int = 0):
         """
-        Func Name  : DC_ClassifyExFile
+        Call **DC_ClassifyExFile**
 
-        Description: DeepClassifier Classify on given text in file
+        DeepClassifier Classify on given text in file
 
-        Parameter:   const char * sClassName: class name
-                     sFilename: text file name
-
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2013-6-8
-
-        DEEP_CLASSIFIER_API const char * DC_ClassifyExFile(const char *sFilename, DC_HANDLE handle = 0);
-        :param filename:
-        :param handler:
-        :return:
+        :param filename: file name of text
+        :param handler: classifier handler
+        :return: result same as :func:`classify_ex`
         """
         return self.get_func("DC_ClassifyExFile", [filename, handler], c_char_p)(filename, handler)
