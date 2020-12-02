@@ -57,6 +57,14 @@ nlpir.native.classifier module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.sentiment module
+-------------------------------------
+
+.. automodule:: nlpir.native.sentiment
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.native.nlpir\_base module
 ---------------------------------------
 

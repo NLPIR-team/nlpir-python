@@ -12,20 +12,8 @@ class SentimentNew(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
-        Func Name  : ST_Init
+        Call **ST_Init**
 
-        Description: Init ST_Init
-        The function must be invoked before any operation listed as following
-
-        Parameters : const char * sInitDirPath=NULL
-        sDataPath:  Path where Data directory stored.
-        the default value is NULL, it indicates the initial directory is current working directory path
-        encode: encoding code;
-        sLicenseCode: license code for unlimited usage. common user ignore it
-        Returns    : success or fail
-        Author     : Kevin Zhang
-        History    :
-        1.create 2013-6-8
         :param data_path:
         :param encode:
         :param license_code:
@@ -36,11 +24,8 @@ class SentimentNew(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def exit_lib(self) -> bool:
         """
-        Func Name  : ST_Exit
+        Call **ST_Exit**
 
-        Description: Exist ST and free related buffer
-        Exit the program and free memory
-        The function must be invoked while you needn't any lexical anlysis
         :return:
         """
         return self.get_func("ST_Exit", None, c_int)()
@@ -48,14 +33,16 @@ class SentimentNew(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
+        Call **ST_GetLastErrMsg**
 
         :return:
         """
         return self.get_func("ST_GetLastErrMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
-    def get_one_object_result(self, title: str, content: str, analysis_object: str):
+    def get_one_object_result(self, title: str, content: str, analysis_object: str) -> str:
         """
+        Call **ST_GetOneObjectResult**
 
         :param title:
         :param content:
@@ -69,24 +56,13 @@ class SentimentNew(NLPIRBase):
         )
 
     @NLPIRBase.byte_str_transform
-    def get_multi_object_result(self, title: str, content: str, object_rule_file: str):
+    def get_multi_object_result(self, title: str, content: str, object_rule_file: str) -> str:
         """
-        Func Name  : ST_GetMultiObjectResult
+        Call **ST_GetMultiObjectResult**
 
-        Description: Get multiple object sentimental result
-
-        Parameters : sTitle: document title
-                   sContent: document content
-                   sObjectRuleFile: see Appendix II: Multiple Object configure sample
-
-        Returns    : const char * result buffer
-                   sample see  Appendix I:Sentimental analysis result sample
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2016-3-20
         :param title:
         :param content:
-        :param object_rule_file:
+        :param object_rule_file: see Appendix II: Multiple Object configure sample
         :return:
         """
         return self.get_func("ST_GetMultiObjectResult", [c_char_p, c_char_p, c_char_p], c_char_p)(
@@ -94,55 +70,25 @@ class SentimentNew(NLPIRBase):
         )
 
     @NLPIRBase.byte_str_transform
-    def get_sentence_point(self, sentence: str):
+    def get_sentence_point(self, sentence: str) -> float:
         """
 
-        Func Name  : ST_GetSentimentPoint
+        Call **ST_GetSentimentPoint**
 
-        Description: Get multiple object sentimental result
+        Get multiple object sentimental result
 
-        Parameters : sSentence: sentence memory
-
-        Returns    : const char * result buffer
-                   sample see  Appendix I:Sentimental analysis result sample
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2016-3-20
         :param sentence:
-        :return:
+        :return:  double,Sentimental point
         """
         return self.get_func("ST_GetSentimentPoint", [c_char_p], c_double)(sentence)
 
-    """
-
-        Func Name  : ST_GetSentimentPoint
-
-        Description: Get multiple object sentimental result
-
-        Parameters : sSentence: sentence memory
-
-        Returns    : double,Sentimental point
-        Author     : Kevin Zhang  
-        History    : 
-                  1.create 2016-3-20
-
-        ST_API double ST_GetSentimentPoint(const char *sSentence);
-    """
-
     @NLPIRBase.byte_str_transform
-    def import_user_dict(self, filename: str, over_write: bool = False):
+    def import_user_dict(self, filename: str, over_write: bool = False) -> int:
         """
-        Func Name  : ST_ImportUserDict
+        Call **ST_ImportUserDict**
 
-        Description: Import User-defined dictionary
-        Parameters :
-                    sFilename:Text filename for user dictionary
-                    bOverwrite: true,  overwrite the existing dictionary
-                               false, add to  the existing dictionary
-        Returns    : The  number of  lexical entry imported successfully
-        Author     : Kevin Zhang
-        History    :
-                  1.create 2014-8-3
+        Import User-defined dictionary, same as :func:`nlpir.native.ictclas.ICTCLAS.import_user_dict`
+
         :param filename:
         :param over_write:
         :return:
@@ -166,6 +112,7 @@ class SentimentAnalysis(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
+        Call **LJST_Inits**
 
         :param data_path:
         :param encode:
@@ -177,6 +124,7 @@ class SentimentAnalysis(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def exit_lib(self) -> bool:
         """
+        Call **LJST_Exits**
 
         :return:
         """
@@ -191,8 +139,11 @@ class SentimentAnalysis(NLPIRBase):
         return "No error function"
 
     @NLPIRBase.byte_str_transform
-    def get_paragraph_sent(self, paragraph: str):
+    def get_paragraph_sent(self, paragraph: str) -> typing.Tuple[bool, str]:
         """
+        Call **LJST_GetParagraphSent**
+
+        Get sentiment analyze result
 
         :param paragraph:
         :return:
@@ -202,19 +153,25 @@ class SentimentAnalysis(NLPIRBase):
         return result_bool, result.value
 
     @NLPIRBase.byte_str_transform
-    def get_file_sent(self, filename: str):
+    def get_file_sent(self, filename: str) -> typing.Tuple[bool, str]:
         """
+        Call **LJST_GetFileSent**
+
+        Get sentiment analyze result
 
         :param filename:
         :return:
         """
-        result = c_char_p()
+        result = create_string_buffer(10240)
         result_bool = self.get_func("LJST_GetFileSent", [c_char_p, c_char_p], c_bool)(filename, byref(result))
         return result_bool, result.value
 
     @NLPIRBase.byte_str_transform
     def import_user_dict(self, filename: str, over_write: bool = False):
         """
+        Call **LJST_ImportUserDict**
+
+        Import User-defined dictionary, same as :func:`nlpir.native.ictclas.ICTCLAS.import_user_dict`
 
         :param filename:
         :param over_write:
