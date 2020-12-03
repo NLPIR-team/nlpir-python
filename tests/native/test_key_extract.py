@@ -76,6 +76,5 @@ def test_import_user_dict():
 
 def test_last_error_msg():
     msg = get_key_extract().get_last_error_msg()
-    logging.info(msg)
     assert msg is not None
     clean_logs(include_current=True)
