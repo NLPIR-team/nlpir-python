@@ -9,7 +9,7 @@ import re
 import os
 
 # class and class instance
-__cls__ = native.ictclas.ICTCLAS
+__cls__ = native.summary.Summary
 __instance__: typing.Optional[native.Summary] = None
 # Location of DLL
 __lib__ = None

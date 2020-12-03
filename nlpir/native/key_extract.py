@@ -39,13 +39,41 @@ class KeyExtract(NLPIRBase):
         Call **KeyExtract_GetKeyWords**
         Extract keyword from text, 从文本中获取关键词
 
-        Returns    : keywords list like:
-                     "
-                        
         :param line: the input paragraph
         :param max_key_limit: maximum of key words, up to 50
-        :param weight_out: whether  the keyword weight output
-        :return: 科学发展观 宏观经济 " or "科学发展观/n/23.80 宏观经济/n/12.20" with weight 分别表示 关键词/关键词词性/权重
+        :param weight_out: the result format, get result split with # if False, get json format if True
+        :return: the keyword with weight
+
+        Split with ``#``
+
+        ::
+
+            科学发展观/n/23.80/12#宏观经济/n/12.20/12#
+
+        JSON形式:
+
+        ::
+
+            [
+                {
+                    'freq': 2,
+                    'pos': 'n_new',
+                    'weight': 7.771335980376418,
+                    'word': '国家权力'
+                },{
+                    'freq': 7,
+                    'pos': 'n',
+                    'weight': 7.438759706600493,
+                    'word': '权力'
+                },{
+                    'freq': 1,
+                    'pos': 'nrf',
+                    'weight': 5.280000338096665,
+                    'word': '孟德斯鸠'
+                },{ ...
+                }, ...
+            ]
+
         """
         return self.get_func('KeyExtract_GetKeyWords', [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit,
                                                                                             weight_out)
@@ -103,7 +131,7 @@ class KeyExtract(NLPIRBase):
         return self.get_func('KeyExtract_CleanUserWord', None, c_int)()
 
     @NLPIRBase.byte_str_transform
-    def save_the_usr_dict(self) -> int:
+    def save_the_usr_dic(self) -> int:
         """
         Call **KeyExtract_SaveTheUsrDic**
 

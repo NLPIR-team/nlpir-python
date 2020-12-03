@@ -134,7 +134,7 @@ def clean_saved_user_dict():
 
     :return: Delete success or not
     """
-    nlpir.clean_saved_user_dict()
+    return nlpir.clean_saved_user_dict()
 
 
 @__get_instance__

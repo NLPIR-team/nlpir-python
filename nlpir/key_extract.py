@@ -9,9 +9,10 @@ from nlpir import native, PACKAGE_DIR
 import typing
 import nlpir
 import os
+import json
 
 # class and class instance
-__cls__ = native.ictclas.ICTCLAS
+__cls__ = native.key_extract.KeyExtract
 __instance__: typing.Optional[native.key_extract.KeyExtract] = None
 # Location of DLL
 __lib__ = None
@@ -85,7 +86,7 @@ def clean_saved_user_dict():
 
 
 @__get_instance__
-def import_blacklist(filename: str, pos_blacklist=list) -> bool:
+def import_blacklist(filename: str, pos_blacklist=typing.List[str]) -> bool:
     """
     Import Blacklist to system
 
@@ -115,7 +116,7 @@ def import_blacklist(filename: str, pos_blacklist=list) -> bool:
             os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
         )
     except OSError:
-        return False
+        pass
     return_result = __instance__.import_key_blacklist(
         filename=filename,
         pos_blacklist="#".join(pos_blacklist)
@@ -130,7 +131,26 @@ def import_blacklist(filename: str, pos_blacklist=list) -> bool:
 @__get_instance__
 def clean_blacklist() -> bool:
     """
-    TODO
+    清除黑名单词表, 会将对应的文件进行重命名, 之后可以通过 :func:`recover_blacklist`
+    进行恢复,但仅可以进行一次,若重复调用本函数则恢复函数不起作用
+
+    :return: clean success or not
+    """
+    try:
+        os.rename(
+            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat"),
+            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
+        )
+        return True
+    except OSError:
+        return False
+
+
+@__get_instance__
+def recover_blacklist() -> bool:
+    """
+    恢复黑名单词表,仅在被重命名的词表存在时才起作用
+
     :return:
     """
     try:
@@ -143,6 +163,42 @@ def clean_blacklist() -> bool:
         return False
 
 
-def get_key_words():
-    pass
-# TODO
+@__get_instance__
+def get_key_words(text: str, max_key: int = 50) -> typing.List[dict]:
+    """
+    获取文本对应的关键词,以及对应的权值,词性,词频等信息
+    Get keyword from text with weight, frequent and pos
+
+    :param text:
+    :param max_key: max number keyword want to get
+    :return: a list of keywords with weight, example:
+
+    ::
+
+        [
+            {
+                'freq': 2,
+                'pos': 'n_new',
+                'weight': 7.771335980376418,
+                'word': '国家权力'
+            },{
+                'freq': 7,
+                'pos': 'n',
+                'weight': 7.438759706600493,
+                'word': '权力'
+            },{
+                'freq': 1,
+                'pos': 'nrf',
+                'weight': 5.280000338096665,
+                'word': '孟德斯鸠'
+            },{ ...
+            }, ...
+        ]
+
+
+    """
+    result = __instance__.get_keywords(line=text, max_key_limit=max_key, weight_out=True)
+    try:
+        return json.loads(result)
+    except json.decoder.JSONDecodeError:
+        return []
