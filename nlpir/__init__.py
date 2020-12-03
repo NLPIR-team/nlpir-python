@@ -175,6 +175,7 @@ def clean_saved_user_dict():
     :return: Delete success or not
     """
     try:
+        # for ictclas
         with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.pdat"), 'w') as f:
             f.write("")
         with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.pos"), 'w') as f:
@@ -182,6 +183,9 @@ def clean_saved_user_dict():
         with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.wordlist"), 'w') as f:
             f.write("")
         with open(os.path.join(PACKAGE_DIR, "Data/UserDefinedDict.lst"), 'w') as f:
+            f.write("")
+        # for key_extract
+        with open(os.path.join(PACKAGE_DIR, "Data/UserDict.pdat"), 'w') as f:
             f.write("")
         return True
     except OSError:
