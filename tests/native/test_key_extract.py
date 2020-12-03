@@ -31,7 +31,7 @@ def test_init_exit():
     clean_logs(include_current=True)
 
 
-def test_paragraph_process():
+def test_extract_keys():
     key_extract = get_key_extract()
     match_tag = re.compile(r"(.+?)/([a-z0-9A-Z]+)/([.\d]+)/(\d+)#")
     assert match_tag.findall(key_extract.get_keywords(test_str, 50, weight_out=False))
@@ -68,6 +68,7 @@ def test_import_user_dict():
         os.remove(os.path.join(PACKAGE_DIR, "Data/FieldDict.pdat"))
         os.remove(os.path.join(PACKAGE_DIR, "Data/FieldDict.pos"))
         os.remove(os.path.join(PACKAGE_DIR, "Data/UserDefinedDict.lst"))
+        os.remove(os.path.join(PACKAGE_DIR, "Data/UserDict.pdat"))
     except FileNotFoundError as e:
         logging.warning(e)
     clean_logs(include_current=True)
