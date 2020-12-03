@@ -7,6 +7,8 @@ Tested Function:
 - :func:`nlpir.native.summary.Summary.single_doc`
 - :func:`nlpir.native.summary.Summary.single_doc_e`
 - :func:`nlpir.native.summary.Summary.file_process`
+- :func:`nlpir.native.summary.Summary.get_last_error_msg`
+
 """
 from nlpir.native import Summary
 from nlpir import native, clean_logs
@@ -32,3 +34,10 @@ def test_summary_string():
 def test_summary_file():
     summary = get_summary()
     assert summary.file_process(text_filename=test_source_filename, sum_rate=0.1, sum_len=300, html_tag_remove=True)
+
+
+def test_get_last_error_msg():
+    summary = get_summary()
+    msg = summary.get_last_error_msg()
+    assert msg is not None
+    clean_logs(include_current=True)
