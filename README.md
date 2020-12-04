@@ -73,3 +73,28 @@ easier to use.
 - [×] All Native NLPIR modules
 - [×] High level API for All modules
 - [×] Samples and Tutorial
+
+## Supported Table
+
+|                   | Native        | Native Doc    | Native Test   | High-Level    | High-Level Doc    | High-Level Test   | Tutorial      | 
+| ----              | :----:        | :----:        | :----:        | :----:        | :----:            | :----:            | :----:        |    
+| ICTCLAS           |       √       |       √       |       √       |       √       |         √         |         √         |       √       |
+| NewWordFinder     |       √       |       √       |       √       |       √       |         √         |        TODO       |               |
+| KeyExtract        |       √       |       √       |       √       |       √       |         √         |         √         |               |
+| Summary           |       √       |       √       |       √       |       √       |         √         |         √         |               |
+| SentimentNew      |       √       |       √       |      TODO     |               |                   |                   |               |
+| SentimentAnalysis |       √       |       √       |      TODO     |               |                   |                   |               |
+| Classify          |       √       |       √       |      TODO     |               |                   |                   |               |
+| DeepClassify      |       √       |       √       |      TODO     |               |                   |                   |               |
+| Cluster           |     TODO      |               |               |               |                   |                   |               |
+| DocCompare        |               |               |               |               |                   |                   |               |
+| DocExtractor      |               |               |               |               |                   |                   |               |
+| DocParser         |               |               |               |               |                   |                   |               |
+| iEncoder          |               |               |               |               |                   |                   |               |
+| HTMLPaser         |               |               |               |               |                   |                   |               |
+| KeyScanner        |     TODO      |               |               |               |                   |                   |               |
+| RedupRemover      |               |               |               |               |                   |                   |               |
+| SpellChecker      |               |               |               |               |                   |                   |               |
+| SplitSentence     |               |               |               |               |                   |                   |               |
+| TextSimilarity    |     TODO      |               |               |               |                   |                   |               |
+| Word2vec          |               |               |               |               |                   |                   |               |
