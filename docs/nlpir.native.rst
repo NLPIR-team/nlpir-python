@@ -41,7 +41,7 @@ nlpir.native.key\_extract module
    :undoc-members:
    :show-inheritance:
 
-nlpir.native.deep_classifier module
+nlpir.native.deep\_classifier module
 -------------------------------------
 
 .. automodule:: nlpir.native.deep_classifier
@@ -61,6 +61,14 @@ nlpir.native.sentiment module
 -------------------------------------
 
 .. automodule:: nlpir.native.sentiment
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nlpir.native.key\_scanner module
+-------------------------------------
+
+.. automodule:: nlpir.native.key_scanner
    :members:
    :undoc-members:
    :show-inheritance:
