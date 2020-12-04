@@ -1,7 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
-from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref
-import typing
+from ctypes import c_bool, c_char_p, c_int, POINTER
 
 
 class DeepClassifier(NLPIRBase):

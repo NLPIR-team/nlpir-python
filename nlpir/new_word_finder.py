@@ -5,10 +5,8 @@ high-level toolbox for Chinese New Word Finder
 # pylint: disable=duplicate-code
 
 from nlpir import get_instance as __get_instance__
-from nlpir import native, PACKAGE_DIR, logger
+from nlpir import native, logger
 import typing
-import nlpir
-import os
 import json
 
 # class and class instance

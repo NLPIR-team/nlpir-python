@@ -38,6 +38,7 @@ def test_segment():
     from multiprocessing import Pool
     with Pool(16) as pool:
         result = pool.map(ictclas.segment, [test_str] * 100)
+        assert result
     # 6th segment to string
     assert test_str_seg == ictclas.segment(test_str, pos_tagged=False, post_process=lambda t, _: t)
     assert test_str_seg_pos == ictclas.segment(test_str, pos_tagged=True, post_process=lambda t, _: t)
@@ -78,4 +79,3 @@ def test_file_segment():
     ictclas.file_segment(os.path.abspath(test_source_filename), os.path.abspath(test_result_filename))
     os.remove(test_result_filename)
     nlpir.clean_logs(include_current=True)
-
