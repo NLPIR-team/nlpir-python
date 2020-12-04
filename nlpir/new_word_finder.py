@@ -86,7 +86,7 @@ def find_new_words_batch(text_iter: typing.Iterable[str]) -> typing.Optional[typ
         logger.error("complete batch process fail")
         return None
     try:
-        return json.loads(__instance__.batch_getresult())
+        return json.loads(__instance__.batch_getresult(format_json=True))
     except json.decoder.JSONDecodeError:
         logger.error("get result fail")
         return []
