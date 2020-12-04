@@ -5,14 +5,11 @@ import re
 import logging
 import sys
 import functools
+from .exception import NLPIRException
 
-__version__ = "0.0.1"
+__version__ = "0.0.3"
 PACKAGE_DIR = os.path.abspath(os.path.dirname(__file__))
 logger = logging.getLogger("nlpir")
-
-
-class NLPIRException(Exception):
-    pass
 
 
 def clean_logs(data_path: typing.Optional[str] = None, include_current: bool = False):
@@ -102,3 +99,94 @@ def init_setting(
     init_module.__data__ = data_path if data_path is not None else init_module.__data__
     init_module.__license_code__ = license_code if license_code is not None else init_module.__license_code__
     return init_module
+
+
+def import_dict(word_list: list, instance) -> list:
+    """
+    Temporary add word as dictionary, will loss it when restart the Program.
+    Can use :func:`save_user_dict` to make persistence, :func:`clean_user_dict` to
+    delete all temporary words or :func:`delete_user_word` to delete part of them.
+
+    The persistent dict cannot be clean by using method above. :func:`clean_saved_user_dict`
+    will be used in this situation. But it will delete all user dict include saved dict in the past.
+
+    Every word in `word_list` can be a single word and the POS will be `n`. The custom POS can be added
+    as `word pos` in `word_list`.
+
+    :param instance: instance to execute the function
+    :param word_list: list of words want to add to NLPIR
+    :return: the word fail to add to the NLPIR
+    """
+    if not hasattr(instance, "add_user_word"):
+        raise NLPIRException("This instance not support this method")
+    fail_list = list()
+    for word in word_list:
+        if 0 != instance.add_user_word(word):
+            fail_list.append(word_list)
+    return fail_list
+
+
+def clean_user_dict(instance) -> bool:
+    """
+    Clean all temporary dictionary, more information shows in :func:`import_dict`
+
+    :param instance: instance to execute the function
+    :return: success or not
+    """
+    if not hasattr(instance, "clean_user_word"):
+        raise NLPIRException("This instance not support this method")
+    return instance.clean_user_word() == 0
+
+
+def delete_user_word(word_list: list, instance):
+    """
+    Delete words in temporary dictionary, more information shows in :func:`import_dict`
+
+    :param instance: instance to execute the function
+    :param word_list: list of words want to delete
+    """
+    if not hasattr(instance, "del_usr_word"):
+        raise NLPIRException("This instance not support this method")
+    for word in word_list:
+        instance.del_usr_word(word)
+
+
+def save_user_dict(instance) -> bool:
+    """
+    Save temporary dictionary to Data, more information shows in :func:`import_dict`
+
+    :param instance: instance to execute the function
+    :return: Success or not
+    """
+    if not hasattr(instance, "save_the_usr_dic"):
+        raise NLPIRException("This instance not support this method")
+    return 1 == instance.save_the_usr_dic()
+
+
+def clean_saved_user_dict():
+    """
+    Delete user dict from disk, which is :
+
+    1. ``Data/FieldDict.pdat``
+    2. ``Data/FieldDict.pos``
+    3. ``Data/FieldDict.wordlist``
+    4. ``Data/UserDefinedDict.lst``
+
+    :return: Delete success or not
+    """
+    try:
+        # for ictclas
+        with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.pdat"), 'w') as f:
+            f.write("")
+        with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.pos"), 'w') as f:
+            f.write("")
+        with open(os.path.join(PACKAGE_DIR, "Data/FieldDict.wordlist"), 'w') as f:
+            f.write("")
+        with open(os.path.join(PACKAGE_DIR, "Data/UserDefinedDict.lst"), 'w') as f:
+            f.write("")
+        # for key_extract
+        with open(os.path.join(PACKAGE_DIR, "Data/UserDict.pdat"), 'w') as f:
+            f.write("")
+        return True
+    except OSError:
+        return False

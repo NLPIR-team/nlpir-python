@@ -25,10 +25,43 @@ nlpir.ictclas module
    :undoc-members:
    :show-inheritance:
 
+nlpir.new\_word\_finder module
+-------------------------------
+
+.. automodule:: nlpir.new_word_finder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nlpir.key\_extract module
+----------------------------
+
+.. automodule:: nlpir.key_extract
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nlpir.summary module
+-----------------------
+
+.. automodule:: nlpir.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
 nlpir.tools module
-------------------
+--------------------
 
 .. automodule:: nlpir.tools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nlpir.exception module
+------------------------
+
+.. automodule:: nlpir.exception
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,6 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
-from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref, c_ulong
+from ctypes import c_bool, c_char_p, c_int, c_uint, c_ulong
 import typing
 
 
@@ -38,29 +38,63 @@ class KeyExtract(NLPIRBase):
         """
         Call **KeyExtract_GetKeyWords**
 
-        Description: Extract keyword from sLine
+        Extract keyword from text, 从文本中获取关键词
 
         :param line: the input paragraph
         :param max_key_limit: maximum of key words, up to 50
-        :param weight_out: whether the keyword weight output
-        :return: "科学发展观/n/23.80 宏观经济/n/12.20" with weight 分别表示 关键词/关键词词性/权重 or JSON
+        :param weight_out: the result format, get result split with # if False, get json format if True
+        :return: the keyword with weight
+
+        Split with ``#``
+
+        ::
+
+            科学发展观/n/23.80/12#宏观经济/n/12.20/12#
+
+        JSON形式:
+
+        ::
+
+            [
+                {
+                    'freq': 2,
+                    'pos': 'n_new',
+                    'weight': 7.771335980376418,
+                    'word': '国家权力'
+                },{
+                    'freq': 7,
+                    'pos': 'n',
+                    'weight': 7.438759706600493,
+                    'word': '权力'
+                },{
+                    'freq': 1,
+                    'pos': 'nrf',
+                    'weight': 5.280000338096665,
+                    'word': '孟德斯鸠'
+                },{ ...
+                }, ...
+            ]
+
         """
-        return self.get_func('KeyExtract_GetKeyWords', [c_char_p, c_int, c_bool], c_char_p)(
-            line,
-            max_key_limit,
-            weight_out
-        )
+        return self.get_func('KeyExtract_GetKeyWords', [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit,
+                                                                                            weight_out)
 
     @NLPIRBase.byte_str_transform
     def import_user_dict(self, filename: str, overwrite: bool = False):
         """
         Call **KeyExtract_ImportUserDict**
 
-        Import keyword user defined dictionary
+        Import a user dict to the system, the format of the dict file::
 
-        :param filename: Text filename for user dictionary, each line for a imported keyword
-        :param overwrite:
-        :return: The number of lexical entry imported successfully
+            word1 pos_tag
+            word2 pos_tag
+
+        If you import a user dict to the system, the user dict will save to the system (in Data directory).
+        You cannot delete the word in the user dict from the system use :func:`clean_user_word` or :func:`del_usr_word`.
+
+        :param str filename: the path of user dict file
+        :param bool overwrite: overwrite the current user dict or not
+        :return: import success or not  1->True 2->False
         """
         return self.get_func('KeyExtract_ImportUserDict', [c_char_p, c_bool], c_uint)(filename, overwrite)
 
@@ -69,13 +103,19 @@ class KeyExtract(NLPIRBase):
         """
         Call **KeyExtract_AddUserWord**
 
-        add a word to the user dictionary ,example::
+        Add a word to the user dictionary ,example::
 
-            一带一路 key
+            单词 词性
 
-        需要作为关键词的，标引前缀必须为key
+        or::
 
-        :param word: 加入到临时用户词典重点词与词性，用空格分割
+            单词 (default n)
+
+        The added word only add in memory and will not affect the user dict, you can use :func:`clean_user_word` or
+        :func:`del_usr_word` to delete the word or all the words in memory. If you want to save to the user dict ,use
+        :func:`save_the_usr_dic` to save to the *Data* directory.
+
+        :param str word:
         :return: 1,true ; 0,false
         """
         return self.get_func('KeyExtract_AddUserWord', [c_char_p], c_int)(word)
@@ -85,18 +125,18 @@ class KeyExtract(NLPIRBase):
         """
         Call **KeyExtract_CleanUserWord**
 
-        Clean all temporary added user words
+        Clean all temporary added user words, more info see :func:`add_user_word`
 
         :return: 1,true ; 0,false
         """
         return self.get_func('KeyExtract_CleanUserWord', None, c_int)()
 
     @NLPIRBase.byte_str_transform
-    def save_the_usr_dict(self) -> int:
+    def save_the_usr_dic(self) -> int:
         """
         Call **KeyExtract_SaveTheUsrDic**
 
-        Save dictionary to file
+        Save in-memory dict to user dict, more info see :func:`add_user_word`
 
         :return: 1,true; 2,false
         """
@@ -107,11 +147,10 @@ class KeyExtract(NLPIRBase):
         """
         Call **KeyExtract_DelUsrWord**
 
-        delete a word from the user dictionary
+         Delete a word from the user dictionary, more info see :func:`add_user_word`
 
-        :param word:
+        :param str word: the word to be delete
         :return: -1, the word not exist in the user dictionary; else, the handle of the word deleted
-
         """
         return self.get_func('KeyExtract_DelUsrWord', [c_char_p], c_int)(word)
 
@@ -122,13 +161,17 @@ class KeyExtract(NLPIRBase):
 
         Import keyword black list
 
-        import_blacklist will ass word to KeyBlackList.pdat remove the words form it need to backup it after use this function.
-        this list of word will not affect the key word extract and segmentation
+        This function will save words to KeyBlackList.pdat , if you want to remove the words form the system
+        need to backup it before use this function. Or use the function :func:`nlpir.key_extract.import_blacklist` ,
+        That function will backup that file automatically and you can use :func:`nlpir.key_extract.clean_blacklist` to
+        clean current blacklist and restore the origin file.
 
-        
-        :param filename: Text filename for user defined blacklist dictionary, each line for a stop keyword
-        :param pos_blacklist: 停用的词性列表，即列为该词性列表访问的词不纳入关键词范围,如设置为#nr#ns#表示nr,ns不作为关键词
-        :return: The number of lexical entry imported successfully
+        This list of word will not affect the key word extract and segmentation
+
+        :param filename: A word list that the words want to import to the blacklist (stop word list),
+            一个停用词词表,里面为想进行屏蔽的词,也可以包括别的词,是否不进行抽取是按照词表中的词性来确定的.
+        :param pos_blacklist: A list of pos that want to block in the system, 想要屏蔽的词的词性
+        :return: number of words that import to the systems
         """
         return self.get_func('KeyExtract_ImportKeyBlackList', [c_char_p, c_char_p], c_uint)(filename, pos_blacklist)
 
@@ -146,7 +189,7 @@ class KeyExtract(NLPIRBase):
 
         启动关键词识别
 
-        :return: true:success, false:fail
+        :return: rue:success, false:fail
         """
         return self.get_func('KeyExtract_Batch_Start', None, c_int)()
 
@@ -155,10 +198,10 @@ class KeyExtract(NLPIRBase):
         """
         Call **KeyExtract_Batch_AddFile**
 
-        往关键词识别系统中添加待识别关键词的文本文件,需要在运行KeyExtract_Batch_Start()之后，才有效
-        
+        往关键词识别系统中添加待识别关键词的文本文件, 需要在运行 :func:`batch_start` 之后，才有效
+
         :param filename: 文件名
-        :return: bool, true:success, false:fail
+        :return: true:success, false:fail
         """
         return self.get_func('KeyExtract_Batch_AddFile', [c_char_p], c_ulong)(filename)
 
@@ -166,10 +209,11 @@ class KeyExtract(NLPIRBase):
     def batch_addmen(self, txt: str) -> bool:
         """
         Call **KeyExtract_Batch_AddMem**
-        往关键词识别系统中添加一段待识别关键词的内存,需要在运行KeyExtract_Batch_Start()之后，才有效
 
-        :param txt: string
-        :return: true:success, false:fail
+        往关键词识别系统中添加一段待识别关键词的内存,需要在运行 :func:`batch_start` 之后，才有效
+
+        :param txt: 文件名
+        :return:  true:success, false:fail
         """
         return self.get_func('KeyExtract_Batch_AddMem', [c_char_p], c_bool)(txt)
 
@@ -178,23 +222,23 @@ class KeyExtract(NLPIRBase):
         """
         Call **KeyExtract_Batch_Complete**
 
-        关键词识别添加内容结束,需要在运行KeyExtract_Batch_Start()之后，才有效
+        关键词识别添加内容结束,需要在运行 :func:`batch_start` 之后，才有效
 
         :return: true:success, false:fail
         """
         return self.get_func('KeyExtract_Batch_Complete', None, c_int)()
 
     @NLPIRBase.byte_str_transform
-    def batch_getresult(self, weight_out: bool = False) -> str:
+    def batch_getresult(self, weight_out: bool) -> str:
         """
         Call **KeyExtract_Batch_GetResult**
 
-        获取关键词识别的结果, 需要在运行KeyExtract_Batch_Complete()之后，才有效
+        获取关键词识别的结果,需要在运行 :func:`batch_complete` 之后，才有效
 
         :param weight_out: 是否需要输出每个关键词的权重参数
-        :return: 输出格式为:【关键词1】 【权重1】 【关键词2】 【权重2】 ...
+        :return:  输出格式为 【关键词1】 【权重1】 【关键词2】 【权重2】 ...
         """
-        return self.get_func('KeyExtract_Batch_GetResult', None, str)()
+        return self.get_func('KeyExtract_Batch_GetResult', [c_bool], str)(weight_out)
 
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:

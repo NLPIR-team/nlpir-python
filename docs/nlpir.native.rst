@@ -25,6 +25,14 @@ nlpir.native.new\_word\_finder module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.summary module
+-------------------------------------
+
+.. automodule:: nlpir.native.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.native.key\_extract module
 -------------------------------------
 
@@ -33,8 +41,32 @@ nlpir.native.key\_extract module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.deep_classifier module
+-------------------------------------
+
+.. automodule:: nlpir.native.deep_classifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nlpir.native.classifier module
+-------------------------------------
+
+.. automodule:: nlpir.native.classifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nlpir.native.sentiment module
+-------------------------------------
+
+.. automodule:: nlpir.native.sentiment
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.native.nlpir\_base module
--------------------------------
+---------------------------------------
 
 .. automodule:: nlpir.native.nlpir_base
    :members:

@@ -29,12 +29,13 @@ def update_license(data_path=None) -> None:
     key_dict = {
         "NLPIR.user": "NLPIR-ICTCLAS分词系统授权/NLPIR.user",
         "keyScan.user": "KeyScanner九眼智能扫描授权/keyScan.user",
-        "deepclassifier.usr": "classifier深度学习分类授权/deepclassifier.user",
+        "DeepClassifier/deepclassifier.user": "classifier深度学习分类授权/deepclassifier.user",
         "keyExtract.user": "KeyExtract关键词提取授权/keyExtract.user",
         "NewWordFinder.user": "NewWordFinder新词发现授权/NewWordFinder.user",
         "summary.user": "Summary自动摘要提取授权/summary.user",
         "DocExtractor.user": "DocExtractor文档提取授权/DocExtractor.user",
-        "sentiment.user": "SentimentNew情感分析授权/sentiment.user"
+        "sentiment.user": "SentimentNew情感分析授权/sentiment.user",
+        "classifier.user": "classifier规则分类授权/classifier.user",
     }
     if data_path is None:
         destination = os.path.join(os.path.dirname(__file__), "Data")
@@ -43,5 +44,7 @@ def update_license(data_path=None) -> None:
     print("start download license!")
     for key in key_dict:
         des_path = os.path.join(destination, key)
+        if not os.path.exists(os.path.dirname(des_path)):
+            os.makedirs(os.path.dirname(des_path))
         print(f"download license:{key} from {base_url + key_dict[key]} save to {des_path}")
         download(base_url + key_dict[key], des_path)

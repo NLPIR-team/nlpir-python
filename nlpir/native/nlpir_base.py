@@ -7,7 +7,7 @@ import typing
 import functools
 from ctypes import c_int
 from nlpir import PACKAGE_DIR
-from nlpir import NLPIRException
+from nlpir.exception import NLPIRException
 
 # All available encoding, according to the header(.h) file
 # 根据对应头文件,NLPIR可设置的编码格式
@@ -57,6 +57,9 @@ class NLPIRBase:
         UTF8_FANTI_CODE: "utf-8"
     }
 
+    #: use it if want load DLL in other mode
+    load_mode = None
+
     @staticmethod
     def byte_str_transform(func: typing.Callable) -> typing.Callable:
         """
@@ -85,6 +88,12 @@ class NLPIRBase:
             return_value = func(self, *args, **kwargs)
             if isinstance(return_value, bytes):
                 return return_value.decode(self.encode)
+            elif isinstance(return_value, tuple):
+                return_value = list(return_value)
+                for i, item in enumerate(return_value):
+                    if isinstance(item, bytes):
+                        return return_value[i].decode(self.encode)
+                return tuple(return_value)
             else:
                 return return_value
 
@@ -184,7 +193,10 @@ class NLPIRBase:
         if is_64bit is None:
             is_64bit = sys.maxsize > 2 ** 32
         lib = self.get_dll_path(platform, lib_dir, is_64bit)
-        lib_nlpir = ctypes.cdll.LoadLibrary(lib)
+        if self.load_mode is not None:
+            lib_nlpir = ctypes.CDLL(lib, mode=self.load_mode)
+        else:
+            lib_nlpir = ctypes.cdll.LoadLibrary(lib)
         self.logger.debug("{} library file '{}' loaded.".format(self.dll_name, lib))
         return lib_nlpir, lib
 
