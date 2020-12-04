@@ -328,7 +328,7 @@ class ICTCLAS(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
-        Call NLPIR_GetLastErrorMsg
+        Call **NLPIR_GetLastErrorMsg**
 
         :return: error message
         """
