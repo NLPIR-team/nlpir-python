@@ -3,10 +3,8 @@
 high-level toolbox for Summarization
 """
 from nlpir import get_instance as __get_instance__
-from nlpir import native, PACKAGE_DIR
+from nlpir import native
 import typing
-import re
-import os
 
 # class and class instance
 __cls__ = native.summary.Summary
