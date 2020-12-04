@@ -6,7 +6,7 @@ Tested function:
 - :func:`nlpir.new_word_finder.find_new_words_batch`
 """
 from nlpir import new_word_finder
-from tests.strings import test_str, test_source_filename
+from tests.strings import test_source_filename
 
 
 def test_new_word_finder():

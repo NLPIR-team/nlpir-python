@@ -167,7 +167,6 @@ class KeyExtract(NLPIRBase):
 
         This list of word will not affect the key word extract and segmentation
 
-        
         :param filename: A word list that the words want to import to the blacklist (stop word list),
             一个停用词词表,里面为想进行屏蔽的词,也可以包括别的词,是否不进行抽取是按照词表中的词性来确定的.
         :param pos_blacklist: A list of pos that want to block in the system, 想要屏蔽的词的词性
@@ -199,7 +198,6 @@ class KeyExtract(NLPIRBase):
         Call **KeyExtract_Batch_AddFile**
 
         往关键词识别系统中添加待识别关键词的文本文件, 需要在运行 :func:`batch_start` 之后，才有效
-        
 
         :param filename: 文件名
         :return: true:success, false:fail
