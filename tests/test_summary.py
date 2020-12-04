@@ -1,3 +1,9 @@
+# coding=utf-8
+"""
+Tested function:
+
+- :func:`nlpir.summary.summarization`
+"""
 from nlpir import summary
 
 

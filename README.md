@@ -79,7 +79,7 @@ easier to use.
 |                   | Native        | Native Doc    | Native Test   | High-Level    | High-Level Doc    | High-Level Test   | Tutorial      | 
 | ----              | :----:        | :----:        | :----:        | :----:        | :----:            | :----:            | :----:        |    
 | ICTCLAS           |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✔         |       ✔       |
-| NewWordFinder     |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✍         |               |
+| NewWordFinder     |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✔         |               |
 | KeyExtract        |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✔         |               |
 | Summary           |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✔         |               |
 | SentimentNew      |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
