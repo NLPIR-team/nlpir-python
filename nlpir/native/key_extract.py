@@ -37,6 +37,7 @@ class KeyExtract(NLPIRBase):
     def get_keywords(self, line: str, max_key_limit: int = 50, weight_out: bool = False) -> str:
         """
         Call **KeyExtract_GetKeyWords**
+
         Extract keyword from text, 从文本中获取关键词
 
         :param line: the input paragraph
@@ -76,7 +77,7 @@ class KeyExtract(NLPIRBase):
 
         """
         return self.get_func('KeyExtract_GetKeyWords', [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit,
-                                                                                            weight_out)
+
 
     @NLPIRBase.byte_str_transform
     def import_user_dict(self, filename: str, overwrite: bool = False):
