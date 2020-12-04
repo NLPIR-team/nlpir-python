@@ -25,6 +25,14 @@ nlpir.ictclas module
    :undoc-members:
    :show-inheritance:
 
+nlpir.new\_word\_finder module
+-------------------------------
+
+.. automodule:: nlpir.new_word_finder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.key\_extract module
 ----------------------------
 
