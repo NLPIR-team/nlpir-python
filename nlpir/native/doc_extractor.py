@@ -74,7 +74,7 @@ class DocExtractor(NLPIRBase):
 
         :return: error message
         """
-        return self.get_func("NLPIR_GetLastErrorMsg", None, c_char_p)()
+        return self.get_func("DE_GetLastErrMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
     def pares_doc_e(
@@ -140,7 +140,7 @@ class DocExtractor(NLPIRBase):
         """
         Call **DE_ComputeSentimentDoc**
 
-        生成单文档摘要
+        生成单文档情感分析结果
 
         :param text: 文档内容
         :return:
