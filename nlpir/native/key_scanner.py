@@ -28,7 +28,7 @@ class KeyScanner(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
-        Call **NLPIR_Init**
+        Call **KS_Init**
 
         :param str data_path:
         :param int encode:
@@ -40,7 +40,7 @@ class KeyScanner(NLPIRBase):
 
     def exit_lib(self) -> bool:
         """
-        Call **NLPIR_Exit**
+        Call **KS_Exit**
 
         :return: exit success or not
         """
@@ -49,7 +49,7 @@ class KeyScanner(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
-        Call **NLPIR_GetLastErrorMsg**
+        Call **KS_GetLastErrorMsg**
 
         :return: error message
         """
@@ -84,17 +84,18 @@ class KeyScanner(NLPIRBase):
         """
         return self.get_func("KS_DeleteInstance", [c_int], c_int)(handle)
 
+    @NLPIRBase.byte_str_transform
     def import_user_dict(
             self,
-            filename: str,
+            text: str,
             pinyin_abbrev_needed: bool = False,
             over_write: bool = False,
             handle=0
-    ) -> c_int:
+    ) -> int:
         """
         Call **ImportUserDict**
 
-        Import User-defined dictionary 导入用户词典
+        Import User-defined dictionary 导入用户词典, 此操作为全局操作为影响其他 instance 的过滤
 
         文本文件每行的格式为: ``词条 词类 权重`` (注意，最多定义255个类别), 例::
 
@@ -113,6 +114,28 @@ class KeyScanner(NLPIRBase):
         表示的是文本内容中包含 ``中国;中华;中华人民共和国;中国共产党;中共`` 中的一种，
         同时出现 ``伟大;光荣;正确`` 中的一个，但不能出现 ``中华民国;国民党`` 的任何一个
 
+        :param text: Text of user dictionary
+        :param pinyin_abbrev_needed:
+        :param over_write: true将覆盖系统已经有的词表；否则将采用追加的方式追加不良词表
+        :param handle: handle of KeyScanner
+        :return: success or not
+        """
+        return self.get_func("KS_ImportUserDict", [c_char_p, c_bool, c_bool, c_int], c_int)(
+            text, pinyin_abbrev_needed, over_write, handle)
+
+    @NLPIRBase.byte_str_transform
+    def import_user_dict_from_file(
+            self,
+            filename: str,
+            pinyin_abbrev_needed: bool = False,
+            over_write: bool = False,
+            handle=0
+    ) -> int:
+        """
+        Call **ImportUserDict**
+
+        Same as :func:`import_user_dict`
+
         :param filename: Text filename for user dictionary
         :param pinyin_abbrev_needed:
         :param over_write: true将覆盖系统已经有的词表；否则将采用追加的方式追加不良词表
@@ -123,11 +146,29 @@ class KeyScanner(NLPIRBase):
             filename, pinyin_abbrev_needed, over_write, handle)
 
     @NLPIRBase.byte_str_transform
-    def delete_user_dic(self, filename: str, handle: int) -> int:
+    def delete_user_dic(self, text: str, handle: int) -> int:
         """
         Call **DeleteUserDict**
 
-        Delete User-defined dictionary 删除用户词典
+        Delete User-defined dictionary 删除用户词典, 此操作为全局操作, 会删除词典文件并影响所有 instance
+
+        文本文件每行的格式为: ``词条`` , 例如::
+
+            AV电影
+            习近平
+
+        :param text: Text of user dictionary
+        :param handle: handle of KeyScanner
+        :return: The number of lexical entry deleted successfully 成功删除的词典条数
+        """
+        return self.get_func("KS_DeleteUserDict", [c_char_p, c_int], c_int)(text, handle)
+
+    @NLPIRBase.byte_str_transform
+    def delete_user_dic_from_file(self, filename: str, handle: int) -> int:
+        """
+        Call **DeleteUserDict**
+
+        Delete User-defined dictionary 删除用户词典, 此操作为全局操作, 会删除词典文件并影响所有 instance
 
         文本文件每行的格式为: ``词条`` , 例如::
 
@@ -270,19 +311,13 @@ class KeyScanner(NLPIRBase):
 
         对扫描的统计结果进行过滤分析
 
-        *  Parameters : sFilename:
-        *				fThreshold：
-        *  Returns    :
-        *  Author     : Kevin Zhang
-        *  History    :
-        *              1.create 2017-4-24
         :param input_filename: 输入的结果文件名
         :param result_filename: 输出结果的文件名
         :param threshold: 不良得分的阈值
         :return: 成功扫描到问题的文件数
         """
         return self.get_func("KS_StatResultFilter", [c_char_p, c_char_p, c_float], c_int)(
-            input_filename, result_filename, threshold)
+            input_filename, result_filename, c_float(threshold))
 
     @NLPIRBase.byte_str_transform
     def scan_result_filter(self, input_filename: str, result_filename: str, threshold: float = 9.0) -> int:
@@ -297,7 +332,7 @@ class KeyScanner(NLPIRBase):
         :return: 成功扫描到问题的文件数
         """
         return self.get_func("KS_ScanResultFilter", [c_char_p, c_char_p, c_float], c_int)(
-            input_filename, result_filename, threshold)
+            input_filename, result_filename, c_float(threshold))
 
     @NLPIRBase.byte_str_transform
     def decrypt(self, input_dir_path: str, result_path: str) -> int:

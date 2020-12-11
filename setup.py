@@ -6,7 +6,7 @@ import nlpir
 with open("README.md") as f:
     readme = f.read()
 dependencies = [
-    'requests'
+    'requests',
 ]
 setup(
     name='nlpir-python',
