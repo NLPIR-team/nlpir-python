@@ -41,6 +41,14 @@ nlpir.key\_extract module
    :undoc-members:
    :show-inheritance:
 
+nlpir.key\_scanner module
+----------------------------
+
+.. automodule:: nlpir.key_scanner
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.summary module
 -----------------------
 
