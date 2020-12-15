@@ -73,6 +73,14 @@ nlpir.native.key\_scanner module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.cluster module
+-------------------------------------
+
+.. automodule:: nlpir.native.cluster
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.native.nlpir\_base module
 ---------------------------------------
 

@@ -7,16 +7,19 @@ from .sentiment import SentimentAnalysis, SentimentNew
 from .summary import Summary
 from .deep_classifier import DeepClassifier
 from .key_scanner import KeyScanner
+from .cluster import Cluster
 from .nlpir_base import UNKNOWN_CODE, GBK_CODE, UTF8_CODE, BIG5_CODE, GBK_FANTI_CODE, UTF8_FANTI_CODE
 
 __all__ = (
     'ICTCLAS',
     'Classifier',
+    'Cluster',
     'DeepClassifier',
     'SentimentNew',
     'SentimentAnalysis',
     'Summary',
     'KeyExtract',
+    'KeyScanner',
     'NewWordFinder',
     'NLPIRException',
     'UNKNOWN_CODE',
