@@ -49,6 +49,14 @@ nlpir.summary module
    :undoc-members:
    :show-inheritance:
 
+nlpir.cluster module
+-----------------------
+
+.. automodule:: nlpir.cluster
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 
 nlpir.tools module
 --------------------
