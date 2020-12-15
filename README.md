@@ -88,7 +88,7 @@ easier to use.
 | SentimentAnalysis |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | Classify          |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | DeepClassify      |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
-| Cluster           |       ✩       |               |               |               |                   |                   |               |
+| Cluster           |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | DocCompare        |               |               |               |               |                   |                   |               |
 | DocExtractor      |               |               |               |               |                   |                   |               |
 | DocParser         |               |               |               |               |                   |                   |               |
