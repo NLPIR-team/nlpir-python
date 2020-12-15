@@ -19,8 +19,6 @@ class KeyScanner(NLPIRBase):
     A dynamic link library native class for Keyword Scan
     """
 
-    DELIMITER = ','  #: 结果分割符
-
     @property
     def dll_name(self) -> str:
         return "KeyScanAPI"
@@ -35,8 +33,8 @@ class KeyScanner(NLPIRBase):
         :param str license_code:
         :return: 1 success 0 fail
         """
-        return self.get_func('KS_Init', [c_char_p, c_int, c_char_p, c_char_p], c_int)(
-            data_path, encode, license_code, self.DELIMITER)
+        return self.get_func('KS_Init', [c_char_p, c_int, c_char_p], c_int)(
+            data_path, encode, license_code)
 
     def exit_lib(self) -> bool:
         """
@@ -56,7 +54,7 @@ class KeyScanner(NLPIRBase):
         return self.get_func("KS_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
-    def new_instance(self) -> int:
+    def new_instance(self, filter_type_index: int = 0) -> int:
         """
         Call **KS_NewInstance**
 
@@ -66,9 +64,11 @@ class KeyScanner(NLPIRBase):
         using :func:`delete_instance` after finish all executions from
         this handle.
 
+        :param filter_type_index: which No of filter want to be used in this instance.
+            The filter file will save into `Data/KeyScanner/filter{no}*`
         :return: a handle from system if success; otherwise return -1;
         """
-        return self.get_func("KS_NewInstance", [None], c_int)()
+        return self.get_func("KS_NewInstance", [c_int], c_int)(filter_type_index)
 
     @NLPIRBase.byte_str_transform
     def delete_instance(self, handle: int) -> int:
@@ -87,15 +87,15 @@ class KeyScanner(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def import_user_dict(
             self,
-            text: str,
-            pinyin_abbrev_needed: bool = False,
+            filename: str,
             over_write: bool = False,
+            pinyin_abbrev_needed: bool = False,
             handle=0
     ) -> int:
         """
         Call **ImportUserDict**
 
-        Import User-defined dictionary 导入用户词典, 此操作为全局操作为影响其他 instance 的过滤
+        Import User-defined dictionary 导入用户词典, 此操作为全局操作会影响其他 instance 的过滤
 
         文本文件每行的格式为: ``词条 词类 权重`` (注意，最多定义255个类别), 例::
 
@@ -114,36 +114,14 @@ class KeyScanner(NLPIRBase):
         表示的是文本内容中包含 ``中国;中华;中华人民共和国;中国共产党;中共`` 中的一种，
         同时出现 ``伟大;光荣;正确`` 中的一个，但不能出现 ``中华民国;国民党`` 的任何一个
 
-        :param text: Text of user dictionary
+        :param filename: path of user dictionary
         :param pinyin_abbrev_needed:
         :param over_write: true将覆盖系统已经有的词表；否则将采用追加的方式追加不良词表
         :param handle: handle of KeyScanner
         :return: success or not
         """
         return self.get_func("KS_ImportUserDict", [c_char_p, c_bool, c_bool, c_int], c_int)(
-            text, pinyin_abbrev_needed, over_write, handle)
-
-    @NLPIRBase.byte_str_transform
-    def import_user_dict_from_file(
-            self,
-            filename: str,
-            pinyin_abbrev_needed: bool = False,
-            over_write: bool = False,
-            handle=0
-    ) -> int:
-        """
-        Call **ImportUserDict**
-
-        Same as :func:`import_user_dict`
-
-        :param filename: Text filename for user dictionary
-        :param pinyin_abbrev_needed:
-        :param over_write: true将覆盖系统已经有的词表；否则将采用追加的方式追加不良词表
-        :param handle: handle of KeyScanner
-        :return: success or not
-        """
-        return self.get_func("KS_ImportUserDict", [c_char_p, c_bool, c_bool, c_int], c_int)(
-            filename, pinyin_abbrev_needed, over_write, handle)
+            filename, over_write, pinyin_abbrev_needed, handle)
 
     @NLPIRBase.byte_str_transform
     def delete_user_dic(self, text: str, handle: int) -> int:
@@ -284,6 +262,7 @@ class KeyScanner(NLPIRBase):
             self,
             input_dir_path: str,
             result_path: str,
+            filter: str,
             thread_count: int = 10,
             encrypt: bool = False,
             scan_mode: int = SCAN_MODE_NORMAL
@@ -295,14 +274,36 @@ class KeyScanner(NLPIRBase):
 
         :param input_dir_path: 输入的文件夹路径
         :param result_path: 输出结果的文件夹路径
+        :param filter: 输入的文件后缀名
         :param thread_count: 线程数，默认10个
         :param encrypt: 0 不加密；1，加密
         :param scan_mode:
         :return: 成功扫描到问题的文件数
         """
-        return self.get_func("KS_ScanDir", [c_char_p, c_char_p, thread_count, encrypt, scan_mode], c_int)(
-            input_dir_path, result_path, thread_count, encrypt, scan_mode
+        return self.get_func("KS_ScanDir", [c_char_p, c_char_p, c_char_p, c_int, c_int, c_int], c_int)(
+            input_dir_path, result_path, filter, thread_count, encrypt, scan_mode
         )
+
+    @NLPIRBase.byte_str_transform
+    def merge_result(self, path: str) -> None:
+        """
+        Merge多线程的扫描结果
+
+        :param path:
+        :return:
+        """
+        return self.get_func("KS_MergeResult", [c_char_p], None)(path)
+
+    @NLPIRBase.byte_str_transform
+    def scan_add_stat(self, result_file: str, handle: int) -> int:
+        """
+        将handle线程扫描结果归并到0线程
+
+        :param result_file:
+        :param handle:
+        :return:
+        """
+        return self.get_func("KS_ScanAddStat", [c_char_p, c_int], c_int)(result_file, handle)
 
     @NLPIRBase.byte_str_transform
     def stat_result_filter(self, input_filename: str, result_filename: str, threshold: float = 5.0) -> int:

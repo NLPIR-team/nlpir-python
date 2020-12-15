@@ -58,23 +58,23 @@ class KeyScanProcessor:
         return __instance__.scan(text, self.handle)
 
 
-def __user_dict2str(user_dict: typing.List) -> str:
-    user_dict = [" ".join(user_dict_item) for user_dict_item in user_dict]
-    user_dict = "\n".join(user_dict)
-    return user_dict
-
-
 @__get_instance__
-def import_user_dict(user_dict: typing.List, pinyin_abbrev_needed: bool = True, over_write: bool = False) -> bool:
-    handle = __instance__.new_instance()
-    __instance__.import_user_dict(__user_dict2str(user_dict), pinyin_abbrev_needed, over_write)
+def import_user_dict(user_dict: str, filter_index: int = 0, pinyin_abbrev_needed: bool = True,
+                     over_write: bool = False) -> bool:
+    handle = __instance__.new_instance(filter_index)
+    __instance__.import_user_dict(
+        filename=user_dict,
+        pinyin_abbrev_needed=pinyin_abbrev_needed,
+        over_write=over_write,
+        handle=handle
+    )
     __instance__.delete_instance(handle)
     return True
 
 
 @__get_instance__
-def delete_user_dict(user_dict: typing.List) -> bool:
-    handle = __instance__.new_instance()
-    __instance__.delete_user_dic(__user_dict2str(user_dict))
+def delete_user_dict(user_dict: str, filter_index: int = 0) -> bool:
+    handle = __instance__.new_instance(filter_index)
+    __instance__.delete_user_dic(user_dict, handle=handle)
     __instance__.delete_instance(handle)
     return True
