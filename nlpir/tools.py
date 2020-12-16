@@ -28,7 +28,7 @@ def update_license(data_path=None) -> None:
     base_url = "https://github.com/NLPIR-team/NLPIR/raw/master/License/license%20for%20a%20month/"
     key_dict = {
         "NLPIR.user": "NLPIR-ICTCLAS分词系统授权/NLPIR.user",
-        "keyScan.user": "KeyScanner九眼智能扫描授权/keyScan.user",
+        "KeyScanner/keyScan.user": "KeyScanner九眼智能扫描授权/keyScan.user",
         "DeepClassifier/deepclassifier.user": "classifier深度学习分类授权/deepclassifier.user",
         "keyExtract.user": "KeyExtract关键词提取授权/keyExtract.user",
         "NewWordFinder.user": "NewWordFinder新词发现授权/NewWordFinder.user",

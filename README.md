@@ -94,7 +94,7 @@ easier to use.
 | DocParser         |               |               |               |               |                   |                   |               |
 | iEncoder          |               |               |               |               |                   |                   |               |
 | HTMLPaser         |               |               |               |               |                   |                   |               |
-| KeyScanner        |       ✩       |               |               |               |                   |                   |               |
+| KeyScanner        |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | RedupRemover      |               |               |               |               |                   |                   |               |
 | SpellChecker      |               |               |               |               |                   |                   |               |
 | SplitSentence     |               |               |               |               |                   |                   |               |
