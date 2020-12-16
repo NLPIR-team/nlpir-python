@@ -1,6 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
-from nlpir import native
+from nlpir.native import nlpir_base
 from ctypes import c_bool, c_char_p, c_int, c_uint, c_ulong
 
 
@@ -32,7 +32,12 @@ class NewWordFinder(NLPIRBase):
         return self.get_func("NWF_Exit", [None], c_bool)()
 
     @NLPIRBase.byte_str_transform
-    def get_new_words(self, line: str, max_key_limit: int = 50, format_opt: int = native.OUTPUT_FORMAT_SHARP) -> str:
+    def get_new_words(
+            self,
+            line: str,
+            max_key_limit: int = 50,
+            format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP
+    ) -> str:
         """
         Call **NWF_GetNewWords**
 
@@ -75,7 +80,12 @@ class NewWordFinder(NLPIRBase):
         return self.get_func("NWF_GetNewWords", [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit, format_opt)
 
     @NLPIRBase.byte_str_transform
-    def get_file_new_words(self, file_name: str, max_key_limit: int = 50, format_opt: int = native.OUTPUT_FORMAT_SHARP) -> str:
+    def get_file_new_words(
+            self,
+            file_name: str,
+            max_key_limit: int = 50,
+            format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP
+    ) -> str:
         """
         Call **NWF_GetFileNewWords**
 

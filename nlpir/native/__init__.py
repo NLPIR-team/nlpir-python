@@ -1,5 +1,4 @@
 from .ictclas import ICTCLAS
-from .nlpir_base import NLPIRException
 from .new_word_finder import NewWordFinder
 from .key_extract import KeyExtract
 from .classifier import Classifier
@@ -24,7 +23,6 @@ __all__ = (
     'KeyExtract',
     'KeyScanner',
     'NewWordFinder',
-    'NLPIRException',
     'UNKNOWN_CODE',
     'GBK_CODE',
     'UTF8_CODE',

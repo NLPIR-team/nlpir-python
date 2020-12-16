@@ -1,6 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
-from nlpir import native
+from nlpir.native import nlpir_base
 from ctypes import c_bool, c_char_p, c_int, c_uint, c_ulong
 import typing
 
@@ -35,7 +35,7 @@ class KeyExtract(NLPIRBase):
         return self.get_func('KeyExtract_Exit', restype=c_bool)()
 
     @NLPIRBase.byte_str_transform
-    def get_keywords(self, line: str, max_key_limit: int = 50, format_opt: int = native.OUTPUT_FORMAT_SHARP) -> str:
+    def get_keywords(self, line: str, max_key_limit: int = 50, format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP) -> str:
         """
         Call **KeyExtract_GetKeyWords**
 
@@ -84,7 +84,12 @@ class KeyExtract(NLPIRBase):
             line, max_key_limit, format_opt)
 
     @NLPIRBase.byte_str_transform
-    def get_file_keywords(self, filename: str, max_key_limit: int = 50, format_opt: int = native.OUTPUT_FORMAT_SHARP) -> str:
+    def get_file_keywords(
+            self,
+            filename: str,
+            max_key_limit: int = 50,
+            format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP
+    ) -> str:
         """
         Call **KeyExtract_GetKeyWords**
 
