@@ -28,7 +28,7 @@ def update_license(data_path=None) -> None:
     base_url = "https://github.com/NLPIR-team/NLPIR/raw/master/License/license%20for%20a%20month/"
     key_dict = {
         "NLPIR.user": "NLPIR-ICTCLAS分词系统授权/NLPIR.user",
-        "keyScan.user": "KeyScanner九眼智能扫描授权/keyScan.user",
+        "KeyScanner/keyScan.user": "KeyScanner九眼智能扫描授权/keyScan.user",
         "DeepClassifier/deepclassifier.user": "classifier深度学习分类授权/deepclassifier.user",
         "keyExtract.user": "KeyExtract关键词提取授权/keyExtract.user",
         "NewWordFinder.user": "NewWordFinder新词发现授权/NewWordFinder.user",
@@ -36,6 +36,7 @@ def update_license(data_path=None) -> None:
         "DocExtractor.user": "DocExtractor文档提取授权/DocExtractor.user",
         "sentiment.user": "SentimentNew情感分析授权/sentiment.user",
         "classifier.user": "classifier规则分类授权/classifier.user",
+        "cluster.user": "cluster聚类授权/cluster.user"
     }
     if data_path is None:
         destination = os.path.join(os.path.dirname(__file__), "Data")

@@ -88,13 +88,13 @@ easier to use.
 | SentimentAnalysis |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | Classify          |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | DeepClassify      |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
-| Cluster           |       ✩       |               |               |               |                   |                   |               |
+| Cluster           |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | DocCompare        |               |               |               |               |                   |                   |               |
 | DocExtractor      |        ✔      |               |               |       ✔       |                   |                   |               |
 | DocParser         |               |               |               |               |                   |                   |               |
 | iEncoder          |               |               |               |               |                   |                   |               |
 | HTMLPaser         |               |               |               |               |                   |                   |               |
-| KeyScanner        |       ✩       |               |               |               |                   |                   |               |
+| KeyScanner        |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | RedupRemover      |               |               |               |               |                   |                   |               |
 | SpellChecker      |               |               |               |               |                   |                   |               |
 | SplitSentence     |               |               |               |               |                   |                   |               |
