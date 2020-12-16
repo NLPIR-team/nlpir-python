@@ -90,7 +90,7 @@ easier to use.
 | DeepClassify      |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | Cluster           |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | DocCompare        |               |               |               |               |                   |                   |               |
-| DocExtractor      |        ✔      |               |               |       ✔       |                   |                   |               |
+| DocExtractor      |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | DocParser         |               |               |               |               |                   |                   |               |
 | iEncoder          |               |               |               |               |                   |                   |               |
 | HTMLPaser         |               |               |               |               |                   |                   |               |

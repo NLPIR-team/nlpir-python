@@ -57,6 +57,14 @@ nlpir.summary module
    :undoc-members:
    :show-inheritance:
 
+nlpir.doc\_extractor module
+------------------------------
+
+.. automodule:: nlpir.doc_extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.cluster module
 -----------------------
 

@@ -25,6 +25,7 @@ class ExtractResult:
     """
     A class for retrieve result from Document Extractor's handle
     """
+    #: Types map can be retrieved from DocExtractor
     retrieve_type_map: typing.Dict[str, int] = {
         "person": native.doc_extractor.DOC_EXTRACT_TYPE_PERSON,
         "location": native.doc_extractor.DOC_EXTRACT_TYPE_LOCATION,
@@ -100,7 +101,7 @@ class ExtractResult:
 
         :param retrieve_types: option, a list of retrieve types want to get,
             default is all types can be retrieved or certain types set by :func:`set_retrieve_types`
-        :return: a dict of result : ``{type_name: [result}]}`` : example
+        :return: a dict of result : ``{type_name: [result}]}`` , example
 
         ::
 

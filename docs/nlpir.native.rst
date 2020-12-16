@@ -81,6 +81,14 @@ nlpir.native.cluster module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.doc\_extractor module
+-------------------------------------
+
+.. automodule:: nlpir.native.doc_extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.native.nlpir\_base module
 ---------------------------------------
 

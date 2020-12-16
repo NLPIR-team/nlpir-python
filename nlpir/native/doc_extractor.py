@@ -3,21 +3,22 @@ from nlpir.native.nlpir_base import NLPIRBase
 from ctypes import c_bool, c_char, c_char_p, c_double, c_int, c_uint, POINTER, Structure, byref, c_size_t
 import typing
 
-DOC_EXTRACT_TYPE_PERSON = 0  #: 输出的人名
-DOC_EXTRACT_TYPE_LOCATION = 1  #: 输出的地名
-DOC_EXTRACT_TYPE_ORGANIZATION = 2  #: 输出的机构名
-DOC_EXTRACT_TYPE_KEYWORD = 3  #: 输出的关键词
-DOC_EXTRACT_TYPE_AUTHOR = 4  #: 输出的文章作者
-DOC_EXTRACT_TYPE_MEDIA = 5  #: 输出的媒体
-DOC_EXTRACT_TYPE_COUNTRY = 6  #: 输出的文章对应的所在国别
-DOC_EXTRACT_TYPE_PROVINCE = 7  #: 输出的文章对应的所在省份
-DOC_EXTRACT_TYPE_ABSTRACT = 8  #: 输出文章的摘要
-DOC_EXTRACT_TYPE_POSITIVE = 9  #: 输出文章的正面情感词
-DOC_EXTRACT_TYPE_NEGATIVE = 10  #: 输出文章的负面情感词
-DOC_EXTRACT_TYPE_TEXT = 11  #: 输出文章去除网页等标签后的正文
-DOC_EXTRACT_TYPE_TIME = 12  #: 输出时间词
-DOC_EXTRACT_TYPE_USER = 13  #: 用户自定义的词类，第一个自定义词
-#  后续的自定义词，依次序号为：DOC_EXTRACT_TYPE_USER + 1；DOC_EXTRACT_TYPE_USER + 2；...
+DOC_EXTRACT_TYPE_PERSON = 0  #: 人名
+DOC_EXTRACT_TYPE_LOCATION = 1  #: 地名
+DOC_EXTRACT_TYPE_ORGANIZATION = 2  #: 机构名
+DOC_EXTRACT_TYPE_KEYWORD = 3  #: 关键词
+DOC_EXTRACT_TYPE_AUTHOR = 4  #: 文章作者
+DOC_EXTRACT_TYPE_MEDIA = 5  #: 媒体
+DOC_EXTRACT_TYPE_COUNTRY = 6  #: 文章对应的所在国别
+DOC_EXTRACT_TYPE_PROVINCE = 7  #: 文章对应的所在省份
+DOC_EXTRACT_TYPE_ABSTRACT = 8  #: 文章的摘要
+DOC_EXTRACT_TYPE_POSITIVE = 9  #: 文章的正面情感词
+DOC_EXTRACT_TYPE_NEGATIVE = 10  #: 文章的负面情感词
+DOC_EXTRACT_TYPE_TEXT = 11  #: 文章去除网页等标签后的正文
+DOC_EXTRACT_TYPE_TIME = 12  #: 时间词
+#: 用户自定义的词类，第一个自定义词
+#: 后续的自定义词，依次序号为：:data:`DOC_EXTRACT_TYPE_USER` + 1 , :data:`DOC_EXTRACT_TYPE_USER` + 2 , ...
+DOC_EXTRACT_TYPE_USER = 13
 
 PERSON_REQUIRED = 0x0001
 LOCATION_REQUIRED = 0x0002
@@ -89,7 +90,8 @@ class DocExtractor(NLPIRBase):
         生成单文档摘要
 
         :param text: 文档内容
-        :param user_def_pos: 用户自定义的词性标记，最多三种（人名、地名、机构名、媒体等内置，无需设置），不同词类之间采用#分割，如"gms#gjtgj#g"
+        :param user_def_pos: 用户自定义的词性标记, 最多三种（人名、地名、机构名、媒体等内置，无需设置, 不同词类之间采用#分割,
+            如 ``gms#gjtgj#g``
         :param summary_needed: 是否需要计算摘要
         :param func_required:
         :return: 用于获取内容的handle, 获取内容完毕后应使用 :func:`release_handle` 释放对应资源
