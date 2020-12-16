@@ -7,7 +7,7 @@ import sys
 import functools
 from .exception import NLPIRException
 
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 PACKAGE_DIR = os.path.abspath(os.path.dirname(__file__))
 logger = logging.getLogger("nlpir")
 
@@ -192,6 +192,7 @@ def clean_saved_user_dict():
         return False
 
 
+# noinspection PyTypeChecker
 def import_blacklist(instance, filename: str, pos_blacklist=typing.List[str]) -> bool:
     """
     Import Blacklist to system

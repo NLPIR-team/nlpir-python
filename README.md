@@ -16,7 +16,7 @@ nlpir-python is a python wrapper for NLPIR modules.
 
 本模块提供两种调用方式:
 
-This package include two level of method:
+This package includes two level of method:
 
 ##### 1. Native call from Dynamic Link Library(DLL) 原生的直接调用DLL的调用方式
 
@@ -93,7 +93,7 @@ easier to use.
 | DocExtractor      |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | DocParser         |               |               |               |               |                   |                   |               |
 | iEncoder          |               |               |               |               |                   |                   |               |
-| HTMLPaser         |               |               |               |               |                   |                   |               |
+| HTMLParser        |               |               |               |               |                   |                   |               |
 | KeyScanner        |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | RedupRemover      |               |               |               |               |                   |                   |               |
 | SpellChecker      |               |               |               |               |                   |                   |               |
