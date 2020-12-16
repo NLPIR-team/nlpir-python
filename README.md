@@ -6,10 +6,11 @@ nlpir-python is a python wrapper for NLPIR modules.
 
 [![Documentation Status](https://readthedocs.org/projects/nlpir-python/badge/?version=latest)](https://nlpir-python.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/nlpir-python.svg)](https://badge.fury.io/py/nlpir-python)
-![Test](https://github.com/yangyaofei/nlpir-python/workflows/test/badge.svg)
+![Test](https://github.com/NLPIR-team/nlpir-python/workflows/test/badge.svg)
+
 - Documentation: https://nlpir-python.rtfd.io
-- Github: https://github.com/yangyaofei/nlpir-python
-- Support: https://github.com/yangyaofei/nlpir-python/issues
+- Github: https://github.com/NLPIR-team/nlpir-python
+- Support: https://github.com/NLPIR-team/nlpir-python/issues
 - Free software: [MIT license](http://opensource.org/licenses/MIT)
 
 ## About
@@ -20,8 +21,7 @@ This package includes two level of method:
 
 ##### 1. Native call from Dynamic Link Library(DLL) 原生的直接调用DLL的调用方式
 
-These methods are native method directory from DLL, you can easily use them
-if you are familiar with the NLPIR modules.
+These methods are native method directory from DLL, you can easily use them if you are familiar with the NLPIR modules.
 
 原生方法是直接调用的NLPIR中的api,并进行了部分简化处理,和python化.
 
@@ -37,16 +37,12 @@ if you are familiar with the NLPIR modules.
     ictclas.paragraph_process(test_str, 0)
 ```
 
-     
-
 ##### 2. High-level pythonic method 整合后的更加Python的调用方式
 
-However, the native methods are not very friendly to the beginners.
-These methods provide a wrapper and tools for the native call, make it
-easier to use.
+However, the native methods are not very friendly to the beginners. These methods provide a wrapper and tools for the
+native call, make it easier to use.
 
-然而,对于一般用户来说,原生api功能强大但是却不是很友好.这里nlpir-python对原生api就行包装,
-并提供了一些工具方法,使其更利于使用.
+然而,对于一般用户来说,原生api功能强大但是却不是很友好.这里nlpir-python对原生api就行包装, 并提供了一些工具方法,使其更利于使用.
 
 ``` python
     from nlpir import ictclas, tools
@@ -63,18 +59,9 @@ easier to use.
 
 ```
 
-
 **NOTE**: This module only support python3.6+
 
 **NOTE**: This repo use the git-lfs, please install lfs when pull this repo
-
-
-## TODO feature
-
-- [✔] Native ICTCLAS
-- [✘] All Native NLPIR modules
-- [✘] High level API for All modules
-- [✘] Samples and Tutorial
 
 ## Supported Table
 
