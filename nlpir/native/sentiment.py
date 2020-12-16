@@ -95,6 +95,18 @@ class SentimentNew(NLPIRBase):
         """
         return self.get_func("ST_ImportUserDict", [c_char_p, c_bool], c_int)(filename, over_write)
 
+    @NLPIRBase.byte_str_transform
+    def process_dir(self, path: str) -> str:
+        """
+        Call ***ST_ProcesDir*
+
+        批量处理指定的目录下的文本文件. 分析结果, 输出到指定的Excel文件中
+
+        :param path:
+        :return: path目录下，自动生成"SentimentRankResult.xls",返回该文件的全路径名称
+        """
+        return self.get_func("ST_ProcesDir", [c_char_p], c_char_p)(path)
+
 
 class SentimentAnalysis(NLPIRBase):
     EMOTION_HAPPY = 0
