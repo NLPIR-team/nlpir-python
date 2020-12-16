@@ -44,12 +44,13 @@ class KeyExtract(NLPIRBase):
         :param line: the input paragraph
         :param max_key_limit: maximum of key words, up to 50
         :param format_opt: output format option, there three options:
-            - :data:`nlpir.native.OUTPUT_FORMAT_SHARP` get string split by sharp
-            - :data:`nlpir.native.OUTPUT_FORMAT_JSON` get json format
-            - :data:`nlpir.native.OUTPUT_FORMAT_EXCEL` get csv format
+
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_SHARP` get string split by sharp
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_JSON` get json format
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_EXCEL` get csv format
         :return: the keyword with weight
 
-        Split with ``#``
+        Split with ``#``:
 
         ::
 
