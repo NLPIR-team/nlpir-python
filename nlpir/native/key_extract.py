@@ -1,11 +1,8 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
+from nlpir import native
 from ctypes import c_bool, c_char_p, c_int, c_uint, c_ulong
 import typing
-
-OUTPUT_FORMAT_SHARP = 0  #: 正常的字符串按照#链接的输出新词结果
-OUTPUT_FORMAT_JSON = 1  #: 正常的JSON字符串输出新词结果
-OUTPUT_FORMAT_EXCEL = 2  #: 正常的CSV字符串输出新词结果,保存为csv格式即可采用Excel打开
 
 
 class KeyExtract(NLPIRBase):
@@ -38,7 +35,7 @@ class KeyExtract(NLPIRBase):
         return self.get_func('KeyExtract_Exit', restype=c_bool)()
 
     @NLPIRBase.byte_str_transform
-    def get_keywords(self, line: str, max_key_limit: int = 50, format_opt: int = OUTPUT_FORMAT_SHARP) -> str:
+    def get_keywords(self, line: str, max_key_limit: int = 50, format_opt: int = native.OUTPUT_FORMAT_SHARP) -> str:
         """
         Call **KeyExtract_GetKeyWords**
 
@@ -46,7 +43,10 @@ class KeyExtract(NLPIRBase):
 
         :param line: the input paragraph
         :param max_key_limit: maximum of key words, up to 50
-        :param format_opt: the result format, get result split with # default, get json format :data:`OUTPUT_FORMAT_JSON`
+        :param format_opt: output format option, there three options:
+            - :data:`nlpir.native.OUTPUT_FORMAT_SHARP` get string split by sharp
+            - :data:`nlpir.native.OUTPUT_FORMAT_JSON` get json format
+            - :data:`nlpir.native.OUTPUT_FORMAT_EXCEL` get csv format
         :return: the keyword with weight
 
         Split with ``#``
@@ -84,7 +84,7 @@ class KeyExtract(NLPIRBase):
             line, max_key_limit, format_opt)
 
     @NLPIRBase.byte_str_transform
-    def get_file_keywords(self, filename: str, max_key_limit: int = 50, format_opt: int = OUTPUT_FORMAT_SHARP) -> str:
+    def get_file_keywords(self, filename: str, max_key_limit: int = 50, format_opt: int = native.OUTPUT_FORMAT_SHARP) -> str:
         """
         Call **KeyExtract_GetKeyWords**
 
@@ -92,7 +92,7 @@ class KeyExtract(NLPIRBase):
 
         :param filename: the input text file
         :param max_key_limit: maximum of key words, up to 50
-        :param format_opt: the result format, get result split with # default, get json format :data:`OUTPUT_FORMAT_JSON`
+        :param format_opt: same as :func:`get_keywords`
         :return: the keyword with weight
 
         Split with ``#``

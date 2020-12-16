@@ -10,6 +10,7 @@ from .doc_extractor import DocExtractor
 from .key_scanner import KeyScanner
 from .cluster import Cluster
 from .nlpir_base import UNKNOWN_CODE, GBK_CODE, UTF8_CODE, BIG5_CODE, GBK_FANTI_CODE, UTF8_FANTI_CODE
+from .nlpir_base import OUTPUT_FORMAT_SHARP, OUTPUT_FORMAT_JSON, OUTPUT_FORMAT_EXCEL
 
 __all__ = (
     'ICTCLAS',
@@ -29,5 +30,8 @@ __all__ = (
     'UTF8_CODE',
     'BIG5_CODE',
     'GBK_FANTI_CODE',
-    'UTF8_FANTI_CODE'
+    'UTF8_FANTI_CODE',
+    'OUTPUT_FORMAT_SHARP',
+    'OUTPUT_FORMAT_JSON',
+    'OUTPUT_FORMAT_EXCEL'
 )
