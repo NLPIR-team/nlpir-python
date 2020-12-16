@@ -7,6 +7,8 @@ high-level toolbox for Chinese Key-word Extraction
 from nlpir import get_instance as __get_instance__
 from nlpir import native
 import typing
+import re
+import json
 
 # class and class instance
 __cls__ = native.key_scanner.KeyScanner
@@ -32,35 +34,83 @@ def get_native_instance() -> native.key_scanner.KeyScanner:
 
 
 class KeyScanProcessor:
+    """
+    关键词过滤处理单元, 需要指定使用的过滤器, 若要新建
+    一过滤器, 选择没有被使用的编号实例化本类, 并使用
+    :func:`import_user_dict` 导入词典后便可使用,下次使用时仅需
+    实例化对应编号的本类即可.
+
+    导入词典后的过滤器会保存在Data文件夹下,若不删除则会一直存在,和导入
+    用户词典相似,不会消失.
+
+    :param filter_type_index: 需要使用的过滤器
+
+    """
+
     @__get_instance__
-    def __init__(self):
-        self.handle = __instance__.new_instance()
+    def __init__(self, filter_type_index: int = 0):
+        self.handle = __instance__.new_instance(filter_type_index=filter_type_index)
 
     @__get_instance__
     def __del__(self):
-        return __instance__.delete_instance(self.handle)
-
-    def import_user_dict(
-            self,
-            filename: str,
-            pinyin_abbrev_needed: bool = False,
-            over_write: bool = False,
-    ):
-        return __instance__.import_user_dict(filename, pinyin_abbrev_needed, over_write, self.handle)
-
-    def delete_user_dict(
-            self,
-            filename: str
-    ):
-        return __instance__.delete_instance(filename, self.handle)
+        __instance__.delete_instance(self.handle)
 
     def scan(self, text: str):
-        return __instance__.scan(text, self.handle)
+        """
+        Scan text
+
+        :param text:
+        :return:
+
+        ::
+
+            [
+                {
+                    "class": class_name,
+                    "freq": frequent_of_class_hit
+                },{
+                    ...
+                },
+                ...
+            ]
+
+        """
+        result = __instance__.scan(text, self.handle)
+        result = re.findall(r"(.+?)/(\d+)#", result)
+        return [{"class": _[0], "freq": _[1]} for _ in result]
+
+    def scan_detail(self, text: str):
+        """
+        Scan text get detail
+
+        :param text:
+        :return:
+
+        """
+        result = __instance__.scan_detail(text, handle=self.handle)
+        result = json.loads(result)
+        result.pop("Detail")
+        result.pop("filename")
+        result.pop("legal")
+        return result
 
 
 @__get_instance__
-def import_user_dict(user_dict: str, filter_index: int = 0, pinyin_abbrev_needed: bool = True,
-                     over_write: bool = False) -> bool:
+def import_user_dict(
+        user_dict: str,
+        filter_index: int = 0,
+        pinyin_abbrev_needed: bool = True,
+        over_write: bool = False
+) -> bool:
+    """
+    导入词典, 对应参数参考 :func:`nlpir.native.key_scanner.KeyScanner.import_user_dict`
+
+    :param user_dict:
+    :param filter_index:
+    :param pinyin_abbrev_needed:
+    :param over_write:
+    :return:
+    """
     handle = __instance__.new_instance(filter_index)
     __instance__.import_user_dict(
         filename=user_dict,
@@ -73,7 +123,17 @@ def import_user_dict(user_dict: str, filter_index: int = 0, pinyin_abbrev_needed
 
 
 @__get_instance__
-def delete_user_dict(user_dict: str, filter_index: int = 0) -> bool:
+def delete_user_dict(
+        user_dict: str,
+        filter_index: int = 0
+) -> bool:
+    """
+    删除词典中的某些单词, 对应参数参考 :func:`nlpir.native.key_scanner.KeyScanner.delete_user_dict`
+
+    :param user_dict:
+    :param filter_index:
+    :return:
+    """
     handle = __instance__.new_instance(filter_index)
     __instance__.delete_user_dic(user_dict, handle=handle)
     __instance__.delete_instance(handle)

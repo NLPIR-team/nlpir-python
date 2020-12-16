@@ -187,9 +187,37 @@ class KeyScanner(NLPIRBase):
 
         ::
 
-            *<class name="政治反动" weight=1>习*-包（）子</class>*(散財童子，真心不爽啊。
-            <class name="FLG" weight=1>法*輪大法</class>好！
-
+            {
+                "Details": ["chou傻逼xi禁评"],
+                "Rules": ["傻逼","xi禁评"],
+                "filename": "",
+                "illegal" :{
+                    "classes":[
+                        {
+                            "freq":1,
+                            "word":"粗言秽语"
+                        },{
+                            "freq":1,
+                            "word":"污言秽语"
+                        },{
+                            "freq":1,
+                            "word":"新华社禁用"
+                        },{
+                            "freq":1,"word":"一号首长"
+                        }
+                    ],
+                    "hit_count":4,
+                    "keys":["傻逼","xi禁评"],
+                    "scan_val":13.333333333333332
+                },
+                "legal": {
+                    "hit_count":0,
+                    "scan_val":0.0
+                },
+                "line_id":0,
+                "org_file":"",
+                "score":13.333333333333332
+            }
         """
         return self.get_func("KS_ScanDetail", [c_char_p, c_int, c_int], c_char_p)(content, scan_mode, handle)
 
