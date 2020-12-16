@@ -42,7 +42,7 @@ class ICTCLAS(NLPIRBase):
 
     @property
     def dll_name(self) -> str:
-        return "ICTCLAS"
+        return "NLPIR"
 
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
