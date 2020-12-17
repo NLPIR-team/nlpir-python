@@ -5,7 +5,7 @@ import os
 
 
 class Summary(NLPIRBase):
-    load_mode = os.RTLD_LAZY
+    load_mode = NLPIRBase.RTLD_LAZY
 
     @property
     def dll_name(self):
