@@ -96,7 +96,7 @@ def test_import_user_dict():
     test_str_seg_with_dict = '另/rz 一/m 法国/nsf 启蒙/vn 思想家/n 卢梭/user 从/p 社会契约论/user 的/ude1 观点/n 出发/vi ，/wd' \
                              ' 认为/v 国家/n 权力/n 是/vshi 公民/n 让/v 渡/v 其/rz 全部/m “/wyz 自然/n 权利/n ”/wyy 而/cc 获得/v 的/ude1 '
     user_dict = """卢梭 user\n社会契约论 user\n"""
-    with open(user_dict_path, "w") as f:
+    with open(user_dict_path, "w", encoding="utf-8") as f:
         f.write(user_dict)
     assert test_str_seg == ictclas.paragraph_process(test_str_2nd)
     # 导入词典对应文件为FieldDict.pdat FieldDict.pos 初始状态下位空,可以删除 这里测试是导入测试后将其删除

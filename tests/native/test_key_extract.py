@@ -56,7 +56,7 @@ def test_import_user_dict():
 
     # test add and delete multi word with import_user_dict
     user_dict = """卢梭 user\n社会契约论 user\n"""
-    with open(user_dict_path, "w") as f:
+    with open(user_dict_path, "w", encoding="utf-8") as f:
         f.write(user_dict)
     assert "卢梭" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str_2nd, 50, weight_out=True))]
     # 导入词典对应文件为FieldDict.pdat FieldDict.pos 初始状态下位空,可以删除 这里测试是导入测试后将其删除
