@@ -60,6 +60,9 @@ class NLPIRBase:
     #: use it if want load DLL in other mode
     load_mode = None
 
+    #: lazy load DLL ,not supported for window, will be None on OS: windows
+    RTLD_LAZY = os.RTLD_LAZY if hasattr(os, "RTLD_LAZY") else None
+
     @staticmethod
     def byte_str_transform(func: typing.Callable) -> typing.Callable:
         """
@@ -194,6 +197,7 @@ class NLPIRBase:
             is_64bit = sys.maxsize > 2 ** 32
         lib = self.get_dll_path(platform, lib_dir, is_64bit)
         if self.load_mode is not None:
+
             lib_nlpir = ctypes.CDLL(lib, mode=self.load_mode)
         else:
             lib_nlpir = ctypes.cdll.LoadLibrary(lib)
