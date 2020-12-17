@@ -1,7 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
 from ctypes import c_char_p, c_int, c_float, create_string_buffer
-import os
 
 
 class Summary(NLPIRBase):

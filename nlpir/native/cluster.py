@@ -2,11 +2,10 @@
 from nlpir.native.nlpir_base import NLPIRBase
 from ctypes import c_bool, c_char_p, c_int
 import typing
-import os
 
 
 class Cluster(NLPIRBase):
-    load_mode = os.RTLD_LAZY
+    load_mode = NLPIRBase.RTLD_LAZY
 
     @property
     def dll_name(self):
