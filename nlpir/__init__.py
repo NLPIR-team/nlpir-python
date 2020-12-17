@@ -218,7 +218,7 @@ def import_blacklist(instance, filename: str, pos_blacklist=typing.List[str]) ->
     :param pos_blacklist: A list of pos that want to block in the system, 想要屏蔽的词的词性
     :return: 是否成功导入
     """
-    if not hasattr(instance, "import_blacklist"):
+    if not hasattr(instance, "import_key_blacklist"):
         raise NLPIRException("This instance not support this method")
     try:
         os.rename(
@@ -238,6 +238,12 @@ def import_blacklist(instance, filename: str, pos_blacklist=typing.List[str]) ->
         return False
 
 
+def __rename__(src, dst):
+    if os.path.isfile(dst):
+        os.remove(dst)
+    os.rename(src, dst)
+
+
 def clean_blacklist() -> bool:
     """
     清除黑名单词表, 会将对应的文件进行重命名, 之后可以通过 :func:`recover_blacklist`
@@ -245,11 +251,10 @@ def clean_blacklist() -> bool:
 
     :return: clean success or not
     """
+    black_dir = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat")
+    black_dir_bak = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
     try:
-        os.rename(
-            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat"),
-            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
-        )
+        __rename__(black_dir, black_dir_bak)
         return True
     except OSError:
         return False
@@ -261,11 +266,10 @@ def recover_blacklist() -> bool:
 
     :return:
     """
+    black_dir = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat")
+    black_dir_bak = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
     try:
-        os.rename(
-            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak"),
-            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat")
-        )
+        __rename__(black_dir_bak, black_dir)
         return True
     except OSError:
         return False

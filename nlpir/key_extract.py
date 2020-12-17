@@ -146,7 +146,7 @@ def get_key_words(text: str, max_key: int = 50) -> typing.List[dict]:
 
 
     """
-    result = __instance__.get_keywords(line=text, max_key_limit=max_key, weight_out=True)
+    result = __instance__.get_keywords(line=text, max_key_limit=max_key, format_opt=native.OUTPUT_FORMAT_JSON)
     try:
         return json.loads(result)
     except json.decoder.JSONDecodeError:

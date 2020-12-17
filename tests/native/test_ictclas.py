@@ -155,8 +155,8 @@ def test_finer_segment():
 
 def test_frq_count():
     ictclas = get_ictclas()
-    assert re.match(r".+/[a-z0-9]+/[0-9]+", ictclas.word_freq_stat(test_str))
-    assert re.match(r".+/[a-z0-9]+/[0-9]+", ictclas.file_word_freq_stat(test_source_filename))
+    assert re.match(r".+?/[0-9]+#", ictclas.word_freq_stat(test_str))
+    assert re.match(r".+?/[0-9]+#", ictclas.file_word_freq_stat(test_source_filename))
     clean_logs(include_current=True)
 
 
