@@ -83,13 +83,32 @@ class KeyScanProcessor:
         """
         Scan text get detail
 
+        ::
+
+            {
+                'Rules': ['傻逼'],
+                'illegal':{
+                    'classes': [
+                        {'freq': 1, 'word': '粗言秽语'},
+                        {'freq': 1, 'word': '污言秽语'},
+                        {'freq': 1, 'word': '新华社禁用'}
+                    ],
+                    'hit_count': 3,
+                    'keys': ['傻逼'],
+                    'scan_val': 3.333333333333333
+                },
+                'line_id': 0,
+                'org_file': '',
+                'score': 3.333333333333333
+            }
         :param text:
         :return:
 
         """
         result = __instance__.scan_detail(text, handle=self.handle)
         result = json.loads(result)
-        result.pop("Detail")
+        print(result)
+        result.pop("Details")
         result.pop("filename")
         result.pop("legal")
         return result

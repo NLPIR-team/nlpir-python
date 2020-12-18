@@ -123,7 +123,11 @@ def __xml2dict__(xml_txt: str) -> typing.List[typing.Dict]:
 
 def searchable_result(
         cluster_result: typing.List[typing.Dict]
-) -> typing.Tuple[typing.Dict[str, str], typing.Dict[str, typing.List[str]], typing.Dict[str, typing.Set[str]]]:
+) -> typing.Tuple[
+    typing.Dict[str, typing.List[str]],
+    typing.Dict[str, typing.List[str]],
+    typing.Dict[str, typing.Set[str]]
+]:
     """
     The :func:`cluster` 's result is not easily to search the result.
     This function will transform the result to a set of result dict to
