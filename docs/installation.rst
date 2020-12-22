@@ -13,8 +13,7 @@ Install from source
 
 .. code:: bash
 
-   python3 setup.py sdist bdist_wheel
-   pip install dist/nlpir_python.whl
+   python3 setup.py install
 
 
 Run test with pytest

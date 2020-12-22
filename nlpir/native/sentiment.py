@@ -73,6 +73,19 @@ class SentimentNew(NLPIRBase):
     def get_sentence_point(self, sentence: str) -> float:
         """
 
+        Call **ST_GetSentencePoint**
+
+        Get multiple object sentimental result
+
+        :param sentence:
+        :return:  double,Sentimental point
+        """
+        return self.get_func("ST_GetSentencePoint", [c_char_p], c_char_p)(sentence)
+
+    @NLPIRBase.byte_str_transform
+    def get_sentiment_point(self, sentence: str) -> float:
+        """
+
         Call **ST_GetSentimentPoint**
 
         Get multiple object sentimental result
