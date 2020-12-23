@@ -107,6 +107,7 @@ class KeyScanProcessor:
         """
         result = __instance__.scan_detail(text, handle=self.handle)
         result = json.loads(result) if len(result) > 2 else dict()
+        result["rules"] = result.pop("Rules", None)
         result.pop("Details", None)
         result.pop("filename", None)
         result.pop("legal", None)
