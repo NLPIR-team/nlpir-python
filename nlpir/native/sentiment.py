@@ -82,7 +82,7 @@ class SentimentNew(NLPIRBase):
         )
 
     @NLPIRBase.byte_str_transform
-    def get_sentence_point(self, sentence: str) -> float:
+    def get_sentence_point(self, sentence: str) -> str:
         """
 
         Call **ST_GetSentencePoint**
