@@ -1,13 +1,25 @@
 # coding=utf-8
-from nlpir.native.nlpir_base import NLPIRBase
+from nlpir.native.nlpir_base import NLPIRBase, UTF8_CODE, PACKAGE_DIR
 from ctypes import c_bool, c_char_p, c_double, c_int, byref, create_string_buffer
 import typing
+import os
 
 
 class SentimentNew(NLPIRBase):
     @property
     def dll_name(self):
         return "SentimentNew"
+
+    def __init__(
+            self,
+            encode: int = UTF8_CODE,
+            lib_path: typing.Optional[int] = None,
+            data_path: typing.Optional[str] = None,
+            license_code: str = ''
+    ):
+        sentiment_path = os.path.join(PACKAGE_DIR, "Data/Sentiment")
+        data_path = sentiment_path if data_path is None else data_path
+        super().__init__(encode, lib_path, data_path, license_code)
 
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
