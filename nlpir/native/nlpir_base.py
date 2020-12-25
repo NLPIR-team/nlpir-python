@@ -5,6 +5,8 @@ import sys
 import ctypes
 import typing
 import functools
+import threading
+from abc import ABC
 from ctypes import c_int
 from nlpir import PACKAGE_DIR
 from nlpir.exception import NLPIRException
@@ -30,7 +32,7 @@ OUTPUT_FORMAT_JSON = 1  #: 正常的JSON字符串输出新词结果
 OUTPUT_FORMAT_EXCEL = 2  #: 正常的CSV字符串输出新词结果,保存为csv格式即可采用Excel打开
 
 
-class NLPIRBase:
+class NLPIRBase(ABC):
     """
     抽象类,作为各种NLPIR组件的基类,提供加载DLL等功能,大部分代码借鉴于pynlpir项目
     Provides a low-level Python interface for NLPIR.
@@ -67,6 +69,8 @@ class NLPIRBase:
 
     #: lazy load DLL ,not supported for window, will be None on OS: windows
     RTLD_LAZY = os.RTLD_LAZY if hasattr(os, "RTLD_LAZY") else None
+
+    __instance_lock__ = threading.Lock()
 
     @staticmethod
     def byte_str_transform(func: typing.Callable) -> typing.Callable:
@@ -107,6 +111,13 @@ class NLPIRBase:
 
         return wraps
 
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls, '__instance__'):
+            with cls.__instance_lock__:
+                if not hasattr(cls, '__instance__'):
+                    cls.__instance__ = object.__new__(cls)
+        return cls.__instance__
+
     def __init__(
             self,
             encode: int = UTF8_CODE,
@@ -114,12 +125,15 @@ class NLPIRBase:
             data_path: typing.Optional[str] = None,
             license_code: str = ''
     ):
+        if hasattr(self, "lib_nlpir"):
+            logging.debug(f"{self} use singleton, skip init")
+            return
         self.LIB_DIR = os.path.join(PACKAGE_DIR, 'lib') if lib_path is None else lib_path
         self.lib_nlpir, self.lib_path = self.load_library(sys.platform)
         self.encode: str = self.encode_map[encode]
         self.encode_nlpir = encode
-        data_path = os.path.join("nlpir", PACKAGE_DIR) if data_path is None else data_path
-        if self.init_lib(data_path, self.encode_nlpir, license_code) == 0:
+        self.data_path = PACKAGE_DIR if data_path is None else data_path
+        if self.init_lib(self.data_path, self.encode_nlpir, license_code) == 0:
             raise NLPIRException(self.get_last_error_msg())
 
     def __del__(self):
