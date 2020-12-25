@@ -36,7 +36,15 @@ match_tag = re.compile(r"(.+?)/([a-z0-9A-Z]+) ")
 
 def process_to_list(txt: str, pos_tag: bool) -> list:
     """
-    Split string, get list of tuple if it has POS tag, or get list of words
+    Default function for ``post_process`` arg in :func:`nlpir.ictclas.segment`,
+    which get list of tuple if it has POS tag, or get list of words
+
+    函数 :func:`nlpir.ictclas.segment` 的 ``post_process`` 的默认参数, 使得分词函数
+    的输出为一个列表, 列表中的内容在进行词性标注时为 tuple, 内容为词和词性. 不进行词性标注时
+    直接为分词后的词.
+
+    **本函数不可直接调用,仅作为 :func:`nlpir.ictclas.segment` 的参数才有意义**
+
 
     :param txt: Segmented string
     :param pos_tag: The segmented string has POS tag or not
@@ -72,6 +80,9 @@ def process_to_list(txt: str, pos_tag: bool) -> list:
 def process_to_generator(text: str, pos_tag: bool) -> typing.Generator:
     """
     Same as :func:`process_to_list` ,return an iterator, save memory if the string is very large
+
+    :func:`nlpir.ictclas.segment` 的内置的处理函数, 非默认值. 本函数可以替换 :func:`process_to_list`, 输出的结果
+    为迭代器,用于获取较大长度的文本
 
     :param text:
     :param pos_tag:
