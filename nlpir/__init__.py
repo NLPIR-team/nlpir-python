@@ -7,7 +7,7 @@ import sys
 import functools
 from .exception import NLPIRException
 
-__version__ = "0.0.3"
+__version__ = "0.0.5"
 PACKAGE_DIR = os.path.abspath(os.path.dirname(__file__))
 logger = logging.getLogger("nlpir")
 
@@ -187,6 +187,89 @@ def clean_saved_user_dict():
         # for key_extract
         with open(os.path.join(PACKAGE_DIR, "Data/UserDict.pdat"), 'w') as f:
             f.write("")
+        return True
+    except OSError:
+        return False
+
+
+# noinspection PyTypeChecker
+def import_blacklist(instance, filename: str, pos_blacklist=typing.List[str]) -> bool:
+    """
+    Import Blacklist to system
+
+    This function will permanently import blacklist words to system not to the memory .
+    If you want to delete the blacklist words, you should run :func:`clean_blacklist` to delete
+    blacklist form system .
+
+    此函数将会把词永久性保存在NLPIR中,和保存用户词典类似.这里删除使用的是 :func:`clean_blacklist` .
+
+    停用词表,Format of stop word::
+        word1 n1
+        word2 n2
+        word3 n3
+
+    若 `pos_blacklist` 为: ``['n1', 'n2']`` 则 `word1`, `word2` 将会进入屏蔽列表
+
+    If `pos_blacklist` : ``['n1', 'n2']`` Then `word1`, `word2` will be in the blacklist
+
+    :param instance: instance to execute the function
+    :param filename: A word list that the words want to import to the blacklist (stop word list),
+        一个停用词词表,里面为想进行屏蔽的词,也可以包括别的词,是否不进行抽取是按照词表中的词性来确定的.
+    :param pos_blacklist: A list of pos that want to block in the system, 想要屏蔽的词的词性
+    :return: 是否成功导入
+    """
+    if not hasattr(instance, "import_key_blacklist"):
+        raise NLPIRException("This instance not support this method")
+    try:
+        os.rename(
+            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat"),
+            os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
+        )
+    except OSError:
+        pass
+    return_result = instance.import_key_blacklist(
+        filename=filename,
+        pos_blacklist="#".join(pos_blacklist)
+    )
+    if return_result > 0:
+        return True
+    else:
+        clean_blacklist()
+        return False
+
+
+def __rename__(src, dst):
+    if os.path.isfile(dst):
+        os.remove(dst)
+    os.rename(src, dst)
+
+
+def clean_blacklist() -> bool:
+    """
+    清除黑名单词表, 会将对应的文件进行重命名, 之后可以通过 :func:`recover_blacklist`
+    进行恢复,但仅可以进行一次,若重复调用本函数则恢复函数不起作用
+
+    :return: clean success or not
+    """
+    black_dir = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat")
+    black_dir_bak = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
+    try:
+        __rename__(black_dir, black_dir_bak)
+        return True
+    except OSError:
+        return False
+
+
+def recover_blacklist() -> bool:
+    """
+    恢复黑名单词表,仅在被重命名的词表存在时才起作用
+
+    :return:
+    """
+    black_dir = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat")
+    black_dir_bak = os.path.join(PACKAGE_DIR, "Data/KeyBlackList.pdat.bak")
+    try:
+        __rename__(black_dir_bak, black_dir)
         return True
     except OSError:
         return False

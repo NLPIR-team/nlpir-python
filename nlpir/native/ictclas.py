@@ -42,7 +42,7 @@ class ICTCLAS(NLPIRBase):
 
     @property
     def dll_name(self) -> str:
-        return "ICTCLAS"
+        return "NLPIR"
 
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
@@ -141,7 +141,7 @@ class ICTCLAS(NLPIRBase):
         :param bool overwrite: overwrite the current user dict or not
         :return: import success or not  1->True 2->False
         """
-        return self.get_func('NLPIR_ImportUserDict', [c_char_p], c_uint)(filename, overwrite)
+        return self.get_func('NLPIR_ImportUserDict', [c_char_p, c_bool], c_uint)(filename, overwrite)
 
     @NLPIRBase.byte_str_transform
     def add_user_word(self, word: str) -> int:
@@ -328,7 +328,7 @@ class ICTCLAS(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
-        Call NLPIR_GetLastErrorMsg
+        Call **NLPIR_GetLastErrorMsg**
 
         :return: error message
         """

@@ -13,6 +13,7 @@ Tested function:
 from nlpir import key_extract
 from tests.strings import test_str, user_dict_path
 import os
+import pytest
 
 
 def test_dict_in_memory():
@@ -34,9 +35,10 @@ def test_store_dict():
     assert key_extract.clean_saved_user_dict()
 
 
+@pytest.mark.run(order=-2)
 def test_black_list():
     user_dict = """孟德斯鸠 user\n"""
-    with open(user_dict_path, "w") as f:
+    with open(user_dict_path, "w", encoding="utf-8") as f:
         f.write(user_dict)
     assert key_extract.import_dict(["孟德斯鸠"])
     assert key_extract.import_blacklist(user_dict_path, ['user'])

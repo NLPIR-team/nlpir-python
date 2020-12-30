@@ -18,13 +18,17 @@ import os
 import re
 import json
 import logging
+import pytest
 from ..strings import test_str, test_str_2nd, user_dict_path
+
+json_out = native.OUTPUT_FORMAT_JSON
 
 
 def get_key_extract(encode=native.UTF8_CODE):
     return KeyExtract(encode=encode)
 
 
+@pytest.mark.run(order=-1)
 def test_init_exit():
     key_extract = get_key_extract()
     key_extract.exit_lib()
@@ -34,34 +38,35 @@ def test_init_exit():
 def test_extract_keys():
     key_extract = get_key_extract()
     match_tag = re.compile(r"(.+?)/([a-z0-9A-Z]+)/([.\d]+)/(\d+)#")
-    assert match_tag.findall(key_extract.get_keywords(test_str, 50, weight_out=False))
-    assert json.loads(key_extract.get_keywords(test_str, 50, weight_out=True))
+    assert match_tag.findall(key_extract.get_keywords(test_str, 50, format_opt=native.OUTPUT_FORMAT_SHARP))
+    assert json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))
 
-    assert len(json.loads(key_extract.get_keywords(test_str, 5, weight_out=True))) == 5
+    assert len(json.loads(key_extract.get_keywords(test_str, 5, format_opt=json_out))) >= 5
     clean_logs(include_current=True)
 
 
+@pytest.mark.run(order=-3)
 def test_import_user_dict():
     # test add and delete single word
     key_extract = get_key_extract()
-    assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, weight_out=True))]
+    assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
     key_extract.add_user_word("孟德斯鸠")
-    assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, weight_out=True))]
+    assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 500, format_opt=json_out))]
     key_extract.del_usr_word("孟德斯鸠")
-    assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, weight_out=True))]
+    assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
     key_extract.add_user_word("孟德斯鸠")
-    assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, weight_out=True))]
+    assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
     key_extract.clean_user_word()
-    assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, weight_out=True))]
+    assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
 
     # test add and delete multi word with import_user_dict
     user_dict = """卢梭 user\n社会契约论 user\n"""
-    with open(user_dict_path, "w") as f:
+    with open(user_dict_path, "w", encoding="utf-8") as f:
         f.write(user_dict)
-    assert "卢梭" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str_2nd, 50, weight_out=True))]
+    assert "卢梭" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str_2nd, 50, format_opt=json_out))]
     # 导入词典对应文件为FieldDict.pdat FieldDict.pos 初始状态下位空,可以删除 这里测试是导入测试后将其删除
     key_extract.import_user_dict(user_dict_path, True)
-    assert "卢梭" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str_2nd, 50, weight_out=True))]
+    assert "卢梭" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str_2nd, 50, format_opt=json_out))]
 
     try:
         os.remove(user_dict_path)

@@ -1,13 +1,25 @@
 # coding=utf-8
-from nlpir.native.nlpir_base import NLPIRBase
+from nlpir.native.nlpir_base import NLPIRBase, UTF8_CODE, PACKAGE_DIR
 from ctypes import c_bool, c_char_p, c_double, c_int, byref, create_string_buffer
 import typing
+import os
 
 
 class SentimentNew(NLPIRBase):
     @property
     def dll_name(self):
         return "SentimentNew"
+
+    def __init__(
+            self,
+            encode: int = UTF8_CODE,
+            lib_path: typing.Optional[int] = None,
+            data_path: typing.Optional[str] = None,
+            license_code: str = ''
+    ):
+        sentiment_path = os.path.join(PACKAGE_DIR, "Data/Sentiment")
+        data_path = sentiment_path if data_path is None else data_path
+        super().__init__(encode, lib_path, data_path, license_code)
 
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
@@ -70,7 +82,20 @@ class SentimentNew(NLPIRBase):
         )
 
     @NLPIRBase.byte_str_transform
-    def get_sentence_point(self, sentence: str) -> float:
+    def get_sentence_point(self, sentence: str) -> str:
+        """
+
+        Call **ST_GetSentencePoint**
+
+        Get multiple object sentimental result
+
+        :param sentence:
+        :return:  double,Sentimental point
+        """
+        return self.get_func("ST_GetSentencePoint", [c_char_p], c_char_p)(sentence)
+
+    @NLPIRBase.byte_str_transform
+    def get_sentiment_point(self, sentence: str) -> float:
         """
 
         Call **ST_GetSentimentPoint**
@@ -94,6 +119,18 @@ class SentimentNew(NLPIRBase):
         :return:
         """
         return self.get_func("ST_ImportUserDict", [c_char_p, c_bool], c_int)(filename, over_write)
+
+    @NLPIRBase.byte_str_transform
+    def process_dir(self, path: str) -> str:
+        """
+        Call **ST_ProcesDir**
+
+        批量处理指定的目录下的文本文件. 分析结果, 输出到指定的Excel文件中
+
+        :param path:
+        :return: path目录下, 自动生成 ``SentimentRankResult.xls``,返回该文件的全路径名称
+        """
+        return self.get_func("ST_ProcesDir", [c_char_p], c_char_p)(path)
 
 
 class SentimentAnalysis(NLPIRBase):

@@ -1,5 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
+from nlpir.native import nlpir_base
 from ctypes import c_bool, c_char_p, c_int, c_uint, c_ulong
 
 
@@ -31,7 +32,12 @@ class NewWordFinder(NLPIRBase):
         return self.get_func("NWF_Exit", [None], c_bool)()
 
     @NLPIRBase.byte_str_transform
-    def get_new_words(self, line: str, max_key_limit: int = 50, format_json: bool = False) -> str:
+    def get_new_words(
+            self,
+            line: str,
+            max_key_limit: int = 50,
+            format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP
+    ) -> str:
         """
         Call **NWF_GetNewWords**
 
@@ -43,12 +49,18 @@ class NewWordFinder(NLPIRBase):
         Process large memory, recommend use NWF_NWI series functions
 
         :param str max_key_limit: maximum of key words, up to 50
-        :param bool format_json: output is json format;otherwise xml format
+        :param int format_opt: output format option, there three options:
+
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_SHARP` get string split by sharp
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_JSON` get json format
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_EXCEL` get csv format
+
         :return: new words list
 
         ::
 
-            "科学发展观 23.80 屌丝 12.20" with weight
+            Sharp format
+            "科学发展观/23.80/1#屌丝/12.20/2" with weight
             Json格式如下：
             [
                {
@@ -66,10 +78,15 @@ class NewWordFinder(NLPIRBase):
             ]
 
         """
-        return self.get_func("NWF_GetNewWords", [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit, format_json)
+        return self.get_func("NWF_GetNewWords", [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit, format_opt)
 
     @NLPIRBase.byte_str_transform
-    def get_file_new_words(self, file_name: str, max_key_limit: int = 50, format_json: bool = False) -> str:
+    def get_file_new_words(
+            self,
+            file_name: str,
+            max_key_limit: int = 50,
+            format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP
+    ) -> str:
         """
         Call **NWF_GetFileNewWords**
 
@@ -77,13 +94,13 @@ class NewWordFinder(NLPIRBase):
 
         :param str file_name: the path of text file
         :param int max_key_limit: max key want to get
-        :param bool format_json: get json format or not
+        :param int format_opt: same as :func:`get_new_words`
         :return: same as :func:`get_new_words`
         """
         return self.get_func("NWF_GetFileNewWords", [c_char_p, c_int, c_bool], c_char_p)(
             file_name,
             max_key_limit,
-            format_json
+            format_opt
         )
 
     """

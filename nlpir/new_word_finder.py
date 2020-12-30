@@ -64,7 +64,7 @@ def find_new_words(text: str, max_key: int) -> typing.Optional[typing.List[dict]
             ...
         ]
     """
-    return json.loads(__instance__.get_new_words(line=text, max_key_limit=max_key, format_json=True))
+    return json.loads(__instance__.get_new_words(line=text, max_key_limit=max_key, format_opt=native.OUTPUT_FORMAT_JSON))
 
 
 @__get_instance__

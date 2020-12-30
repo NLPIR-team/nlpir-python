@@ -1,5 +1,6 @@
 from nlpir import ictclas
 import nlpir
+import pytest
 
 
 def test_segment():
@@ -45,6 +46,7 @@ def test_segment():
     nlpir.clean_logs(include_current=True)
 
 
+@pytest.mark.run(order=-2)
 def test_dict():
     from tests.strings import test_str_1st, test_str_2nd
     # test add and delete single word
@@ -76,6 +78,9 @@ def test_dict():
 def test_file_segment():
     from tests.strings import test_source_filename, test_result_filename
     import os
-    ictclas.file_segment(os.path.abspath(test_source_filename), os.path.abspath(test_result_filename))
-    os.remove(test_result_filename)
+    ictclas.file_segment(
+        os.path.abspath(test_source_filename),
+        os.path.abspath(test_result_filename) + ".test_ictclas.test_file_segment"
+    )
+    os.remove(test_result_filename + ".test_ictclas.test_file_segment")
     nlpir.clean_logs(include_current=True)

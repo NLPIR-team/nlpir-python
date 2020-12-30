@@ -1,5 +1,6 @@
 # coding=utf-8
 from nlpir.native.nlpir_base import NLPIRBase
+from nlpir.native import nlpir_base
 from ctypes import c_bool, c_char_p, c_int, c_uint, c_ulong
 import typing
 
@@ -34,7 +35,7 @@ class KeyExtract(NLPIRBase):
         return self.get_func('KeyExtract_Exit', restype=c_bool)()
 
     @NLPIRBase.byte_str_transform
-    def get_keywords(self, line: str, max_key_limit: int = 50, weight_out: bool = False) -> str:
+    def get_keywords(self, line: str, max_key_limit: int = 50, format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP) -> str:
         """
         Call **KeyExtract_GetKeyWords**
 
@@ -42,7 +43,62 @@ class KeyExtract(NLPIRBase):
 
         :param line: the input paragraph
         :param max_key_limit: maximum of key words, up to 50
-        :param weight_out: the result format, get result split with # if False, get json format if True
+        :param format_opt: output format option, there three options:
+
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_SHARP` get string split by sharp
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_JSON` get json format
+            - :data:`nlpir.native.nlpir_base.OUTPUT_FORMAT_EXCEL` get csv format
+        :return: the keyword with weight
+
+        Split with ``#``:
+
+        ::
+
+            科学发展观/n/23.80/12#宏观经济/n/12.20/12#
+
+        JSON形式:
+
+        ::
+
+            [
+                {
+                    'freq': 2,
+                    'pos': 'n_new',
+                    'weight': 7.771335980376418,
+                    'word': '国家权力'
+                },{
+                    'freq': 7,
+                    'pos': 'n',
+                    'weight': 7.438759706600493,
+                    'word': '权力'
+                },{
+                    'freq': 1,
+                    'pos': 'nrf',
+                    'weight': 5.280000338096665,
+                    'word': '孟德斯鸠'
+                },{ ...
+                }, ...
+            ]
+
+        """
+        return self.get_func('KeyExtract_GetKeyWords', [c_char_p, c_int, c_int], c_char_p)(
+            line, max_key_limit, format_opt)
+
+    @NLPIRBase.byte_str_transform
+    def get_file_keywords(
+            self,
+            filename: str,
+            max_key_limit: int = 50,
+            format_opt: int = nlpir_base.OUTPUT_FORMAT_SHARP
+    ) -> str:
+        """
+        Call **KeyExtract_GetKeyWords**
+
+        Extract keyword from file, 从文本文件中获取关键词
+
+        :param filename: the input text file
+        :param max_key_limit: maximum of key words, up to 50
+        :param format_opt: same as :func:`get_keywords`
         :return: the keyword with weight
 
         Split with ``#``
@@ -76,8 +132,8 @@ class KeyExtract(NLPIRBase):
             ]
 
         """
-        return self.get_func('KeyExtract_GetKeyWords', [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit,
-                                                                                            weight_out)
+        return self.get_func('KeyExtract_GetFileKeyWords', [c_char_p, c_int, c_int], c_char_p)(
+            filename, max_key_limit, format_opt)
 
     @NLPIRBase.byte_str_transform
     def import_user_dict(self, filename: str, overwrite: bool = False):
