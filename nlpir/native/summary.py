@@ -39,7 +39,7 @@ class Summary(NLPIRBase):
 
         :return:
         """
-        return self.get_func("DS_GetLastErrMsg", None, c_char_p)()
+        return self.get_func("DS_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
     def single_doc(self, text: str, sum_rate: float = 0.0, sum_len: int = 250, html_tag_remove: int = 0):

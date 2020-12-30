@@ -18,6 +18,7 @@ import os
 import re
 import json
 import logging
+import pytest
 from ..strings import test_str, test_str_2nd, user_dict_path
 
 json_out = native.OUTPUT_FORMAT_JSON
@@ -27,6 +28,7 @@ def get_key_extract(encode=native.UTF8_CODE):
     return KeyExtract(encode=encode)
 
 
+@pytest.mark.run(order=-1)
 def test_init_exit():
     key_extract = get_key_extract()
     key_extract.exit_lib()
@@ -43,12 +45,13 @@ def test_extract_keys():
     clean_logs(include_current=True)
 
 
+@pytest.mark.run(order=-3)
 def test_import_user_dict():
     # test add and delete single word
     key_extract = get_key_extract()
     assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
     key_extract.add_user_word("孟德斯鸠")
-    assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
+    assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 500, format_opt=json_out))]
     key_extract.del_usr_word("孟德斯鸠")
     assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
     key_extract.add_user_word("孟德斯鸠")

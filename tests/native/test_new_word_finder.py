@@ -19,6 +19,7 @@ from nlpir.native.new_word_finder import NewWordFinder
 from nlpir import native, clean_logs
 from tests.strings import test_source_filename
 import json
+import pytest
 
 json_out = native.OUTPUT_FORMAT_JSON
 
@@ -27,6 +28,7 @@ def get_new_word_finder(encode=native.UTF8_CODE):
     return NewWordFinder(encode=encode)
 
 
+@pytest.mark.run(order=-1)
 def test_init_exit():
     new_word_finder = get_new_word_finder()
     new_word_finder.exit_lib()

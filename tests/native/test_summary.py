@@ -13,12 +13,14 @@ Tested Function:
 from nlpir.native import Summary
 from nlpir import native, clean_logs
 from ..strings import test_str, test_source_filename
+import pytest
 
 
 def get_summary(encode=native.UTF8_CODE):
     return Summary(encode=encode)
 
 
+@pytest.mark.run(order=-1)
 def test_init_exit():
     summary = get_summary()
     summary.exit_lib()
