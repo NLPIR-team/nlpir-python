@@ -173,7 +173,7 @@ class SentimentAnalysis(NLPIRBase):
 
         :return:
         """
-        return "No error function"
+        return self.get_func("LJST_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
     def get_paragraph_sent(self, paragraph: str) -> typing.Tuple[bool, str]:
