@@ -75,7 +75,7 @@ class DocExtractor(NLPIRBase):
 
         :return: error message
         """
-        return self.get_func("DE_GetLastErrMsg", None, c_char_p)()
+        return self.get_func("DE_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
     def pares_doc_e(
