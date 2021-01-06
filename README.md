@@ -85,5 +85,5 @@ native call, make it easier to use.
 | RedupRemover      |               |               |               |               |                   |                   |               |
 | SpellChecker      |               |               |               |               |                   |                   |               |
 | SplitSentence     |               |               |               |               |                   |                   |               |
-| TextSimilarity    |       ✩       |               |               |               |                   |                   |               |
+| TextSimilarity    |       ✔       |       ✍       |               |       ✔       |         ✔         |                   |               |
 | Word2vec          |               |               |               |               |                   |                   |               |
