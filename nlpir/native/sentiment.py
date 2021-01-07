@@ -45,11 +45,11 @@ class SentimentNew(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
-        Call **ST_GetLastErrMsg**
+        Call **ST_GetLastErrorMsg**
 
         :return:
         """
-        return self.get_func("ST_GetLastErrMsg", None, c_char_p)()
+        return self.get_func("ST_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
     def get_one_object_result(self, title: str, content: str, analysis_object: str) -> str:
@@ -149,14 +149,14 @@ class SentimentAnalysis(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
-        Call **LJST_Inits**
+        Call **LJST_Init**
 
         :param data_path:
         :param encode:
         :param license_code:
         :return:
         """
-        return self.get_func("LJST_Inits", [c_char_p, c_int, c_char_p], c_int)(data_path, encode, license_code)
+        return self.get_func("LJST_Init", [c_char_p, c_int, c_char_p], c_int)(data_path, encode, license_code)
 
     @NLPIRBase.byte_str_transform
     def exit_lib(self) -> bool:

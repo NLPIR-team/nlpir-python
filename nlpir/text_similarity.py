@@ -43,8 +43,8 @@ def similarity(text_1: str, text_2: str, model=SIM_MODEL_WORD) -> float:
     """
     compute text similarity, there are three models:
 
-    - :data:`SIM_MODEL_WORD` 字模型，速度最快，适用于相对规范的短文本
-    - :data:`IM_MODEL_CHAR` 词模型，速度适中，常规适用于正常规范的长文档
+    - :data:`SIM_MODEL_WORD` 词模型，速度适中，常规适用于正常规范的长文档
+    - :data:`IM_MODEL_CHAR` 字模型，速度最快，适用于相对规范的短文本
     - :data:`SIM_MODEL_KEY` 主题词模型，速度最慢，考虑语义最多，适合于复杂文本
 
     :param text_1:
