@@ -98,6 +98,12 @@ def init_setting(
     init_module.__lib__ = lib_path if lib_path is not None else init_module.__lib__
     init_module.__data__ = data_path if data_path is not None else init_module.__data__
     init_module.__license_code__ = license_code if license_code is not None else init_module.__license_code__
+    init_module.__cls__(
+        encode=init_module.__nlpir_encode__,
+        lib_path=init_module.__lib__,
+        data_path=init_module.__data__,
+        license_code=init_module.__license_code__
+    )
     return init_module
 
 
