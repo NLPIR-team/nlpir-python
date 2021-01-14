@@ -28,8 +28,8 @@ class Classifier(NLPIRBase):
         :param license_code:
         :return: 1 success 0 fail
         """
-        return self.get_func("classifier_init", [c_char_p, c_char_p, c_char_p], c_bool)("rulelist.xml", data_path,
-                                                                                        license_code)
+        return self.get_func("classifier_init", [c_char_p, c_char_p, c_int, c_char_p], c_bool)(
+            "rulelist.xml", data_path, encode, license_code)
 
     @NLPIRBase.byte_str_transform
     def exit_lib(self) -> bool:
@@ -70,16 +70,28 @@ class Classifier(NLPIRBase):
         :param out_type: 输出知否包括置信度,同 :func:`exec_1`
         :return: 同 :func:`exec_1`
         """
-        return self.get_func("classifier_exec")([c_char_p, c_char_p, c_int], c_char_p)(title, content, out_type)
+        return self.get_func("classifier_exec", [c_char_p, c_char_p, c_int], c_char_p)(title, content, out_type)
 
     @NLPIRBase.byte_str_transform
-    def detail(self, classname: str):
+    def exec_file(self, filename: str, out_type: int) -> str:
+        """
+        Call **classifier_execFile**
+
+        :param filename: 文件名
+        :param out_type: 输出是否包括置信度, 0 没有置信度 1 有置信度
+        :return: 主题类别串  各类之间用\t隔开，类名按照置信度从高到低排序
+            举例：“要闻	敏感	诉讼”, “要闻 1.00	敏感 0.95	诉讼 0.82”
+        """
+        return self.get_func("classifier_execFile", [c_char_p, c_int], c_char_p)(filename, out_type)
+
+    @NLPIRBase.byte_str_transform
+    def detail(self, class_name: str):
         """
         Call **classifier_detail**
 
         对于当前文档，输入类名，取得结果明细
 
-        :param classname: 结果类名
+        :param class_name: 结果类名
         :return: 结果明细 例如:
 
         ::
@@ -89,7 +101,7 @@ class Classifier(NLPIRBase):
             SUBRULE2: 股市 1	基金 3	股票 8
             SUBRULE3: 书摘 2
         """
-        return self.get_func("classifier_detail", [c_char_p], c_char_p)(classname)
+        return self.get_func("classifier_detail", [c_char_p], c_char_p)(class_name)
 
     @NLPIRBase.byte_str_transform
     def set_sim_thresh(self, sim: float):

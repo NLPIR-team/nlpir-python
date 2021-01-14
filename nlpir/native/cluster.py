@@ -19,9 +19,9 @@ class Cluster(NLPIRBase):
         :param data_path:
         :param encode:
         :param license_code:
-        :return: 1 success 0 fail
+        :return: 1 success Other fail
         """
-        return self.get_func("CLUS_Init", [c_char_p, c_char_p, c_int], c_bool)(data_path, license_code, encode)
+        return self.get_func("CLUS_Init", [c_char_p, c_int, c_char_p], c_int)(data_path, encode, license_code)
 
     @NLPIRBase.byte_str_transform
     def exit_lib(self) -> bool:
@@ -35,11 +35,11 @@ class Cluster(NLPIRBase):
     @NLPIRBase.byte_str_transform
     def get_last_error_msg(self) -> str:
         """
-        Call **CLUS_GetLastErrMsg**
+        Call **CLUS_GetLastErrorMsg**
 
         :return:
         """
-        return self.get_func("CLUS_GetLastErrMsg", None, c_char_p)()
+        return self.get_func("CLUS_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
     def set_parameter(self, max_clus: int, max_doc: int) -> bool:
@@ -68,17 +68,16 @@ class Cluster(NLPIRBase):
         return self.get_func("CLUS_AddContent", [c_char_p, c_char_p], c_bool)(text, signature)
 
     @NLPIRBase.byte_str_transform
-    def add_file(self, filename: str, signature: str):
+    def add_file(self, filename: str):
         """
         Call **CLUS_AddFile**
 
         追加文件内容,在进程中此函数可以在打印结果之前执行多次
 
         :param filename: 正文文件
-        :param signature: 唯一标识
         :return: 是否成功
         """
-        return self.get_func("CLUS_AddFile", [c_char_p, c_char_p], c_bool)(filename, signature)
+        return self.get_func("CLUS_AddFile", [c_char_p], c_bool)(filename)
 
     @NLPIRBase.byte_str_transform
     def get_latest_result(
@@ -121,7 +120,7 @@ class Cluster(NLPIRBase):
             </LJCluster-Result>
 
         :param xml_filename: 输出文件名
-        :param result_path: 输出路径
+        :param result_path: 输出路径, 按照聚类结果作为不同子目录存储
         :return: 是否成功
         """
         status = self.get_func("CLUS_GetLatestResult", [c_char_p, c_char_p], c_bool)(xml_filename, result_path)

@@ -42,7 +42,14 @@ class Summary(NLPIRBase):
         return self.get_func("DS_GetLastErrorMsg", None, c_char_p)()
 
     @NLPIRBase.byte_str_transform
-    def single_doc(self, text: str, sum_rate: float = 0.0, sum_len: int = 250, html_tag_remove: int = 0):
+    def single_doc(
+            self,
+            text: str,
+            sum_rate: float = 0.0,
+            sum_len: int = 500,
+            html_tag_remove: int = 0,
+            sentence_count: int = 0
+    ):
         """
         Call **DS_SingleDoc**
 
@@ -53,14 +60,22 @@ class Summary(NLPIRBase):
             the percentage of summarization length comparing to original text (0.00 represent no limit)
         :param int sum_len: 用户限定的摘要长度(为0则不限制）The max len of summarization(0 will no limit)
         :param bool html_tag_remove: 是否需要对原文进行Html标签的去除 remove the html tag or not
+        :param int sentence_count: 用户限定的句子数量 （为0则不限制）
         :return: 摘要字符串；出错返回空串 the summarization content, get null string if occurs error.
         """
-        return self.get_func("DS_SingleDoc", [c_char_p, c_float, c_int, c_int], c_char_p)(
-            text, c_float(sum_rate), sum_len, html_tag_remove
+        return self.get_func("DS_SingleDoc", [c_char_p, c_float, c_int, c_int, c_int], c_char_p)(
+            text, c_float(sum_rate), sum_len, sentence_count, html_tag_remove
         )
 
     @NLPIRBase.byte_str_transform
-    def single_doc_e(self, text: str, sum_rate: float = 0.0, sum_len: int = 250, html_tag_remove: int = 0):
+    def single_doc_e(
+            self,
+            text: str,
+            sum_rate: float = 0.0,
+            sum_len: int = 500,
+            html_tag_remove: int = 0,
+            sentence_count: int = 0
+    ):
         """
         Call **DS_SingleDocE**
 
@@ -71,18 +86,27 @@ class Summary(NLPIRBase):
             the percentage of summarization length comparing to original text (0.00 represent no limit)
         :param int sum_len: 用户限定的摘要长度(为0则不限制）The max len of summarization(0 will no limit)
         :param bool html_tag_remove: 是否需要对原文进行Html标签的去除 remove the html tag or not
+        :param int sentence_count: 用户限定的句子数量 （为0则不限制）
         :return: 摘要字符串；出错返回空串 the summarization content, get null string if occurs error.
         """
         buffer_len = int(len(text) * 3 * (sum_rate if sum_rate > 0.0 else 1))
         buffer_len = sum_len if sum_len < buffer_len else buffer_len
         result = create_string_buffer(buffer_len * 4)
         result_2 = self.get_func("DS_SingleDocE", [c_char_p, c_char_p, c_float, c_int, c_int])(
-            result, text, c_float(sum_rate), sum_len, html_tag_remove
+            result, text, c_float(sum_rate), sum_len, sentence_count, html_tag_remove
         )
         return result.value, result_2
 
     @NLPIRBase.byte_str_transform
-    def file_process(self, text_filename: str, sum_rate: float = 0.0, sum_len: int = 250, html_tag_remove: int = 0):
+    def file_process(
+            self,
+            text_filename: str,
+            sum_rate: float = 0.0,
+            sum_len: int = 500,
+            html_tag_remove: int = 0,
+            sentence_count: int = 0
+
+    ):
         """
         Call **DS_FileProcess**
 
@@ -93,7 +117,8 @@ class Summary(NLPIRBase):
             the percentage of summarization length comparing to original text (0.00 represent no limit)
         :param int sum_len: 用户限定的摘要长度(为0则不限制）The max len of summarization(0 will no limit)
         :param bool html_tag_remove: 是否需要对原文进行Html标签的去除 remove the html tag or not
+        :param int sentence_count: 用户限定的句子数量 （为0则不限制）
         :return: 摘要字符串；出错返回空串 the summarization content, get null string if occurs error.
         """
         return self.get_func("DS_FileProcess", [c_char_p, c_float, c_int, c_int], c_char_p)(
-            text_filename, c_float(sum_rate), sum_len, html_tag_remove)
+            text_filename, c_float(sum_rate), sum_len, sentence_count, html_tag_remove)
