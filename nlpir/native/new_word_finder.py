@@ -78,7 +78,7 @@ class NewWordFinder(NLPIRBase):
             ]
 
         """
-        return self.get_func("NWF_GetNewWords", [c_char_p, c_int, c_bool], c_char_p)(line, max_key_limit, format_opt)
+        return self.get_func("NWF_GetNewWords", [c_char_p, c_int, c_int], c_char_p)(line, max_key_limit, format_opt)
 
     @NLPIRBase.byte_str_transform
     def get_file_new_words(
@@ -97,7 +97,7 @@ class NewWordFinder(NLPIRBase):
         :param int format_opt: same as :func:`get_new_words`
         :return: same as :func:`get_new_words`
         """
-        return self.get_func("NWF_GetFileNewWords", [c_char_p, c_int, c_bool], c_char_p)(
+        return self.get_func("NWF_GetFileNewWords", [c_char_p, c_int, c_int], c_char_p)(
             file_name,
             max_key_limit,
             format_opt
