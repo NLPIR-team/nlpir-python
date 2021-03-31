@@ -333,3 +333,17 @@ class ICTCLAS(NLPIRBase):
         :return: error message
         """
         return self.get_func("NLPIR_GetLastErrorMsg", None, c_char_p)()
+
+    @NLPIRBase.byte_str_transform
+    def tokenizer_for_ir(self, sline: str) -> str:
+        """
+        Call **NLPIR_Tokenizer4IR**
+
+        搜索引擎模式，在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词
+
+        :param str sline: The source paragraph
+        :param bool stop_word_remove: remove stop words or not
+        :return: same as :func:`word_freq_stat`
+        """
+        return self.get_func("NLPIR_Tokenizer4IR", [c_char_p, c_bool], c_char_p)(sline)
+    

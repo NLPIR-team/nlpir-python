@@ -181,3 +181,13 @@ def test_last_error_msg():
     logging.info(msg)
     assert msg is not None
     clean_logs(include_current=True)
+
+
+def test_tokenizer_for_ir():
+    msg = get_ictclas().tokenizer_for_ir(test_str_2nd)
+    print(msg)
+    logging.info(msg)
+
+
+if __name__ == '__main__':
+    test_tokenizer_for_ir()
