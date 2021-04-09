@@ -30,7 +30,14 @@ def get_native_instance() -> native.Summary:
 
 
 @__get_instance__
-def summarization(content: str, sum_rate: float = 0.0, sum_len: int = 250, html_tag_remove: bool = True) -> str:
+def summarization(
+        content: str,
+        sum_rate: float = 0.0,
+        sum_len: int = 250,
+        html_tag_remove: bool = True,
+        sentence_count: int = 0
+
+) -> str:
     """
     摘要生成, 摘要长度受 `sum_rate` , `sum_len` 影响
 
@@ -39,6 +46,7 @@ def summarization(content: str, sum_rate: float = 0.0, sum_len: int = 250, html_
         the percentage of summarization length comparing to original text (0.00 represent no limit):
     :param sum_len: 用户限定的摘要长度(为0则不限制）The max len of summarization(0 will no limit)
     :param html_tag_remove: 是否需要对原文进行Html标签的去除 remove the html tag or not
+    :param int sentence_count: 用户限定的句子数量 （为0则不限制）limit number of sentence, set 0 to no limit
     :return: 摘要字符串；出错返回空串 the summarization content, get null string if occurs error.
     """
     return __instance__.single_doc_e(

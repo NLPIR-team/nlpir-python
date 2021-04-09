@@ -134,7 +134,9 @@ class NLPIRBase(ABC):
         self.encode_nlpir = encode
         self.data_path = PACKAGE_DIR if data_path is None else data_path
         if self.init_lib(self.data_path, self.encode_nlpir, license_code) == 0:
-            raise NLPIRException(self.get_last_error_msg())
+            error_msg = self.get_last_error_msg()
+            self.logger.error(error_msg)
+            raise NLPIRException(error_msg)
 
     def __del__(self):
         return self.exit_lib()

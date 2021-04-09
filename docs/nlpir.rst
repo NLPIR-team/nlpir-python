@@ -73,6 +73,14 @@ nlpir.cluster module
    :undoc-members:
    :show-inheritance:
 
+nlpir.text_similarity module
+-------------------------------
+
+.. automodule:: nlpir.text_similarity
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 
 nlpir.tools module
 --------------------

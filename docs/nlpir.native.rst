@@ -89,6 +89,14 @@ nlpir.native.doc\_extractor module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.text\_similarity module
+-------------------------------------
+
+.. automodule:: nlpir.native.text_similarity
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 nlpir.native.nlpir\_base module
 ---------------------------------------
 
