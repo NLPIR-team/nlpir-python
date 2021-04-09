@@ -23,6 +23,7 @@ Tested Function:
 """
 from nlpir.native import ICTCLAS
 from nlpir import native, PACKAGE_DIR, clean_logs
+from collections.abc import Iterable
 import os
 import re
 import logging
@@ -180,4 +181,11 @@ def test_last_error_msg():
     msg = get_ictclas().get_last_error_msg()
     logging.info(msg)
     assert msg is not None
+    clean_logs(include_current=True)
+
+
+def test_tokenizer_for_ir():
+    msg = get_ictclas().tokenizer_for_ir(test_str_2nd)
+    logging.info(msg)
+    assert isinstance(msg, Iterable) == True
     clean_logs(include_current=True)
