@@ -177,6 +177,18 @@ class ICTCLAS(NLPIRBase):
         return self.get_func('NLPIR_CleanUserWord', None, c_int)()
 
     @NLPIRBase.byte_str_transform
+    def clean_current_user_word(self) -> int:
+        """
+        Call **NLPIR_CleanCurrentUserWord**
+        Clean all Current temporary added user words and restore previous stored data
+
+        ** Now Only for win and linux x64 **
+
+        :return: 1,true; 2,false
+        """
+        return self.get_func('NLPIR_CleanCurrentUserWord', None, c_int)()
+
+    @NLPIRBase.byte_str_transform
     def save_the_usr_dic(self) -> int:
         """
         Call **NLPIR_SaveTheUsrDic**
@@ -346,4 +358,3 @@ class ICTCLAS(NLPIRBase):
         :return: same as :func:`word_freq_stat`
         """
         return self.get_func("NLPIR_Tokenizer4IR", [c_char_p, c_bool], c_char_p)(sline)
-    

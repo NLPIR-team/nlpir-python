@@ -188,6 +188,18 @@ class KeyExtract(NLPIRBase):
         return self.get_func('KeyExtract_CleanUserWord', None, c_int)()
 
     @NLPIRBase.byte_str_transform
+    def clean_current_user_word(self) -> int:
+        """
+        Call **KeyExtract_CleanCurrentUserWord**
+        Clean all Current temporary added user words and restore previous stored data
+
+        ** Now Only for win and linux x64 **
+
+        :return: 1,true ; 0,false
+        """
+        return self.get_func('KeyExtract_CleanCurrentUserWord', None, c_int)()
+
+    @NLPIRBase.byte_str_transform
     def save_the_usr_dic(self) -> int:
         """
         Call **KeyExtract_SaveTheUsrDic**

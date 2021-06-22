@@ -9,6 +9,7 @@ Tested Function:
 - :func:`nlpir.native.ictclas.ICTCLAS.add_user_word`
 - :func:`nlpir.native.ictclas.ICTCLAS.del_usr_word`
 - :func:`nlpir.native.ictclas.ICTCLAS.clean_user_word`
+- :func:`nlpir.native.ictclas.ICTCLAS.clean_current_user_word`
 - :func:`nlpir.native.ictclas.ICTCLAS.import_user_dict`
 - :func:`nlpir.native.ictclas.ICTCLAS.get_uni_prob`
 - :func:`nlpir.native.ictclas.ICTCLAS.is_word`
@@ -58,7 +59,8 @@ def test_paragraph_process():
                    ' 论 的 观点 出发 ， 认为 国家 权力 是 公民 让 渡 其 全部 “ 自然 权利 ” 而 获得 的 ， 他 在 其 名' \
                    '著 《 社会 契约 论 》 中 写道 ： “ 任何 国家 权力 无不 是 以 民众 的 权力 （ 权利 ） 让 渡 与 公众' \
                    ' 认可 作为 前提 的 ” 。 '
-
+    # clean all the user word
+    ictclas.clean_user_word()
     assert test_str_seg == ictclas.paragraph_process(test_str, 0)
     assert test_str_seg_pos == ictclas.paragraph_process(test_str, 1)
     clean_logs(include_current=True)
@@ -66,6 +68,8 @@ def test_paragraph_process():
 
 def test_paragraph_process_a():
     ictclas = get_ictclas()
+    # clean all the user word
+    ictclas.clean_user_word()
     result, result_count = ictclas.paragraph_process_a(test_str, True)
     assert result_count == 110
     clean_logs(include_current=True)
@@ -73,6 +77,8 @@ def test_paragraph_process_a():
 
 def test_file_process():
     ictclas = get_ictclas()
+    # clean all the user word
+    ictclas.clean_user_word()
     ictclas.file_process(
         os.path.abspath(test_source_filename),
         os.path.abspath(test_result_filename) + ".native.test_ictclas.test_file_process",
@@ -88,6 +94,8 @@ def test_import_user_dict():
     test_str_seg = '法国/nsf 启蒙/vn 思想家/n 孟德斯/nrf 鸠/n 曾/d 说/v 过/vf '
     test_str_seg_with_dict = '法国/nsf 启蒙/vn 思想家/n 孟德斯鸠/n 曾/d 说/v 过/vf '
     ictclas = get_ictclas()
+    # clean all the user word
+    ictclas.clean_user_word()
     assert test_str_seg == ictclas.paragraph_process(test_str_1st)
     ictclas.add_user_word("孟德斯鸠")
     assert test_str_seg_with_dict == ictclas.paragraph_process(test_str_1st)
@@ -95,9 +103,11 @@ def test_import_user_dict():
     assert test_str_seg == ictclas.paragraph_process(test_str_1st)
     ictclas.add_user_word("孟德斯鸠")
     assert test_str_seg_with_dict == ictclas.paragraph_process(test_str_1st)
+    ictclas.clean_current_user_word()
+    assert test_str_seg == ictclas.paragraph_process(test_str_1st)
+    ictclas.add_user_word("孟德斯鸠")
     ictclas.clean_user_word()
     assert test_str_seg == ictclas.paragraph_process(test_str_1st)
-
     # test add and delete multi word with import_user_dict
     test_str_seg = '另/rz 一/m 法国/nsf 启蒙/vn 思想家/n 卢/nr1 梭/ng 从/p 社会/n 契约/n 论/k 的/ude1 观点/n 出发/vi ，/wd' \
                    ' 认为/v 国家/n 权力/n 是/vshi 公民/n 让/v 渡/v 其/rz 全部/m “/wyz 自然/n 权利/n ”/wyy 而/cc 获得/v 的/ude1 '
@@ -117,6 +127,9 @@ def test_import_user_dict():
         os.remove(os.path.join(PACKAGE_DIR, "Data/UserDefinedDict.lst"))
     except FileNotFoundError as e:
         logging.warning(e)
+    ictclas.clean_user_word()
+    # TODO This is a bug for NLPIR, clean_user_word can not clean word imported by import_user_dict in memory
+    assert test_str_seg_with_dict == ictclas.paragraph_process(test_str_2nd)
     clean_logs(include_current=True)
 
 

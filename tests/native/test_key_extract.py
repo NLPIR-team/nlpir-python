@@ -37,6 +37,7 @@ def test_init_exit():
 
 def test_extract_keys():
     key_extract = get_key_extract()
+    key_extract.clean_user_word()
     match_tag = re.compile(r"(.+?)/([a-z0-9A-Z]+)/([.\d]+)/(\d+)#")
     assert match_tag.findall(key_extract.get_keywords(test_str, 50, format_opt=native.OUTPUT_FORMAT_SHARP))
     assert json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))
@@ -49,6 +50,7 @@ def test_extract_keys():
 def test_import_user_dict():
     # test add and delete single word
     key_extract = get_key_extract()
+    key_extract.clean_user_word()
     assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
     key_extract.add_user_word("孟德斯鸠")
     assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 500, format_opt=json_out))]
@@ -58,8 +60,11 @@ def test_import_user_dict():
     assert "孟德斯鸠" in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
     key_extract.clean_user_word()
     assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
+    key_extract.add_user_word("孟德斯鸠")
+    key_extract.clean_current_user_word()
+    assert "孟德斯鸠" not in [i["word"] for i in json.loads(key_extract.get_keywords(test_str, 50, format_opt=json_out))]
 
-    # test add and delete multi word with import_user_dict
+# test add and delete multi word with import_user_dict
     user_dict = """卢梭 user\n社会契约论 user\n"""
     with open(user_dict_path, "w", encoding="utf-8") as f:
         f.write(user_dict)

@@ -55,6 +55,17 @@ def clean_user_dict() -> bool:
 
 
 @__get_instance__
+def clean_temp_user_dict() -> bool:
+    """
+    See :func:`nlpir.clean_temp_user_dict`
+
+    :return: success or not
+
+    """
+    return nlpir.clean_temp_user_dict(instance=__instance__)
+
+
+@__get_instance__
 def delete_user_word(word_list: list):
     """
     See :func:`nlpir.delete_user_word`
