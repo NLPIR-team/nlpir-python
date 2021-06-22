@@ -3,13 +3,7 @@
 
 name: Linux64-test
 
-on:
-  push:
-    branches: [ * ]
-  pull_request:
-    branches: [ master ]
-  release:
-    types: [ created ]
+on: [ push, pull_request , release ]
 
 jobs:
   build:
