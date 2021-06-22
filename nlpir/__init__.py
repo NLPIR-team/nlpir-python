@@ -110,8 +110,12 @@ def init_setting(
 def import_dict(word_list: list, instance) -> list:
     """
     Temporary add word as dictionary, will loss it when restart the Program.
-    Can use :func:`save_user_dict` to make persistence, :func:`clean_user_dict` to
-    delete all temporary words or :func:`delete_user_word` to delete part of them.
+    Can use :func:`save_user_dict` to make persistence, :func:`clean_temp_user_dict` to
+    delete all temporary words in memory or :func:`clean_user_dict` to clean all user words
+    stored in memory and persistent in disk , but this function will not delete the persistent
+    user dictionary in disk, the user persistent dictionary will be reloaded when restart the
+    Program.
+    :func:`delete_user_word` can delete part of the user dictionary.
 
     The persistent dict cannot be clean by using method above. :func:`clean_saved_user_dict`
     will be used in this situation. But it will delete all user dict include saved dict in the past.
@@ -132,9 +136,26 @@ def import_dict(word_list: list, instance) -> list:
     return fail_list
 
 
+def clean_temp_user_dict(instance) -> bool:
+    """
+    Clean all temporary words in memory.
+
+    :param instance: instance to execute the function
+    :return: success or not
+    """
+    if not hasattr(instance, "clean_temp_user_dict"):
+        raise NLPIRException("This instance not support this method")
+    return instance.clean_temp_user_dict() == 1
+
+
 def clean_user_dict(instance) -> bool:
     """
-    Clean all temporary dictionary, more information shows in :func:`import_dict`
+    Clean all user words stored in memory and persistent in disk,
+    but this function will not delete the persistent user dictionary in disk,
+    the user persistent dictionary will be reloaded when restart the
+    Program.
+
+    More information shows in :func:`import_dict`
 
     :param instance: instance to execute the function
     :return: success or not

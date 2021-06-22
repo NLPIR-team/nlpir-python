@@ -18,6 +18,7 @@ import pytest
 
 def test_dict_in_memory():
     from tests.strings import test_str
+    key_extract.clean_user_dict()
     assert "孟德斯鸠" not in [i["word"] for i in key_extract.get_key_words(test_str, max_key=10)]
     key_extract.import_dict(["孟德斯鸠"])
     assert "孟德斯鸠" in [i["word"] for i in key_extract.get_key_words(test_str, max_key=10)]
@@ -26,6 +27,10 @@ def test_dict_in_memory():
     key_extract.import_dict(["孟德斯鸠"])
     assert "孟德斯鸠" in [i["word"] for i in key_extract.get_key_words(test_str, max_key=10)]
     key_extract.clean_user_dict()
+    assert "孟德斯鸠" not in [i["word"] for i in key_extract.get_key_words(test_str, max_key=10)]
+    key_extract.import_dict(["孟德斯鸠"])
+    key_extract.clean_temp_user_dict()
+    assert "孟德斯鸠" not in [i["word"] for i in key_extract.get_key_words(test_str, max_key=10)]
 
 
 def test_store_dict():

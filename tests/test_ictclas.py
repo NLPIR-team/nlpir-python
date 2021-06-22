@@ -19,6 +19,7 @@ def test_segment():
                    ' 论 的 观点 出发 ， 认为 国家 权力 是 公民 让 渡 其 全部 “ 自然 权利 ” 而 获得 的 ， 他 在 其 名' \
                    '著 《 社会 契约 论 》 中 写道 ： “ 任何 国家 权力 无不 是 以 民众 的 权力 （ 权利 ） 让 渡 与 公众' \
                    ' 认可 作为 前提 的 ” 。 '
+    ictclas.clean_user_dict()
     # 1st segment string
     assert test_str_seg.split(" ") == ictclas.segment(test_str, pos_tagged=False, post_process=ictclas.process_to_list)
     # 2nd segment string with tagging
@@ -52,6 +53,7 @@ def test_dict():
     # test add and delete single word
     test_str_seg = '法国/nsf 启蒙/vn 思想家/n 孟德斯/nrf 鸠/n 曾/d 说/v 过/vf '
     test_str_seg_with_dict = '法国/nsf 启蒙/vn 思想家/n 孟德斯鸠/n 曾/d 说/v 过/vf '
+    ictclas.clean_user_dict()
     assert test_str_seg == ictclas.segment(test_str_1st, pos_tagged=True, post_process=lambda t, _: t)
     ictclas.import_dict(["孟德斯鸠"])
     assert test_str_seg_with_dict == ictclas.segment(test_str_1st, pos_tagged=True, post_process=lambda t, _: t)
@@ -60,6 +62,9 @@ def test_dict():
     ictclas.import_dict(["孟德斯鸠"])
     assert test_str_seg_with_dict == ictclas.segment(test_str_1st, pos_tagged=True, post_process=lambda t, _: t)
     ictclas.clean_user_dict()
+    assert test_str_seg == ictclas.segment(test_str_1st, pos_tagged=True, post_process=lambda t, _: t)
+    ictclas.import_dict(["孟德斯鸠"])
+    ictclas.clean_temp_user_dict()
     assert test_str_seg == ictclas.segment(test_str_1st, pos_tagged=True, post_process=lambda t, _: t)
 
     # test add and delete multi word with import_user_dict
