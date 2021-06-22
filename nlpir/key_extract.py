@@ -62,6 +62,7 @@ def clean_temp_user_dict() -> bool:
     :return: success or not
 
     """
+    return nlpir.clean_temp_user_dict(instance=__instance__)
 
 
 @__get_instance__

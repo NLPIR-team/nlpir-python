@@ -73,9 +73,12 @@ def test_dict():
     test_str_seg_with_dict = '另/rz 一/m 法国/nsf 启蒙/vn 思想家/n 卢梭/user 从/p 社会契约论/user 的/ude1 观点/n 出发/vi ，/wd' \
                              ' 认为/v 国家/n 权力/n 是/vshi 公民/n 让/v 渡/v 其/rz 全部/m “/wyz 自然/n 权利/n ”/wyy 而/cc 获得/v 的/ude1 '
     user_dict = ["卢梭 user", "社会契约论 user"]
+    ictclas.clean_user_dict()
     assert test_str_seg == ictclas.segment(test_str_2nd, pos_tagged=True, post_process=lambda t, _: t)
     ictclas.import_dict(user_dict)
     assert test_str_seg_with_dict == ictclas.segment(test_str_2nd, pos_tagged=True, post_process=lambda t, _: t)
+    ictclas.clean_temp_user_dict()
+    assert test_str_seg == ictclas.segment(test_str_2nd, pos_tagged=True, post_process=lambda t, _: t)
     assert ictclas.clean_saved_user_dict()
     nlpir.clean_logs(include_current=True)
 

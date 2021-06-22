@@ -143,9 +143,9 @@ def clean_temp_user_dict(instance) -> bool:
     :param instance: instance to execute the function
     :return: success or not
     """
-    if not hasattr(instance, "clean_temp_user_dict"):
+    if not hasattr(instance, "clean_current_user_word"):
         raise NLPIRException("This instance not support this method")
-    return instance.clean_temp_user_dict() == 1
+    return instance.clean_current_user_word() == 1
 
 
 def clean_user_dict(instance) -> bool:

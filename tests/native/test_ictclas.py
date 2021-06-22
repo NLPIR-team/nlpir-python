@@ -127,6 +127,9 @@ def test_import_user_dict():
         os.remove(os.path.join(PACKAGE_DIR, "Data/UserDefinedDict.lst"))
     except FileNotFoundError as e:
         logging.warning(e)
+    ictclas.clean_user_word()
+    # TODO This is a bug for NLPIR, clean_user_word can not clean word imported by import_user_dict in memory
+    assert test_str_seg_with_dict == ictclas.paragraph_process(test_str_2nd)
     clean_logs(include_current=True)
 
 
