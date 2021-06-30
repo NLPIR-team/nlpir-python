@@ -174,19 +174,22 @@ class NLPIRBase(ABC):
         :rtype: str
         """
 
-        def get_dll_prefix(prefix, suffix):
-            return os.path.join(lib_dir, prefix + self.dll_name + suffix)
+        def get_dll_prefix(paths, prefix, suffix):
+            lib_path = lib_dir
+            for path in paths:
+                lib_path = os.path.join(lib_path, path)
+            return os.path.join(lib_path, prefix + self.dll_name + suffix)
 
         if platform.startswith('win') and is_64bit:
-            lib = get_dll_prefix("", "64")
+            lib = get_dll_prefix(["win", "lib64"], "", "64")
         elif platform.startswith('win'):
-            lib = get_dll_prefix("", "32")
+            lib = get_dll_prefix(["win", "lib32"], "", "32")
         elif platform.startswith('linux') and is_64bit:
-            lib = get_dll_prefix("lib", "64.so")
+            lib = get_dll_prefix(["linux", "lib64"], "lib", "64.so")
         elif platform.startswith('linux'):
-            lib = get_dll_prefix("lib", "32.so")
+            lib = get_dll_prefix(["linux", "lib32"], "lib", "32.so")
         elif platform == 'darwin':
-            lib = get_dll_prefix("lib", "darwin.so")
+            lib = get_dll_prefix(["darwin"], "lib", ".so")
             # lib = get_dll_prefix("lib", ".dylib")
         else:
             raise RuntimeError("Platform '{}' is not supported.".format(
