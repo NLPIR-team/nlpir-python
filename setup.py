@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 # coding : utf-8
-from wheel.bdist_wheel import bdist_wheel
 from setuptools import setup, find_packages
+
 import nlpir
+
+try:
+    from wheel.bdist_wheel import bdist_wheel
+
+    HAS_WHEEL = True
+except ImportError:
+    HAS_WHEEL = False
 
 with open("README.md", encoding="utf-8") as f:
     readme = f.read()
@@ -19,14 +26,13 @@ multi_arch_lib = {
     'macos_10_9_x86_64': ['lib/darwin/*']
 }
 
-
-class MultiArchBdistWheel(bdist_wheel):
-    def finalize_options(self):
-        print(self.plat_name)
-        self.distribution.package_data["nlpir"] += multi_arch_lib.get(self.plat_name, multi_arch_lib['any'])
-        print(self.distribution.package_data)
-        bdist_wheel.finalize_options(self)
-
+if HAS_WHEEL:
+    class MultiArchBdistWheel(bdist_wheel):
+        def finalize_options(self):
+            print(self.plat_name)
+            self.distribution.package_data["nlpir"] += multi_arch_lib.get(self.plat_name, multi_arch_lib['any'])
+            print(self.distribution.package_data)
+            bdist_wheel.finalize_options(self)
 
 setup(
     name='nlpir-python',
@@ -68,5 +74,5 @@ setup(
     },
     cmdclass={
         'bdist_wheel': MultiArchBdistWheel,
-    },
+    } if HAS_WHEEL else None,
 )
