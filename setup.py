@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # coding : utf-8
+from wheel.bdist_wheel import bdist_wheel
 from setuptools import setup, find_packages
 import nlpir
 
@@ -8,6 +9,25 @@ with open("README.md", encoding="utf-8") as f:
 dependencies = [
     'requests',
 ]
+
+multi_arch_lib = {
+    'any': ['lib/*/*', 'lib/*', 'lib/*/*/*'],
+    'win_amd64': ['lib/win/*'],
+    'linux_x86_64': ['lib/linux/x86/lib64/*'],
+    'linux_aarch64': ['lib/linux/aarch64/*'],
+    'macos_11_0_x86_64': ['lib/darwin/*'],
+    'macos_10_9_x86_64': ['lib/darwin/*']
+}
+
+
+class MultiArchBdistWheel(bdist_wheel):
+    def finalize_options(self):
+        print(self.plat_name)
+        self.distribution.package_data["nlpir"] += multi_arch_lib.get(self.plat_name, multi_arch_lib['any'])
+        print(self.distribution.package_data)
+        bdist_wheel.finalize_options(self)
+
+
 setup(
     name='nlpir-python',
     version=nlpir.__version__,
@@ -22,7 +42,7 @@ setup(
     python_requires='>=3.6',
     install_requires=dependencies,
     include_package_data=True,
-    package_data={'nlpir': ['Data/*.*', 'Data/*/*', 'Data/Sentiment/Data/*', 'Data/Sentiment/Data/*/*', 'lib/*']},
+    package_data={'nlpir': ['Data/*.*', 'Data/*/*', 'Data/Sentiment/Data/*', 'Data/Sentiment/Data/*/*']},
     keywords=['nlpir', 'nlp', 'Chinese word segmentation', 'ictclas', 'CWS'],
     test_suite='tests',
     platforms=[
@@ -45,5 +65,8 @@ setup(
         'console_scripts': [
             'nlpir_update = nlpir.tools:update_license'
         ]
-    }
+    },
+    cmdclass={
+        'bdist_wheel': MultiArchBdistWheel,
+    },
 )

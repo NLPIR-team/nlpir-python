@@ -29,5 +29,10 @@ jobs:
           TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
-          python setup.py sdist bdist_wheel
+          python setup.py bdist_wheel --plat-name any
+          python setup.py bdist_wheel --plat-name linux_x86_64
+          python setup.py bdist_wheel --plat-name linux_aarch64
+          python setup.py bdist_wheel --plat-name win_amd64
+          python setup.py bdist_wheel --plat-name macos_10_9_x86_64
+          python setup.py bdist_wheel --plat-name macos_11_0_x86_64
           twine upload dist/*.whl
