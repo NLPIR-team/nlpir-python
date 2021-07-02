@@ -74,5 +74,5 @@ setup(
     },
     cmdclass={
         'bdist_wheel': MultiArchBdistWheel,
-    } if HAS_WHEEL else None,
+    } if HAS_WHEEL else dict(),
 )
