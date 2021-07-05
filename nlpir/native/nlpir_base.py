@@ -2,6 +2,7 @@
 import os
 import logging
 import sys
+import platform
 import ctypes
 import typing
 import functools
@@ -129,7 +130,7 @@ class NLPIRBase(ABC):
             logging.debug(f"{self} use singleton, skip init")
             return
         self.LIB_DIR = os.path.join(PACKAGE_DIR, 'lib') if lib_path is None else lib_path
-        self.lib_nlpir, self.lib_path = self.load_library(sys.platform)
+        self.lib_nlpir, self.lib_path = self.load_library(platform.uname())
         self.encode: str = self.encode_map[encode]
         self.encode_nlpir = encode
         self.data_path = PACKAGE_DIR if data_path is None else data_path
@@ -165,45 +166,56 @@ class NLPIRBase(ABC):
         """
         raise NotImplementedError
 
-    def get_dll_path(self, platform: str, lib_dir: str, is_64bit: bool) -> str:
+    def get_dll_path(self, uname: platform.uname_result, lib_dir: str, is_64bit: bool) -> str:
         """
-        :param str platform: sys.platform
+        :param platform.uname_result uname: The platform identifier for the user's system.
         :param str lib_dir: path to lib
         :param bool is_64bit: is 64bit or not
         :return: the abspath of dll
         :rtype: str
         """
 
-        def get_dll_prefix(prefix, suffix):
-            return os.path.join(lib_dir, prefix + self.dll_name + suffix)
+        def get_dll_prefix(paths, prefix, suffix):
+            lib_path = lib_dir
+            for path in paths:
+                lib_path = os.path.join(lib_path, path)
+            return os.path.join(lib_path, prefix + self.dll_name + suffix)
 
-        if platform.startswith('win') and is_64bit:
-            lib = get_dll_prefix("", "64")
-        elif platform.startswith('win'):
-            lib = get_dll_prefix("", "32")
-        elif platform.startswith('linux') and is_64bit:
-            lib = get_dll_prefix("lib", "64.so")
-        elif platform.startswith('linux'):
-            lib = get_dll_prefix("lib", "32.so")
-        elif platform == 'darwin':
-            lib = get_dll_prefix("lib", "darwin.so")
+        # TODO need to know the arch for windows if there is an arm processor
+        # in Windows machine is AMD64, linux is x86_64 as well
+        if uname.system.startswith('Win'):
+            if is_64bit:
+                lib = get_dll_prefix(["win", "lib64"], "", "64")
+            else:
+                lib = get_dll_prefix(["win", "lib32"], "", "32")
+        elif uname.system.startswith('Linux'):
+            if platform.machine().startswith("x86"):
+                if is_64bit:
+                    lib = get_dll_prefix(["linux", "x86", "lib64"], "lib", "64.so")
+                else:
+                    lib = get_dll_prefix(["linux", "x86", "lib32"], "lib", "32.so")
+            elif platform.machine().startswith("aarch64"):
+                lib = get_dll_prefix(["linux", "aarch64"], "lib", ".so")
+            else:
+                raise RuntimeError(f"Platform with system:{uname.system} arch:{uname.machine} is not supported.")
+        elif uname.system.startswith("Darwin"):
+            lib = get_dll_prefix(["darwin"], "lib", ".so")
             # lib = get_dll_prefix("lib", ".dylib")
         else:
-            raise RuntimeError("Platform '{}' is not supported.".format(
-                platform))
+            raise RuntimeError(f"Platform with system:{uname.system} arch:{uname.machine} is not supported.")
         self.logger.debug("Using {} file for {}".format(lib, platform))
         return lib
 
     def load_library(
             self,
-            platform: str,
+            uname: platform.uname_result,
             is_64bit: typing.Optional[bool] = None,
             lib_dir: typing.Optional[str] = None
     ) -> typing.Tuple[ctypes.CDLL, str]:
         """Loads the NLPIR library appropriate for the user's system.
         This function is called automatically when create a instance.
 
-        :param str platform: The platform identifier for the user's system.
+        :param platform.uname_result uname: The platform identifier for the user's system.
         :param bool is_64bit: Whether or not the user's system is 64-bit.
         :param str lib_dir: The directory that contains the library files
             (defaults to :data:`LIB_DIR`).
@@ -216,7 +228,7 @@ class NLPIRBase(ABC):
         self.logger.debug("Loading NLPIR library file from '{}'".format(lib_dir))
         if is_64bit is None:
             is_64bit = sys.maxsize > 2 ** 32
-        lib = self.get_dll_path(platform, lib_dir, is_64bit)
+        lib = self.get_dll_path(uname, lib_dir, is_64bit)
         if self.load_mode is not None:
 
             lib_nlpir = ctypes.CDLL(lib, mode=self.load_mode)
