@@ -1,0 +1,38 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Linux-aarch64-test
+
+on: [ push, pull_request , release ]
+
+jobs:
+  aarch64_job:
+    runs-on: ubuntu-latest
+    name: test on aarch64
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+      - uses: uraimo/run-on-arch-action@v2.0.5
+        name: Run test
+        with:
+          arch: aarch64
+          distro: ubuntu20.04
+          # Not required, but speeds up builds by storing container images in
+          # a GitHub package registry.
+          githubToken: ${{ github.token }}
+          install: |
+            apt-get update
+            apt-get install -y python3 python3-pip
+          # Set an output parameter `uname` for use in subsequent steps
+          run: |
+            uname -a
+            apt-get install
+            python3 -m pip install --upgrade pip
+            pip install flake8 pytest
+            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+            # stop the build if there are Python syntax errors or undefined names
+            flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+            # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+            flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+            pytest --dist loadfile -n 10
