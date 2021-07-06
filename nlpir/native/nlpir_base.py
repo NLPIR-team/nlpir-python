@@ -100,7 +100,7 @@ class NLPIRBase(ABC):
                     kwargs[k] = kwargs[k].encode(self.encode)
             return_value = func(self, *args, **kwargs)
             if isinstance(return_value, bytes):
-                return return_value.decode(self.encode)
+                return return_value.decode(self.encode, errors="ignore")
             elif isinstance(return_value, tuple):
                 return_value = list(return_value)
                 for i, item in enumerate(return_value):

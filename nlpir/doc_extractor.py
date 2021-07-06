@@ -71,7 +71,21 @@ class ExtractResult:
             self.all_available_type_map[retrieve_type]: retrieve_type for retrieve_type in self.all_available_type_map
         }
 
-        self.re_result = re.compile(r"(.+?)/([a-z0-9A-Z]+?)/([.\d]+?)/(\d+)?#")
+        self.re_sharp_split = re.compile(r"([^#]+)#"), lambda _: {0: _}
+        self.re_key_words = re.compile(r"(.+?)/([a-z0-9A-Z]+?)/([.\d]+?)/(\d+)?#"), lambda _: {0: _[0], 1: _[1],
+                                                                                               2: _[2], 3: _[3]}
+        self.re_weight = re.compile(r"(.+?)/(\d+)#"), lambda _: {0: _[0], 2: _[1]}
+        self.re_none = re.compile("(.+)"), lambda _: {0: _}
+        self.re_result_map = {
+            native.doc_extractor.DOC_EXTRACT_TYPE_KEYWORD: self.re_key_words,
+            native.doc_extractor.DOC_EXTRACT_TYPE_AUTHOR: self.re_none,
+            native.doc_extractor.DOC_EXTRACT_TYPE_MEDIA: self.re_none,
+            native.doc_extractor.DOC_EXTRACT_TYPE_ABSTRACT: self.re_none,
+            native.doc_extractor.DOC_EXTRACT_TYPE_POSITIVE: self.re_weight,
+            native.doc_extractor.DOC_EXTRACT_TYPE_NEGATIVE: self.re_weight,
+            native.doc_extractor.DOC_EXTRACT_TYPE_TEXT: self.re_none,
+            native.doc_extractor.DOC_EXTRACT_TYPE_TIME: self.re_sharp_split,
+        }
 
     def get_available_retrieve_types(self) -> typing.Dict[str, int]:
         """
@@ -123,16 +137,18 @@ class ExtractResult:
             result = __instance__.get_result(
                 handle=self.handle, doc_extract_type=retrieve_type
             )
-            result = self.re_result.findall(result)
-            result_dict[self.__retrieve_type_reverse_map[retrieve_type]] = [
-                {
-                    "word": string_tuple[0],
-                    "pos": string_tuple[1],
-                    "weight": float(string_tuple[2]),
-                    "frq": int(string_tuple[3])
-                }
-                for string_tuple in result
-            ]
+            re_, func = self.re_result_map.get(retrieve_type, self.re_sharp_split)
+            result = re_.findall("" if result is None else result)
+            result_list = list()
+            for string_tuple in result:
+                result_map = func(string_tuple)
+                result_list.append({
+                    "word": result_map.get(0, None),
+                    "pos": result_map.get(1, None),
+                    "weight": float(result_map.get(2, None)) if result_map.get(2, None) is not None else None,
+                    "frq": int(result_map.get(3, None)) if result_map.get(3, None) is not None else None
+                })
+            result_dict[self.__retrieve_type_reverse_map[retrieve_type]] = result_list
         return result_dict
 
     @__get_instance__
