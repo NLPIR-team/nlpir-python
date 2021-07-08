@@ -72,8 +72,8 @@ class ExtractResult:
         }
 
         self.re_sharp_split = re.compile(r"([^#]+)#"), lambda _: {0: _}
-        self.re_key_words = re.compile(r"(.+?)/([a-z0-9A-Z]+?)/([.\d]+?)/(\d+)?#"), lambda _: {0: _[0], 1: _[1],
-                                                                                               2: _[2], 3: _[3]}
+        self.re_key_words = re.compile(r"([^/^#]+)/([^/^#]+)/([.\d]+?)/(\d+)?#"), lambda _: {0: _[0], 1: _[1],
+                                                                                             2: _[2], 3: _[3]}
         self.re_weight = re.compile(r"(.+?)/(\d+)#"), lambda _: {0: _[0], 2: _[1]}
         self.re_none = re.compile("(.+)"), lambda _: {0: _}
         self.re_result_map = {
