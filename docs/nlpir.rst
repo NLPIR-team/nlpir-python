@@ -81,6 +81,14 @@ nlpir.text_similarity module
    :undoc-members:
    :show-inheritance:
 
+nlpir.sentiment_analysis module
+-------------------------------
+
+.. automodule:: nlpir.sentiment_analysis
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 
 nlpir.tools module
 --------------------
