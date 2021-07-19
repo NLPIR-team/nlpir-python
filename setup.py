@@ -48,7 +48,16 @@ setup(
     python_requires='>=3.6',
     install_requires=dependencies,
     include_package_data=True,
-    package_data={'nlpir': ['Data/*.*', 'Data/*/*', 'Data/Sentiment/Data/*', 'Data/Sentiment/Data/*/*']},
+    package_data={
+        'nlpir': [
+            'Data/*.*',
+            'Data/*/*',
+            'Data/Sentiment/Data/*',
+            'Data/Sentiment/Data/*/*',
+            'Data/SentimentAnalysis/Data/*',
+            'Data/SentimentAnalysis/Data/*/*'
+        ]
+    },
     keywords=['nlpir', 'nlp', 'Chinese word segmentation', 'ictclas', 'CWS'],
     test_suite='tests',
     platforms=[
