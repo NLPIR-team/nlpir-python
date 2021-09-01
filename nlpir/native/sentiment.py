@@ -146,6 +146,17 @@ class SentimentAnalysis(NLPIRBase):
     def dll_name(self):
         return "LJSentimentAnalysis"
 
+    def __init__(
+            self,
+            encode: int = UTF8_CODE,
+            lib_path: typing.Optional[int] = None,
+            data_path: typing.Optional[str] = None,
+            license_code: str = ''
+    ):
+        sentiment_path = os.path.join(PACKAGE_DIR, "Data/SentimentAnalysis")
+        data_path = sentiment_path if data_path is None else data_path
+        super().__init__(encode, lib_path, data_path, license_code)
+
     @NLPIRBase.byte_str_transform
     def init_lib(self, data_path: str, encode: int, license_code: str) -> int:
         """
@@ -215,3 +226,27 @@ class SentimentAnalysis(NLPIRBase):
         :return:
         """
         return self.get_func("LJST_ImportUserDict", [c_char_p, c_bool], c_int)(filename, over_write)
+
+    @NLPIRBase.byte_str_transform
+    def get_paragraph_sent_e(self, paragraph: str) -> str:
+        """
+        Call **LJST_GetParagraphSentE**
+
+        Get sentiment analyze result
+
+        :param paragraph:
+        :return:
+        """
+        return self.get_func("LJST_GetParagraphSentE", [c_char_p], c_char_p)(paragraph)
+
+    @NLPIRBase.byte_str_transform
+    def get_file_sent_e(self, filename: str) -> str:
+        """
+        Call **LJST_GetFileSentE**
+
+        Get sentiment analyze result
+
+        :param filename:
+        :return:
+        """
+        return self.get_func("LJST_GetFileSentE", [c_char_p], c_bool)(filename)

@@ -72,7 +72,7 @@ native call, make it easier to use.
 | KeyExtract        |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✔         |               |
 | Summary           |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✔         |               |
 | SentimentNew      |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
-| SentimentAnalysis |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
+| SentimentAnalysis |       ✔       |       ✔       |       ✍       |       ✔       |         ✔         |                   |               |
 | Classify          |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | DeepClassify      |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | Cluster           |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
