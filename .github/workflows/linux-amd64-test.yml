@@ -3,7 +3,7 @@
 
 name: Linux64-test
 
-on: [ push, pull_request , release ]
+on: [ push, pull_request ]
 
 jobs:
   build:
