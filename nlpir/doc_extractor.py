@@ -125,7 +125,7 @@ class ExtractResult:
                         "word": "卢梭",
                         "pos": "n",
                         "weight": 1.5,
-                        "frq": 100
+                        "freq": 100
                     }
                 ]
             }
@@ -146,7 +146,7 @@ class ExtractResult:
                     "word": result_map.get(0, None),
                     "pos": result_map.get(1, None),
                     "weight": float(result_map.get(2, None)) if result_map.get(2, None) is not None else None,
-                    "frq": int(result_map.get(3, None)) if result_map.get(3, None) is not None else None
+                    "freq": int(result_map.get(3, None)) if result_map.get(3, None) is not None else None
                 })
             result_dict[self.__retrieve_type_reverse_map[retrieve_type]] = result_list
         return result_dict
