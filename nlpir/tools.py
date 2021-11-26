@@ -39,6 +39,7 @@ def update_license(data_path=None) -> None:
         "classifier.user": "classifier规则分类授权/classifier.user",
         "cluster.user": "cluster聚类授权/cluster.user",
         "TextSimilarity.user": "TextSimilarity文本相似度/TextSimilarity.user",
+        # TODO KGB and NERICS
     }
     if data_path is None:
         destination = os.path.join(os.path.dirname(__file__), "Data")

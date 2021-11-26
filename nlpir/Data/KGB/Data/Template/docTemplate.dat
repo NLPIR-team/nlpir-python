@@ -1,0 +1,5156 @@
+<DocTemplate><DocFormat><format>
+<type>FORMULA_INDEX</type>
+<font>楷体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>320:1;</line_space>
+<section_format>
+	<prefix>［</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>］</post>
+	<level>0</level>
+	<section_type>-512</section_type>
+	<sample>［18］傅刚，赵承，李佳路.大风沙过后的思考[N/OL]</sample>
+</section_format>
+</format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>楷体:18;</font>
+<fontSize>21:18;</fontSize>
+<line_space>320:18;</line_space>
+<section_format>
+	<prefix>［</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>］</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>［1］周庆荣，张泽廷，朱美文，等.固体溶质在含夹带剂超临界流体中的溶解度［J］.化工学报，1995，46(3)：317-323.</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>黑体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>黑体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>320:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>黑体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>黑体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space>320:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_COL</type>
+<font>Times New Roman:15;宋体:19;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:1;</font>
+<fontSize>52:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:10;</font>
+<fontSize>36:1;</fontSize>
+<line_space>360:10;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>仿宋:2;华文行楷:2;宋体:26;楷体:10;黑体:8;</font>
+<fontSize>21:10;24:7;28:7;32:3;44:1;</fontSize>
+<line_space>240:1;300:4;320:10;440:7;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TITLE2</type>
+<font>黑体:3;</font>
+<fontSize>24:3;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>（</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>）</post>
+	<level>-1</level>
+	<section_type>2</section_type>
+	<sample>（一）</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:7;</font>
+<fontSize>24:7;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>.</post>
+	<level>1</level>
+	<section_type>3</section_type>
+	<sample>1.</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>黑体:9;</font>
+<fontSize>24:9;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>云南艺术学院</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>Times New Roman:5;</font>
+<fontSize>18:5;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>Times New Roman:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>楷体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>　</post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2.1　盐胁迫对相对干重的影响</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>Times New Roman:6;宋体:14;</font>
+<fontSize>18:15;28:5;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:2;</font>
+<fontSize>44:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>Times New Roman:14;宋体:14;黑体:2;</font>
+<fontSize>15:1;18:2;21:22;28:1;30:1;32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TITLE1</type>
+<font>Times New Roman:1;</font>
+<fontSize></fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>Super</prefix>
+	<section_sep></section_sep>
+	<num_format>7</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>Supervisor</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>Times New Roman:1;</font>
+<fontSize></fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>盐</post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1盐分胁迫对植物的伤害</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>Times New Roman:2;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>植</post>
+	<level>2</level>
+	<section_type>3</section_type>
+	<sample>1.2植物的耐盐机理</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE4</type>
+<font>Times New Roman:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>细</post>
+	<level>3</level>
+	<section_type>4</section_type>
+	<sample>1.2.2细胞内的渗透调节机制</sample>
+</section_format>
+</format>
+<format>
+<type>5</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>6</type>
+<font>Times New Roman:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>7</type>
+<font>Times New Roman:2;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>8</type>
+<font>黑体:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京林业大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:11;</font>
+<fontSize>24:11;</fontSize>
+<line_space>240:6;276:5;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>刘</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>1.刘国钧，</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>zh-CN:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:1;黑体:1;</font>
+<fontSize>24:1;28:1;32:1;</fontSize>
+<line_space>240:1;360:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:3;</font>
+<fontSize>18:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>zh-CN:3;</font>
+<fontSize>18:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>宋体:5;</font>
+<fontSize>21:5;</fontSize>
+<line_space>273:2;</line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:20;</font>
+<fontSize>21:35;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>357:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>zh-CN:4;宋体:53;黑体:12;</font>
+<fontSize>24:17;28:20;30:3;32:8;36:1;</fontSize>
+<line_space>240:6;276:1;320:11;357:3;360:1;460:18;555:1;580:1;612:1;616:1;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>zh-CN:2;</font>
+<fontSize>28:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>zh-CN:6;</font>
+<fontSize>24:6;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>zh-CN:2;黑体:1;</font>
+<fontSize>24:2;32:1;</fontSize>
+<line_space>240:1;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>3.2.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>zh-CN:2;</font>
+<fontSize>28:2;</fontSize>
+<line_space>240:2;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中国传媒大学</Organization>
+<Area>*</Area>
+<Argument>研究生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>MAJOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:11;</font>
+<fontSize>21:11;</fontSize>
+<line_space>440:11;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]姜敏,彭少贤,郦华兴.形状记忆聚合物研究现状与发展[J].现代塑料加工应用,2005,17(2):</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>zh-CN:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:6;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:9;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font></font>
+<fontSize>22:4;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>zh-CN:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post>实</post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1-1实验数据分析</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:46;</font>
+<fontSize>21:46;</fontSize>
+<line_space>264:50;</line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:3;</font>
+<fontSize>32:1;36:1;</fontSize>
+<line_space>240:3;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>Cambria Math:2;zh-CN:2;仿宋_GB2312:1;宋体:22;黑体:11;</font>
+<fontSize>18:2;21:5;24:7;26:1;28:20;30:1;32:2;36:1;44:3;</fontSize>
+<line_space>240:5;360:11;400:28;440:3;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:3;</font>
+<fontSize>32:3;</fontSize>
+<line_space>400:3;</line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:2;</font>
+<fontSize>28:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>本</post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1本论文研究的目的和意义</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>Times New Roman:2;zh-CN:1;</font>
+<fontSize>24:3;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>形</post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.2.1形状记忆聚氨酯的形状记忆机理</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:4;</font>
+<fontSize>24:2;28:5;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中国农业大学</Organization>
+<Area>*</Area>
+<Argument>研究生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>Arial:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:2;</font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>黑体:2;</font>
+<fontSize>32:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1.3</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:15;</font>
+<fontSize>21:20;</fontSize>
+<line_space>440:20;</line_space></format>
+<format>
+<type>-3</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>560:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>华文仿宋:2;宋体:29;黑体:16;</font>
+<fontSize>21:13;24:19;28:5;30:15;32:4;36:1;</fontSize>
+<line_space>240:1;320:2;360:2;440:34;560:7;640:1;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:6;</font>
+<fontSize>32:6;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:2;</font>
+<fontSize>28:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:3;</font>
+<fontSize>26:3;</fontSize>
+<line_space>400:3;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.2.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space>360:2;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京大学</Organization>
+<Area>*</Area>
+<Argument>研究生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:2;</font>
+<fontSize>21:5;</fontSize>
+<line_space>420:5;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>隶书:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_COL</type>
+<font></font>
+<fontSize>18:15;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:4;</font>
+<fontSize>21:2;</fontSize>
+<line_space>360:2;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:2;</font>
+<fontSize>30:2;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:2;</font>
+<fontSize>15:1;21:7;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:4;</font>
+<fontSize>28:4;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>盐</post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1盐分胁迫对植物的伤害</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:2;</font>
+<fontSize>26:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>植</post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.2.1植物形态适应机制</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE4</type>
+<font>黑体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>无</post>
+	<level>4</level>
+	<section_type>4</section_type>
+	<sample>1.2.2.1无机渗透调节机制</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:2;</font>
+<fontSize>24:12;</fontSize>
+<line_space>440:12;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京工商大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:8;</font>
+<fontSize>24:8;</fontSize>
+<line_space>300:8;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>隶书:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>360:1;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>　</post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1.1　论文题序层次格式</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:19;</font>
+<fontSize>21:19;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>Times New Roman:5;宋体:66;黑体:2;</font>
+<fontSize>21:6;24:72;32:2;36:1;</fontSize>
+<line_space>300:18;360:61;480:1;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:7;</font>
+<fontSize>36:7;</fontSize>
+<line_space>480:7;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>.</post>
+	<level>0</level>
+	<section_type>1</section_type>
+	<sample>1.</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:10;</font>
+<fontSize>30:10;</fontSize>
+<line_space>240:8;415:1;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>．</post>
+	<level>1</level>
+	<section_type>2</section_type>
+	<sample>1．1论文印装</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:6;</font>
+<fontSize>28:6;</fontSize>
+<line_space>240:6;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>封</post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.2.1封面及毕业设计（论文）任务书</sample>
+</section_format>
+</format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京工业大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:34;</font>
+<fontSize>24:34;</fontSize>
+<line_space>360:34;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>．</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>1．连续出版物</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:69;黑体:9;</font>
+<fontSize>24:67;30:9;</fontSize>
+<line_space>240:13;280:23;360:32;520:3;600:11;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>72:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>Times New Roman:2;宋体:11;黑体:7;</font>
+<fontSize>24:53;28:2;30:4;32:5;44:2;</fontSize>
+<line_space>360:62;600:1;</line_space></format>
+<format>
+<type>TITLE2</type>
+<font></font>
+<fontSize>24:1;32:1;</fontSize>
+<line_space>360:2;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京航天航空大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>FORMULA_INDEX</type>
+<font></font>
+<fontSize></fontSize>
+<line_space>300:2;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:9;</font>
+<fontSize>21:15;</fontSize>
+<line_space>360:15;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>24:2;</fontSize>
+<line_space>400:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:2;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>华文中宋:2;</font>
+<fontSize>28:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:24;</font>
+<fontSize>21:24;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:5;</font>
+<fontSize>32:5;</fontSize>
+<line_space>360:5;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:40;黑体:7;</font>
+<fontSize>21:1;24:46;32:2;36:1;</fontSize>
+<line_space>360:2;400:46;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:4;</font>
+<fontSize>32:2;36:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:6;黑体:11;</font>
+<fontSize>24:17;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京交通大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font></font>
+<fontSize>24:25;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>黑体:1;</font>
+<fontSize>24:3;30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:5;</font>
+<fontSize>21:5;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>zh-CN:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font></font>
+<fontSize>30:12;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图Z-</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>0</level>
+	<section_type>-201</section_type>
+	<sample>图Z-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>黑体:7;</font>
+<fontSize>21:4;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表Z-</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>0</level>
+	<section_type>-102</section_type>
+	<sample>表Z-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:24;黑体:67;</font>
+<fontSize>21:178;22:10;</fontSize>
+<line_space>312:36;</line_space></format>
+<format>
+<type>-3</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>72:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>Times New Roman:3;宋体:4;微软雅黑:1;方正魏碑简体:1;黑体:23;</font>
+<fontSize>21:1;22:13;24:8;28:9;30:21;72:1;</fontSize>
+<line_space>312:1;360:3;480:1;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:2;</font>
+<fontSize>30:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>CONTENT1</type>
+<font>zh-CN:18;</font>
+<fontSize>24:18;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京科技大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:10;</font>
+<fontSize></fontSize>
+<line_space>460:10;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]丁昊凯，许静雯，谢黎文；ASP.NET网站开发典型模块与实例精讲．北京：电子工业出版社，2006.8</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>zh-CN:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>zh-CN:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:8;</font>
+<fontSize>21:8;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>0</level>
+	<section_type>-201</section_type>
+	<sample>图3</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:11;</font>
+<fontSize>36:12;</fontSize>
+<line_space>360:12;</line_space></format>
+<format>
+<type>-3</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:1;</font>
+<fontSize>72:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>52:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>zh-CN:18;宋体:28;黑体:2;</font>
+<fontSize>21:3;24:4;32:1;36:1;</fontSize>
+<line_space>460:59;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>宋体:5;</font>
+<fontSize>44:5;</fontSize>
+<line_space>460:5;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:9;</font>
+<fontSize>32:9;</fontSize>
+<line_space>460:9;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>背</post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1背景</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>宋体:18;</font>
+<fontSize>32:18;</fontSize>
+<line_space>460:18;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.3.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>zh-CN:6;宋体:27;</font>
+<fontSize>24:33;</fontSize>
+<line_space>400:33;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京青年政治学院</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>AUTHOR</type>
+<font>楷体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:2;</font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>0</level>
+	<section_type>-201</section_type>
+	<sample>图1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>0</level>
+	<section_type>-102</section_type>
+	<sample>表1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:30;</font>
+<fontSize>21:40;</fontSize>
+<line_space>440:40;</line_space></format>
+<format>
+<type>-3</type>
+<font>楷体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>560:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>楷体:6;</font>
+<fontSize>32:6;</fontSize>
+<line_space>360:6;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:21;黑体:1;</font>
+<fontSize>21:12;24:6;28:1;32:1;</fontSize>
+<line_space>240:1;360:2;440:18;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>宋体:4;</font>
+<fontSize>28:3;32:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>Arial:2;</font>
+<fontSize>28:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font></font>
+<fontSize>24:3;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.2.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE4</type>
+<font>Arial:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>形</post>
+	<level>4</level>
+	<section_type>4</section_type>
+	<sample>1.2.1.1形状记忆聚合物</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:2;</font>
+<fontSize>24:1;28:1;</fontSize>
+<line_space>360:2;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京物资学院</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:10;</font>
+<fontSize></fontSize>
+<line_space>460:10;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]丁昊凯，许静雯，谢黎文；ASP.NET网站开发典型模块与实例精讲．北京：电子工业出版社，2006.8</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>楷体:3;</font>
+<fontSize>21:3;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2-1</sample>
+</section_format>
+</format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>52:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:32;黑体:1;</font>
+<fontSize>24:1;32:8;</fontSize>
+<line_space>360:6;460:28;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:4;</font>
+<fontSize>32:4;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:4;</font>
+<fontSize>28:4;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>背</post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1背景</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:5;</font>
+<fontSize>24:5;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.3.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:14;</font>
+<fontSize>24:14;</fontSize>
+<line_space>360:14;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京邮电大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>FORMULA_INDEX</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:2;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>宋体:3;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:7;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:2;宋体:3;</font>
+<fontSize>18:5;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>21:5;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:9;</font>
+<fontSize>21:9;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表2.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:304;</font>
+<fontSize>21:316;</fontSize>
+<line_space>240:319;</line_space></format>
+<format>
+<type>-3</type>
+<font></font>
+<fontSize>32:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>华文细黑:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>48:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>zh-CN:2;华文细黑:2;华文行楷:1;宋体:260;黑体:1;</font>
+<fontSize>21:40;24:17;30:15;36:1;44:2;</fontSize>
+<line_space>240:1;360:10;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>Cambria:3;黑体:8;</font>
+<fontSize>20:2;30:9;</fontSize>
+<line_space>300:1;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:23;</font>
+<fontSize>28:23;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:19;</font>
+<fontSize>24:19;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>2.1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>zh-CN:3;宋体:36;</font>
+<fontSize>24:39;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>大连理工大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>黑体:4;</font>
+<fontSize>22:6;24:2;28:1;30:1;</fontSize>
+<line_space>300:13;360:2;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>、</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>一、中文部分</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font></font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>300:1;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:25;</font>
+<fontSize>19:25;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>华文中宋:1;</font>
+<fontSize>48:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>华文中宋:1;宋体:43;黑体:7;</font>
+<fontSize>21:1;22:2;24:36;28:3;30:5;32:13;48:1;72:2;</fontSize>
+<line_space>240:1;300:6;360:29;480:8;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:1;</font>
+<fontSize>28:1;32:2;36:1;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>对外经济贸易大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:3;黑体:1;</font>
+<fontSize>21:2;24:1;30:1;</fontSize>
+<line_space>400:1;440:2;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]第一作者姓名，第二作者姓名，第三作者姓名，等.文章题目.刊物名称，出版年号，刊号：页码范围</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:2;</font>
+<fontSize>18:4;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>宋体:2;楷体_GB2312:26;</font>
+<fontSize>40:2;44:22;48:2;100:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>18:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:46;</font>
+<fontSize>21:46;</fontSize>
+<line_space>264:50;</line_space></format>
+<format>
+<type>-3</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:1;</font>
+<fontSize>24:2;</fontSize>
+<line_space>440:2;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:20;微软雅黑:2;黑体:7;</font>
+<fontSize>24:23;</fontSize>
+<line_space>400:11;440:20;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:3;</font>
+<fontSize>24:1;28:1;30:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>宋体:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space>400:1;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post>实</post>
+	<level>1</level>
+	<section_type>3</section_type>
+	<sample>表1-1实验数据分析</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE4</type>
+<font>宋体:2;</font>
+<fontSize>18:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix>表注：</prefix>
+	<section_sep></section_sep>
+	<num_format>6</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>4</section_type>
+	<sample>表注：XXX</sample>
+</section_format>
+</format>
+<format>
+<type>5</type>
+<font>宋体:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space>400:2;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>华北电力大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>700:1;</line_space></format>
+<format>
+<type>MAJOR</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>700:1;</line_space></format>
+<format>
+<type>AUTHOR</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>700:1;</line_space></format>
+<format>
+<type>FORMULA_INDEX</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>(</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post>)</post>
+	<level>1</level>
+	<section_type>-512</section_type>
+	<sample>(1-1)</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>Times New Roman:31;</font>
+<fontSize>24:31;</fontSize>
+<line_space>440:31;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>640:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>Times New Roman:5;</font>
+<fontSize>24:5;</fontSize>
+<line_space>440:5;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>640:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:5;</font>
+<fontSize>24:5;</fontSize>
+<line_space>440:5;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>640:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:1;21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>440:1;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:12;</font>
+<fontSize>21:12;</fontSize>
+<line_space>440:12;</line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:3;</font>
+<fontSize>32:3;</fontSize>
+<line_space>700:3;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>840:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:5;</font>
+<fontSize>24:5;</fontSize>
+<line_space>440:4;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>Times New Roman:1;宋体:1;</font>
+<fontSize>32:2;</fontSize>
+<line_space>640:1;</line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>宋体:3;</font>
+<fontSize>28:3;</fontSize>
+<line_space>640:3;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.3.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>Times New Roman:2;宋体:52;</font>
+<fontSize>22:57;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京理工大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>700:1;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:2;</font>
+<fontSize>28:2;</fontSize>
+<line_space>400:2;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>宋体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space>320:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>32:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space>400:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>楷体:2;</font>
+<fontSize>30:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:2;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font></font>
+<fontSize>21:18;</fontSize>
+<line_space>440:19;</line_space></format>
+<format>
+<type>-3</type>
+<font>微软雅黑:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>微软雅黑:1;</font>
+<fontSize>60:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:31;微软雅黑:1;黑体:6;</font>
+<fontSize>21:7;24:32;28:9;32:5;</fontSize>
+<line_space>320:2;360:9;400:15;440:13;480:4;700:6;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>宋体:1;黑体:3;</font>
+<fontSize>32:6;</fontSize>
+<line_space>240:5;</line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:4;</font>
+<fontSize>28:4;</fontSize>
+<line_space>240:4;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:2;</font>
+<fontSize>24:1;28:1;</fontSize>
+<line_space>400:2;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>兰州大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:5;</font>
+<fontSize>21:5;</fontSize>
+<line_space>320:5;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>320:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>宋体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space>320:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:2;</font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:22;</font>
+<fontSize>21:16;28:12;30:8;32:2;</fontSize>
+<line_space>240:1;360:16;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:14;</font>
+<fontSize>21:1;24:10;32:3;</fontSize>
+<line_space>360:8;420:1;480:4;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>仿宋_GB2312:1;宋体:19;黑体:1;</font>
+<fontSize>21:7;24:12;28:3;32:1;</fontSize>
+<line_space>320:8;400:9;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:5;</font>
+<fontSize>21:1;32:5;</fontSize>
+<line_space>240:4;</line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>zh-CN:1;黑体:13;</font>
+<fontSize>28:15;</fontSize>
+<line_space>240:14;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:19;</font>
+<fontSize>24:14;28:5;</fontSize>
+<line_space>400:7;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>兰州大学</Organization>
+<Area>*</Area>
+<Argument>研究生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>宋体:1;</font>
+<fontSize>24:2;</fontSize>
+<line_space>360:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space>360:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:3;</font>
+<fontSize>21:2;</fontSize>
+<line_space>360:4;</line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>Times New Roman:1;宋体:9;</font>
+<fontSize>20:1;21:4;22:4;</fontSize>
+<line_space>360:12;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:15;黑体:1;</font>
+<fontSize>20:6;21:7;24:28;44:2;</fontSize>
+<line_space>360:120;480:1;</line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:9;</font>
+<fontSize>28:9;</fontSize>
+<line_space>360:9;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>Times New Roman:2;Verdana:1;宋体:84;黑体:5;</font>
+<fontSize>21:34;24:98;28:3;30:2;</fontSize>
+<line_space>288:1;360:105;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:5;</font>
+<fontSize>28:5;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>Arial:12;宋体:1;黑体:1;</font>
+<fontSize>24:14;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font></font>
+<fontSize>24:21;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>黑体:4;</font>
+<fontSize>28:4;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>武汉工程大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:5;新宋体:7;黑体:1;</font>
+<fontSize>18:7;21:4;24:1;36:1;</fontSize>
+<line_space>400:5;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[2]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>24:2;</fontSize>
+<line_space>400:2;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>Arial:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:3;</font>
+<fontSize>24:3;</fontSize>
+<line_space>400:3;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:3;</font>
+<fontSize>18:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>黑体:2;</font>
+<fontSize>36:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_COL</type>
+<font>华文行楷:1;宋体:126;隶书:1;黑体:7;</font>
+<fontSize>21:99;24:10;28:7;44:2;52:2;</fontSize>
+<line_space>300:40;320:85;360:19;</line_space></format>
+<format>
+<type>-3</type>
+<font></font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:2;</font>
+<fontSize>44:2;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font></font>
+<fontSize>36:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>Arial:2;Times New Roman:8;宋体:43;楷体_GB2312:11;黑体:13;</font>
+<fontSize>21:11;24:75;28:4;30:3;36:13;</fontSize>
+<line_space>300:2;400:62;440:6;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>宋体:1;黑体:7;</font>
+<fontSize>21:1;30:6;36:2;</fontSize>
+<line_space>400:7;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>1</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中国矿业大学</Organization>
+<Area>*</Area>
+<Argument>研究生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>FORMULA_INDEX</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>zh-CN:1;宋体:1;</font>
+<fontSize>24:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>宋体:3;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:10;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>Arial:9;zh-CN:2;宋体:6;</font>
+<fontSize>18:6;21:11;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>宋体:1;黑体:21;</font>
+<fontSize>21:23;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>华文中宋:2;宋体:4;</font>
+<fontSize>72:2;</fontSize>
+<line_space>288:4;</line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>黑体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>仿宋_GB2312:11;宋体:279;黑体:1;</font>
+<fontSize>21:286;30:2;32:9;</fontSize>
+<line_space>240:178;280:1;360:12;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>Arial:1;zh-CN:46;宋体:156;黑体:10;</font>
+<fontSize>21:34;24:51;30:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:9;</font>
+<fontSize>30:9;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>Arial:21;</font>
+<fontSize>28:21;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>Arial:26;</font>
+<fontSize>24:26;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>zh-CN:4;宋体:1;</font>
+<fontSize>24:5;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中国石油大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:12;</font>
+<fontSize>24:12;</fontSize>
+<line_space>240:1;440:1;460:10;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]丁昊凯，许静雯，谢黎文；ASP.NET网站开发典型模块与实例精讲．北京：电子工业出版社，2006.8</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>460:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>楷体:3;</font>
+<fontSize>21:3;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2-1</sample>
+</section_format>
+</format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>楷体:7;</font>
+<fontSize>28:7;</fontSize>
+<line_space>360:7;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>楷体:3;</font>
+<fontSize>44:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:25;黑体:2;</font>
+<fontSize>24:1;32:3;</fontSize>
+<line_space>460:28;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>宋体:3;</font>
+<fontSize>30:3;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>Arial:4;</font>
+<fontSize>28:4;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font></font>
+<fontSize>28:5;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.3.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:4;</font>
+<fontSize>28:15;</fontSize>
+<line_space>360:15;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中国政法大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>MAJOR</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>AUTHOR</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>宋体:5;</font>
+<fontSize>24:5;</fontSize>
+<line_space>440:5;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]李松庆，王炜.第三方物流的实证分析[M].北京：中国物资出版社，2005.</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>24:3;</fontSize>
+<line_space>440:3;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>32:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;宋体:1;</font>
+<fontSize>18:1;21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>440:1;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>0</level>
+	<section_type>-102</section_type>
+	<sample>表1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font></font>
+<fontSize>21:30;</fontSize>
+<line_space>440:30;</line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:3;</font>
+<fontSize>32:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>Arial:1;宋体:33;黑体:2;</font>
+<fontSize>21:1;24:17;28:17;30:1;32:1;</fontSize>
+<line_space>440:37;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>、</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>一、我国第三方物流的概况</sample>
+</section_format>
+</format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中央财经大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>Arial:2;宋体:5;</font>
+<fontSize>24:7;28:1;</fontSize>
+<line_space>440:7;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>32:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>300:1;</line_space></format>
+<format>
+<type>-500</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>zh-CN:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font></font>
+<fontSize>30:24;32:2;</fontSize>
+<line_space>480:26;</line_space></format>
+<format>
+<type>TABLE_COL</type>
+<font>黑体:2;</font>
+<fontSize>24:1;52:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:3;</font>
+<fontSize>28:3;</fontSize>
+<line_space>300:3;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>Arial:5;宋体:36;黑体:3;</font>
+<fontSize>21:1;24:64;28:1;32:3;</fontSize>
+<line_space>300:26;440:21;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>宋体:3;</font>
+<fontSize>24:1;28:2;</fontSize>
+<line_space>440:3;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>一</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>宋体:5;</font>
+<fontSize>24:5;</fontSize>
+<line_space>440:5;</line_space>
+<section_format>
+	<prefix>（</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>）</post>
+	<level>-1</level>
+	<section_type>2</section_type>
+	<sample>（一）正文字体</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>宋体:2;</font>
+<fontSize>21:1;24:1;</fontSize>
+<line_space>440:2;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>3</section_type>
+	<sample>1.一个序号使用的例子</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE4</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>440:1;</line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>关</post>
+	<level>1</level>
+	<section_type>4</section_type>
+	<sample>2.关于序号的其他问题</sample>
+</section_format>
+</format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中央民族大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>FORMULA_INDEX</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>楷体_GB2312:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>楷体_GB2312:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>楷体_GB2312:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font></font>
+<fontSize>21:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_COL</type>
+<font></font>
+<fontSize>21:11;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:10;黑体:12;</font>
+<fontSize>20:9;21:6;24:13;30:2;32:5;</fontSize>
+<line_space>240:4;360:15;400:10;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:4;</font>
+<fontSize>24:2;32:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>宋体:5;黑体:4;</font>
+<fontSize>24:6;28:3;</fontSize>
+<line_space>400:5;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>3</section_type>
+	<sample>表2.1</sample>
+</section_format>
+</format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>湖北汽车工业学院</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>FORMULA_INDEX</type>
+<font>宋体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>400:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>楷体_GB2312:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>楷体_GB2312:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>楷体_GB2312:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font></font>
+<fontSize>21:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TABLE_COL</type>
+<font></font>
+<fontSize>21:11;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TEXT</type>
+<font>宋体:10;黑体:12;</font>
+<fontSize>20:9;21:6;24:13;30:2;32:5;</fontSize>
+<line_space>240:4;360:15;400:10;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:4;</font>
+<fontSize>24:2;32:2;</fontSize>
+<line_space>400:2;</line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>2</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第一章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>宋体:5;黑体:4;</font>
+<fontSize>24:6;28:3;</fontSize>
+<line_space>400:5;</line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:2;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>3</section_type>
+	<sample>表2.1</sample>
+</section_format>
+</format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>湖北汽车工业学院科技学院</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>Times New Roman:38;</font>
+<fontSize>24:38;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>王坤[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>,</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>王坤[1,2]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>黑体:2;</font>
+<fontSize>36:2;</fontSize>
+<line_space>360:2;</line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font></font>
+<fontSize>21:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表6.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font></font>
+<fontSize>21:30;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>36:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>Times New Roman:5;宋体:5;黑体:18;</font>
+<fontSize>21:2;24:5;28:5;30:16;32:2;36:2;</fontSize>
+<line_space>240:5;360:1;440:1;560:8;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:2;</font>
+<fontSize>32:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>黑体:3;</font>
+<fontSize>28:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TITLE3</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>Times New Roman:102;宋体:1;黑体:9;</font>
+<fontSize>24:112;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>北京理工大学</Organization>
+<Area>*</Area>
+<Argument>研究生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>SUPERVISOR</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>MAJOR</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>AUTHOR</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font></font>
+<fontSize>24:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]李旭乐，宗光华.生物工程微操作机器人视觉系统的研究[J].北京航空航天大学学报，2002（2）：22-25</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>BatangChe:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>BatangChe:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>宋体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:3;</font>
+<fontSize>24:3;</fontSize>
+<line_space>360:3;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>黑体:2;</font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>zh-CN:2;</font>
+<fontSize>18:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font>宋体:2;</font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>Times New Roman:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>360:1;</line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>-201</section_type>
+	<sample>图2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>360:1;</line_space>
+<section_format>
+	<prefix>续表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>-</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>-102</section_type>
+	<sample>续表2-1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font></font>
+<fontSize>21:50;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>宋体:1;</font>
+<fontSize>44:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>宋体:8;</font>
+<fontSize>44:8;</fontSize>
+<line_space>240:8;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>72:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>BatangChe:1;Times New Roman:8;zh-CN:2;宋体:3;黑体:2;</font>
+<fontSize>21:2;24:18;28:10;36:3;</fontSize>
+<line_space>360:7;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>Times New Roman:3;宋体:1;</font>
+<fontSize>32:4;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>CONTENT1</type>
+<font>Times New Roman:14;</font>
+<fontSize>24:8;28:6;</fontSize>
+<line_space></line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>上海第二工业大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>MAJOR</type>
+<font></font>
+<fontSize></fontSize>
+<line_space>1260:1;</line_space></format>
+<format>
+<type>AUTHOR</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>.</post>
+	<level>1</level>
+	<section_type>-513</section_type>
+	<sample>2.</sample>
+</section_format>
+</format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font></font>
+<fontSize></fontSize>
+<line_space>360:6;</line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>440:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>28:3;</fontSize>
+<line_space>360:3;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:2;</font>
+<fontSize>28:3;</fontSize>
+<line_space>360:3;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>32:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font></font>
+<fontSize>18:2;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font></font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;24:1;</fontSize>
+<line_space>360:2;</line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post>表</post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图2.1表示DPCM的原理，图中s(t)为模拟信号波形，x(Figure</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>360:1;</line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表2.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:55;</font>
+<fontSize>18:3;21:15;24:55;</fontSize>
+<line_space>360:94;</line_space></format>
+<format>
+<type>-3</type>
+<font>长城楷体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:2;</font>
+<fontSize>30:2;</fontSize>
+<line_space>480:2;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>黑体:1;</font>
+<fontSize>56:1;</fontSize>
+<line_space>1260:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>zh-CN:1;宋体:32;楷体_GB2312:1;长城楷体:3;黑体:5;</font>
+<fontSize>18:4;21:1;24:55;28:16;30:3;32:5;36:2;56:1;</fontSize>
+<line_space>360:62;480:5;576:1;600:11;720:1;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:3;</font>
+<fontSize>32:3;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TITLE2</type>
+<font>Times New Roman:5;</font>
+<fontSize>28:5;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>2.2.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>宋体:2;</font>
+<fontSize>24:9;</fontSize>
+<line_space>360:9;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>上海师范大学天华学院</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>MAJOR</type>
+<font>Microsoft JhengHei:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>413:1;</line_space></format>
+<format>
+<type>AUTHOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>413:1;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font>Times New Roman:6;</font>
+<fontSize>21:7;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[3]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font>zh-CN:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font>Times New Roman:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize>24:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:2;</font>
+<fontSize>24:2;</fontSize>
+<line_space>400:1;480:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>240:1;</line_space></format>
+<format>
+<type>FOOTER</type>
+<font>Times New Roman:2;宋体:1;</font>
+<fontSize>18:2;21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>宋体:2;</font>
+<fontSize>18:2;21:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font></font>
+<fontSize></fontSize>
+<line_space>300:6;</line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:3;</font>
+<fontSize>21:2;</fontSize>
+<line_space>360:1;</line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:6;</font>
+<fontSize>21:6;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>Times New Roman:3;宋体:25;</font>
+<fontSize>24:3;28:3;</fontSize>
+<line_space>240:3;360:34;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>Microsoft JhengHei:1;</font>
+<fontSize>52:1;</fontSize>
+<line_space>680:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>Microsoft JhengHei:4;Times New Roman:4;zh-CN:2;仿宋_GB2312:1;宋体:33;黑体:6;</font>
+<fontSize>18:1;24:13;28:14;30:2;32:1;</fontSize>
+<line_space>240:2;360:14;366:1;379:1;413:4;428:1;480:4;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:3;</font>
+<fontSize>28:3;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第1章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>宋体:3;黑体:5;</font>
+<fontSize>24:8;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:13;</font>
+<fontSize>24:13;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>黑体:23;</font>
+<fontSize>24:21;28:2;</fontSize>
+<line_space>240:20;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中国科学院大学</Organization>
+<Area>*</Area>
+<Argument>本科生</Argument>
+</DocTemplate>
+<DocTemplate><DocFormat><format>
+<type>MAJOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>640:1;</line_space></format>
+<format>
+<type>AUTHOR</type>
+<font>宋体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>640:1;</line_space></format>
+<format>
+<type>ACKNOWLEDGE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>REFERENCE_TEXT</type>
+<font></font>
+<fontSize>21:7;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>[</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>]</post>
+	<level>1</level>
+	<section_type>-510</section_type>
+	<sample>[1]</sample>
+</section_format>
+</format>
+<format>
+<type>REFERENCE_CAPTION</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_EN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_EN</type>
+<font></font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_EN</type>
+<font></font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_KEYWORD_CN</type>
+<font>宋体:1;</font>
+<fontSize></fontSize>
+<line_space></line_space></format>
+<format>
+<type>ABSTRACT_TEXT_CN</type>
+<font>宋体:2;</font>
+<fontSize>24:1;</fontSize>
+<line_space>360:1;</line_space></format>
+<format>
+<type>ABSTRACT_CAPTION_CN</type>
+<font>黑体:1;</font>
+<fontSize>28:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FOOTER</type>
+<font>Times New Roman:5;</font>
+<fontSize>18:5;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>HEADER</type>
+<font>宋体:1;</font>
+<fontSize>18:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>TXTBOX</type>
+<font></font>
+<fontSize></fontSize>
+<line_space>300:6;</line_space></format>
+<format>
+<type>FIGURE_CAPTION</type>
+<font>宋体:3;</font>
+<fontSize>21:2;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>图</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-201</section_type>
+	<sample>图1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_CAPTION</type>
+<font>宋体:7;</font>
+<fontSize>21:7;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>表</prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>1</level>
+	<section_type>-102</section_type>
+	<sample>表1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TABLE_COL</type>
+<font>宋体:53;黑体:6;</font>
+<fontSize>21:7;28:6;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>-3</type>
+<font>黑体:1;</font>
+<fontSize>30:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>-2</type>
+<font>黑体:1;</font>
+<fontSize>52:1;</fontSize>
+<line_space></line_space></format>
+<format>
+<type>FIRSTPAGES</type>
+<font>宋体:1;</font>
+<fontSize>21:1;</fontSize>
+<line_space>480:1;</line_space></format>
+<format>
+<type>TEXT</type>
+<font>仿宋_GB2312:1;宋体:46;黑体:27;</font>
+<fontSize>24:21;28:16;30:2;32:3;</fontSize>
+<line_space>240:19;480:6;640:3;</line_space></format>
+<format>
+<type>TITLE1</type>
+<font>黑体:4;</font>
+<fontSize>28:4;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix>第</prefix>
+	<section_sep></section_sep>
+	<num_format>0</num_format>
+	<post>章</post>
+	<level>1</level>
+	<section_type>1</section_type>
+	<sample>第2章</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE2</type>
+<font>宋体:3;黑体:5;</font>
+<fontSize>24:8;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>2</level>
+	<section_type>2</section_type>
+	<sample>1.1</sample>
+</section_format>
+</format>
+<format>
+<type>TITLE3</type>
+<font>黑体:13;</font>
+<fontSize>24:13;</fontSize>
+<line_space></line_space>
+<section_format>
+	<prefix></prefix>
+	<chapter_format>0</chapter_format>
+	<section_sep>.</section_sep>
+	<num_format>0</num_format>
+	<post></post>
+	<level>3</level>
+	<section_type>3</section_type>
+	<sample>1.1.1</sample>
+</section_format>
+</format>
+<format>
+<type>CONTENT1</type>
+<font>黑体:2;</font>
+<fontSize>24:1;28:1;</fontSize>
+<line_space>240:2;</line_space></format>
+</DocFormat><Required>
+</Required>
+
+<DocType>7</DocType>
+<Organization>中国科学院大学</Organization>
+<Area>*</Area>
+<Argument>研究生</Argument>
+</DocTemplate>

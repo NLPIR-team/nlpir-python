@@ -1,5 +1,5 @@
 import os
-
+from pathlib import Path
 
 test_str = "法国启蒙思想家孟德斯鸠曾说过：“一切有权力的人都容易滥用权力，这是一条千古不变的经验。有权力的人直到把权力用到" \
            "极限方可休止。”另一法国启蒙思想家卢梭从社会契约论的观点出发，认为国家权力是公民让渡其全部“自然权利”而获得的，" \
@@ -9,3 +9,5 @@ test_str_2nd = "另一法国启蒙思想家卢梭从社会契约论的观点出�
 test_source_filename = os.path.join(os.path.dirname(__file__), "test.txt")
 test_result_filename = os.path.join(os.path.dirname(__file__), "test_result.txt")
 user_dict_path = os.path.join(os.path.dirname(__file__), "tmp_user_dict.txt")
+test_kgb_rules = Path(os.path.join(os.path.dirname(__file__), "kgb_rule_test.xml")).read_text()
+test_kgb_test_text = Path(os.path.join(os.path.dirname(__file__), "kgb_test.txt")).read_text()
