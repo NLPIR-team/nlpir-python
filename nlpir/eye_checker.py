@@ -82,7 +82,7 @@ def extract_knowledge(
         report_type: int
 ) -> KGBResult:
     extract_result_text = __instance__.extract_knowledge(report_text, report_type)
-    extract_result_dict = json.loads(extract_result_text)
+    extract_result_dict = json.loads(extract_result_text) if extract_result_text is not None else dict()
 
     single_key_result = extract_result_dict.pop("SingleKey_result", dict())
     single_key_result["key_value"] = single_key_result.pop("KeyVals", list())
