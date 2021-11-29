@@ -40,17 +40,6 @@ class EyeChecker(nlpir_base.NLPIRBase):
     DOC_EXTRACT_TYPE_MAX_LENGTH = 600  # 最大长度
     load_mode = nlpir_base.NLPIRBase.RTLD_LAZY
 
-    def __init__(
-            self,
-            encode: int = UTF8_CODE,
-            lib_path: typing.Optional[int] = None,
-            data_path: typing.Optional[str] = None,
-            license_code: str = ''
-    ):
-        kgb_path = os.path.join(PACKAGE_DIR, "Data/KGB")
-        data_path = kgb_path if data_path is None else data_path
-        super().__init__(encode, lib_path, data_path, license_code)
-
     @property
     def dll_name(self) -> str:
         return "EyeCheckerAPI"
