@@ -1,10 +1,7 @@
 # coding=utf-8
-import os
-import typing
 from ctypes import c_bool, c_char_p, c_int, c_size_t
 
 from nlpir.native import nlpir_base
-from nlpir.native.nlpir_base import NLPIRBase, UTF8_CODE, PACKAGE_DIR
 
 RPT_UNSPECIFIC = 0  # No Specific type
 RPT_JIAYOUZHAN = 1  # 加油站报告
