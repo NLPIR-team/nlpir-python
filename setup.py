@@ -57,9 +57,6 @@ setup(
             'Data/Sentiment/Data/*/*',
             'Data/SentimentAnalysis/Data/*',
             'Data/SentimentAnalysis/Data/*/*',
-            # TODO should separate it or put it to main Data ?
-            'Data/KGB/Data/*',
-            'Data/KGB/Data/*/*',
         ]
     },
     keywords=['nlpir', 'nlp', 'Chinese word segmentation', 'ictclas', 'CWS'],
