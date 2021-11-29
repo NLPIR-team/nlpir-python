@@ -1,0 +1,11 @@
+{
+	"PunctionCheck": "off",
+	"FormatCheck": "off",
+	"FilterCheck": "off",
+	"SpellCheck": "off",
+	"SpellCheckIP": "127.0.0.1:8001",
+	"OCR": "off",
+	"CountryDetect": "on",	
+	"author": "张华平博士",
+	"Contact": "张华平博士"
+}

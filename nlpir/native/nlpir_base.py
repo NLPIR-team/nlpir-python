@@ -28,6 +28,7 @@ GBK_FANTI_CODE = 3
 UTF8_FANTI_CODE = 4
 
 # Output format
+OUTPUT_FORMAT_XML = 0  #: EyeChecker 使用的
 OUTPUT_FORMAT_SHARP = 0  #: 正常的字符串按照#链接的输出新词结果
 OUTPUT_FORMAT_JSON = 1  #: 正常的JSON字符串输出新词结果
 OUTPUT_FORMAT_EXCEL = 2  #: 正常的CSV字符串输出新词结果,保存为csv格式即可采用Excel打开

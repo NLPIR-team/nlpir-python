@@ -15,6 +15,7 @@ with open("README.md", encoding="utf-8") as f:
     readme = f.read()
 dependencies = [
     'requests',
+    'pydantic>=1.8.2'
 ]
 
 multi_arch_lib = {
@@ -55,7 +56,10 @@ setup(
             'Data/Sentiment/Data/*',
             'Data/Sentiment/Data/*/*',
             'Data/SentimentAnalysis/Data/*',
-            'Data/SentimentAnalysis/Data/*/*'
+            'Data/SentimentAnalysis/Data/*/*',
+            # TODO should separate it or put it to main Data ?
+            'Data/KGB/Data/*',
+            'Data/KGB/Data/*/*',
         ]
     },
     keywords=['nlpir', 'nlp', 'Chinese word segmentation', 'ictclas', 'CWS'],

@@ -1,0 +1,8 @@
+<?xmlversion="1.0"encoding="GB2312"?>
+<KGB>
+	<PunctionCheck>off</PunctionCheck>//标点检查是否启动
+	<FormatCheck>off</FormatCheck>//格式检查
+	<OCR>off</OCR>//是否是OCR段落是否需要拼接
+	<author>张华平博士</author>//作者
+	<Contact>pipy_zhang@msn.com</Contact>//作者联系方式
+</KGB>

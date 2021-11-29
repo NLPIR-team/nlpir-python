@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<kgb>
+	<item>
+		<no>1</no> 
+		<name>回收站</name>
+		<rule>{[(经营地址^(乙方^))]}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>temp|回收站</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>1</no> // 1
+		<name>供应方</name>
+		<rule>{[(供应方;乙方;供方;卖方;供货单位;承包人;承包人（全称）)]}+{[：]} +0+ {[-(/LE;以下简称乙方;（以下;签订时间;（盖章）;需方;。;，;姓名)]50}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_B|供应方:{((?!的).)*$}</argument>//contract_a 主体
+		<credit>90</credit>
+	</item>
+
+	<item>
+		<no>2</no> //2
+		<name>采购标的物名称</name>
+		<rule>{[/LB]}+{[-(采购;合同)]8}s+{[(采购合同)]}</rule>
+		<field>text</field>//首行为字段头; colhead
+		<action>extract</action>
+		<argument>subject_matter|采购标的物名称:{\S+}</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>3</no> // 3(1)
+		<name>采购标的总物价</name>
+		<rule>{[(大写)]}+10+{[：]} + {[(/t;/m;壹;贰;叁;肆;伍;陆;柒;捌;玖;零;拾;佰;仟;万;亿;圆;元;分;角)]100}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_feebig|采购标的总物价:{\S+[元圆]\S*}</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>3.1</no> // 3(1)
+		<name>采购标的总物价</name>
+		<rule>{[(大写)]}+{[(/t;/m;壹;贰;叁;肆;伍;陆;柒;捌;玖;零;拾;佰;仟;万;亿;圆;元;分;角)]100}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_feebig|采购标的总物价:{\S+[元圆]\S*}</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>4</no> // 3(1)
+		<name>金额小写</name>
+		<rule>{[人民币;￥;¥;小写;价款]}+4 +{[：]}+{[(,;/m;元)]20}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_fee|金额小写:{\S*\d\S*}</argument>
+		<credit>90</credit>
+	</item>
+
+	<item>
+		<no>13</no> 
+		<name>无线表格抽取</name>
+		<rule>{[(DN40;2.2KW;3.0KW;DN40;DN65)]}s+{[/Unit]}s+{[/Unit]}s+{[/Unit]}s</rule>
+		<field>text</field>//
+		<action>Unit_Extract</action>
+		<argument>standard|标识;result|功率;standardVal|重量;unit|误差;</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>4.1</no> 
+		<name>金额小写</name>
+		<rule>{[合同]+[价款]+[总额]}+{[(,;/m;元)]20}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_fee|金额小写:{\S*\d\S*}</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>5</no>// 3（2）
+		<name>计价方式类型</name>
+		<rule>{[(固定单价;固定总价;根据市场价格波动调整;总价固定;单价固定)]}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>lowercase_amount|计价方式类型</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>6</no> // 4
+		<name>价格构成</name>
+		<rule>{[(单价;以上价格)]}+5 + {[(包含;包含但不限于;包括;含)]} + {[-(/LE;。;；)]50}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_price_including|价格构成</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>7</no> // 5(1)
+		<name>交货期限</name>
+		<rule>{[(交货;交（提）货)]}+2+{[(期限;时间)]}+{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_submit_deadline|交货期限</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>8</no> //5(2)
+		<name>交货地点</name>
+		<rule>{[(交（提）货;交货)] + [(地点)]}+ 3 +{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_submit_location|交货地点</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>9</no> //6(1)
+		<name>收货人</name>
+		<rule>{[(/LB;姓名：)]}+{[-(电话)]6 +[电话] +[：] + [(/m)]11}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>receiver_phone|收货人</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>10</no>//6(2)
+		<name>收货人职责</name>
+		<rule>{[(收货人职责)]} +{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>receiver _duties|收货人职责</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>11</no>//7(1)
+		<name>质量要求</name>
+		<rule>{[(质量)]} +{[(要求;标准)]} + 10 +{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>quality_requirements|质量要求</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>12</no> //7(2)
+		<name>质量保证条款</name>
+		<rule>{材料质保;质量保修;材料保修}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>contract_quality_ensurance|质量保证条款</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>13</no> //8
+		<name>交货验收及保管方式</name>
+		<rule>{[(验收方法、验收内容)]}+{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>delivery_acceptance|交货验收及保管方式</argument>
+		<credit>90</credit>
+	</item>
+	
+	<item>
+		<no>15</no> //10(1)
+		<name>付款条件</name>
+		<rule>{[(支付货款的条件)]}+{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_condition|付款条件</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>16</no> //10(2)
+		<name>结算方式</name>
+		<rule>{[(支付;结算;付款)] + [方式]}+2+{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_pay_means|结算方式</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>17</no> //11
+		<name>违约责任条款</name>
+		<rule>{、违约责任}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>breach_of_liability_clause|违约责任条款</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>18</no> //12
+		<name>争议解决方式</name>
+		<rule>{争议解决方式;争议解决}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>dispute_Resolution|争议解决方式</argument>
+		<credit>90</credit>
+	</item>
+	
+	
+	<item>
+		<no>21</no> //14
+		<name>合同份数</name> // 14
+		<rule>{[合同]}+{[-(甲方执;各执;各持;各;甲执)]1000}+{[(甲方执;各执;各持;各;甲执)]} + {{[-(份)]}s + {[份]}</rule>
+		<field>text</field>
+		<action>extract</action>//抽取并转换为数
+		<argument>contract_a_count|合同份数</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>22</no> //15
+		<name>合同生效时间</name>
+		<rule>{合同生效}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>contract_effective_conditions|合同生效时间</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>23</no> // 16
+		<name>权利义务不得转让条款</name>
+		<rule>{[(/LB;。;；)]} + {[-(不得转让)]100 + [不得转让] + [-(/LE;；)]100}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>rights_and_obligations|权利义务不得转让条款:{\S*权利\S+}</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>24</no> //17
+		<name>补充条款</name>
+		<rule>{补充条款}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>additional_terms|补充条款</argument>
+		<credit>90</credit>
+	</item>
+
+
+	<item>
+		<no>25</no>
+		<name>采购方</name>
+		<rule>{[(采购方;甲方;需方;买方;发包人;订货单位)]}+{[：]} + {[-(/LE;（盖章）;（以下;签订时间;供应方;乙方)]50}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_A|甲方:{[^：]+}</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>26</no> 
+		<name>工程名称</name>
+		<rule>{[(工程名称)]}+{[：]} + {[-(/LE;；;工程地点)]100}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>contract_project|工程名称</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>27</no>  // 13(1)
+		<name>税务信息</name>
+		<rule>{增值税发票}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>tax_information|税务信息</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>28</no> 
+		<name>发票要求</name>
+		<rule>{[(发票的要求)]}+{[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>invoice_request|发票要求</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>29</no> 
+		<name>施工验收方式</name>
+		<rule>{[(/LB;。;；)]} + {[-(通过验收)]100 + [通过验收] + [-(/LE)]100}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>construction_acceptance_method|施工验收方式</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>30</no> //12
+		<name>争议解决方式</name>
+		<rule>{[解决合同纠纷的方式]} + {[：]} + {[-(/LE)]1000}s</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>dispute_Resolution|争议解决方式</argument>
+		<credit>90</credit>
+	</item>
+	
+	<item>
+		<no>31</no>//7(1)
+		<name>质量要求</name>
+		<rule>{质量要求;质量标准}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>quality_requirements|质量要求</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>32</no> //10(2)
+		<name>结算方式</name>
+		<rule>{结算方式;支付方式;结算方法}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>contract_pay_means|结算方式</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>33</no> // 16
+		<name>权利义务不得转让条款</name>
+		<rule>{权利义务不得转让条款;权利义务之转让}</rule>
+		<field>title</field>
+		<action>sectionextract</action>
+		<argument>rights_and_obligations|权利义务不得转让条款</argument>
+		<credit>90</credit>
+	</item>
+	
+	<item>//序号	材料名称	规格型号	单位	订购数量	单价（元）	合同金额
+		<no>100</no> 
+		<name>合同报价提取</name>
+		<rule>{[序号]}s+{[材料名称;标的物;产品名称;名称]}s+{[规格;型号]}s+{[单位]}s+{[数量;订购数量]}s+{[单价;单价（元）]}s+{[金额;总价]}s</rule>
+		<field>rowhead</field>//首行为字段头; colhead
+		<action>tableextract</action>
+		<argument>contract_xuhao;contract_itemname|商品名称;contract_itemspec|规格型号;contract_itemunit|单位;contract_itemnum|订购数量;contract_itemprice|单价;contract_sum|金额;</argument>//contract_object 安评中的评价对象
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>34</no> 
+		<name>甲方违约金</name>
+		<rule>{[甲方应向乙方支付退货部分货款的]} + {[-(作为违约金)]10}s + {[作为违约金]}</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>ldamaages_a|甲方违约金</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>35</no> 
+		<name>乙方违约金</name>
+		<rule>{[乙方需向甲方支付不能交货部分货款的]} + {[-(作为违约金)]10}s + {[作为违约金]}</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>ldamaages_b|乙方违约金</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>36</no> 
+		<name>甲方所在地</name>
+		<rule>{[依法向]} + {[-(人民法院)]10}s + {[人民法院]}</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>address_sue|起诉法院所在地</argument>
+		<credit>90</credit>
+	</item>
+	<item>
+		<no>37</no> 
+		<name>首次付款</name>
+		<rule>{[发货前支付]} + {[-(货款)]10}s + {[货款]}</rule>
+		<field>text</field>
+		<action>extract</action>
+		<argument>1000:首次付款比例不得等于或超过100%</argument>
+		<credit>90</credit>
+	</item>
+	</items>
+	<audits>
+		<audit>
+			<no>10</no>
+			<name>甲方合同份数</name>
+			<rule>integer(contract_a_count|合同份数) >= 3</rule>
+			<field>contract_a_count|合同份数</field>
+			<argument>1000:甲方合同份数不能少于3份</argument>
+			<credit>90</credit>
+		</audit>	
+			<audit>
+			<no>2</no>
+			<name>违约金比例不对等</name>
+			<rule>ldamaages_a <= ldamaages_b</rule>
+			<field>contract_feebig|违约金比例不对等</field>
+			<argument>1000:违约金比例不对等</argument>
+			<credit>90</credit>
+		</audit>
+	<audit>
+			<no>7</no>
+			<name>分项总和必须等于总额</name>
+			<rule>sum( contract_sum|金额 ) = contract_fee|金额小写</rule>
+			<field>same_col</field>
+			<argument>1000;分项总和必须等于总额</argument>
+			<credit>90</credit>
+		</audit>		
+		<audit>
+			<no>6</no>
+			<name>数量价格金额核算</name>
+			<rule>contract_itemnum|订购数量 * contract_itemprice|单价 = contract_sum|金额</rule>
+			<field>same_tuple</field>;same_tuple:同一行或者同一元组内；same_col，同一列;same_para；同一段；same_section:同一章节
+			<argument>1000;数量价格金额核算</argument>
+			<credit>90</credit>
+		</audit>
+
+
+		<audit>
+			<no>6</no>
+			<name>首付货款核算</name>
+			<rule>payment|首次付款 < 100% </rule>
+			<field></field>
+			<argument>1000;首付货款核算异常</argument>
+			<credit>1000</credit>
+		</audit>
+		
+		<audit>
+			<no>1</no>
+			<name>元组指标唯一性检查审计</name>
+			<rule>audit_unique_tuple</rule>
+			<field>contract_A|甲方;contract_B|供应方;contract_project|工程名称;contract_fee|金额小写;contract_feebig|金额大写</field>
+			<argument>3.1</argument>//错误编号
+			<credit>90</credit>
+		</audit>		<audit>
+			<no>1</no>
+			<name>指标唯一性检查审计</name>
+			<rule>audit_unique</rule>
+			<field>contract_A|甲方;contract_B|供应方;contract_project|工程名称;contract_fee|金额小写;contract_feebig|金额大写</field>
+			<argument>3.1</argument>//错误编号
+			<credit>90</credit>
+		</audit>
+	<audit>
+			<no>6</no>
+			<name>甲方黑名单排查</name>
+			<rule>contract_A|甲方 NOT_IN ["固安县万源轴承店";"宿州中矿三杰科技有限公司";"红河聚泰矿业有限公司";"四川东泉机械设备制造有限公司";"重庆京宏源铝业有限公司";"深圳海思半导体有限公司"]  </rule>
+			<field></field>
+			<argument>1000;甲方命中黑名单</argument>
+			<credit>1000</credit>
+		</audit>
+		<audit>
+			<no>6</no>
+			<name>乙方黑名单排查</name>
+			<rule>contract_B|乙方 NOT_IN ["固安县万源轴承店";"宿州中矿三杰科技有限公司";"红河聚泰矿业有限公司";"四川东泉机械设备制造有限公司";"重庆京宏源铝业有限公司";"深圳海思半导体有限公司"]  </rule>
+			<field></field>
+			<argument>1000;乙方命中黑名单</argument>
+			<credit>1000</credit>
+		</audit>
+		<audit>
+			<no>6</no>
+			<name>起诉法院所在地</name>
+			<rule>address_sue|起诉法院所在地  substr ["北京市";"甲方"]  </rule>
+			<field></field>
+			<argument>1000;法院选择错误</argument>
+			<credit>1000</credit>
+		</audit>
+		<audit>
+		<no>1</no>
+			<name>非空检查审计</name>
+			<rule>audit_not_null</rule>
+			<field>contract_quality_ensurance|质量保证条款;rights_and_obligations|权利义务不得转让条款;</field>
+			<argument>3.1</argument>//错误编号
+			<credit>90</credit>
+		</audit>
+		<audit>
+			<no>2</no>
+			<name>大小写金额一致性检查</name>
+			<rule>audit_num_chinese</rule>
+			<field>contract_feebig|金额大写</field>
+			<argument>11.1</argument>
+			<credit>90</credit>
+		</audit>	
+
+
+		</audits>	
+		</kgb>
+	

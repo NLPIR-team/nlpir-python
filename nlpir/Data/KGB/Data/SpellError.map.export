@@ -1,0 +1,3887 @@
+Data Size=2006,Index Size=1946
+Handle=0(阿谀奉迎),Start=0	End=0 count=1
+ data=1(阿谀逢迎) 
+Handle=1(阿谀逢迎),Start=1	End=1 count=1
+ data=0(阿谀奉迎) 
+Handle=2(哀声叹气),Start=2	End=2 count=1
+ data=3(唉声叹气) 
+Handle=3(唉声叹气),Start=3	End=3 count=1
+ data=2(哀声叹气) 
+Handle=4(爱滋病),Start=4	End=4 count=1
+ data=5(艾滋病) 
+Handle=5(艾滋病),Start=5	End=5 count=1
+ data=4(爱滋病) 
+Handle=6(爱不失手),Start=6	End=6 count=1
+ data=7(爱不释手) 
+Handle=7(爱不释手),Start=7	End=7 count=1
+ data=6(爱不失手) 
+Handle=8(爱带),Start=8	End=8 count=1
+ data=9(爱戴) 
+Handle=9(爱戴),Start=9	End=9 count=1
+ data=8(爱带) 
+Handle=10(安祥),Start=10	End=10 count=1
+ data=11(安详) 
+Handle=11(安详),Start=11	End=11 count=1
+ data=10(安祥) 
+Handle=12(按装),Start=12	End=12 count=1
+ data=13(安装) 
+Handle=13(安装),Start=13	End=13 count=1
+ data=12(按装) 
+Handle=14(暗熟),Start=14	End=14 count=1
+ data=15(谙熟) 
+Handle=15(谙熟),Start=15	End=15 count=1
+ data=14(暗熟) 
+Handle=16(按步就班),Start=16	End=16 count=1
+ data=17(按部就班) 
+Handle=17(按部就班),Start=17	End=17 count=1
+ data=16(按步就班) 
+Handle=18(暗然神伤),Start=18	End=18 count=1
+ data=19(黯然神伤) 
+Handle=19(黯然神伤),Start=19	End=19 count=1
+ data=18(暗然神伤) 
+Handle=20(暗然失色),Start=20	End=20 count=1
+ data=21(黯然失色) 
+Handle=21(黯然失色),Start=21	End=21 count=1
+ data=20(暗然失色) 
+Handle=22(跋徙),Start=22	End=22 count=1
+ data=23(跋涉) 
+Handle=23(跋涉),Start=23	End=23 count=1
+ data=22(跋徙) 
+Handle=24(白璧无暇),Start=24	End=24 count=1
+ data=25(白璧无瑕) 
+Handle=25(白璧无瑕),Start=25	End=25 count=1
+ data=24(白璧无暇) 
+Handle=26(百费待兴),Start=26	End=26 count=1
+ data=27(百废待兴) 
+Handle=27(百废待兴),Start=27	End=27 count=1
+ data=26(百费待兴) 
+Handle=28(百感交积),Start=28	End=28 count=1
+ data=29(百感交集) 
+Handle=29(百感交集),Start=29	End=29 count=1
+ data=28(百感交积) 
+Handle=30(百页窗),Start=30	End=30 count=1
+ data=31(百叶窗) 
+Handle=31(百叶窗),Start=31	End=31 count=1
+ data=30(百页窗) 
+Handle=32(裨官野史),Start=32	End=32 count=1
+ data=33(稗官野史) 
+Handle=33(稗官野史),Start=33	End=33 count=1
+ data=32(裨官野史) 
+Handle=34(搬门弄斧),Start=34	End=34 count=1
+ data=35(班门弄斧) 
+Handle=35(班门弄斧),Start=35	End=35 count=1
+ data=34(搬门弄斧) 
+Handle=36(半途而费),Start=36	End=36 count=1
+ data=37(半途而废) 
+Handle=37(半途而废),Start=37	End=37 count=1
+ data=36(半途而费) 
+Handle=38(报导),Start=38	End=38 count=1
+ data=39(报道) 
+Handle=39(报道),Start=39	End=39 count=1
+ data=38(报导) 
+Handle=40(报消),Start=40	End=40 count=1
+ data=41(报销) 
+Handle=41(报销),Start=41	End=41 count=1
+ data=40(报消) 
+Handle=42(报歉),Start=42	End=42 count=1
+ data=43(抱歉) 
+Handle=43(抱歉),Start=43	End=43 count=1
+ data=42(报歉) 
+Handle=44(报怨),Start=44	End=44 count=1
+ data=45(抱怨) 
+Handle=45(抱怨),Start=45	End=45 count=1
+ data=44(报怨) 
+Handle=46(爆发),Start=46	End=46 count=1
+ data=47(暴发) 
+Handle=47(暴发),Start=47	End=47 count=1
+ data=46(爆发) 
+Handle=48(爆乱),Start=48	End=48 count=1
+ data=49(暴乱) 
+Handle=49(暴乱),Start=49	End=49 count=1
+ data=48(爆乱) 
+Handle=50(暴燥),Start=50	End=50 count=1
+ data=51(暴躁) 
+Handle=51(暴躁),Start=51	End=51 count=1
+ data=50(暴燥) 
+Handle=52(杯盘狼迹),Start=52	End=52 count=1
+ data=53(杯盘狼藉) 
+Handle=53(杯盘狼藉),Start=53	End=53 count=1
+ data=52(杯盘狼迹) 
+Handle=54(碑贴临摹),Start=54	End=54 count=1
+ data=55(碑帖临摹) 
+Handle=55(碑帖临摹),Start=55	End=55 count=1
+ data=54(碑贴临摹) 
+Handle=56(备受),Start=56	End=56 count=1
+ data=57(倍受) 
+Handle=57(倍受),Start=57	End=57 count=1
+ data=56(备受) 
+Handle=58(奔弛),Start=58	End=58 count=1
+ data=59(奔驰) 
+Handle=59(奔驰),Start=59	End=59 count=1
+ data=58(奔弛) 
+Handle=60(蹦发),Start=60	End=60 count=1
+ data=61(迸发) 
+Handle=61(迸发),Start=61	End=61 count=1
+ data=60(蹦发) 
+Handle=62(必竟),Start=62	End=62 count=1
+ data=63(毕竟) 
+Handle=63(毕竟),Start=63	End=63 count=1
+ data=62(必竟) 
+Handle=65(蔽病),Start=64	End=64 count=1
+ data=66(弊病) 
+Handle=66(弊病),Start=65	End=65 count=1
+ data=65(蔽病) 
+Handle=67(编篡),Start=66	End=66 count=1
+ data=68(编纂) 
+Handle=68(编纂),Start=67	End=67 count=1
+ data=67(编篡) 
+Handle=69(变形金钢),Start=68	End=68 count=1
+ data=70(变形金刚) 
+Handle=70(变形金刚),Start=69	End=69 count=1
+ data=69(变形金钢) 
+Handle=71(辨护),Start=70	End=70 count=1
+ data=72(辩护) 
+Handle=72(辩护),Start=71	End=71 count=1
+ data=71(辨护) 
+Handle=73(敝气),Start=72	End=72 count=1
+ data=74(憋气) 
+Handle=74(憋气),Start=73	End=73 count=1
+ data=73(敝气) 
+Handle=75(别出新裁),Start=74	End=74 count=1
+ data=76(别出心裁) 
+Handle=76(别出心裁),Start=75	End=75 count=1
+ data=75(别出新裁) 
+Handle=77(彬彬有理),Start=76	End=76 count=1
+ data=78(彬彬有礼) 
+Handle=78(彬彬有礼),Start=77	End=77 count=1
+ data=77(彬彬有理) 
+Handle=79(频临),Start=78	End=78 count=1
+ data=80(濒临) 
+Handle=80(濒临),Start=79	End=79 count=1
+ data=79(频临) 
+Handle=81(并行不背),Start=80	End=80 count=1
+ data=82(并行不悖) 
+Handle=82(并行不悖),Start=81	End=81 count=1
+ data=81(并行不背) 
+Handle=83(病入膏盲),Start=82	End=82 count=1
+ data=84(病入膏肓) 
+Handle=84(病入膏肓),Start=83	End=83 count=1
+ data=83(病入膏盲) 
+Handle=85(泊来品),Start=84	End=84 count=1
+ data=86(舶来品) 
+Handle=86(舶来品),Start=85	End=85 count=1
+ data=85(泊来品) 
+Handle=87(不卑不吭),Start=86	End=86 count=1
+ data=88(不卑不亢) 
+Handle=88(不卑不亢),Start=87	End=87 count=1
+ data=87(不卑不吭) 
+Handle=89(不接不离),Start=88	End=88 count=1
+ data=90(不即不离) 
+Handle=90(不即不离),Start=89	End=89 count=1
+ data=89(不接不离) 
+Handle=91(不记其数),Start=90	End=90 count=1
+ data=92(不计其数) 
+Handle=92(不计其数),Start=91	End=91 count=1
+ data=91(不记其数) 
+Handle=93(不记前嫌),Start=92	End=92 count=1
+ data=94(不计前嫌) 
+Handle=94(不计前嫌),Start=93	End=93 count=1
+ data=93(不记前嫌) 
+Handle=95(不加思索),Start=94	End=94 count=1
+ data=96(不假思索) 
+Handle=96(不假思索),Start=95	End=95 count=1
+ data=95(不加思索) 
+Handle=97(不径而走),Start=96	End=96 count=1
+ data=98(不胫而走) 
+Handle=98(不胫而走),Start=97	End=97 count=1
+ data=97(不径而走) 
+Handle=99(不可思义),Start=98	End=98 count=1
+ data=100(不可思议) 
+Handle=100(不可思议),Start=99	End=99 count=1
+ data=99(不可思义) 
+Handle=101(不落巢臼),Start=100	End=100 count=1
+ data=102(不落窠臼) 
+Handle=102(不落窠臼),Start=101	End=101 count=1
+ data=101(不落巢臼) 
+Handle=103(不能自己),Start=102	End=102 count=1
+ data=104(不能自已) 
+Handle=104(不能自已),Start=103	End=103 count=1
+ data=103(不能自己) 
+Handle=105(不知所错),Start=104	End=104 count=1
+ data=106(不知所措) 
+Handle=106(不知所措),Start=105	End=105 count=1
+ data=105(不知所错) 
+Handle=107(部置),Start=106	End=106 count=1
+ data=108(布置) 
+Handle=108(布置),Start=107	End=107 count=1
+ data=107(部置) 
+Handle=109(布署),Start=108	End=108 count=1
+ data=110(部署) 
+Handle=110(部署),Start=109	End=109 count=1
+ data=109(布署) 
+Handle=111(残无人道),Start=110	End=110 count=1
+ data=112(惨无人道) 
+Handle=112(惨无人道),Start=111	End=111 count=1
+ data=111(残无人道) 
+Handle=113(伧促),Start=112	End=112 count=1
+ data=114(仓促) 
+Handle=114(仓促),Start=113	End=113 count=1
+ data=113(伧促) 
+Handle=115(仓怆),Start=114	End=114 count=1
+ data=116(仓皇) 
+Handle=116(仓皇),Start=115	End=115 count=1
+ data=115(仓怆) 
+Handle=117(仓慌失措),Start=116	End=116 count=1
+ data=118(仓惶失措) 
+Handle=118(仓惶失措),Start=117	End=117 count=1
+ data=117(仓慌失措) 
+Handle=119(仓桑),Start=118	End=118 count=1
+ data=120(沧桑) 
+Handle=120(沧桑),Start=119	End=119 count=1
+ data=119(仓桑) 
+Handle=121(草管人命),Start=120	End=120 count=1
+ data=122(草菅人命) 
+Handle=122(草菅人命),Start=121	End=121 count=1
+ data=121(草管人命) 
+Handle=123(草屏),Start=122	End=122 count=1
+ data=124(草坪) 
+Handle=124(草坪),Start=123	End=123 count=1
+ data=123(草屏) 
+Handle=126(查颜观色),Start=124	End=124 count=1
+ data=127(察颜观色) 
+Handle=127(察颜观色),Start=125	End=125 count=1
+ data=126(查颜观色) 
+Handle=128(馋言),Start=126	End=126 count=1
+ data=129(谗言) 
+Handle=129(谗言),Start=127	End=127 count=1
+ data=128(馋言) 
+Handle=130(缠绵悱测),Start=128	End=128 count=1
+ data=131(缠绵悱恻) 
+Handle=131(缠绵悱恻),Start=129	End=129 count=1
+ data=130(缠绵悱测) 
+Handle=132(伥然),Start=130	End=130 count=1
+ data=133(怅然) 
+Handle=133(怅然),Start=131	End=131 count=1
+ data=132(伥然) 
+Handle=134(朝气篷勃),Start=132	End=132 count=1
+ data=135(朝气蓬勃) 
+Handle=135(朝气蓬勃),Start=133	End=133 count=1
+ data=134(朝气篷勃) 
+Handle=136(制肘),Start=134	End=134 count=1
+ data=137(掣肘) 
+Handle=137(掣肘),Start=135	End=135 count=1
+ data=136(制肘) 
+Handle=138(沉缅),Start=136	End=136 count=1
+ data=139(沉湎) 
+Handle=139(沉湎),Start=137	End=137 count=1
+ data=138(沉缅) 
+Handle=140(陈词烂调),Start=138	End=138 count=1
+ data=141(陈词滥调) 
+Handle=141(陈词滥调),Start=139	End=139 count=1
+ data=140(陈词烂调) 
+Handle=142(趁心如意),Start=140	End=140 count=1
+ data=143(称心如意) 
+Handle=143(称心如意),Start=141	End=141 count=1
+ data=142(趁心如意) 
+Handle=144(膛目结舌),Start=142	End=142 count=1
+ data=145(瞠目结舌) 
+Handle=145(瞠目结舌),Start=143	End=143 count=1
+ data=144(膛目结舌) 
+Handle=146(惩前毙后),Start=144	End=144 count=1
+ data=147(惩前毖后) 
+Handle=147(惩前毖后),Start=145	End=145 count=1
+ data=146(惩前毙后) 
+Handle=148(冲耳不闻),Start=146	End=146 count=1
+ data=149(充耳不闻) 
+Handle=149(充耳不闻),Start=147	End=147 count=1
+ data=148(冲耳不闻) 
+Handle=150(瞳憬),Start=148	End=148 count=1
+ data=151(憧憬) 
+Handle=151(憧憬),Start=149	End=149 count=1
+ data=150(瞳憬) 
+Handle=152(稠怅),Start=150	End=150 count=1
+ data=153(惆怅) 
+Handle=153(惆怅),Start=151	End=151 count=1
+ data=152(稠怅) 
+Handle=154(出类拔粹),Start=152	End=152 count=1
+ data=155(出类拔萃) 
+Handle=155(出类拔萃),Start=153	End=153 count=1
+ data=154(出类拔粹) 
+Handle=156(出奇不意),Start=154	End=154 count=1
+ data=157(出其不意) 
+Handle=157(出其不意),Start=155	End=155 count=1
+ data=156(出奇不意) 
+Handle=158(出奇致胜),Start=156	End=156 count=1
+ data=159(出奇制胜) 
+Handle=159(出奇制胜),Start=157	End=157 count=1
+ data=158(出奇致胜) 
+Handle=160(出人投地),Start=158	End=158 count=1
+ data=161(出人头地) 
+Handle=161(出人头地),Start=159	End=159 count=1
+ data=160(出人投地) 
+Handle=162(处心集虑),Start=160	End=160 count=1
+ data=163(处心积虑) 
+Handle=163(处心积虑),Start=161	End=161 count=1
+ data=162(处心集虑) 
+Handle=164(穿流不息),Start=162	End=162 count=1
+ data=165(川流不息) 
+Handle=165(川流不息),Start=163	End=163 count=1
+ data=164(穿流不息) 
+Handle=166(串插),Start=164	End=164 count=1
+ data=167(穿插) 
+Handle=167(穿插),Start=165	End=165 count=1
+ data=166(串插) 
+Handle=168(穿带),Start=166	End=166 count=1
+ data=169(穿戴) 
+Handle=169(穿戴),Start=167	End=167 count=1
+ data=168(穿带) 
+Handle=170(床第之私),Start=168	End=168 count=1
+ data=171(床笫之私) 
+Handle=171(床笫之私),Start=169	End=169 count=1
+ data=170(床第之私) 
+Handle=172(唇枪舌箭),Start=170	End=170 count=1
+ data=173(唇枪舌剑) 
+Handle=173(唇枪舌剑),Start=171	End=171 count=1
+ data=172(唇枪舌箭) 
+Handle=174(缀学),Start=172	End=172 count=1
+ data=175(辍学) 
+Handle=175(辍学),Start=173	End=173 count=1
+ data=174(缀学) 
+Handle=176(词不达义),Start=174	End=174 count=1
+ data=177(词不达意) 
+Handle=177(词不达意),Start=175	End=175 count=1
+ data=176(词不达义) 
+Handle=178(凑和),Start=176	End=176 count=1
+ data=179(凑合) 
+Handle=179(凑合),Start=177	End=177 count=1
+ data=178(凑和) 
+Handle=180(粗旷),Start=178	End=178 count=1
+ data=181(粗犷) 
+Handle=181(粗犷),Start=179	End=179 count=1
+ data=180(粗旷) 
+Handle=182(纂夺),Start=180	End=180 count=1
+ data=183(篡夺) 
+Handle=183(篡夺),Start=181	End=181 count=1
+ data=182(纂夺) 
+Handle=184(磋跎岁月),Start=182	End=182 count=1
+ data=185(蹉跎岁月) 
+Handle=185(蹉跎岁月),Start=183	End=183 count=1
+ data=184(磋跎岁月) 
+Handle=186(打腊),Start=184	End=184 count=1
+ data=187(打猎) 
+Handle=187(打猎),Start=185	End=185 count=1
+ data=186(打腊) 
+Handle=188(大才小用),Start=186	End=186 count=1
+ data=189(大材小用) 
+Handle=189(大材小用),Start=187	End=187 count=1
+ data=188(大才小用) 
+Handle=190(大慨),Start=188	End=188 count=1
+ data=191(大概) 
+Handle=191(大概),Start=189	End=189 count=1
+ data=190(大慨) 
+Handle=192(大姆指),Start=190	End=190 count=1
+ data=193(大拇指) 
+Handle=193(大拇指),Start=191	End=191 count=1
+ data=192(大姆指) 
+Handle=194(大气晚成),Start=192	End=192 count=1
+ data=195(大器晚成) 
+Handle=195(大器晚成),Start=193	End=193 count=1
+ data=194(大气晚成) 
+Handle=196(大相径廷),Start=194	End=194 count=1
+ data=197(大相径庭) 
+Handle=197(大相径庭),Start=195	End=195 count=1
+ data=196(大相径廷) 
+Handle=198(大有稗益),Start=196	End=196 count=1
+ data=199(大有裨益) 
+Handle=199(大有裨益),Start=197	End=197 count=1
+ data=198(大有稗益) 
+Handle=200(大至),Start=198	End=198 count=1
+ data=201(大致) 
+Handle=201(大致),Start=199	End=199 count=1
+ data=200(大至) 
+Handle=202(待价而估),Start=200	End=200 count=1
+ data=203(待价而沽) 
+Handle=203(待价而沽),Start=201	End=201 count=1
+ data=202(待价而估) 
+Handle=204(怠漫),Start=202	End=202 count=1
+ data=205(怠慢) 
+Handle=205(怠慢),Start=203	End=203 count=1
+ data=204(怠漫) 
+Handle=206(惮精竭虑),Start=204	End=204 count=1
+ data=207(殚精竭虑) 
+Handle=207(殚精竭虑),Start=205	End=205 count=1
+ data=206(惮精竭虑) 
+Handle=208(淡薄名利),Start=206	End=206 count=1
+ data=209(淡泊名利) 
+Handle=209(淡泊名利),Start=207	End=207 count=1
+ data=208(淡薄名利) 
+Handle=210(当人不让),Start=208	End=208 count=1
+ data=211(当仁不让) 
+Handle=211(当仁不让),Start=209	End=209 count=1
+ data=210(当人不让) 
+Handle=212(砥毁),Start=210	End=210 count=1
+ data=213(诋毁) 
+Handle=213(诋毁),Start=211	End=211 count=1
+ data=212(砥毁) 
+Handle=214(诋砺),Start=212	End=212 count=1
+ data=215(砥砺) 
+Handle=215(砥砺),Start=213	End=213 count=1
+ data=214(诋砺) 
+Handle=216(颠复),Start=214	End=214 count=1
+ data=217(颠覆) 
+Handle=217(颠覆),Start=215	End=215 count=1
+ data=216(颠复) 
+Handle=218(电影角本),Start=216	End=216 count=1
+ data=219(电影脚本) 
+Handle=219(电影脚本),Start=217	End=217 count=1
+ data=218(电影角本) 
+Handle=220(凋蔽),Start=218	End=218 count=1
+ data=221(凋敝) 
+Handle=221(凋敝),Start=219	End=219 count=1
+ data=220(凋蔽) 
+Handle=222(调以轻心),Start=220	End=220 count=1
+ data=223(掉以轻心) 
+Handle=223(掉以轻心),Start=221	End=221 count=1
+ data=222(调以轻心) 
+Handle=224(鼎立相助),Start=222	End=222 count=1
+ data=225(鼎力相助) 
+Handle=225(鼎力相助),Start=223	End=223 count=1
+ data=224(鼎立相助) 
+Handle=226(挺而走险),Start=224	End=224 count=1
+ data=227(铤而走险) 
+Handle=227(铤而走险),Start=225	End=225 count=1
+ data=226(挺而走险) 
+Handle=228(徒坡),Start=226	End=226 count=1
+ data=229(陡坡) 
+Handle=229(陡坡),Start=227	End=227 count=1
+ data=228(徒坡) 
+Handle=230(独出心材),Start=228	End=228 count=1
+ data=231(独出心裁) 
+Handle=231(独出心裁),Start=229	End=229 count=1
+ data=230(独出心材) 
+Handle=232(读书礼记),Start=230	End=230 count=1
+ data=233(读书札记) 
+Handle=233(读书札记),Start=231	End=231 count=1
+ data=232(读书礼记) 
+Handle=234(赌搏),Start=232	End=232 count=1
+ data=235(赌博) 
+Handle=235(赌博),Start=233	End=233 count=1
+ data=234(赌搏) 
+Handle=236(渡假),Start=234	End=234 count=1
+ data=237(度假) 
+Handle=237(度假),Start=235	End=235 count=1
+ data=236(渡假) 
+Handle=238(渡假村?),Start=236	End=236 count=1
+ data=239(度假村) 
+Handle=239(度假村),Start=237	End=237 count=1
+ data=238(渡假村?) 
+Handle=240(度过难关),Start=238	End=238 count=1
+ data=241(渡过难关) 
+Handle=241(渡过难关),Start=239	End=239 count=1
+ data=240(度过难关) 
+Handle=242(断壁颓桓),Start=240	End=240 count=1
+ data=243(断壁颓垣) 
+Handle=243(断壁颓垣),Start=241	End=241 count=1
+ data=242(断壁颓桓) 
+Handle=244(拙拙逼人),Start=242	End=242 count=1
+ data=245(咄咄逼人) 
+Handle=245(咄咄逼人),Start=243	End=243 count=1
+ data=244(拙拙逼人) 
+Handle=246(额首称庆),Start=244	End=244 count=1
+ data=247(额手称庆) 
+Handle=247(额手称庆),Start=245	End=245 count=1
+ data=246(额首称庆) 
+Handle=248(耳儒目染),Start=246	End=246 count=1
+ data=249(耳濡目染) 
+Handle=249(耳濡目染),Start=247	End=247 count=1
+ data=248(耳儒目染) 
+Handle=250(发人深醒),Start=248	End=248 count=1
+ data=251(发人深省) 
+Handle=251(发人深省),Start=249	End=249 count=1
+ data=250(发人深醒) 
+Handle=252(发韧),Start=250	End=250 count=1
+ data=253(发轫) 
+Handle=253(发轫),Start=251	End=251 count=1
+ data=252(发韧) 
+Handle=254(反还),Start=252	End=252 count=1
+ data=255(返还) 
+Handle=255(返还),Start=253	End=253 count=1
+ data=254(反还) 
+Handle=256(范筹),Start=254	End=254 count=1
+ data=257(范畴) 
+Handle=257(范畴),Start=255	End=255 count=1
+ data=256(范筹) 
+Handle=258(防碍),Start=256	End=256 count=1
+ data=259(妨碍) 
+Handle=259(妨碍),Start=257	End=257 count=1
+ data=258(防碍) 
+Handle=260(飞扬拔扈),Start=258	End=258 count=1
+ data=261(飞扬跋扈) 
+Handle=261(飞扬跋扈),Start=259	End=259 count=1
+ data=260(飞扬拔扈) 
+Handle=262(分道扬标),Start=260	End=260 count=1
+ data=263(分道扬镳) 
+Handle=263(分道扬镳),Start=261	End=261 count=1
+ data=262(分道扬标) 
+Handle=264(分岐),Start=262	End=262 count=1
+ data=265(分歧) 
+Handle=265(分歧),Start=263	End=263 count=1
+ data=264(分岐) 
+Handle=266(纷至踏来),Start=264	End=264 count=1
+ data=267(纷至沓来) 
+Handle=267(纷至沓来),Start=265	End=265 count=1
+ data=266(纷至踏来) 
+Handle=268(愤发),Start=266	End=266 count=1
+ data=269(奋发) 
+Handle=269(奋发),Start=267	End=267 count=1
+ data=268(愤发) 
+Handle=270(愤发图强),Start=268	End=268 count=1
+ data=271(奋发图强) 
+Handle=271(奋发图强),Start=269	End=269 count=1
+ data=270(愤发图强) 
+Handle=272(愤概),Start=270	End=270 count=1
+ data=273(愤慨) 
+Handle=273(愤慨),Start=271	End=271 count=1
+ data=272(愤概) 
+Handle=274(丰功伟迹),Start=272	End=272 count=1
+ data=275(丰功伟绩) 
+Handle=275(丰功伟绩),Start=273	End=273 count=1
+ data=274(丰功伟迹) 
+Handle=276(风雨漂摇),Start=274	End=274 count=1
+ data=277(风雨飘摇) 
+Handle=277(风雨飘摇),Start=275	End=275 count=1
+ data=276(风雨漂摇) 
+Handle=278(封妻阴子),Start=276	End=276 count=1
+ data=279(封妻荫子) 
+Handle=279(封妻荫子),Start=277	End=277 count=1
+ data=278(封妻阴子) 
+Handle=280(蜂涌),Start=278	End=278 count=1
+ data=281(蜂拥) 
+Handle=281(蜂拥),Start=279	End=279 count=1
+ data=280(蜂涌) 
+Handle=282(蜂涌而来),Start=280	End=280 count=1
+ data=283(蜂拥而来) 
+Handle=283(蜂拥而来),Start=281	End=281 count=1
+ data=282(蜂涌而来) 
+Handle=284(浮想连翩),Start=282	End=282 count=1
+ data=285(浮想联翩) 
+Handle=285(浮想联翩),Start=283	End=283 count=1
+ data=284(浮想连翩) 
+Handle=286(幅射),Start=284	End=284 count=1
+ data=287(辐射) 
+Handle=287(辐射),Start=285	End=285 count=1
+ data=286(幅射) 
+Handle=288(伏首帖耳),Start=286	End=286 count=1
+ data=289(俯首帖耳) 
+Handle=289(俯首帖耳),Start=287	End=287 count=1
+ data=288(伏首帖耳) 
+Handle=290(斧底抽薪),Start=288	End=288 count=1
+ data=291(釜底抽薪) 
+Handle=291(釜底抽薪),Start=289	End=289 count=1
+ data=290(斧底抽薪) 
+Handle=292(符会),Start=290	End=290 count=1
+ data=293(附会) 
+Handle=293(附会),Start=291	End=291 count=1
+ data=292(符会) 
+Handle=294(赴汤滔火),Start=292	End=292 count=1
+ data=295(赴汤蹈火) 
+Handle=295(赴汤蹈火),Start=293	End=293 count=1
+ data=294(赴汤滔火) 
+Handle=296(富丽堂黄),Start=294	End=294 count=1
+ data=297(富丽堂皇) 
+Handle=297(富丽堂皇),Start=295	End=295 count=1
+ data=296(富丽堂黄) 
+Handle=298(复没),Start=296	End=296 count=1
+ data=299(覆没) 
+Handle=299(覆没),Start=297	End=297 count=1
+ data=298(复没) 
+Handle=300(复水难收),Start=298	End=298 count=1
+ data=301(覆水难收) 
+Handle=301(覆水难收),Start=299	End=299 count=1
+ data=300(复水难收) 
+Handle=302(甘败下风),Start=300	End=300 count=1
+ data=303(甘拜下风) 
+Handle=303(甘拜下风),Start=301	End=301 count=1
+ data=302(甘败下风) 
+Handle=304(肝脑途地),Start=302	End=302 count=1
+ data=305(肝脑涂地) 
+Handle=305(肝脑涂地),Start=303	End=303 count=1
+ data=304(肝脑途地) 
+Handle=306(感概),Start=304	End=304 count=1
+ data=307(感慨) 
+Handle=307(感慨),Start=305	End=305 count=1
+ data=306(感概) 
+Handle=308(感人肺府),Start=306	End=306 count=1
+ data=309(感人肺腑) 
+Handle=309(感人肺腑),Start=307	End=307 count=1
+ data=308(感人肺府) 
+Handle=310(刚腹自用),Start=308	End=308 count=1
+ data=311(刚愎自用) 
+Handle=311(刚愎自用),Start=309	End=309 count=1
+ data=310(刚腹自用) 
+Handle=312(高吭),Start=310	End=310 count=1
+ data=313(高亢) 
+Handle=313(高亢),Start=311	End=311 count=1
+ data=312(高吭) 
+Handle=314(高瞻远嘱),Start=312	End=312 count=1
+ data=315(高瞻远瞩) 
+Handle=315(高瞻远瞩),Start=313	End=313 count=1
+ data=314(高瞻远嘱) 
+Handle=316(膏梁子弟),Start=314	End=314 count=1
+ data=317(膏粱子弟) 
+Handle=317(膏粱子弟),Start=315	End=315 count=1
+ data=316(膏梁子弟) 
+Handle=318(告馨),Start=316	End=316 count=1
+ data=319(告罄) 
+Handle=319(告罄),Start=317	End=317 count=1
+ data=318(告馨) 
+Handle=320(歌舞生平),Start=318	End=318 count=1
+ data=321(歌舞升平) 
+Handle=321(歌舞升平),Start=319	End=319 count=1
+ data=320(歌舞生平) 
+Handle=322(膈膜),Start=320	End=320 count=1
+ data=323(隔膜) 
+Handle=323(隔膜),Start=321	End=321 count=1
+ data=322(膈膜) 
+Handle=324(各行其事),Start=322	End=322 count=1
+ data=325(各行其是) 
+Handle=325(各行其是),Start=323	End=323 count=1
+ data=324(各行其事) 
+Handle=326(各届人士),Start=324	End=324 count=1
+ data=327(各界人士) 
+Handle=327(各界人士),Start=325	End=325 count=1
+ data=326(各届人士) 
+Handle=328(公作),Start=326	End=326 count=1
+ data=329(工作) 
+Handle=329(工作),Start=327	End=327 count=1
+ data=328(公作) 
+Handle=330(功亏一匮),Start=328	End=328 count=1
+ data=331(功亏一篑) 
+Handle=331(功亏一篑),Start=329	End=329 count=1
+ data=330(功亏一匮) 
+Handle=332(供献),Start=330	End=330 count=1
+ data=333(贡献) 
+Handle=333(贡献),Start=331	End=331 count=1
+ data=332(供献) 
+Handle=334(勾花),Start=332	End=332 count=1
+ data=335(钩花) 
+Handle=335(钩花),Start=333	End=333 count=1
+ data=334(勾花) 
+Handle=336(沽名掉誉),Start=334	End=334 count=1
+ data=337(沽名钓誉) 
+Handle=337(沽名钓誉),Start=335	End=335 count=1
+ data=336(沽名掉誉) 
+Handle=338(孤柱一掷),Start=336	End=336 count=1
+ data=339(孤注一掷) 
+Handle=339(孤注一掷),Start=337	End=337 count=1
+ data=338(孤柱一掷) 
+Handle=340(估息),Start=338	End=338 count=1
+ data=341(姑息) 
+Handle=341(姑息),Start=339	End=339 count=1
+ data=340(估息) 
+Handle=342(汨汨流淌),Start=340	End=340 count=1
+ data=343(汩汩流淌) 
+Handle=343(汩汩流淌),Start=341	End=341 count=1
+ data=342(汨汨流淌) 
+Handle=344(鼓厉),Start=342	End=342 count=1
+ data=345(鼓励) 
+Handle=345(鼓励),Start=343	End=343 count=1
+ data=344(鼓厉) 
+Handle=346(故作恣态),Start=344	End=344 count=1
+ data=347(故作姿态) 
+Handle=347(故作姿态),Start=345	End=345 count=1
+ data=346(故作恣态) 
+Handle=348(关怀倍至),Start=346	End=346 count=1
+ data=349(关怀备至) 
+Handle=349(关怀备至),Start=347	End=347 count=1
+ data=348(关怀倍至) 
+Handle=350(观摹),Start=348	End=348 count=1
+ data=351(观摩) 
+Handle=351(观摩),Start=349	End=349 count=1
+ data=350(观摹) 
+Handle=352(贯串),Start=350	End=350 count=1
+ data=353(贯穿) 
+Handle=353(贯穿),Start=351	End=351 count=1
+ data=352(贯串) 
+Handle=354(规距),Start=352	End=352 count=1
+ data=355(规矩) 
+Handle=355(规矩),Start=353	End=353 count=1
+ data=354(规距) 
+Handle=356(魁丽),Start=354	End=354 count=1
+ data=357(瑰丽) 
+Handle=357(瑰丽),Start=355	End=355 count=1
+ data=356(魁丽) 
+Handle=358(鬼辩),Start=356	End=356 count=1
+ data=359(诡辩) 
+Handle=359(诡辩),Start=357	End=357 count=1
+ data=358(鬼辩) 
+Handle=360(鬼计多端),Start=358	End=358 count=1
+ data=361(诡计多端) 
+Handle=361(诡计多端),Start=359	End=359 count=1
+ data=360(鬼计多端) 
+Handle=362(鬼鬼崇崇),Start=360	End=360 count=1
+ data=363(鬼鬼祟祟) 
+Handle=363(鬼鬼祟祟),Start=361	End=361 count=1
+ data=362(鬼鬼崇崇) 
+Handle=364(过份),Start=362	End=362 count=1
+ data=365(过分) 
+Handle=365(过分),Start=363	End=363 count=1
+ data=364(过份) 
+Handle=366(海角天崖),Start=364	End=364 count=1
+ data=367(海角天涯) 
+Handle=367(海角天涯),Start=365	End=365 count=1
+ data=366(海角天崖) 
+Handle=368(害躁),Start=366	End=366 count=1
+ data=369(害臊) 
+Handle=369(害臊),Start=367	End=367 count=1
+ data=368(害躁) 
+Handle=370(含辛如苦),Start=368	End=368 count=1
+ data=371(含辛茹苦) 
+Handle=371(含辛茹苦),Start=369	End=369 count=1
+ data=370(含辛如苦) 
+Handle=372(函养),Start=370	End=370 count=1
+ data=373(涵养) 
+Handle=373(涵养),Start=371	End=371 count=1
+ data=372(函养) 
+Handle=374(寒战),Start=372	End=372 count=1
+ data=375(寒颤) 
+Handle=375(寒颤),Start=373	End=373 count=1
+ data=374(寒战) 
+Handle=376(寒喧),Start=374	End=374 count=1
+ data=377(寒暄) 
+Handle=377(寒暄),Start=375	End=375 count=1
+ data=376(寒喧) 
+Handle=378(汗流夹背),Start=376	End=376 count=1
+ data=379(汗流浃背) 
+Handle=379(汗流浃背),Start=377	End=377 count=1
+ data=378(汗流夹背) 
+Handle=380(行为出犯),Start=378	End=378 count=1
+ data=381(行为触犯) 
+Handle=381(行为触犯),Start=379	End=379 count=1
+ data=380(行为出犯) 
+Handle=382(好景不长),Start=380	End=380 count=1
+ data=383(好景不常) 
+Handle=383(好景不常),Start=381	End=381 count=1
+ data=382(好景不长) 
+Handle=384(和霭可亲),Start=382	End=382 count=1
+ data=385(和蔼可亲) 
+Handle=385(和蔼可亲),Start=383	End=383 count=1
+ data=384(和霭可亲) 
+Handle=386(和言悦色),Start=384	End=384 count=1
+ data=387(和颜悦色) 
+Handle=387(和颜悦色),Start=385	End=385 count=1
+ data=386(和言悦色) 
+Handle=388(鹤戾),Start=386	End=386 count=1
+ data=389(鹤唳) 
+Handle=389(鹤唳),Start=387	End=387 count=1
+ data=388(鹤戾) 
+Handle=390(宏篇巨制),Start=388	End=388 count=1
+ data=391(鸿篇巨制) 
+Handle=391(鸿篇巨制),Start=389	End=389 count=1
+ data=390(宏篇巨制) 
+Handle=392(轰堂大笑),Start=390	End=390 count=1
+ data=393(哄堂大笑) 
+Handle=393(哄堂大笑),Start=391	End=391 count=1
+ data=392(轰堂大笑) 
+Handle=394(侯车室),Start=392	End=392 count=1
+ data=395(候车室) 
+Handle=395(候车室),Start=393	End=393 count=1
+ data=394(侯车室) 
+Handle=396(狐度),Start=394	End=394 count=1
+ data=397(弧度) 
+Handle=397(弧度),Start=395	End=395 count=1
+ data=396(狐度) 
+Handle=398(虎视耽耽),Start=396	End=396 count=1
+ data=399(虎视眈眈) 
+Handle=399(虎视眈眈),Start=397	End=397 count=1
+ data=398(虎视耽耽) 
+Handle=400(互相推委),Start=398	End=398 count=1
+ data=401(互相推诿) 
+Handle=401(互相推诿),Start=399	End=399 count=1
+ data=400(互相推委) 
+Handle=402(户藉),Start=400	End=400 count=1
+ data=403(户籍) 
+Handle=403(户籍),Start=401	End=401 count=1
+ data=402(户藉) 
+Handle=404(怙恶不俊),Start=402	End=402 count=1
+ data=405(怙恶不悛) 
+Handle=405(怙恶不悛),Start=403	End=403 count=1
+ data=404(怙恶不俊) 
+Handle=406(花好月园),Start=404	End=404 count=1
+ data=407(花好月圆) 
+Handle=407(花好月圆),Start=405	End=405 count=1
+ data=406(花好月园) 
+Handle=408(欢渡节日),Start=406	End=406 count=1
+ data=409(欢度节日) 
+Handle=409(欢度节日),Start=407	End=407 count=1
+ data=408(欢渡节日) 
+Handle=410(欢心鼓舞),Start=408	End=408 count=1
+ data=411(欢欣鼓舞) 
+Handle=411(欢欣鼓舞),Start=409	End=409 count=1
+ data=410(欢心鼓舞) 
+Handle=412(焕散),Start=410	End=410 count=1
+ data=413(涣散) 
+Handle=413(涣散),Start=411	End=411 count=1
+ data=412(焕散) 
+Handle=414(换然一新),Start=412	End=412 count=1
+ data=415(焕然一新) 
+Handle=415(焕然一新),Start=413	End=413 count=1
+ data=414(换然一新) 
+Handle=416(谎谬),Start=414	End=414 count=1
+ data=417(荒谬) 
+Handle=417(荒谬),Start=415	End=415 count=1
+ data=416(谎谬) 
+Handle=418(黄粮美梦),Start=416	End=416 count=1
+ data=419(黄梁美梦) 
+Handle=419(黄梁美梦),Start=417	End=418 count=2
+ data=418(黄粮美梦) 420(黄粱美梦) 
+Handle=420(黄粱美梦),Start=419	End=419 count=1
+ data=419(黄梁美梦) 
+Handle=421(晃子),Start=420	End=420 count=1
+ data=422(幌子) 
+Handle=422(幌子),Start=421	End=421 count=1
+ data=421(晃子) 
+Handle=423(违疾忌医),Start=422	End=422 count=1
+ data=424(讳疾忌医) 
+Handle=424(讳疾忌医),Start=423	End=423 count=1
+ data=423(违疾忌医) 
+Handle=425(晕腥),Start=424	End=424 count=1
+ data=426(荤腥) 
+Handle=426(荤腥),Start=425	End=425 count=1
+ data=425(晕腥) 
+Handle=427(昏昏噩噩),Start=426	End=426 count=1
+ data=428(浑浑噩噩) 
+Handle=428(浑浑噩噩),Start=427	End=427 count=1
+ data=427(昏昏噩噩) 
+Handle=429(混身是胆),Start=428	End=428 count=1
+ data=430(浑身是胆) 
+Handle=430(浑身是胆),Start=429	End=429 count=1
+ data=429(混身是胆) 
+Handle=431(火中取粟),Start=430	End=430 count=1
+ data=432(火中取栗) 
+Handle=432(火中取栗),Start=431	End=431 count=1
+ data=431(火中取粟) 
+Handle=433(获益非浅),Start=432	End=432 count=1
+ data=434(获益匪浅) 
+Handle=434(获益匪浅),Start=433	End=433 count=1
+ data=433(获益非浅) 
+Handle=435(积毁消骨),Start=434	End=434 count=1
+ data=436(积毁销骨) 
+Handle=436(积毁销骨),Start=435	End=435 count=1
+ data=435(积毁消骨) 
+Handle=437(急流勇退),Start=436	End=436 count=1
+ data=438(激流勇退) 
+Handle=438(激流勇退),Start=437	End=437 count=1
+ data=437(急流勇退) 
+Handle=439(羁拌),Start=438	End=438 count=1
+ data=440(羁绊) 
+Handle=440(羁绊),Start=439	End=439 count=1
+ data=439(羁拌) 
+Handle=441(既使),Start=440	End=440 count=1
+ data=442(即使) 
+Handle=442(即使),Start=441	End=441 count=1
+ data=441(既使) 
+Handle=443(急待),Start=442	End=442 count=1
+ data=444(亟待) 
+Handle=444(亟待),Start=443	End=443 count=1
+ data=443(急待) 
+Handle=445(及不可待),Start=444	End=444 count=1
+ data=446(急不可待) 
+Handle=446(急不可待),Start=445	End=445 count=1
+ data=445(及不可待) 
+Handle=447(急燥),Start=446	End=446 count=1
+ data=448(急躁) 
+Handle=448(急躁),Start=447	End=447 count=1
+ data=447(急燥) 
+Handle=449(藉贯),Start=448	End=448 count=1
+ data=450(籍贯) 
+Handle=450(籍贯),Start=449	End=449 count=1
+ data=449(藉贯) 
+Handle=451(机率),Start=450	End=450 count=1
+ data=452(几率) 
+Handle=452(几率),Start=451	End=451 count=1
+ data=451(机率) 
+Handle=453(挤兑),Start=452	End=452 count=1
+ data=454(挤对) 
+Handle=454(挤对),Start=453	End=453 count=1
+ data=453(挤兑) 
+Handle=455(计日成功),Start=454	End=454 count=1
+ data=456(计日程功) 
+Handle=456(计日程功),Start=455	End=455 count=1
+ data=455(计日成功) 
+Handle=457(技俩),Start=456	End=456 count=1
+ data=458(伎俩) 
+Handle=458(伎俩),Start=457	End=457 count=1
+ data=457(技俩) 
+Handle=459(即然),Start=458	End=458 count=1
+ data=460(既然) 
+Handle=460(既然),Start=459	End=459 count=1
+ data=459(即然) 
+Handle=461(既往不究),Start=460	End=460 count=1
+ data=462(既往不咎) 
+Handle=462(既往不咎),Start=461	End=461 count=1
+ data=461(既往不究) 
+Handle=463(寂莫),Start=462	End=462 count=1
+ data=464(寂寞) 
+Handle=464(寂寞),Start=463	End=463 count=1
+ data=463(寂莫) 
+Handle=465(家俱),Start=464	End=464 count=1
+ data=466(家具) 
+Handle=466(家具),Start=465	End=465 count=1
+ data=465(家俱) 
+Handle=467(驾奴),Start=466	End=466 count=1
+ data=468(驾驭) 
+Handle=468(驾驭),Start=467	End=467 count=1
+ data=467(驾奴) 
+Handle=469(坚如盘石),Start=468	End=468 count=1
+ data=470(坚如磬石) 
+Handle=470(坚如磬石),Start=469	End=469 count=1
+ data=469(坚如盘石) 
+Handle=471(间碟),Start=470	End=470 count=1
+ data=472(间谍) 
+Handle=472(间谍),Start=471	End=471 count=1
+ data=471(间碟) 
+Handle=473(简炼),Start=472	End=472 count=1
+ data=474(简练) 
+Handle=474(简练),Start=473	End=473 count=1
+ data=473(简炼) 
+Handle=475(简漏),Start=474	End=474 count=1
+ data=476(简陋) 
+Handle=476(简陋),Start=475	End=475 count=1
+ data=475(简漏) 
+Handle=477(讲意气),Start=476	End=476 count=1
+ data=478(讲义气) 
+Handle=478(讲义气),Start=477	End=477 count=1
+ data=477(讲意气) 
+Handle=479(骄横姿肆),Start=478	End=478 count=1
+ data=480(骄横恣肆) 
+Handle=480(骄横恣肆),Start=479	End=479 count=1
+ data=479(骄横姿肆) 
+Handle=481(骄健),Start=480	End=480 count=1
+ data=482(矫健) 
+Handle=482(矫健),Start=481	End=481 count=1
+ data=481(骄健) 
+Handle=483(娇揉造作),Start=482	End=482 count=1
+ data=484(矫揉造作) 
+Handle=484(矫揉造作),Start=483	End=483 count=1
+ data=483(娇揉造作) 
+Handle=485(矫往过正),Start=484	End=484 count=1
+ data=486(矫枉过正) 
+Handle=486(矫枉过正),Start=485	End=485 count=1
+ data=485(矫往过正) 
+Handle=487(佼洁),Start=486	End=486 count=1
+ data=488(皎洁) 
+Handle=488(皎洁),Start=487	End=487 count=1
+ data=487(佼洁) 
+Handle=489(叫苦不叠),Start=488	End=488 count=1
+ data=490(叫苦不迭) 
+Handle=490(叫苦不迭),Start=489	End=489 count=1
+ data=489(叫苦不叠) 
+Handle=491(教悔),Start=490	End=490 count=1
+ data=492(教诲) 
+Handle=492(教诲),Start=491	End=491 count=1
+ data=491(教悔) 
+Handle=493(教梭),Start=492	End=492 count=1
+ data=494(教唆) 
+Handle=494(教唆),Start=493	End=493 count=1
+ data=493(教梭) 
+Handle=495(接恰),Start=494	End=494 count=1
+ data=496(接洽) 
+Handle=496(接洽),Start=495	End=495 count=1
+ data=495(接恰) 
+Handle=497(接踪而来),Start=496	End=496 count=1
+ data=498(接踵而来) 
+Handle=498(接踵而来),Start=497	End=497 count=1
+ data=497(接踪而来) 
+Handle=499(揭杆而起),Start=498	End=498 count=1
+ data=500(揭竿而起) 
+Handle=500(揭竿而起),Start=499	End=499 count=1
+ data=499(揭杆而起) 
+Handle=501(蹉商),Start=500	End=500 count=1
+ data=502(嗟商) 
+Handle=502(嗟商),Start=501	End=501 count=1
+ data=501(蹉商) 
+Handle=503(洁白无暇),Start=502	End=502 count=1
+ data=504(洁白无瑕) 
+Handle=504(洁白无瑕),Start=503	End=503 count=1
+ data=503(洁白无暇) 
+Handle=505(桀傲不驯),Start=504	End=504 count=1
+ data=506(桀骜不驯) 
+Handle=506(桀骜不驯),Start=505	End=505 count=1
+ data=505(桀傲不驯) 
+Handle=507(竭泽而鱼),Start=506	End=506 count=1
+ data=508(竭泽而渔) 
+Handle=508(竭泽而渔),Start=507	End=507 count=1
+ data=507(竭泽而鱼) 
+Handle=509(金榜提名),Start=508	End=508 count=1
+ data=510(金榜题名) 
+Handle=510(金榜题名),Start=509	End=509 count=1
+ data=509(金榜提名) 
+Handle=511(金钢钻),Start=510	End=510 count=1
+ data=512(金刚钻) 
+Handle=512(金刚钻),Start=511	End=511 count=1
+ data=511(金钢钻) 
+Handle=513(禁若寒蝉),Start=512	End=512 count=1
+ data=514(噤若寒蝉) 
+Handle=514(噤若寒蝉),Start=513	End=513 count=1
+ data=513(禁若寒蝉) 
+Handle=515(惊赅),Start=514	End=514 count=1
+ data=516(惊骇) 
+Handle=516(惊骇),Start=515	End=515 count=1
+ data=515(惊赅) 
+Handle=517(惊慌失措),Start=516	End=516 count=1
+ data=518(惊惶失措) 
+Handle=518(惊惶失措),Start=517	End=517 count=1
+ data=517(惊慌失措) 
+Handle=519(竞竞业业),Start=518	End=518 count=1
+ data=520(兢兢业业) 
+Handle=520(兢兢业业),Start=519	End=519 count=1
+ data=519(竞竞业业) 
+Handle=521(精焊),Start=520	End=520 count=1
+ data=522(精悍) 
+Handle=522(精悍),Start=521	End=521 count=1
+ data=521(精焊) 
+Handle=523(精减),Start=522	End=522 count=1
+ data=524(精简) 
+Handle=524(精简),Start=523	End=523 count=1
+ data=523(精减) 
+Handle=525(精神焕散),Start=524	End=524 count=1
+ data=526(精神涣散) 
+Handle=526(精神涣散),Start=525	End=525 count=1
+ data=525(精神焕散) 
+Handle=527(痉孪),Start=526	End=526 count=1
+ data=528(痉挛) 
+Handle=528(痉挛),Start=527	End=527 count=1
+ data=527(痉孪) 
+Handle=529(竞然),Start=528	End=528 count=1
+ data=530(竟然) 
+Handle=530(竟然),Start=529	End=529 count=1
+ data=529(竞然) 
+Handle=531(敬配),Start=530	End=530 count=1
+ data=532(敬佩) 
+Handle=532(敬佩),Start=531	End=531 count=1
+ data=531(敬配) 
+Handle=533(炯然),Start=532	End=532 count=1
+ data=534(迥然) 
+Handle=534(迥然),Start=533	End=533 count=1
+ data=533(炯然) 
+Handle=535(迥迥有神),Start=534	End=534 count=1
+ data=536(炯炯有神) 
+Handle=536(炯炯有神),Start=535	End=535 count=1
+ data=535(迥迥有神) 
+Handle=537(九宵),Start=536	End=536 count=1
+ data=538(九霄) 
+Handle=538(九霄),Start=537	End=537 count=1
+ data=537(九宵) 
+Handle=539(九宵云外),Start=538	End=538 count=1
+ data=540(九霄云外) 
+Handle=540(九霄云外),Start=539	End=539 count=1
+ data=539(九宵云外) 
+Handle=541(九洲),Start=540	End=540 count=1
+ data=542(九州) 
+Handle=542(九州),Start=541	End=541 count=1
+ data=541(九洲) 
+Handle=543(久负胜名),Start=542	End=542 count=1
+ data=544(久负盛名) 
+Handle=544(久负盛名),Start=543	End=543 count=1
+ data=543(久负胜名) 
+Handle=545(据传到案),Start=544	End=544 count=1
+ data=546(拘传到案) 
+Handle=546(拘传到案),Start=545	End=545 count=1
+ data=545(据传到案) 
+Handle=547(鞠躬尽粹),Start=546	End=546 count=1
+ data=548(鞠躬尽瘁) 
+Handle=548(鞠躬尽瘁),Start=547	End=547 count=1
+ data=547(鞠躬尽粹) 
+Handle=549(诅丧),Start=548	End=548 count=1
+ data=550(沮丧) 
+Handle=550(沮丧),Start=549	End=549 count=1
+ data=549(诅丧) 
+Handle=551(振世震惊),Start=550	End=550 count=1
+ data=552(举世震惊) 
+Handle=552(举世震惊),Start=551	End=551 count=1
+ data=551(振世震惊) 
+Handle=553(举一返三),Start=552	End=552 count=1
+ data=554(举一反三) 
+Handle=554(举一反三),Start=553	End=553 count=1
+ data=553(举一返三) 
+Handle=555(决择),Start=554	End=554 count=1
+ data=556(抉择) 
+Handle=556(抉择),Start=555	End=555 count=1
+ data=555(决择) 
+Handle=557(决对),Start=556	End=556 count=1
+ data=558(绝对) 
+Handle=558(绝对),Start=557	End=557 count=1
+ data=557(决对) 
+Handle=559(掘起),Start=558	End=558 count=1
+ data=560(崛起) 
+Handle=560(崛起),Start=559	End=559 count=1
+ data=559(掘起) 
+Handle=561(峻工),Start=560	End=560 count=1
+ data=562(竣工) 
+Handle=562(竣工),Start=561	End=561 count=1
+ data=561(峻工) 
+Handle=563(偕书),Start=562	End=562 count=1
+ data=564(楷书) 
+Handle=564(楷书),Start=563	End=563 count=1
+ data=563(偕书) 
+Handle=565(可见一般),Start=564	End=564 count=1
+ data=566(可见一斑) 
+Handle=566(可见一斑),Start=565	End=565 count=1
+ data=565(可见一般) 
+Handle=567(克苦),Start=566	End=566 count=1
+ data=568(刻苦) 
+Handle=568(刻苦),Start=567	End=567 count=1
+ data=567(克苦) 
+Handle=569(格守),Start=568	End=568 count=1
+ data=570(恪守) 
+Handle=570(恪守),Start=569	End=569 count=1
+ data=569(格守) 
+Handle=571(口干舌躁),Start=570	End=570 count=1
+ data=572(口干舌燥) 
+Handle=572(口干舌燥),Start=571	End=571 count=1
+ data=571(口干舌躁) 
+Handle=573(口事心非),Start=572	End=572 count=1
+ data=574(口是心非) 
+Handle=574(口是心非),Start=573	End=573 count=1
+ data=573(口事心非) 
+Handle=575(苦脑),Start=574	End=574 count=1
+ data=576(苦恼) 
+Handle=576(苦恼),Start=575	End=575 count=1
+ data=575(苦脑) 
+Handle=577(跨台),Start=576	End=576 count=1
+ data=578(垮台) 
+Handle=578(垮台),Start=577	End=577 count=1
+ data=577(跨台) 
+Handle=579(宽敝),Start=578	End=578 count=1
+ data=580(宽敞) 
+Handle=580(宽敞),Start=579	End=579 count=1
+ data=579(宽敝) 
+Handle=581(宽茹),Start=580	End=580 count=1
+ data=582(宽恕) 
+Handle=582(宽恕),Start=581	End=581 count=1
+ data=581(宽茹) 
+Handle=583(狂忘),Start=582	End=582 count=1
+ data=584(狂妄) 
+Handle=584(狂妄),Start=583	End=583 count=1
+ data=583(狂忘) 
+Handle=585(阔卓),Start=584	End=584 count=1
+ data=586(阔绰) 
+Handle=586(阔绰),Start=585	End=585 count=1
+ data=585(阔卓) 
+Handle=587(拉扰),Start=586	End=586 count=1
+ data=588(拉拢) 
+Handle=588(拉拢),Start=587	End=587 count=1
+ data=587(拉扰) 
+Handle=589(腊纸),Start=588	End=588 count=1
+ data=590(蜡纸) 
+Handle=590(蜡纸),Start=589	End=589 count=1
+ data=589(腊纸) 
+Handle=591(兰天白云),Start=590	End=590 count=1
+ data=592(蓝天白云) 
+Handle=592(蓝天白云),Start=591	End=591 count=1
+ data=591(兰天白云) 
+Handle=593(朗颂),Start=592	End=592 count=1
+ data=594(朗诵) 
+Handle=594(朗诵),Start=593	End=593 count=1
+ data=593(朗颂) 
+Handle=595(老陈持重),Start=594	End=594 count=1
+ data=596(老成持重) 
+Handle=596(老成持重),Start=595	End=595 count=1
+ data=595(老陈持重) 
+Handle=597(老奸巨滑),Start=596	End=596 count=1
+ data=598(老奸巨猾) 
+Handle=598(老奸巨猾),Start=597	End=597 count=1
+ data=597(老奸巨滑) 
+Handle=599(老俩口),Start=598	End=598 count=1
+ data=600(老两口) 
+Handle=600(老两口),Start=599	End=599 count=1
+ data=599(老俩口) 
+Handle=601(老生长谈),Start=600	End=600 count=1
+ data=602(老生常谈) 
+Handle=602(老生常谈),Start=601	End=601 count=1
+ data=601(老生长谈) 
+Handle=603(雷励风行),Start=602	End=602 count=1
+ data=604(雷甲风行) 
+Handle=604(雷甲风行),Start=603	End=603 count=1
+ data=603(雷励风行) 
+Handle=605(离经判道),Start=604	End=604 count=1
+ data=606(离经叛道) 
+Handle=606(离经叛道),Start=605	End=605 count=1
+ data=605(离经判道) 
+Handle=607(离乡背境),Start=606	End=606 count=1
+ data=608(离乡背井) 
+Handle=608(离乡背井),Start=607	End=607 count=1
+ data=607(离乡背境) 
+Handle=609(礼上往来),Start=608	End=608 count=1
+ data=610(礼尚往来) 
+Handle=610(礼尚往来),Start=609	End=609 count=1
+ data=609(礼上往来) 
+Handle=611(励兵秣马),Start=610	End=610 count=1
+ data=612(厉兵秣马) 
+Handle=612(厉兵秣马),Start=611	End=611 count=1
+ data=611(励兵秣马) 
+Handle=613(厉精图治),Start=612	End=612 count=1
+ data=614(励精图治) 
+Handle=614(励精图治),Start=613	End=613 count=1
+ data=613(厉精图治) 
+Handle=615(厉害得失),Start=614	End=614 count=1
+ data=616(利害得失) 
+Handle=616(利害得失),Start=615	End=615 count=1
+ data=615(厉害得失) 
+Handle=617(联襟),Start=616	End=616 count=1
+ data=618(连襟) 
+Handle=618(连襟),Start=617	End=617 count=1
+ data=617(联襟) 
+Handle=619(练习薄),Start=618	End=618 count=1
+ data=620(练习簿) 
+Handle=620(练习簿),Start=619	End=619 count=1
+ data=619(练习薄) 
+Handle=621(良晨美景),Start=620	End=620 count=1
+ data=622(良辰美景) 
+Handle=622(良辰美景),Start=621	End=621 count=1
+ data=621(良晨美景) 
+Handle=623(良秀),Start=622	End=622 count=1
+ data=624(良莠) 
+Handle=624(良莠),Start=623	End=623 count=1
+ data=623(良秀) 
+Handle=625(良秀不齐),Start=624	End=624 count=1
+ data=626(良莠不齐) 
+Handle=626(良莠不齐),Start=625	End=625 count=1
+ data=625(良秀不齐) 
+Handle=627(凉干),Start=626	End=626 count=1
+ data=628(晾干) 
+Handle=628(晾干),Start=627	End=627 count=1
+ data=627(凉干) 
+Handle=629(廖廖无几),Start=628	End=628 count=1
+ data=630(寥寥无几) 
+Handle=630(寥寥无几),Start=629	End=629 count=1
+ data=629(廖廖无几) 
+Handle=631(寥若辰星),Start=630	End=630 count=1
+ data=632(寥若晨星) 
+Handle=632(寥若晨星),Start=631	End=631 count=1
+ data=631(寥若辰星) 
+Handle=633(燎望),Start=632	End=632 count=1
+ data=634(瞭望) 
+Handle=634(瞭望),Start=633	End=633 count=1
+ data=633(燎望) 
+Handle=635(辚次栉比),Start=634	End=634 count=1
+ data=636(鳞次栉比) 
+Handle=636(鳞次栉比),Start=635	End=635 count=1
+ data=635(辚次栉比) 
+Handle=637(玲俐),Start=636	End=636 count=1
+ data=638(伶俐) 
+Handle=638(伶俐),Start=637	End=637 count=1
+ data=637(玲俐) 
+Handle=639(吟听),Start=638	End=638 count=1
+ data=640(聆听) 
+Handle=640(聆听),Start=639	End=639 count=1
+ data=639(吟听) 
+Handle=641(另辟溪径),Start=640	End=640 count=1
+ data=642(另辟蹊径) 
+Handle=642(另辟蹊径),Start=641	End=641 count=1
+ data=641(另辟溪径) 
+Handle=643(令人辛酸),Start=642	End=642 count=1
+ data=644(令人心酸) 
+Handle=644(令人心酸),Start=643	End=643 count=1
+ data=643(令人辛酸) 
+Handle=645(令人怍舌),Start=644	End=644 count=1
+ data=646(令人咋舌) 
+Handle=646(令人咋舌),Start=645	End=645 count=1
+ data=645(令人怍舌) 
+Handle=647(留芳百世),Start=646	End=646 count=1
+ data=648(流芳百世) 
+Handle=648(流芳百世),Start=647	End=647 count=1
+ data=647(留芳百世) 
+Handle=649(龙盘虎据),Start=648	End=648 count=1
+ data=650(龙盘虎踞) 
+Handle=650(龙盘虎踞),Start=649	End=649 count=1
+ data=649(龙盘虎据) 
+Handle=651(陋洞百出),Start=650	End=650 count=1
+ data=652(漏洞百出) 
+Handle=652(漏洞百出),Start=651	End=651 count=1
+ data=651(陋洞百出) 
+Handle=653(鹿葺),Start=652	End=652 count=1
+ data=654(鹿茸) 
+Handle=654(鹿茸),Start=653	End=653 count=1
+ data=653(鹿葺) 
+Handle=655(戳力同心),Start=654	End=654 count=1
+ data=656(戮力同心) 
+Handle=656(戮力同心),Start=655	End=655 count=1
+ data=655(戳力同心) 
+Handle=657(挛生),Start=656	End=656 count=1
+ data=658(孪生) 
+Handle=658(孪生),Start=657	End=657 count=1
+ data=657(挛生) 
+Handle=659(略夺),Start=658	End=658 count=1
+ data=660(掠夺) 
+Handle=660(掠夺),Start=659	End=659 count=1
+ data=659(略夺) 
+Handle=661(伦落),Start=660	End=660 count=1
+ data=662(沦落) 
+Handle=662(沦落),Start=661	End=661 count=1
+ data=661(伦落) 
+Handle=663(罗唆),Start=662	End=662 count=1
+ data=664(啰唆) 
+Handle=664(啰唆),Start=663	End=663 count=1
+ data=663(罗唆) 
+Handle=665(锣鼓掀天),Start=664	End=664 count=1
+ data=666(锣鼓喧天) 
+Handle=666(锣鼓喧天),Start=665	End=665 count=1
+ data=665(锣鼓掀天) 
+Handle=667(落英宾纷),Start=666	End=666 count=1
+ data=668(落英缤纷) 
+Handle=668(落英缤纷),Start=667	End=667 count=1
+ data=667(落英宾纷) 
+Handle=669(旅客需知),Start=668	End=668 count=1
+ data=670(旅客须知) 
+Handle=670(旅客须知),Start=669	End=669 count=1
+ data=669(旅客需知) 
+Handle=671(绿草如荫),Start=670	End=670 count=1
+ data=672(绿草如茵) 
+Handle=672(绿草如茵),Start=671	End=671 count=1
+ data=671(绿草如荫) 
+Handle=673(脉胳分明),Start=672	End=672 count=1
+ data=674(脉络分明) 
+Handle=674(脉络分明),Start=673	End=673 count=1
+ data=673(脉胳分明) 
+Handle=675(满目疮胰),Start=674	End=674 count=1
+ data=676(满目疮痍) 
+Handle=676(满目疮痍),Start=675	End=675 count=1
+ data=675(满目疮胰) 
+Handle=677(漫骂),Start=676	End=676 count=1
+ data=678(谩骂) 
+Handle=678(谩骂),Start=677	End=677 count=1
+ data=677(漫骂) 
+Handle=679(漫延),Start=678	End=678 count=1
+ data=680(蔓延) 
+Handle=680(蔓延),Start=679	End=679 count=1
+ data=679(漫延) 
+Handle=681(慢不经心),Start=680	End=680 count=1
+ data=682(漫不经心) 
+Handle=682(漫不经心),Start=681	End=681 count=1
+ data=681(慢不经心) 
+Handle=683(满山遍野),Start=682	End=682 count=1
+ data=684(漫山遍野) 
+Handle=684(漫山遍野),Start=683	End=683 count=1
+ data=683(满山遍野) 
+Handle=685(慢谈),Start=684	End=684 count=1
+ data=686(漫谈) 
+Handle=686(漫谈),Start=685	End=685 count=1
+ data=685(慢谈) 
+Handle=687(肓目),Start=686	End=686 count=1
+ data=688(盲目) 
+Handle=688(盲目),Start=687	End=687 count=1
+ data=687(肓目) 
+Handle=689(茫无头序),Start=688	End=688 count=1
+ data=690(茫无头绪) 
+Handle=690(茫无头绪),Start=689	End=689 count=1
+ data=689(茫无头序) 
+Handle=691(毛骨耸然),Start=690	End=690 count=1
+ data=692(毛骨悚然) 
+Handle=692(毛骨悚然),Start=691	End=691 count=1
+ data=691(毛骨耸然) 
+Handle=693(冒然),Start=692	End=692 count=1
+ data=694(贸然) 
+Handle=694(贸然),Start=693	End=693 count=1
+ data=693(冒然) 
+Handle=695(貌和神离),Start=694	End=694 count=1
+ data=696(貌合神离) 
+Handle=696(貌合神离),Start=695	End=695 count=1
+ data=695(貌和神离) 
+Handle=697(殁齿不忘),Start=696	End=696 count=1
+ data=698(没齿不忘) 
+Handle=698(没齿不忘),Start=697	End=697 count=1
+ data=697(殁齿不忘) 
+Handle=699(美仑美奂),Start=698	End=698 count=1
+ data=700(美轮美奂) 
+Handle=700(美轮美奂),Start=699	End=699 count=1
+ data=699(美仑美奂) 
+Handle=701(美玉无暇),Start=700	End=700 count=1
+ data=702(美玉无瑕) 
+Handle=702(美玉无瑕),Start=701	End=701 count=1
+ data=701(美玉无暇) 
+Handle=703(魁力),Start=702	End=702 count=1
+ data=704(魅力) 
+Handle=704(魅力),Start=703	End=703 count=1
+ data=703(魁力) 
+Handle=705(门可落雀),Start=704	End=704 count=1
+ data=706(门可罗雀) 
+Handle=706(门可罗雀),Start=705	End=705 count=1
+ data=705(门可落雀) 
+Handle=707(迷天大谎),Start=706	End=706 count=1
+ data=708(弥天大谎) 
+Handle=708(弥天大谎),Start=707	End=707 count=1
+ data=707(迷天大谎) 
+Handle=709(密而不宣),Start=708	End=708 count=1
+ data=710(秘而不宣) 
+Handle=710(秘而不宣),Start=709	End=709 count=1
+ data=709(密而不宣) 
+Handle=711(勉厉),Start=710	End=710 count=1
+ data=712(勉励) 
+Handle=712(勉励),Start=711	End=711 count=1
+ data=711(勉厉) 
+Handle=713(面黄饥瘦),Start=712	End=712 count=1
+ data=714(面黄肌瘦) 
+Handle=714(面黄肌瘦),Start=713	End=713 count=1
+ data=713(面黄饥瘦) 
+Handle=715(面面具到),Start=714	End=714 count=1
+ data=716(面面俱到) 
+Handle=716(面面俱到),Start=715	End=715 count=1
+ data=715(面面具到) 
+Handle=717(瞄摹),Start=716	End=716 count=1
+ data=718(描摹) 
+Handle=718(描摹),Start=717	End=717 count=1
+ data=717(瞄摹) 
+Handle=719(民生凋蔽),Start=718	End=718 count=1
+ data=720(民生凋敝) 
+Handle=720(民生凋敝),Start=719	End=719 count=1
+ data=719(民生凋蔽) 
+Handle=721(抿灭),Start=720	End=720 count=1
+ data=722(泯灭) 
+Handle=722(泯灭),Start=721	End=721 count=1
+ data=721(抿灭) 
+Handle=723(名符其实),Start=722	End=722 count=1
+ data=724(名副其实) 
+Handle=724(名副其实),Start=723	End=723 count=1
+ data=723(名符其实) 
+Handle=725(名缰利琐),Start=724	End=724 count=1
+ data=726(名缰利锁) 
+Handle=726(名缰利锁),Start=725	End=725 count=1
+ data=725(名缰利琐) 
+Handle=727(名列前矛),Start=726	End=726 count=1
+ data=728(名列前茅) 
+Handle=728(名列前茅),Start=727	End=727 count=1
+ data=727(名列前矛) 
+Handle=729(名落深山),Start=728	End=728 count=1
+ data=730(名落孙山) 
+Handle=730(名落孙山),Start=729	End=729 count=1
+ data=729(名落深山) 
+Handle=731(名躁一时),Start=730	End=730 count=1
+ data=732(名噪一时) 
+Handle=732(名噪一时),Start=731	End=731 count=1
+ data=731(名躁一时) 
+Handle=733(明查秋毫),Start=732	End=732 count=1
+ data=734(明察秋毫) 
+Handle=734(明察秋毫),Start=733	End=733 count=1
+ data=733(明查秋毫) 
+Handle=735(明枪暗剑),Start=734	End=734 count=1
+ data=736(明枪暗箭) 
+Handle=736(明枪暗箭),Start=735	End=735 count=1
+ data=735(明枪暗剑) 
+Handle=737(昨日黄花),Start=736	End=736 count=1
+ data=738(明日黄花) 
+Handle=738(明日黄花),Start=737	End=737 count=1
+ data=737(昨日黄花) 
+Handle=739(名信片),Start=738	End=738 count=1
+ data=740(明信片) 
+Handle=740(明信片),Start=739	End=739 count=1
+ data=739(名信片) 
+Handle=741(明则保身),Start=740	End=740 count=1
+ data=742(明哲保身) 
+Handle=742(明哲保身),Start=741	End=741 count=1
+ data=741(明则保身) 
+Handle=743(暝思苦索),Start=742	End=742 count=1
+ data=744(冥思苦索) 
+Handle=744(冥思苦索),Start=743	End=743 count=1
+ data=743(暝思苦索) 
+Handle=745(名记不忘),Start=744	End=744 count=1
+ data=746(铭记不忘) 
+Handle=746(铭记不忘),Start=745	End=745 count=1
+ data=745(名记不忘) 
+Handle=747(酩盯大醉),Start=746	End=746 count=1
+ data=748(酩酊大醉) 
+Handle=748(酩酊大醉),Start=747	End=747 count=1
+ data=747(酩盯大醉) 
+Handle=749(缪种流传),Start=748	End=748 count=1
+ data=750(谬种流传) 
+Handle=750(谬种流传),Start=749	End=749 count=1
+ data=749(缪种流传) 
+Handle=751(摸糊不清),Start=750	End=750 count=1
+ data=752(模糊不清) 
+Handle=752(模糊不清),Start=751	End=751 count=1
+ data=751(摸糊不清) 
+Handle=753(磨擦),Start=752	End=752 count=1
+ data=754(摩擦) 
+Handle=754(摩擦),Start=753	End=753 count=1
+ data=753(磨擦) 
+Handle=755(磨肩接踵),Start=754	End=754 count=1
+ data=756(摩肩接踵) 
+Handle=756(摩肩接踵),Start=755	End=755 count=1
+ data=755(磨肩接踵) 
+Handle=757(磨拳擦掌),Start=756	End=756 count=1
+ data=758(摩拳擦掌) 
+Handle=758(摩拳擦掌),Start=757	End=757 count=1
+ data=757(磨拳擦掌) 
+Handle=759(莫不关心),Start=758	End=758 count=1
+ data=760(漠不关心) 
+Handle=760(漠不关心),Start=759	End=759 count=1
+ data=759(莫不关心) 
+Handle=761(默挈),Start=760	End=760 count=1
+ data=762(默契) 
+Handle=762(默契),Start=761	End=761 count=1
+ data=761(默挈) 
+Handle=763(目不交捷),Start=762	End=762 count=1
+ data=764(目不交睫) 
+Handle=764(目不交睫),Start=763	End=763 count=1
+ data=763(目不交捷) 
+Handle=765(目光如巨),Start=764	End=764 count=1
+ data=766(目光如炬) 
+Handle=766(目光如炬),Start=765	End=765 count=1
+ data=765(目光如巨) 
+Handle=767(暮天席地),Start=766	End=766 count=1
+ data=768(幕天席地) 
+Handle=768(幕天席地),Start=767	End=767 count=1
+ data=767(暮天席地) 
+Handle=769(暮蔼),Start=768	End=768 count=1
+ data=770(暮霭) 
+Handle=770(暮霭),Start=769	End=769 count=1
+ data=769(暮蔼) 
+Handle=771(脑火),Start=770	End=770 count=1
+ data=772(恼火) 
+Handle=772(恼火),Start=771	End=771 count=1
+ data=771(脑火) 
+Handle=773(脑羞成怒),Start=772	End=772 count=1
+ data=774(恼羞成怒) 
+Handle=774(恼羞成怒),Start=773	End=773 count=1
+ data=773(脑羞成怒) 
+Handle=775(摄手蹑脚),Start=774	End=774 count=1
+ data=776(蹑手蹑脚) 
+Handle=776(蹑手蹑脚),Start=775	End=775 count=1
+ data=775(摄手蹑脚) 
+Handle=777(宁缺无滥),Start=776	End=776 count=1
+ data=778(宁缺毋滥) 
+Handle=778(宁缺毋滥),Start=777	End=777 count=1
+ data=777(宁缺无滥) 
+Handle=779(钮扣),Start=778	End=778 count=1
+ data=780(纽扣) 
+Handle=780(纽扣),Start=779	End=779 count=1
+ data=779(钮扣) 
+Handle=781(弄巧成绌),Start=780	End=780 count=1
+ data=782(弄巧成拙) 
+Handle=782(弄巧成拙),Start=781	End=781 count=1
+ data=781(弄巧成绌) 
+Handle=783(奴颜卑膝),Start=782	End=782 count=1
+ data=784(奴颜婢膝) 
+Handle=784(奴颜婢膝),Start=783	End=783 count=1
+ data=783(奴颜卑膝) 
+Handle=785(呕歌),Start=784	End=784 count=1
+ data=786(讴歌) 
+Handle=786(讴歌),Start=785	End=785 count=1
+ data=785(呕歌) 
+Handle=787(欧打),Start=786	End=786 count=1
+ data=788(殴打) 
+Handle=788(殴打),Start=787	End=787 count=1
+ data=787(欧打) 
+Handle=789(呕气),Start=788	End=788 count=1
+ data=790(怄气) 
+Handle=790(怄气),Start=789	End=789 count=1
+ data=789(呕气) 
+Handle=791(蹒姗),Start=790	End=790 count=1
+ data=792(蹒跚) 
+Handle=792(蹒跚),Start=791	End=791 count=1
+ data=791(蹒姗) 
+Handle=793(叛若两人),Start=792	End=792 count=1
+ data=794(判若两人) 
+Handle=794(判若两人),Start=793	End=793 count=1
+ data=793(叛若两人) 
+Handle=795(宠然大物),Start=794	End=794 count=1
+ data=796(庞然大物) 
+Handle=796(庞然大物),Start=795	End=795 count=1
+ data=795(宠然大物) 
+Handle=797(旁门阻道),Start=796	End=796 count=1
+ data=798(旁门左道) 
+Handle=798(旁门左道),Start=797	End=797 count=1
+ data=797(旁门阻道) 
+Handle=799(陪偿),Start=798	End=798 count=1
+ data=800(赔偿) 
+Handle=800(赔偿),Start=799	End=799 count=1
+ data=799(陪偿) 
+Handle=801(陪礼道歉),Start=800	End=800 count=1
+ data=802(赔礼道歉) 
+Handle=802(赔礼道歉),Start=801	End=801 count=1
+ data=801(陪礼道歉) 
+Handle=803(砰然心动),Start=802	End=802 count=1
+ data=804(怦然心动) 
+Handle=804(怦然心动),Start=803	End=803 count=1
+ data=803(砰然心动) 
+Handle=805(篷荜生辉),Start=804	End=804 count=1
+ data=806(蓬荜生辉) 
+Handle=806(蓬荜生辉),Start=805	End=805 count=1
+ data=805(篷荜生辉) 
+Handle=807(篷筚生辉),Start=806	End=806 count=1
+ data=808(蓬筚生辉) 
+Handle=808(蓬筚生辉),Start=807	End=807 count=1
+ data=807(篷筚生辉) 
+Handle=809(批漏百出),Start=808	End=808 count=1
+ data=810(纰漏百出) 
+Handle=810(纰漏百出),Start=809	End=809 count=1
+ data=809(批漏百出) 
+Handle=811(披肝历胆),Start=810	End=810 count=1
+ data=812(披肝沥胆) 
+Handle=812(披肝沥胆),Start=811	End=811 count=1
+ data=811(披肝历胆) 
+Handle=813(披星带月),Start=812	End=812 count=1
+ data=814(披星戴月) 
+Handle=814(披星戴月),Start=813	End=813 count=1
+ data=813(披星带月) 
+Handle=815(疲踏),Start=814	End=814 count=1
+ data=816(疲塌) 
+Handle=816(疲塌),Start=815	End=815 count=1
+ data=815(疲踏) 
+Handle=817(偏坦),Start=816	End=816 count=1
+ data=818(偏袒) 
+Handle=818(偏袒),Start=817	End=817 count=1
+ data=817(偏坦) 
+Handle=819(飘泊无定),Start=818	End=818 count=1
+ data=820(漂泊无定) 
+Handle=820(漂泊无定),Start=819	End=819 count=1
+ data=819(飘泊无定) 
+Handle=821(飘洋过海),Start=820	End=820 count=1
+ data=822(漂洋过海) 
+Handle=822(漂洋过海),Start=821	End=821 count=1
+ data=821(飘洋过海) 
+Handle=823(贫脊),Start=822	End=822 count=1
+ data=824(贫瘠) 
+Handle=824(贫瘠),Start=823	End=823 count=1
+ data=823(贫脊) 
+Handle=825(凭添),Start=824	End=824 count=1
+ data=826(平添) 
+Handle=826(平添),Start=825	End=825 count=1
+ data=825(凭添) 
+Handle=827(凭心而论),Start=826	End=826 count=1
+ data=828(平心而论) 
+Handle=828(平心而论),Start=827	End=827 count=1
+ data=827(凭心而论) 
+Handle=829(迫不急待),Start=828	End=828 count=1
+ data=830(迫不及待) 
+Handle=830(迫不及待),Start=829	End=829 count=1
+ data=829(迫不急待) 
+Handle=831(破斧沉舟),Start=830	End=830 count=1
+ data=832(破釜沉舟) 
+Handle=832(破釜沉舟),Start=831	End=831 count=1
+ data=831(破斧沉舟) 
+Handle=833(破格进升),Start=832	End=832 count=1
+ data=834(破格晋升) 
+Handle=834(破格晋升),Start=833	End=833 count=1
+ data=833(破格进升) 
+Handle=835(欺君惘上),Start=834	End=834 count=1
+ data=836(欺君罔上) 
+Handle=836(欺君罔上),Start=835	End=835 count=1
+ data=835(欺君惘上) 
+Handle=837(气喘嘘嘘),Start=836	End=836 count=1
+ data=838(气喘吁吁) 
+Handle=838(气喘吁吁),Start=837	End=837 count=1
+ data=837(气喘嘘嘘) 
+Handle=839(气慨),Start=838	End=838 count=1
+ data=840(气概) 
+Handle=840(气概),Start=839	End=839 count=1
+ data=839(气慨) 
+Handle=841(器宇轩昂),Start=840	End=840 count=1
+ data=842(气宇轩昂) 
+Handle=842(气宇轩昂),Start=841	End=841 count=1
+ data=841(器宇轩昂) 
+Handle=843(千锤百练),Start=842	End=842 count=1
+ data=844(千锤百炼) 
+Handle=844(千锤百炼),Start=843	End=843 count=1
+ data=843(千锤百练) 
+Handle=845(千均一发),Start=844	End=844 count=1
+ data=846(千钧一发) 
+Handle=846(千钧一发),Start=845	End=845 count=1
+ data=845(千均一发) 
+Handle=847(迁徒),Start=846	End=846 count=1
+ data=848(迁徙) 
+Handle=848(迁徙),Start=847	End=847 count=1
+ data=847(迁徒) 
+Handle=849(前踞后恭),Start=848	End=848 count=1
+ data=850(前倨后恭) 
+Handle=850(前倨后恭),Start=849	End=849 count=1
+ data=849(前踞后恭) 
+Handle=851(前扑后继),Start=850	End=850 count=1
+ data=852(前仆后继) 
+Handle=852(前仆后继),Start=851	End=851 count=1
+ data=851(前扑后继) 
+Handle=853(黔驴计穷),Start=852	End=852 count=1
+ data=854(黔驴技穷) 
+Handle=854(黔驴技穷),Start=853	End=853 count=1
+ data=853(黔驴计穷) 
+Handle=855(强焊),Start=854	End=854 count=1
+ data=856(强悍) 
+Handle=856(强悍),Start=855	End=855 count=1
+ data=855(强焊) 
+Handle=857(强驽之末),Start=856	End=856 count=1
+ data=858(强弩之末) 
+Handle=858(强弩之末),Start=857	End=857 count=1
+ data=857(强驽之末) 
+Handle=859(墙恒),Start=858	End=858 count=1
+ data=860(墙垣) 
+Handle=860(墙垣),Start=859	End=859 count=1
+ data=859(墙恒) 
+Handle=861(炝黑),Start=860	End=860 count=1
+ data=862(呛黑) 
+Handle=862(呛黑),Start=861	End=861 count=1
+ data=861(炝黑) 
+Handle=863(敲榨勒索),Start=862	End=862 count=1
+ data=864(敲诈勒索) 
+Handle=864(敲诈勒索),Start=863	End=863 count=1
+ data=863(敲榨勒索) 
+Handle=865(巧装打扮),Start=864	End=864 count=1
+ data=866(乔装打扮) 
+Handle=866(乔装打扮),Start=865	End=865 count=1
+ data=865(巧装打扮) 
+Handle=867(巧夺天公),Start=866	End=866 count=1
+ data=868(巧夺天工) 
+Handle=868(巧夺天工),Start=867	End=867 count=1
+ data=867(巧夺天公) 
+Handle=869(切肤之疼),Start=868	End=868 count=1
+ data=870(切肤之痛) 
+Handle=870(切肤之痛),Start=869	End=869 count=1
+ data=869(切肤之疼) 
+Handle=871(亲睐),Start=870	End=870 count=1
+ data=872(青睐) 
+Handle=872(青睐),Start=871	End=871 count=1
+ data=871(亲睐) 
+Handle=873(轻手摄脚),Start=872	End=872 count=1
+ data=874(轻手蹑脚) 
+Handle=874(轻手蹑脚),Start=873	End=873 count=1
+ data=873(轻手摄脚) 
+Handle=875(清沏见底),Start=874	End=874 count=1
+ data=876(清澈见底) 
+Handle=876(清澈见底),Start=875	End=875 count=1
+ data=875(清沏见底) 
+Handle=877(清规诫律),Start=876	End=876 count=1
+ data=878(清规戒律) 
+Handle=878(清规戒律),Start=877	End=877 count=1
+ data=877(清规诫律) 
+Handle=879(清淅),Start=878	End=878 count=1
+ data=880(清晰) 
+Handle=880(清晰),Start=879	End=879 count=1
+ data=879(清淅) 
+Handle=881(磬竹难书),Start=880	End=880 count=1
+ data=882(罄竹难书) 
+Handle=882(罄竹难书),Start=881	End=881 count=1
+ data=881(磬竹难书) 
+Handle=883(曲指可数),Start=882	End=882 count=1
+ data=884(屈指可数) 
+Handle=884(屈指可数),Start=883	End=883 count=1
+ data=883(曲指可数) 
+Handle=885(趋之若骛),Start=884	End=884 count=1
+ data=886(趋之若鹜) 
+Handle=886(趋之若鹜),Start=885	End=885 count=1
+ data=885(趋之若骛) 
+Handle=887(曲突徒薪),Start=886	End=886 count=1
+ data=888(曲突徙薪) 
+Handle=888(曲突徙薪),Start=887	End=887 count=1
+ data=887(曲突徒薪) 
+Handle=889(全愈),Start=888	End=888 count=1
+ data=890(痊愈) 
+Handle=890(痊愈),Start=889	End=889 count=1
+ data=889(全愈) 
+Handle=891(挠恕),Start=890	End=890 count=1
+ data=892(饶恕) 
+Handle=892(饶恕),Start=891	End=891 count=1
+ data=891(挠恕) 
+Handle=893(惹事生非),Start=892	End=892 count=1
+ data=894(惹是生非) 
+Handle=894(惹是生非),Start=893	End=893 count=1
+ data=893(惹事生非) 
+Handle=895(人才倍出),Start=894	End=894 count=1
+ data=896(人才辈出) 
+Handle=896(人才辈出),Start=895	End=895 count=1
+ data=895(人才倍出) 
+Handle=897(人情事故),Start=896	End=896 count=1
+ data=898(人情世故) 
+Handle=898(人情世故),Start=897	End=897 count=1
+ data=897(人情事故) 
+Handle=899(人声顶沸),Start=898	End=898 count=1
+ data=900(人声鼎沸) 
+Handle=900(人声鼎沸),Start=899	End=899 count=1
+ data=899(人声顶沸) 
+Handle=901(认订),Start=900	End=900 count=1
+ data=902(认定) 
+Handle=902(认定),Start=901	End=901 count=1
+ data=901(认订) 
+Handle=903(认罪服法),Start=902	End=902 count=1
+ data=904(认罪伏法) 
+Handle=904(认罪伏法),Start=903	End=903 count=1
+ data=903(认罪服法) 
+Handle=905(融恰),Start=904	End=904 count=1
+ data=906(融洽) 
+Handle=906(融洽),Start=905	End=905 count=1
+ data=905(融恰) 
+Handle=907(揉躏),Start=906	End=906 count=1
+ data=908(蹂躏) 
+Handle=908(蹂躏),Start=907	End=907 count=1
+ data=907(揉躏) 
+Handle=909(如法泡制),Start=908	End=908 count=1
+ data=910(如法炮制) 
+Handle=910(如法炮制),Start=909	End=909 count=1
+ data=909(如法泡制) 
+Handle=911(如火如茶),Start=910	End=910 count=1
+ data=912(如火如荼) 
+Handle=912(如火如荼),Start=911	End=911 count=1
+ data=911(如火如茶) 
+Handle=913(如失重负),Start=912	End=912 count=1
+ data=914(如释重负) 
+Handle=914(如释重负),Start=913	End=913 count=1
+ data=913(如失重负) 
+Handle=915(如愿以尝),Start=914	End=914 count=1
+ data=916(如愿以偿) 
+Handle=916(如愿以偿),Start=915	End=915 count=1
+ data=915(如愿以尝) 
+Handle=917(入不付出),Start=916	End=916 count=1
+ data=918(入不敷出) 
+Handle=918(入不敷出),Start=917	End=917 count=1
+ data=917(入不付出) 
+Handle=919(入场卷),Start=918	End=918 count=1
+ data=920(入场券) 
+Handle=920(入场券),Start=919	End=919 count=1
+ data=919(入场卷) 
+Handle=921(锐不可挡),Start=920	End=920 count=1
+ data=922(锐不可当) 
+Handle=922(锐不可当),Start=921	End=921 count=1
+ data=921(锐不可挡) 
+Handle=923(若及若离),Start=922	End=922 count=1
+ data=924(若即若离) 
+Handle=924(若即若离),Start=923	End=923 count=1
+ data=923(若及若离) 
+Handle=925(诺大),Start=924	End=924 count=1
+ data=926(偌大) 
+Handle=926(偌大),Start=925	End=925 count=1
+ data=925(诺大) 
+Handle=927(弱不经风),Start=926	End=926 count=1
+ data=928(弱不禁风) 
+Handle=928(弱不禁风),Start=927	End=927 count=1
+ data=927(弱不经风) 
+Handle=929(撒慌),Start=928	End=928 count=1
+ data=930(撒谎) 
+Handle=930(撒谎),Start=929	End=929 count=1
+ data=929(撒慌) 
+Handle=931(三步曲),Start=930	End=930 count=1
+ data=932(三部曲) 
+Handle=932(三部曲),Start=931	End=931 count=1
+ data=931(三步曲) 
+Handle=933(三翻五次),Start=932	End=932 count=1
+ data=934(三番五次) 
+Handle=934(三番五次),Start=933	End=933 count=1
+ data=933(三翻五次) 
+Handle=935(散慢),Start=934	End=934 count=1
+ data=936(散漫) 
+Handle=936(散漫),Start=935	End=935 count=1
+ data=935(散慢) 
+Handle=937(搔痒病),Start=936	End=936 count=1
+ data=938(瘙痒病) 
+Handle=938(瘙痒病),Start=937	End=937 count=1
+ data=937(搔痒病) 
+Handle=939(色厉内茬),Start=938	End=938 count=1
+ data=940(色厉内荏) 
+Handle=940(色厉内荏),Start=939	End=939 count=1
+ data=939(色厉内茬) 
+Handle=941(杀戳),Start=940	End=940 count=1
+ data=942(杀戮) 
+Handle=942(杀戮),Start=941	End=941 count=1
+ data=941(杀戳) 
+Handle=943(插血为盟),Start=942	End=942 count=1
+ data=944(歃血为盟) 
+Handle=944(歃血为盟),Start=943	End=943 count=1
+ data=943(插血为盟) 
+Handle=945(煞废苦心),Start=944	End=944 count=1
+ data=946(煞费苦心) 
+Handle=946(煞费苦心),Start=945	End=945 count=1
+ data=945(煞废苦心) 
+Handle=947(山拗),Start=946	End=946 count=1
+ data=948(山坳) 
+Handle=948(山坳),Start=947	End=947 count=1
+ data=947(山拗) 
+Handle=949(山清水秀),Start=948	End=948 count=1
+ data=950(山青水秀) 
+Handle=950(山青水秀),Start=949	End=949 count=1
+ data=949(山清水秀) 
+Handle=951(珊珊来迟),Start=950	End=950 count=1
+ data=952(姗姗来迟) 
+Handle=952(姗姗来迟),Start=951	End=951 count=1
+ data=951(珊珊来迟) 
+Handle=953(潜然泪下),Start=952	End=952 count=1
+ data=954(潸然泪下) 
+Handle=954(潸然泪下),Start=953	End=953 count=1
+ data=953(潜然泪下) 
+Handle=955(闪铄),Start=954	End=954 count=1
+ data=956(闪烁) 
+Handle=956(闪烁),Start=955	End=955 count=1
+ data=955(闪铄) 
+Handle=957(擅于),Start=956	End=956 count=1
+ data=958(善于) 
+Handle=958(善于),Start=957	End=957 count=1
+ data=957(擅于) 
+Handle=959(善长),Start=958	End=958 count=1
+ data=960(擅长) 
+Handle=960(擅长),Start=959	End=959 count=1
+ data=959(善长) 
+Handle=961(瞻养),Start=960	End=960 count=1
+ data=962(赡养) 
+Handle=962(赡养),Start=961	End=961 count=1
+ data=961(瞻养) 
+Handle=963(商确),Start=962	End=962 count=1
+ data=964(商榷) 
+Handle=964(商榷),Start=963	End=963 count=1
+ data=963(商确) 
+Handle=965(响午),Start=964	End=964 count=1
+ data=966(晌午) 
+Handle=966(晌午),Start=965	End=965 count=1
+ data=965(响午) 
+Handle=967(尝罚),Start=966	End=966 count=1
+ data=968(赏罚) 
+Handle=968(赏罚),Start=967	End=967 count=1
+ data=967(尝罚) 
+Handle=969(摄服),Start=968	End=968 count=1
+ data=970(慑服) 
+Handle=970(慑服),Start=969	End=969 count=1
+ data=969(摄服) 
+Handle=971(申张),Start=970	End=970 count=1
+ data=972(伸张) 
+Handle=972(伸张),Start=971	End=971 count=1
+ data=971(申张) 
+Handle=973(申张正义),Start=972	End=972 count=1
+ data=974(伸张正义) 
+Handle=974(伸张正义),Start=973	End=973 count=1
+ data=973(申张正义) 
+Handle=975(身分证),Start=974	End=974 count=1
+ data=976(身份证) 
+Handle=976(身份证),Start=975	End=975 count=1
+ data=975(身分证) 
+Handle=977(深负众望),Start=976	End=976 count=1
+ data=978(深孚众望) 
+Handle=978(深孚众望),Start=977	End=977 count=1
+ data=977(深负众望) 
+Handle=979(审察),Start=978	End=978 count=1
+ data=980(审查) 
+Handle=980(审查),Start=979	End=979 count=1
+ data=979(审察) 
+Handle=981(生死忧关),Start=980	End=980 count=1
+ data=982(生死攸关) 
+Handle=982(生死攸关),Start=981	End=981 count=1
+ data=981(生死忧关) 
+Handle=983(声名雀起),Start=982	End=982 count=1
+ data=984(声名鹊起) 
+Handle=984(声名鹊起),Start=983	End=983 count=1
+ data=983(声名雀起) 
+Handle=985(胜卷在握),Start=984	End=984 count=1
+ data=986(胜券在握) 
+Handle=986(胜券在握),Start=985	End=985 count=1
+ data=985(胜卷在握) 
+Handle=987(胜况空前),Start=986	End=986 count=1
+ data=988(盛况空前) 
+Handle=988(盛况空前),Start=987	End=987 count=1
+ data=987(胜况空前) 
+Handle=989(神气凌人),Start=988	End=988 count=1
+ data=990(盛气凌人) 
+Handle=990(盛气凌人),Start=989	End=989 count=1
+ data=989(神气凌人) 
+Handle=991(释之交臂),Start=990	End=990 count=1
+ data=992(失之交臂) 
+Handle=992(失之交臂),Start=991	End=991 count=1
+ data=991(释之交臂) 
+Handle=993(拾人牙惠),Start=992	End=992 count=1
+ data=994(拾人牙慧) 
+Handle=994(拾人牙慧),Start=993	End=993 count=1
+ data=993(拾人牙惠) 
+Handle=995(拾遗补缺),Start=994	End=994 count=1
+ data=996(拾遗补阙) 
+Handle=996(拾遗补阙),Start=995	End=995 count=1
+ data=995(拾遗补缺) 
+Handle=997(食不裹腹),Start=996	End=996 count=1
+ data=998(食不果腹) 
+Handle=998(食不果腹),Start=997	End=997 count=1
+ data=997(食不裹腹) 
+Handle=999(史无前列),Start=998	End=998 count=1
+ data=1000(史无前例) 
+Handle=1000(史无前例),Start=999	End=999 count=1
+ data=999(史无前列) 
+Handle=1001(矢口诋赖),Start=1000	End=1000 count=1
+ data=1002(矢口抵赖) 
+Handle=1002(矢口抵赖),Start=1001	End=1001 count=1
+ data=1001(矢口诋赖) 
+Handle=1003(始作踊者),Start=1002	End=1002 count=1
+ data=1004(始作俑者) 
+Handle=1004(始作俑者),Start=1003	End=1003 count=1
+ data=1003(始作踊者) 
+Handle=1005(世外桃园),Start=1004	End=1004 count=1
+ data=1006(世外桃源) 
+Handle=1006(世外桃源),Start=1005	End=1005 count=1
+ data=1005(世外桃园) 
+Handle=1007(事过景迁),Start=1006	End=1006 count=1
+ data=1008(事过境迁) 
+Handle=1008(事过境迁),Start=1007	End=1007 count=1
+ data=1007(事过景迁) 
+Handle=1009(事绩),Start=1008	End=1008 count=1
+ data=1010(事迹) 
+Handle=1010(事迹),Start=1009	End=1009 count=1
+ data=1009(事绩) 
+Handle=1011(视查),Start=1010	End=1010 count=1
+ data=1012(视察) 
+Handle=1012(视察),Start=1011	End=1011 count=1
+ data=1011(视查) 
+Handle=1013(事得其反),Start=1012	End=1012 count=1
+ data=1014(适得其反) 
+Handle=1014(适得其反),Start=1013	End=1013 count=1
+ data=1013(事得其反) 
+Handle=1015(嗜酒成僻),Start=1014	End=1014 count=1
+ data=1016(嗜酒成癖) 
+Handle=1016(嗜酒成癖),Start=1015	End=1015 count=1
+ data=1015(嗜酒成僻) 
+Handle=1017(收收),Start=1016	End=1016 count=1
+ data=1018(收受) 
+Handle=1018(收受),Start=1017	End=1017 count=1
+ data=1017(收收) 
+Handle=1019(手捥),Start=1018	End=1018 count=1
+ data=1020(手腕) 
+Handle=1020(手腕),Start=1019	End=1019 count=1
+ data=1019(手捥) 
+Handle=1021(受庞若惊),Start=1020	End=1020 count=1
+ data=1022(受宠若惊) 
+Handle=1022(受宠若惊),Start=1021	End=1021 count=1
+ data=1021(受庞若惊) 
+Handle=1023(受秽罪),Start=1022	End=1022 count=1
+ data=1024(受贿罪) 
+Handle=1024(受贿罪),Start=1023	End=1023 count=1
+ data=1023(受秽罪) 
+Handle=1025(熟炼),Start=1024	End=1024 count=1
+ data=1026(熟练) 
+Handle=1026(熟练),Start=1025	End=1025 count=1
+ data=1025(熟炼) 
+Handle=1027(熟视无赌),Start=1026	End=1026 count=1
+ data=1028(熟视无睹) 
+Handle=1028(熟视无睹),Start=1027	End=1027 count=1
+ data=1027(熟视无赌) 
+Handle=1029(竖立),Start=1028	End=1028 count=1
+ data=1030(树立) 
+Handle=1030(树立),Start=1029	End=1029 count=1
+ data=1029(竖立) 
+Handle=1031(濑口),Start=1030	End=1030 count=1
+ data=1032(漱口) 
+Handle=1032(漱口),Start=1031	End=1031 count=1
+ data=1031(濑口) 
+Handle=1033(水笼头),Start=1032	End=1032 count=1
+ data=1034(水龙头) 
+Handle=1034(水龙头),Start=1033	End=1033 count=1
+ data=1033(水笼头) 
+Handle=1035(水泻不通),Start=1034	End=1034 count=1
+ data=1036(水泄不通) 
+Handle=1036(水泄不通),Start=1035	End=1035 count=1
+ data=1035(水泻不通) 
+Handle=1037(水性扬花),Start=1036	End=1036 count=1
+ data=1038(水性杨花) 
+Handle=1038(水性杨花),Start=1037	End=1037 count=1
+ data=1037(水性扬花) 
+Handle=1039(睡眼醒忪),Start=1038	End=1038 count=1
+ data=1040(睡眼惺忪) 
+Handle=1040(睡眼惺忪),Start=1039	End=1039 count=1
+ data=1039(睡眼醒忪) 
+Handle=1041(睡眼惺腥松),Start=1040	End=1040 count=1
+ data=1042(睡眼惺松) 
+Handle=1042(睡眼惺松),Start=1041	End=1041 count=1
+ data=1041(睡眼惺腥松) 
+Handle=1043(司空见贯),Start=1042	End=1042 count=1
+ data=1044(司空见惯) 
+Handle=1044(司空见惯),Start=1043	End=1043 count=1
+ data=1043(司空见贯) 
+Handle=1045(撕杀),Start=1044	End=1044 count=1
+ data=1046(厮杀) 
+Handle=1046(厮杀),Start=1045	End=1045 count=1
+ data=1045(撕杀) 
+Handle=1047(死皮癞脸),Start=1046	End=1046 count=1
+ data=1048(死皮赖脸) 
+Handle=1048(死皮赖脸),Start=1047	End=1047 count=1
+ data=1047(死皮癞脸) 
+Handle=1049(松驰),Start=1048	End=1048 count=1
+ data=1050(松弛) 
+Handle=1050(松弛),Start=1049	End=1049 count=1
+ data=1049(松驰) 
+Handle=1051(纵恿),Start=1050	End=1050 count=1
+ data=1052(怂恿) 
+Handle=1052(怂恿),Start=1051	End=1051 count=1
+ data=1051(纵恿) 
+Handle=1053(随声附合),Start=1052	End=1052 count=1
+ data=1054(随声附和) 
+Handle=1054(随声附和),Start=1053	End=1053 count=1
+ data=1053(随声附合) 
+Handle=1055(锁屑),Start=1054	End=1054 count=1
+ data=1056(琐屑) 
+Handle=1056(琐屑),Start=1055	End=1055 count=1
+ data=1055(锁屑) 
+Handle=1057(贪脏枉法),Start=1056	End=1056 count=1
+ data=1058(贪赃枉法) 
+Handle=1058(贪赃枉法),Start=1057	End=1057 count=1
+ data=1057(贪脏枉法) 
+Handle=1059(谈笑风声),Start=1058	End=1058 count=1
+ data=1060(谈笑风生) 
+Handle=1060(谈笑风生),Start=1059	End=1059 count=1
+ data=1059(谈笑风声) 
+Handle=1061(坦城),Start=1060	End=1060 count=1
+ data=1062(坦诚) 
+Handle=1062(坦诚),Start=1061	End=1061 count=1
+ data=1061(坦城) 
+Handle=1063(坦护),Start=1062	End=1062 count=1
+ data=1064(袒护) 
+Handle=1064(袒护),Start=1063	End=1063 count=1
+ data=1063(坦护) 
+Handle=1065(叹为观只),Start=1064	End=1064 count=1
+ data=1066(叹为观止) 
+Handle=1066(叹为观止),Start=1065	End=1065 count=1
+ data=1065(叹为观只) 
+Handle=1067(蹈光养晦),Start=1066	End=1066 count=1
+ data=1068(韬光养晦) 
+Handle=1068(韬光养晦),Start=1067	End=1067 count=1
+ data=1067(蹈光养晦) 
+Handle=1069(誉写),Start=1068	End=1068 count=1
+ data=1070(誊写) 
+Handle=1070(誊写),Start=1069	End=1069 count=1
+ data=1069(誉写) 
+Handle=1071(题纲),Start=1070	End=1070 count=1
+ data=1072(提纲) 
+Handle=1072(提纲),Start=1071	End=1071 count=1
+ data=1071(题纲) 
+Handle=1073(提纲携领),Start=1072	End=1072 count=1
+ data=1074(提纲挈领) 
+Handle=1074(提纲挈领),Start=1073	End=1073 count=1
+ data=1073(提纲携领) 
+Handle=1075(醍醐贯顶),Start=1074	End=1074 count=1
+ data=1076(醍醐灌顶) 
+Handle=1076(醍醐灌顶),Start=1075	End=1075 count=1
+ data=1075(醍醐贯顶) 
+Handle=1077(天崩地拆),Start=1076	End=1076 count=1
+ data=1078(天崩地坼) 
+Handle=1078(天崩地坼),Start=1077	End=1077 count=1
+ data=1077(天崩地拆) 
+Handle=1079(天翻地复),Start=1078	End=1078 count=1
+ data=1080(天翻地覆) 
+Handle=1080(天翻地覆),Start=1079	End=1079 count=1
+ data=1079(天翻地复) 
+Handle=1081(天崖海角),Start=1080	End=1080 count=1
+ data=1082(天涯海角) 
+Handle=1082(天涯海角),Start=1081	End=1081 count=1
+ data=1081(天崖海角) 
+Handle=1083(天衣无逢),Start=1082	End=1082 count=1
+ data=1084(天衣无缝) 
+Handle=1084(天衣无缝),Start=1083	End=1083 count=1
+ data=1083(天衣无逢) 
+Handle=1085(甜静),Start=1084	End=1084 count=1
+ data=1086(恬静) 
+Handle=1086(恬静),Start=1085	End=1085 count=1
+ data=1085(甜静) 
+Handle=1087(挑拨事非),Start=1086	End=1086 count=1
+ data=1088(挑拨是非) 
+Handle=1088(挑拨是非),Start=1087	End=1087 count=1
+ data=1087(挑拨事非) 
+Handle=1089(挑畔),Start=1088	End=1088 count=1
+ data=1090(挑衅) 
+Handle=1090(挑衅),Start=1089	End=1089 count=1
+ data=1089(挑畔) 
+Handle=1091(条分褛析),Start=1090	End=1090 count=1
+ data=1092(条分缕析) 
+Handle=1092(条分缕析),Start=1091	End=1091 count=1
+ data=1091(条分褛析) 
+Handle=1093(调察),Start=1092	End=1092 count=1
+ data=1094(调查) 
+Handle=1094(调查),Start=1093	End=1093 count=1
+ data=1093(调察) 
+Handle=1095(调济),Start=1094	End=1094 count=1
+ data=1096(调剂) 
+Handle=1096(调剂),Start=1095	End=1095 count=1
+ data=1095(调济) 
+Handle=1097(通谍),Start=1096	End=1096 count=1
+ data=1098(通牒) 
+Handle=1098(通牒),Start=1097	End=1097 count=1
+ data=1097(通谍) 
+Handle=1099(通货膨涨),Start=1098	End=1098 count=1
+ data=1100(通货膨胀) 
+Handle=1100(通货膨胀),Start=1099	End=1099 count=1
+ data=1099(通货膨涨) 
+Handle=1101(通辑),Start=1100	End=1100 count=1
+ data=1102(通缉) 
+Handle=1102(通缉),Start=1101	End=1101 count=1
+ data=1101(通辑) 
+Handle=1103(通霄),Start=1102	End=1102 count=1
+ data=1104(通宵) 
+Handle=1104(通宵),Start=1103	End=1103 count=1
+ data=1103(通霄) 
+Handle=1105(通霄达旦),Start=1104	End=1104 count=1
+ data=1106(通宵达旦) 
+Handle=1106(通宵达旦),Start=1105	End=1105 count=1
+ data=1105(通霄达旦) 
+Handle=1107(同仇敌慨),Start=1106	End=1106 count=1
+ data=1108(同仇敌忾) 
+Handle=1108(同仇敌忾),Start=1107	End=1107 count=1
+ data=1107(同仇敌慨) 
+Handle=1109(头晕目炫),Start=1108	End=1108 count=1
+ data=1110(头晕目眩) 
+Handle=1110(头晕目眩),Start=1109	End=1109 count=1
+ data=1109(头晕目炫) 
+Handle=1111(投机捣把),Start=1110	End=1110 count=1
+ data=1112(投机倒把) 
+Handle=1112(投机倒把),Start=1111	End=1111 count=1
+ data=1111(投机捣把) 
+Handle=1113(投身汩罗),Start=1112	End=1112 count=1
+ data=1114(投身汨罗) 
+Handle=1114(投身汨罗),Start=1113	End=1113 count=1
+ data=1113(投身汩罗) 
+Handle=1115(图穷匕现),Start=1114	End=1114 count=1
+ data=1116(图穷匕见) 
+Handle=1116(图穷匕见),Start=1115	End=1115 count=1
+ data=1115(图穷匕现) 
+Handle=1117(推懈责任),Start=1116	End=1116 count=1
+ data=1118(推卸责任) 
+Handle=1118(推卸责任),Start=1117	End=1117 count=1
+ data=1117(推懈责任) 
+Handle=1119(推心至腹),Start=1118	End=1118 count=1
+ data=1120(推心置腹) 
+Handle=1120(推心置腹),Start=1119	End=1119 count=1
+ data=1119(推心至腹) 
+Handle=1121(脱化),Start=1120	End=1120 count=1
+ data=1122(蜕化) 
+Handle=1122(蜕化),Start=1121	End=1121 count=1
+ data=1121(脱化) 
+Handle=1123(退化变质),Start=1122	End=1122 count=1
+ data=1124(蜕化变质) 
+Handle=1124(蜕化变质),Start=1123	End=1123 count=1
+ data=1123(退化变质) 
+Handle=1125(拖踏),Start=1124	End=1124 count=1
+ data=1126(拖沓) 
+Handle=1126(拖沓),Start=1125	End=1125 count=1
+ data=1125(拖踏) 
+Handle=1127(挖墙角),Start=1126	End=1126 count=1
+ data=1128(挖墙脚) 
+Handle=1128(挖墙脚),Start=1127	End=1127 count=1
+ data=1127(挖墙角) 
+Handle=1129(歪风斜气),Start=1128	End=1128 count=1
+ data=1130(歪风邪气) 
+Handle=1130(歪风邪气),Start=1129	End=1129 count=1
+ data=1129(歪风斜气) 
+Handle=1131(歪门斜道),Start=1130	End=1130 count=1
+ data=1132(歪门邪道) 
+Handle=1132(歪门邪道),Start=1131	End=1131 count=1
+ data=1131(歪门斜道) 
+Handle=1133(完壁归赵),Start=1132	End=1132 count=1
+ data=1134(完璧归赵) 
+Handle=1134(完璧归赵),Start=1133	End=1133 count=1
+ data=1133(完壁归赵) 
+Handle=1135(万古常青),Start=1134	End=1134 count=1
+ data=1136(万古长青) 
+Handle=1136(万古长青),Start=1135	End=1135 count=1
+ data=1135(万古常青) 
+Handle=1137(万马齐暗),Start=1136	End=1136 count=1
+ data=1138(万马齐喑) 
+Handle=1138(万马齐喑),Start=1137	End=1137 count=1
+ data=1137(万马齐暗) 
+Handle=1139(万事享通),Start=1138	End=1138 count=1
+ data=1140(万事亨通) 
+Handle=1140(万事亨通),Start=1139	End=1139 count=1
+ data=1139(万事享通) 
+Handle=1141(妄费心机),Start=1140	End=1140 count=1
+ data=1142(枉费心机) 
+Handle=1142(枉费心机),Start=1141	End=1141 count=1
+ data=1141(妄费心机) 
+Handle=1143(妄自非薄),Start=1142	End=1142 count=1
+ data=1144(妄自菲薄) 
+Handle=1144(妄自菲薄),Start=1143	End=1143 count=1
+ data=1143(妄自非薄) 
+Handle=1145(望风披糜),Start=1144	End=1144 count=1
+ data=1146(望风披靡) 
+Handle=1146(望风披靡),Start=1145	End=1145 count=1
+ data=1145(望风披糜) 
+Handle=1147(微忽其微),Start=1146	End=1146 count=1
+ data=1148(微乎其微) 
+Handle=1148(微乎其微),Start=1147	End=1147 count=1
+ data=1147(微忽其微) 
+Handle=1149(为国捐驱),Start=1148	End=1148 count=1
+ data=1150(为国捐躯) 
+Handle=1150(为国捐躯),Start=1149	End=1149 count=1
+ data=1149(为国捐驱) 
+Handle=1151(惟一),Start=1150	End=1150 count=1
+ data=1152(唯一) 
+Handle=1152(唯一),Start=1151	End=1151 count=1
+ data=1151(惟一) 
+Handle=1153(惟利事图),Start=1152	End=1152 count=1
+ data=1154(惟利是图) 
+Handle=1154(惟利是图),Start=1153	End=1153 count=1
+ data=1153(惟利事图) 
+Handle=1155(唯妙惟肖),Start=1154	End=1154 count=1
+ data=1156(惟妙惟肖) 
+Handle=1156(惟妙惟肖),Start=1155	End=1155 count=1
+ data=1155(唯妙惟肖) 
+Handle=1157(尾大不吊),Start=1156	End=1156 count=1
+ data=1158(尾大不掉) 
+Handle=1158(尾大不掉),Start=1157	End=1157 count=1
+ data=1157(尾大不吊) 
+Handle=1159(委糜),Start=1158	End=1158 count=1
+ data=1160(委靡) 
+Handle=1160(委靡),Start=1159	End=1159 count=1
+ data=1159(委糜) 
+Handle=1161(委屈求全),Start=1160	End=1160 count=1
+ data=1162(委曲求全) 
+Handle=1162(委曲求全),Start=1161	End=1161 count=1
+ data=1161(委屈求全) 
+Handle=1163(萎糜不振),Start=1162	End=1162 count=1
+ data=1164(萎靡不振) 
+Handle=1164(萎靡不振),Start=1163	End=1163 count=1
+ data=1163(萎糜不振) 
+Handle=1165(卫戌),Start=1164	End=1164 count=1
+ data=1166(卫戍) 
+Handle=1166(卫戍),Start=1165	End=1165 count=1
+ data=1165(卫戌) 
+Handle=1167(未雨绸谬),Start=1166	End=1166 count=1
+ data=1168(未雨绸缪) 
+Handle=1168(未雨绸缪),Start=1167	End=1167 count=1
+ data=1167(未雨绸谬) 
+Handle=1169(味同嚼腊),Start=1168	End=1168 count=1
+ data=1170(味同嚼蜡) 
+Handle=1170(味同嚼蜡),Start=1169	End=1169 count=1
+ data=1169(味同嚼腊) 
+Handle=1171(尉然成风),Start=1170	End=1170 count=1
+ data=1172(蔚然成风) 
+Handle=1172(蔚然成风),Start=1171	End=1171 count=1
+ data=1171(尉然成风) 
+Handle=1173(文渎),Start=1172	End=1172 count=1
+ data=1174(文牍) 
+Handle=1174(文牍),Start=1173	End=1173 count=1
+ data=1173(文渎) 
+Handle=1175(文过是非),Start=1174	End=1174 count=1
+ data=1176(文过饰非) 
+Handle=1176(文过饰非),Start=1175	End=1176 count=2
+ data=1175(文过是非) 1612(纹过饰非) 
+Handle=1177(闻鸡起武),Start=1177	End=1177 count=1
+ data=1178(闻鸡起舞) 
+Handle=1178(闻鸡起舞),Start=1178	End=1178 count=1
+ data=1177(闻鸡起武) 
+Handle=1179(闻名暇迩),Start=1179	End=1179 count=1
+ data=1180(闻名遐迩) 
+Handle=1180(闻名遐迩),Start=1180	End=1180 count=1
+ data=1179(闻名暇迩) 
+Handle=1181(吻颈之交),Start=1181	End=1181 count=1
+ data=1182(刎颈之交) 
+Handle=1182(刎颈之交),Start=1182	End=1182 count=1
+ data=1181(吻颈之交) 
+Handle=1183(稳操胜卷),Start=1183	End=1183 count=1
+ data=1184(稳操胜券) 
+Handle=1184(稳操胜券),Start=1184	End=1184 count=1
+ data=1183(稳操胜卷) 
+Handle=1185(瓮中捉鳌),Start=1185	End=1185 count=1
+ data=1186(瓮中捉鳖) 
+Handle=1186(瓮中捉鳖),Start=1186	End=1186 count=1
+ data=1185(瓮中捉鳌) 
+Handle=1187(乌烟障气),Start=1187	End=1187 count=1
+ data=1188(乌烟瘴气) 
+Handle=1188(乌烟瘴气),Start=1188	End=1188 count=1
+ data=1187(乌烟障气) 
+Handle=1189(污告),Start=1189	End=1189 count=1
+ data=1190(诬告) 
+Handle=1190(诬告),Start=1190	End=1190 count=1
+ data=1189(污告) 
+Handle=1191(无耻滥言),Start=1191	End=1191 count=1
+ data=1192(无耻谰言) 
+Handle=1192(无耻谰言),Start=1192	End=1192 count=1
+ data=1191(无耻滥言) 
+Handle=1193(无耻之犹),Start=1193	End=1193 count=1
+ data=1194(无耻之尤) 
+Handle=1194(无耻之尤),Start=1194	End=1194 count=1
+ data=1193(无耻之犹) 
+Handle=1195(无独有禺),Start=1195	End=1195 count=1
+ data=1196(无独有偶) 
+Handle=1196(无独有偶),Start=1196	End=1196 count=1
+ data=1195(无独有禺) 
+Handle=1197(无计于事),Start=1197	End=1197 count=1
+ data=1198(无济于事) 
+Handle=1198(无济于事),Start=1198	End=1198 count=1
+ data=1197(无计于事) 
+Handle=1199(无精打彩),Start=1199	End=1199 count=1
+ data=1200(无精打采) 
+Handle=1200(无精打采),Start=1200	End=1200 count=1
+ data=1199(无精打彩) 
+Handle=1201(无礼漫骂),Start=1201	End=1201 count=1
+ data=1202(无礼谩骂) 
+Handle=1202(无礼谩骂),Start=1202	End=1202 count=1
+ data=1201(无礼漫骂) 
+Handle=1203(无用讳言),Start=1203	End=1203 count=1
+ data=1204(无庸讳言) 
+Handle=1204(无庸讳言),Start=1204	End=1204 count=1
+ data=1203(无用讳言) 
+Handle=1205(无与论比),Start=1205	End=1205 count=1
+ data=1206(无与伦比) 
+Handle=1206(无与伦比),Start=1206	End=1206 count=1
+ data=1205(无与论比) 
+Handle=1207(熙熙嚷嚷),Start=1207	End=1207 count=1
+ data=1208(熙熙攘攘) 
+Handle=1208(熙熙攘攘),Start=1208	End=1208 count=1
+ data=1207(熙熙嚷嚷) 
+Handle=1209(嘻戏),Start=1209	End=1209 count=1
+ data=1210(嬉戏) 
+Handle=1210(嬉戏),Start=1210	End=1210 count=1
+ data=1209(嘻戏) 
+Handle=1211(激文),Start=1211	End=1211 count=1
+ data=1212(檄文) 
+Handle=1212(檄文),Start=1212	End=1212 count=1
+ data=1211(激文) 
+Handle=1213(暇思迩想),Start=1213	End=1213 count=1
+ data=1214(遐思迩想) 
+Handle=1214(遐思迩想),Start=1214	End=1214 count=1
+ data=1213(暇思迩想) 
+Handle=1215(闲情逸志),Start=1215	End=1215 count=1
+ data=1216(闲情逸致) 
+Handle=1216(闲情逸致),Start=1216	End=1216 count=1
+ data=1215(闲情逸志) 
+Handle=1217(陷井),Start=1217	End=1217 count=1
+ data=1218(陷阱) 
+Handle=1218(陷阱),Start=1218	End=1218 count=1
+ data=1217(陷井) 
+Handle=1219(相辅相承),Start=1219	End=1219 count=1
+ data=1220(相辅相成) 
+Handle=1220(相辅相成),Start=1220	End=1220 count=1
+ data=1219(相辅相承) 
+Handle=1221(相题并论),Start=1221	End=1221 count=1
+ data=1222(相提并论) 
+Handle=1222(相提并论),Start=1222	End=1222 count=1
+ data=1221(相题并论) 
+Handle=1223(相形见拙),Start=1223	End=1223 count=1
+ data=1224(相形见绌) 
+Handle=1224(相形见绌),Start=1224	End=1224 count=1
+ data=1223(相形见拙) 
+Handle=1225(相应成趣),Start=1225	End=1225 count=1
+ data=1226(相映成趣) 
+Handle=1226(相映成趣),Start=1226	End=1226 count=1
+ data=1225(相应成趣) 
+Handle=1227(向偶而泣),Start=1227	End=1227 count=1
+ data=1228(向隅而泣) 
+Handle=1228(向隅而泣),Start=1228	End=1228 count=1
+ data=1227(向偶而泣) 
+Handle=1229(消遥),Start=1229	End=1229 count=1
+ data=1230(逍遥) 
+Handle=1230(逍遥),Start=1230	End=1230 count=1
+ data=1229(消遥) 
+Handle=1231(消毁),Start=1231	End=1231 count=1
+ data=1232(销毁) 
+Handle=1232(销毁),Start=1232	End=1232 count=1
+ data=1231(消毁) 
+Handle=1233(消声匿迹),Start=1233	End=1233 count=1
+ data=1234(销声匿迹) 
+Handle=1234(销声匿迹),Start=1234	End=1234 count=1
+ data=1233(消声匿迹) 
+Handle=1235(宵汉),Start=1235	End=1235 count=1
+ data=1236(霄汉) 
+Handle=1236(霄汉),Start=1236	End=1236 count=1
+ data=1235(宵汉) 
+Handle=1237(笑容可鞠),Start=1237	End=1237 count=1
+ data=1238(笑容可掬) 
+Handle=1238(笑容可掬),Start=1238	End=1238 count=1
+ data=1237(笑容可鞠) 
+Handle=1239(协从),Start=1239	End=1239 count=1
+ data=1240(胁从) 
+Handle=1240(胁从),Start=1240	End=1240 count=1
+ data=1239(协从) 
+Handle=1241(协迫),Start=1241	End=1241 count=1
+ data=1242(胁迫) 
+Handle=1242(胁迫),Start=1242	End=1242 count=1
+ data=1241(协迫) 
+Handle=1243(泻露),Start=1243	End=1243 count=1
+ data=1244(泄露) 
+Handle=1244(泄露),Start=1244	End=1244 count=1
+ data=1243(泻露) 
+Handle=1245(心浮气燥),Start=1245	End=1245 count=1
+ data=1246(心浮气躁) 
+Handle=1246(心浮气躁),Start=1246	End=1246 count=1
+ data=1245(心浮气燥) 
+Handle=1247(心恢意懒),Start=1247	End=1247 count=1
+ data=1248(心灰意懒) 
+Handle=1248(心灰意懒),Start=1248	End=1248 count=1
+ data=1247(心恢意懒) 
+Handle=1249(心率不齐),Start=1249	End=1249 count=1
+ data=1250(心律不齐) 
+Handle=1250(心律不齐),Start=1250	End=1250 count=1
+ data=1249(心率不齐) 
+Handle=1251(辛苦恣雎),Start=1251	End=1251 count=1
+ data=1252(辛苦恣睢) 
+Handle=1252(辛苦恣睢),Start=1252	End=1252 count=1
+ data=1251(辛苦恣雎) 
+Handle=1253(欣尝),Start=1253	End=1253 count=1
+ data=1254(欣赏) 
+Handle=1254(欣赏),Start=1254	End=1254 count=1
+ data=1253(欣尝) 
+Handle=1255(形势严竣),Start=1255	End=1255 count=1
+ data=1256(形势严峻) 
+Handle=1256(形势严峻),Start=1256	End=1256 count=1
+ data=1255(形势严竣) 
+Handle=1257(形消骨立),Start=1257	End=1257 count=1
+ data=1258(形销骨立) 
+Handle=1258(形销骨立),Start=1258	End=1258 count=1
+ data=1257(形消骨立) 
+Handle=1259(兴高彩烈),Start=1259	End=1259 count=1
+ data=1260(兴高采烈) 
+Handle=1260(兴高采烈),Start=1260	End=1260 count=1
+ data=1259(兴高彩烈) 
+Handle=1261(性格粗旷),Start=1261	End=1261 count=1
+ data=1262(性格粗犷) 
+Handle=1262(性格粗犷),Start=1262	End=1262 count=1
+ data=1261(性格粗旷) 
+Handle=1263(修养生息),Start=1263	End=1263 count=1
+ data=1264(休养生息) 
+Handle=1264(休养生息),Start=1264	End=1264 count=1
+ data=1263(修养生息) 
+Handle=1265(修茸),Start=1265	End=1265 count=1
+ data=1266(修葺) 
+Handle=1266(修葺),Start=1266	End=1266 count=1
+ data=1265(修茸) 
+Handle=1267(虚无缥缈渺),Start=1267	End=1267 count=1
+ data=1268(虚无缥缈) 
+Handle=1268(虚无缥缈),Start=1268	End=1268 count=1
+ data=1267(虚无缥缈渺) 
+Handle=1270(暄宾夺主),Start=1269	End=1269 count=1
+ data=1271(喧宾夺主) 
+Handle=1271(喧宾夺主),Start=1270	End=1270 count=1
+ data=1270(暄宾夺主) 
+Handle=1272(暄闹),Start=1271	End=1271 count=1
+ data=1273(喧闹) 
+Handle=1273(喧闹),Start=1272	End=1272 count=1
+ data=1272(暄闹) 
+Handle=1274(悬梁刺骨),Start=1273	End=1273 count=1
+ data=1275(悬梁刺股) 
+Handle=1275(悬梁刺股),Start=1274	End=1274 count=1
+ data=1274(悬梁刺骨) 
+Handle=1276(弦律),Start=1275	End=1275 count=1
+ data=1277(旋律) 
+Handle=1277(旋律),Start=1276	End=1276 count=1
+ data=1276(弦律) 
+Handle=1278(炫目),Start=1277	End=1277 count=1
+ data=1279(眩目) 
+Handle=1279(眩目),Start=1278	End=1278 count=1
+ data=1278(炫目) 
+Handle=1280(喧染),Start=1279	End=1279 count=1
+ data=1281(渲染) 
+Handle=1281(渲染),Start=1280	End=1280 count=1
+ data=1280(喧染) 
+Handle=1282(寻序渐进),Start=1281	End=1281 count=1
+ data=1283(循序渐进) 
+Handle=1283(循序渐进),Start=1282	End=1282 count=1
+ data=1282(寻序渐进) 
+Handle=1284(殉情枉法),Start=1283	End=1283 count=1
+ data=1285(徇情枉法) 
+Handle=1285(徇情枉法),Start=1284	End=1284 count=1
+ data=1284(殉情枉法) 
+Handle=1286(淹没无闻),Start=1285	End=1285 count=1
+ data=1287(湮没无闻) 
+Handle=1287(湮没无闻),Start=1286	End=1286 count=1
+ data=1286(淹没无闻) 
+Handle=1288(严悛),Start=1287	End=1287 count=1
+ data=1289(严峻) 
+Handle=1289(严峻),Start=1288	End=1288 count=1
+ data=1288(严悛) 
+Handle=1290(严励),Start=1289	End=1289 count=1
+ data=1291(严厉) 
+Handle=1291(严厉),Start=1290	End=1290 count=1
+ data=1290(严励) 
+Handle=1292(揠旗息鼓),Start=1291	End=1291 count=1
+ data=1293(偃旗息鼓) 
+Handle=1293(偃旗息鼓),Start=1292	End=1292 count=1
+ data=1292(揠旗息鼓) 
+Handle=1294(演译),Start=1293	End=1293 count=1
+ data=1295(演绎) 
+Handle=1295(演绎),Start=1294	End=1294 count=1
+ data=1294(演译) 
+Handle=1296(膺品),Start=1295	End=1295 count=1
+ data=1297(赝品) 
+Handle=1297(赝品),Start=1296	End=1296 count=1
+ data=1296(膺品) 
+Handle=1298(扬常而去),Start=1297	End=1297 count=1
+ data=1299(扬长而去) 
+Handle=1299(扬长而去),Start=1298	End=1298 count=1
+ data=1298(扬常而去) 
+Handle=1300(沓无音信),Start=1299	End=1299 count=1
+ data=1301(杳无音信) 
+Handle=1301(杳无音信),Start=1300	End=1300 count=1
+ data=1300(沓无音信) 
+Handle=1302(要言不繁),Start=1301	End=1301 count=1
+ data=1303(要言不烦) 
+Handle=1303(要言不烦),Start=1302	End=1302 count=1
+ data=1302(要言不繁) 
+Handle=1304(竭见),Start=1303	End=1303 count=1
+ data=1305(谒见) 
+Handle=1305(谒见),Start=1304	End=1304 count=1
+ data=1304(竭见) 
+Handle=1306(一笔勾消),Start=1305	End=1305 count=1
+ data=1307(一笔勾销) 
+Handle=1307(一笔勾销),Start=1306	End=1306 count=1
+ data=1306(一笔勾消) 
+Handle=1308(一霎那),Start=1307	End=1307 count=1
+ data=1309(一刹那) 
+Handle=1309(一刹那),Start=1308	End=1308 count=1
+ data=1308(一霎那) 
+Handle=1310(一愁莫展),Start=1309	End=1309 count=1
+ data=1311(一筹莫展) 
+Handle=1311(一筹莫展),Start=1310	End=1310 count=1
+ data=1310(一愁莫展) 
+Handle=1312(一幅对联),Start=1311	End=1311 count=1
+ data=1313(一副对联) 
+Handle=1313(一副对联),Start=1312	End=1312 count=1
+ data=1312(一幅对联) 
+Handle=1314(一股作气),Start=1313	End=1313 count=1
+ data=1315(一鼓作气) 
+Handle=1315(一鼓作气),Start=1314	End=1314 count=1
+ data=1314(一股作气) 
+Handle=1316(一劳永易),Start=1315	End=1315 count=1
+ data=1317(一劳永逸) 
+Handle=1317(一劳永逸),Start=1316	End=1316 count=1
+ data=1316(一劳永易) 
+Handle=1318(一诺千斤),Start=1317	End=1317 count=1
+ data=1319(一诺千金) 
+Handle=1319(一诺千金),Start=1318	End=1318 count=1
+ data=1318(一诺千斤) 
+Handle=1320(一杯黄土),Start=1319	End=1319 count=1
+ data=1321(一抔黄土) 
+Handle=1321(一抔黄土),Start=1320	End=1320 count=1
+ data=1320(一杯黄土) 
+Handle=1322(一切就序),Start=1321	End=1321 count=1
+ data=1323(一切就绪) 
+Handle=1323(一切就绪),Start=1322	End=1322 count=1
+ data=1322(一切就序) 
+Handle=1324(一如继往),Start=1323	End=1323 count=1
+ data=1325(一如既往) 
+Handle=1325(一如既往),Start=1324	End=1324 count=1
+ data=1324(一如继往) 
+Handle=1326(一蹋糊涂),Start=1325	End=1325 count=1
+ data=1327(一塌糊涂) 
+Handle=1327(一塌糊涂),Start=1326	End=1326 count=1
+ data=1326(一蹋糊涂) 
+Handle=1328(一衣戴水),Start=1327	End=1327 count=1
+ data=1329(一衣带水) 
+Handle=1329(一衣带水),Start=1328	End=1328 count=1
+ data=1328(一衣戴水) 
+Handle=1330(一张一驰),Start=1329	End=1329 count=1
+ data=1331(一张一弛) 
+Handle=1331(一张一弛),Start=1330	End=1330 count=1
+ data=1330(一张一驰) 
+Handle=1332(一枕黄梁),Start=1331	End=1331 count=1
+ data=1333(一枕黄粱) 
+Handle=1333(一枕黄粱),Start=1332	End=1332 count=1
+ data=1332(一枕黄梁) 
+Handle=1334(以警效尤),Start=1333	End=1333 count=1
+ data=1335(以儆效尤) 
+Handle=1335(以儆效尤),Start=1334	End=1334 count=1
+ data=1334(以警效尤) 
+Handle=1336(以身作责),Start=1335	End=1335 count=1
+ data=1337(以身作则) 
+Handle=1337(以身作则),Start=1336	End=1336 count=1
+ data=1336(以身作责) 
+Handle=1338(以逸代劳),Start=1337	End=1337 count=1
+ data=1339(以逸待劳) 
+Handle=1339(以逸待劳),Start=1338	End=1338 count=1
+ data=1338(以逸代劳) 
+Handle=1340(以老卖老),Start=1339	End=1339 count=1
+ data=1341(倚老卖老) 
+Handle=1341(倚老卖老),Start=1340	End=1340 count=1
+ data=1340(以老卖老) 
+Handle=1342(倚门颌首),Start=1341	End=1341 count=1
+ data=1343(倚门颔首) 
+Handle=1343(倚门颔首),Start=1342	End=1342 count=1
+ data=1342(倚门颌首) 
+Handle=1344(义不容词),Start=1343	End=1343 count=1
+ data=1345(义不容辞) 
+Handle=1345(义不容辞),Start=1344	End=1344 count=1
+ data=1344(义不容词) 
+Handle=1346(义无返顾),Start=1345	End=1345 count=1
+ data=1347(义无反顾) 
+Handle=1347(义无反顾),Start=1346	End=1346 count=1
+ data=1346(义无返顾) 
+Handle=1348(一口同声),Start=1347	End=1347 count=1
+ data=1349(异口同声) 
+Handle=1349(异口同声),Start=1348	End=1348 count=1
+ data=1348(一口同声) 
+Handle=1350(意想天开),Start=1349	End=1349 count=1
+ data=1351(异想天开) 
+Handle=1351(异想天开),Start=1350	End=1350 count=1
+ data=1350(意想天开) 
+Handle=1352(仰扬顿挫),Start=1351	End=1351 count=1
+ data=1353(抑扬顿挫) 
+Handle=1353(抑扬顿挫),Start=1352	End=1352 count=1
+ data=1352(仰扬顿挫) 
+Handle=1354(肆业),Start=1353	End=1353 count=1
+ data=1355(肄业) 
+Handle=1355(肄业),Start=1354	End=1354 count=1
+ data=1354(肆业) 
+Handle=1356(意兴昂然),Start=1355	End=1355 count=1
+ data=1357(意兴盎然) 
+Handle=1357(意兴盎然),Start=1356	End=1356 count=1
+ data=1356(意兴昂然) 
+Handle=1358(因地治宜),Start=1357	End=1357 count=1
+ data=1359(因地制宜) 
+Handle=1359(因地制宜),Start=1358	End=1358 count=1
+ data=1358(因地治宜) 
+Handle=1360(因事利导),Start=1359	End=1359 count=1
+ data=1361(因势利导) 
+Handle=1361(因势利导),Start=1360	End=1360 count=1
+ data=1360(因事利导) 
+Handle=1362(阴谋鬼计),Start=1361	End=1361 count=1
+ data=1363(阴谋诡计) 
+Handle=1363(阴谋诡计),Start=1362	End=1362 count=1
+ data=1362(阴谋鬼计) 
+Handle=1364(引伸),Start=1363	End=1363 count=1
+ data=1365(引申) 
+Handle=1365(引申),Start=1364	End=1364 count=1
+ data=1364(引伸) 
+Handle=1366(饮鸠止渴),Start=1365	End=1365 count=1
+ data=1367(饮鸩止渴) 
+Handle=1367(饮鸩止渴),Start=1366	End=1366 count=1
+ data=1366(饮鸠止渴) 
+Handle=1368(英雄倍出),Start=1367	End=1367 count=1
+ data=1369(英雄辈出) 
+Handle=1369(英雄辈出),Start=1368	End=1368 count=1
+ data=1368(英雄倍出) 
+Handle=1370(莹光),Start=1369	End=1369 count=1
+ data=1371(荧光) 
+Handle=1371(荧光),Start=1370	End=1370 count=1
+ data=1370(莹光) 
+Handle=1372(营私舞敝),Start=1371	End=1371 count=1
+ data=1373(营私舞弊) 
+Handle=1373(营私舞弊),Start=1372	End=1372 count=1
+ data=1372(营私舞敝) 
+Handle=1374(影谍),Start=1373	End=1373 count=1
+ data=1375(影碟) 
+Handle=1375(影碟),Start=1374	End=1374 count=1
+ data=1374(影谍) 
+Handle=1376(庸人自忧),Start=1375	End=1375 count=1
+ data=1377(庸人自扰) 
+Handle=1377(庸人自扰),Start=1376	End=1376 count=1
+ data=1376(庸人自忧) 
+Handle=1378(忧柔寡断),Start=1377	End=1377 count=1
+ data=1379(优柔寡断) 
+Handle=1379(优柔寡断),Start=1378	End=1378 count=1
+ data=1378(忧柔寡断) 
+Handle=1380(忧哉游哉),Start=1379	End=1379 count=1
+ data=1381(优哉游哉) 
+Handle=1381(优哉游哉),Start=1380	End=1380 count=1
+ data=1380(忧哉游哉) 
+Handle=1382(忧心冲冲),Start=1381	End=1381 count=1
+ data=1383(忧心忡忡) 
+Handle=1383(忧心忡忡),Start=1382	End=1382 count=1
+ data=1382(忧心冲冲) 
+Handle=1384(尤如),Start=1383	End=1383 count=1
+ data=1385(犹如) 
+Handle=1385(犹如),Start=1384	End=1384 count=1
+ data=1384(尤如) 
+Handle=1386(尤如猛虎),Start=1385	End=1385 count=1
+ data=1387(犹如猛虎) 
+Handle=1387(犹如猛虎),Start=1386	End=1386 count=1
+ data=1386(尤如猛虎) 
+Handle=1388(游戈),Start=1387	End=1387 count=1
+ data=1389(游弋) 
+Handle=1389(游弋),Start=1388	End=1388 count=1
+ data=1388(游戈) 
+Handle=1390(有持无恐),Start=1389	End=1389 count=1
+ data=1391(有恃无恐) 
+Handle=1391(有恃无恐),Start=1390	End=1390 count=1
+ data=1390(有持无恐) 
+Handle=1392(鱼目浑珠),Start=1391	End=1391 count=1
+ data=1393(鱼目混珠) 
+Handle=1393(鱼目混珠),Start=1392	End=1392 count=1
+ data=1392(鱼目浑珠) 
+Handle=1394(渝期作废),Start=1393	End=1393 count=1
+ data=1395(逾期作废) 
+Handle=1395(逾期作废),Start=1394	End=1394 count=1
+ data=1394(渝期作废) 
+Handle=1396(语无轮次),Start=1395	End=1395 count=1
+ data=1397(语无伦次) 
+Handle=1397(语无伦次),Start=1396	End=1396 count=1
+ data=1396(语无轮次) 
+Handle=1398(欲盖弥章),Start=1397	End=1397 count=1
+ data=1399(欲盖弥彰) 
+Handle=1399(欲盖弥彰),Start=1398	End=1398 count=1
+ data=1398(欲盖弥章) 
+Handle=1400(原气大伤),Start=1399	End=1399 count=1
+ data=1401(元气大伤) 
+Handle=1401(元气大伤),Start=1400	End=1400 count=1
+ data=1400(原气大伤) 
+Handle=1402(元霄节),Start=1401	End=1401 count=1
+ data=1403(元宵节) 
+Handle=1403(元宵节),Start=1402	End=1402 count=1
+ data=1402(元霄节) 
+Handle=1404(原形必露),Start=1403	End=1403 count=1
+ data=1405(原形毕露) 
+Handle=1405(原形毕露),Start=1404	End=1404 count=1
+ data=1404(原形必露) 
+Handle=1406(沿木求鱼),Start=1405	End=1405 count=1
+ data=1407(缘木求鱼) 
+Handle=1407(缘木求鱼),Start=1406	End=1406 count=1
+ data=1406(沿木求鱼) 
+Handle=1408(渊远流长),Start=1407	End=1407 count=1
+ data=1409(源远流长) 
+Handle=1409(源远流长),Start=1408	End=1408 count=1
+ data=1408(渊远流长) 
+Handle=1410(越祖代庖),Start=1409	End=1409 count=1
+ data=1411(越俎代庖) 
+Handle=1411(越俎代庖),Start=1410	End=1410 count=1
+ data=1410(越祖代庖) 
+Handle=1412(云宵),Start=1411	End=1411 count=1
+ data=1413(云霄) 
+Handle=1413(云霄),Start=1412	End=1412 count=1
+ data=1412(云宵) 
+Handle=1414(运筹帷握),Start=1413	End=1413 count=1
+ data=1415(运筹帷幄) 
+Handle=1415(运筹帷幄),Start=1414	End=1414 count=1
+ data=1414(运筹帷握) 
+Handle=1416(杂杳),Start=1415	End=1415 count=1
+ data=1417(杂沓) 
+Handle=1417(杂沓),Start=1416	End=1416 count=1
+ data=1416(杂杳) 
+Handle=1418(脏款),Start=1417	End=1417 count=1
+ data=1419(赃款) 
+Handle=1419(赃款),Start=1418	End=1418 count=1
+ data=1418(脏款) 
+Handle=1420(遭秧),Start=1419	End=1419 count=1
+ data=1421(遭殃) 
+Handle=1421(遭殃),Start=1420	End=1420 count=1
+ data=1420(遭秧) 
+Handle=1422(造形),Start=1421	End=1421 count=1
+ data=1423(造型) 
+Handle=1423(造型),Start=1422	End=1422 count=1
+ data=1422(造形) 
+Handle=1424(造旨),Start=1423	End=1423 count=1
+ data=1425(造诣) 
+Handle=1425(造诣),Start=1424	End=1424 count=1
+ data=1424(造旨) 
+Handle=1426(责无旁代),Start=1425	End=1425 count=1
+ data=1427(责无旁贷) 
+Handle=1427(责无旁贷),Start=1426	End=1426 count=1
+ data=1426(责无旁代) 
+Handle=1428(贬眼),Start=1427	End=1427 count=1
+ data=1429(眨眼) 
+Handle=1429(眨眼),Start=1428	End=1428 count=1
+ data=1428(贬眼) 
+Handle=1430(醮水),Start=1429	End=1429 count=1
+ data=1431(蘸水) 
+Handle=1431(蘸水),Start=1430	End=1430 count=1
+ data=1430(醮水) 
+Handle=1432(张慌失措),Start=1431	End=1431 count=1
+ data=1433(张皇失措) 
+Handle=1433(张皇失措),Start=1432	End=1432 count=1
+ data=1432(张慌失措) 
+Handle=1434(常年累月),Start=1433	End=1433 count=1
+ data=1435(长年累月) 
+Handle=1435(长年累月),Start=1434	End=1434 count=1
+ data=1434(常年累月) 
+Handle=1436(仗义直言),Start=1435	End=1435 count=1
+ data=1437(仗义执言) 
+Handle=1437(仗义执言),Start=1436	End=1436 count=1
+ data=1436(仗义直言) 
+Handle=1438(帐蓬),Start=1437	End=1437 count=1
+ data=1439(帐篷) 
+Handle=1439(帐篷),Start=1438	End=1438 count=1
+ data=1438(帐蓬) 
+Handle=1440(招雪),Start=1439	End=1439 count=1
+ data=1441(昭雪) 
+Handle=1441(昭雪),Start=1440	End=1440 count=1
+ data=1440(招雪) 
+Handle=1442(招之即来),Start=1441	End=1441 count=1
+ data=1443(召之即来) 
+Handle=1443(召之即来),Start=1442	End=1442 count=1
+ data=1442(招之即来) 
+Handle=1444(照本喧科),Start=1443	End=1443 count=1
+ data=1445(照本宣科) 
+Handle=1445(照本宣科),Start=1444	End=1444 count=1
+ data=1444(照本喧科) 
+Handle=1446(遮天避日),Start=1445	End=1445 count=1
+ data=1447(遮天蔽日) 
+Handle=1447(遮天蔽日),Start=1446	End=1446 count=1
+ data=1446(遮天避日) 
+Handle=1448(蜇伏),Start=1447	End=1447 count=1
+ data=1449(蛰伏) 
+Handle=1449(蛰伏),Start=1448	End=1448 count=1
+ data=1448(蜇伏) 
+Handle=1450(针贬),Start=1449	End=1449 count=1
+ data=1451(针砭) 
+Handle=1451(针砭),Start=1450	End=1450 count=1
+ data=1450(针贬) 
+Handle=1452(针炙),Start=1451	End=1451 count=1
+ data=1453(针灸) 
+Handle=1453(针灸),Start=1452	End=1452 count=1
+ data=1452(针炙) 
+Handle=1454(侦茶),Start=1453	End=1453 count=1
+ data=1455(侦查) 
+Handle=1455(侦查),Start=1454	End=1454 count=1
+ data=1454(侦茶) 
+Handle=1456(真缔),Start=1455	End=1455 count=1
+ data=1457(真谛) 
+Handle=1457(真谛),Start=1456	End=1456 count=1
+ data=1456(真缔) 
+Handle=1458(真知卓见),Start=1457	End=1457 count=1
+ data=1459(真知灼见) 
+Handle=1459(真知灼见),Start=1458	End=1458 count=1
+ data=1458(真知卓见) 
+Handle=1460(慎密),Start=1459	End=1459 count=1
+ data=1461(缜密) 
+Handle=1461(缜密),Start=1460	End=1460 count=1
+ data=1460(慎密) 
+Handle=1462(震奋),Start=1461	End=1461 count=1
+ data=1463(振奋) 
+Handle=1463(振奋),Start=1462	End=1462 count=1
+ data=1462(震奋) 
+Handle=1464(震聋发聩),Start=1463	End=1463 count=1
+ data=1465(振聋发聩) 
+Handle=1465(振聋发聩),Start=1464	End=1464 count=1
+ data=1464(震聋发聩) 
+Handle=1466(震憾),Start=1465	End=1465 count=1
+ data=1467(震撼) 
+Handle=1467(震撼),Start=1466	End=1466 count=1
+ data=1466(震憾) 
+Handle=1468(整伤),Start=1467	End=1467 count=1
+ data=1469(整饬) 
+Handle=1469(整饬),Start=1468	End=1468 count=1
+ data=1468(整伤) 
+Handle=1470(证卷),Start=1469	End=1469 count=1
+ data=1471(证券) 
+Handle=1471(证券),Start=1470	End=1470 count=1
+ data=1470(证卷) 
+Handle=1472(直迷不悟),Start=1471	End=1471 count=1
+ data=1473(执迷不悟) 
+Handle=1473(执迷不悟),Start=1472	End=1472 count=1
+ data=1472(直迷不悟) 
+Handle=1474(直接了当),Start=1473	End=1473 count=1
+ data=1475(直截了当) 
+Handle=1475(直截了当),Start=1474	End=1474 count=1
+ data=1474(直接了当) 
+Handle=1476(职务便力),Start=1475	End=1475 count=1
+ data=1477(职务便利) 
+Handle=1477(职务便利),Start=1476	End=1476 count=1
+ data=1476(职务便力) 
+Handle=1478(只日可待),Start=1477	End=1477 count=1
+ data=1479(指日可待) 
+Handle=1479(指日可待),Start=1478	End=1478 count=1
+ data=1478(只日可待) 
+Handle=1480(致理名言),Start=1479	End=1479 count=1
+ data=1481(至理名言) 
+Handle=1481(至理名言),Start=1480	End=1480 count=1
+ data=1480(致理名言) 
+Handle=1482(灸手可热),Start=1481	End=1481 count=1
+ data=1483(炙手可热) 
+Handle=1483(炙手可热),Start=1482	End=1482 count=1
+ data=1482(灸手可热) 
+Handle=1484(治丝益焚),Start=1483	End=1483 count=1
+ data=1485(治丝益棼) 
+Handle=1485(治丝益棼),Start=1484	End=1484 count=1
+ data=1484(治丝益焚) 
+Handle=1486(置若惘闻),Start=1485	End=1485 count=1
+ data=1487(置若罔闻) 
+Handle=1487(置若罔闻),Start=1486	End=1486 count=1
+ data=1486(置若惘闻) 
+Handle=1488(中西合壁),Start=1487	End=1487 count=1
+ data=1489(中西合璧) 
+Handle=1489(中西合璧),Start=1488	End=1488 count=1
+ data=1488(中西合壁) 
+Handle=1490(众口烁金),Start=1489	End=1489 count=1
+ data=1491(众口铄金) 
+Handle=1491(众口铄金),Start=1490	End=1490 count=1
+ data=1490(众口烁金) 
+Handle=1492(众失之的),Start=1491	End=1491 count=1
+ data=1493(众矢之的) 
+Handle=1493(众矢之的),Start=1492	End=1492 count=1
+ data=1492(众失之的) 
+Handle=1494(重蹈复辙),Start=1493	End=1493 count=1
+ data=1495(重蹈覆辙) 
+Handle=1495(重蹈覆辙),Start=1494	End=1494 count=1
+ data=1494(重蹈复辙) 
+Handle=1496(重迭),Start=1495	End=1495 count=1
+ data=1497(重叠) 
+Handle=1497(重叠),Start=1496	End=1496 count=1
+ data=1496(重迭) 
+Handle=1498(重峦迭嶂),Start=1497	End=1497 count=1
+ data=1499(重峦叠嶂) 
+Handle=1499(重峦叠嶂),Start=1498	End=1498 count=1
+ data=1498(重峦迭嶂) 
+Handle=1500(珠联壁合),Start=1499	End=1499 count=1
+ data=1501(珠联璧合) 
+Handle=1501(珠联璧合),Start=1500	End=1500 count=1
+ data=1500(珠联壁合) 
+Handle=1502(蛛丝蚂迹),Start=1501	End=1501 count=1
+ data=1503(蛛丝马迹) 
+Handle=1503(蛛丝马迹),Start=1502	End=1502 count=1
+ data=1502(蛛丝蚂迹) 
+Handle=1504(煮豆燃箕),Start=1503	End=1503 count=1
+ data=1505(煮豆燃萁) 
+Handle=1505(煮豆燃萁),Start=1504	End=1504 count=1
+ data=1504(煮豆燃箕) 
+Handle=1506(专心致至),Start=1505	End=1505 count=1
+ data=1507(专心致志) 
+Handle=1507(专心致志),Start=1506	End=1506 count=1
+ data=1506(专心致至) 
+Handle=1508(嫌钱),Start=1507	End=1507 count=1
+ data=1509(赚钱) 
+Handle=1509(赚钱),Start=1508	End=1508 count=1
+ data=1508(嫌钱) 
+Handle=1510(装钉),Start=1509	End=1509 count=1
+ data=1511(装订) 
+Handle=1511(装订),Start=1510	End=1510 count=1
+ data=1510(装钉) 
+Handle=1512(装璜),Start=1511	End=1511 count=1
+ data=1513(装潢) 
+Handle=1513(装潢),Start=1512	End=1512 count=1
+ data=1512(装璜) 
+Handle=1514(装祯),Start=1513	End=1513 count=1
+ data=1515(装帧) 
+Handle=1515(装帧),Start=1514	End=1514 count=1
+ data=1514(装祯) 
+Handle=1516(追朔),Start=1515	End=1515 count=1
+ data=1517(追溯) 
+Handle=1517(追溯),Start=1516	End=1516 count=1
+ data=1516(追朔) 
+Handle=1518(准备就序),Start=1517	End=1517 count=1
+ data=1519(准备就绪) 
+Handle=1519(准备就绪),Start=1518	End=1518 count=1
+ data=1518(准备就序) 
+Handle=1520(卓而不群),Start=1519	End=1519 count=1
+ data=1521(卓尔不群) 
+Handle=1521(卓尔不群),Start=1520	End=1520 count=1
+ data=1520(卓而不群) 
+Handle=1522(子虚鸟有),Start=1521	End=1521 count=1
+ data=1523(子虚乌有) 
+Handle=1523(子虚乌有),Start=1522	End=1522 count=1
+ data=1522(子虚鸟有) 
+Handle=1524(自惭行秽),Start=1523	End=1523 count=1
+ data=1525(自惭形秽) 
+Handle=1525(自惭形秽),Start=1524	End=1524 count=1
+ data=1524(自惭行秽) 
+Handle=1526(自侍),Start=1525	End=1525 count=1
+ data=1527(自恃) 
+Handle=1527(自恃),Start=1526	End=1526 count=1
+ data=1526(自侍) 
+Handle=1528(自翊),Start=1527	End=1527 count=1
+ data=1529(自诩) 
+Handle=1529(自诩),Start=1528	End=1528 count=1
+ data=1528(自翊) 
+Handle=1530(姿意妄为),Start=1529	End=1529 count=1
+ data=1531(恣意妄为) 
+Handle=1531(恣意妄为),Start=1530	End=1530 count=1
+ data=1530(姿意妄为) 
+Handle=1532(从容),Start=1531	End=1531 count=1
+ data=1533(纵容) 
+Handle=1533(纵容),Start=1532	End=1532 count=1
+ data=1532(从容) 
+Handle=1534(走头无路),Start=1533	End=1533 count=1
+ data=1535(走投无路) 
+Handle=1535(走投无路),Start=1534	End=1534 count=1
+ data=1534(走头无路) 
+Handle=1536(作崇),Start=1535	End=1535 count=1
+ data=1537(作祟) 
+Handle=1537(作祟),Start=1536	End=1536 count=1
+ data=1536(作崇) 
+Handle=1538(坐收鱼利),Start=1537	End=1537 count=1
+ data=1539(坐收渔利) 
+Handle=1539(坐收渔利),Start=1538	End=1538 count=1
+ data=1538(坐收鱼利) 
+Handle=1540(做月子),Start=1539	End=1539 count=1
+ data=1541(坐月子) 
+Handle=1541(坐月子),Start=1540	End=1540 count=1
+ data=1540(做月子) 
+Handle=1542(坐阵),Start=1541	End=1541 count=1
+ data=1543(坐镇) 
+Handle=1543(坐镇),Start=1542	End=1542 count=1
+ data=1542(坐阵) 
+Handle=1544(坐无虚席),Start=1543	End=1543 count=1
+ data=1545(座无虚席) 
+Handle=1545(座无虚席),Start=1544	End=1544 count=1
+ data=1544(坐无虚席) 
+Handle=1546(坐右铭),Start=1545	End=1545 count=1
+ data=1547(座右铭) 
+Handle=1547(座右铭),Start=1546	End=1546 count=1
+ data=1546(坐右铭) 
+Handle=1548(灿然一笑),Start=1547	End=1547 count=1
+ data=1549(粲然一笑) 
+Handle=1549(粲然一笑),Start=1548	End=1548 count=1
+ data=1548(灿然一笑) 
+Handle=1550(路见一般),Start=1549	End=1549 count=1
+ data=1551(路见一斑) 
+Handle=1551(路见一斑),Start=1550	End=1550 count=1
+ data=1550(路见一般) 
+Handle=1552(负籍从师),Start=1551	End=1551 count=1
+ data=1553(负笈从师) 
+Handle=1553(负笈从师),Start=1552	End=1552 count=1
+ data=1552(负籍从师) 
+Handle=1554(沉缅酒色),Start=1553	End=1553 count=1
+ data=1555(沉湎酒色) 
+Handle=1555(沉湎酒色),Start=1554	End=1554 count=1
+ data=1554(沉缅酒色) 
+Handle=1556(万事具备),Start=1555	End=1555 count=1
+ data=1557(万事俱备) 
+Handle=1557(万事俱备),Start=1556	End=1556 count=1
+ data=1556(万事具备) 
+Handle=1558(精神矍烁),Start=1557	End=1557 count=1
+ data=1559(精神矍铄) 
+Handle=1559(精神矍铄),Start=1558	End=1558 count=1
+ data=1558(精神矍烁) 
+Handle=1560(针贬时弊),Start=1559	End=1559 count=1
+ data=1561(针砭时弊) 
+Handle=1561(针砭时弊),Start=1560	End=1560 count=1
+ data=1560(针贬时弊) 
+Handle=1562(百战不贻),Start=1561	End=1561 count=1
+ data=1563(百战不殆) 
+Handle=1563(百战不殆),Start=1562	End=1562 count=1
+ data=1562(百战不贻) 
+Handle=1564(大名鼎顶),Start=1563	End=1563 count=1
+ data=1565(大名鼎鼎) 
+Handle=1565(大名鼎鼎),Start=1564	End=1564 count=1
+ data=1564(大名鼎顶) 
+Handle=1566(雍荣华贵),Start=1565	End=1565 count=1
+ data=1567(雍容华贵) 
+Handle=1567(雍容华贵),Start=1566	End=1566 count=1
+ data=1566(雍荣华贵) 
+Handle=1568(成绩蜚然),Start=1567	End=1567 count=1
+ data=1569(成绩斐然) 
+Handle=1569(成绩斐然),Start=1568	End=1568 count=1
+ data=1568(成绩蜚然) 
+Handle=1570(稍安毋躁),Start=1569	End=1569 count=1
+ data=1571(少安毋躁) 
+Handle=1571(少安毋躁),Start=1570	End=1570 count=1
+ data=1570(稍安毋躁) 
+Handle=1572(舍身取义),Start=1571	End=1571 count=1
+ data=1573(舍生取义) 
+Handle=1573(舍生取义),Start=1572	End=1572 count=1
+ data=1572(舍身取义) 
+Handle=1574(望而怯步),Start=1573	End=1573 count=1
+ data=1575(望而却步) 
+Handle=1575(望而却步),Start=1574	End=1574 count=1
+ data=1574(望而怯步) 
+Handle=1576(水乳交溶),Start=1575	End=1575 count=1
+ data=1577(水乳交融) 
+Handle=1577(水乳交融),Start=1576	End=1576 count=1
+ data=1576(水乳交溶) 
+Handle=1578(全神灌注),Start=1577	End=1577 count=1
+ data=1579(全神贯注) 
+Handle=1579(全神贯注),Start=1578	End=1578 count=1
+ data=1578(全神灌注) 
+Handle=1580(招工启示),Start=1579	End=1579 count=1
+ data=1581(招工启事) 
+Handle=1581(招工启事),Start=1580	End=1580 count=1
+ data=1580(招工启示) 
+Handle=1582(心胸偏狭),Start=1581	End=1581 count=1
+ data=1583(心胸褊狭) 
+Handle=1583(心胸褊狭),Start=1582	End=1582 count=1
+ data=1582(心胸偏狭) 
+Handle=1584(辩证施治),Start=1583	End=1583 count=1
+ data=1585(辨证施治) 
+Handle=1585(辨证施治),Start=1584	End=1584 count=1
+ data=1584(辩证施治) 
+Handle=1586(温情脉默),Start=1585	End=1585 count=1
+ data=1587(温情脉脉) 
+Handle=1587(温情脉脉),Start=1586	End=1586 count=1
+ data=1586(温情脉默) 
+Handle=1588(唯唯诺喏),Start=1587	End=1587 count=1
+ data=1589(唯唯诺诺) 
+Handle=1589(唯唯诺诺),Start=1588	End=1588 count=1
+ data=1588(唯唯诺喏) 
+Handle=1590(靡糜之音),Start=1589	End=1589 count=1
+ data=1591(靡靡之音) 
+Handle=1591(靡靡之音),Start=1590	End=1590 count=1
+ data=1590(靡糜之音) 
+Handle=1592(同等学历),Start=1591	End=1591 count=1
+ data=1593(同等学力) 
+Handle=1593(同等学力),Start=1592	End=1592 count=1
+ data=1592(同等学历) 
+Handle=1594(联锁反应),Start=1593	End=1593 count=1
+ data=1595(连锁反应) 
+Handle=1595(连锁反应),Start=1594	End=1594 count=1
+ data=1594(联锁反应) 
+Handle=1596(战略布署),Start=1595	End=1595 count=1
+ data=1597(战略部署) 
+Handle=1597(战略部署),Start=1596	End=1596 count=1
+ data=1596(战略布署) 
+Handle=1598(听信馋言),Start=1597	End=1597 count=1
+ data=1599(听信谗言) 
+Handle=1599(听信谗言),Start=1598	End=1598 count=1
+ data=1598(听信馋言) 
+Handle=1600(变换莫测),Start=1599	End=1599 count=1
+ data=1601(变幻莫测) 
+Handle=1601(变幻莫测),Start=1600	End=1600 count=1
+ data=1600(变换莫测) 
+Handle=1602(精减机构),Start=1601	End=1601 count=1
+ data=1603(精简机构) 
+Handle=1603(精简机构),Start=1602	End=1602 count=1
+ data=1602(精减机构) 
+Handle=1604(任人为贤),Start=1603	End=1603 count=1
+ data=1605(任人唯贤) 
+Handle=1605(任人唯贤),Start=1604	End=1604 count=1
+ data=1604(任人为贤) 
+Handle=1606(锦秀河山),Start=1605	End=1605 count=1
+ data=1607(锦绣河山) 
+Handle=1607(锦绣河山),Start=1606	End=1606 count=1
+ data=1606(锦秀河山) 
+Handle=1608(不醒人事),Start=1607	End=1607 count=1
+ data=1609(不省人事) 
+Handle=1609(不省人事),Start=1608	End=1608 count=1
+ data=1608(不醒人事) 
+Handle=1610(各书己见),Start=1609	End=1609 count=1
+ data=1611(各抒己见) 
+Handle=1611(各抒己见),Start=1610	End=1610 count=1
+ data=1610(各书己见) 
+Handle=1612(纹过饰非),Start=1611	End=1611 count=1
+ data=1176(文过饰非) 
+Handle=1613(蜂涌而出),Start=1612	End=1612 count=1
+ data=1614(蜂拥而出) 
+Handle=1614(蜂拥而出),Start=1613	End=1613 count=1
+ data=1613(蜂涌而出) 
+Handle=1615(共商国事),Start=1614	End=1614 count=1
+ data=1616(共商国是) 
+Handle=1616(共商国是),Start=1615	End=1615 count=1
+ data=1615(共商国事) 
+Handle=1617(带罪立功),Start=1616	End=1616 count=1
+ data=1618(戴罪立功) 
+Handle=1618(戴罪立功),Start=1617	End=1617 count=1
+ data=1617(带罪立功) 
+Handle=1619(学以至用),Start=1618	End=1618 count=1
+ data=1620(学以致用) 
+Handle=1620(学以致用),Start=1619	End=1619 count=1
+ data=1619(学以至用) 
+Handle=1621(养植业),Start=1620	End=1620 count=1
+ data=1622(养殖业) 
+Handle=1622(养殖业),Start=1621	End=1621 count=1
+ data=1621(养植业) 
+Handle=1623(辨证法),Start=1622	End=1622 count=1
+ data=1624(辩证法) 
+Handle=1624(辩证法),Start=1623	End=1623 count=1
+ data=1623(辨证法) 
+Handle=1625(浅尝则止),Start=1624	End=1624 count=1
+ data=1626(浅尝辄止) 
+Handle=1626(浅尝辄止),Start=1625	End=1625 count=1
+ data=1625(浅尝则止) 
+Handle=1627(误入岐途),Start=1626	End=1626 count=1
+ data=1628(误入歧途) 
+Handle=1628(误入歧途),Start=1627	End=1627 count=1
+ data=1627(误入岐途) 
+Handle=1629(引亢高歌),Start=1628	End=1628 count=1
+ data=1630(引吭高歌) 
+Handle=1630(引吭高歌),Start=1629	End=1629 count=1
+ data=1629(引亢高歌) 
+Handle=1631(合盘托出),Start=1630	End=1630 count=1
+ data=1632(和盘托出) 
+Handle=1632(和盘托出),Start=1631	End=1631 count=1
+ data=1631(合盘托出) 
+Handle=1633(卷秩浩繁),Start=1632	End=1632 count=1
+ data=1634(卷帙浩繁) 
+Handle=1634(卷帙浩繁),Start=1633	End=1633 count=1
+ data=1633(卷秩浩繁) 
+Handle=1635(一柱香),Start=1634	End=1634 count=1
+ data=1636(一炷香) 
+Handle=1636(一炷香),Start=1635	End=1635 count=1
+ data=1635(一柱香) 
+Handle=1637(凑分子),Start=1636	End=1636 count=1
+ data=1638(凑份子) 
+Handle=1638(凑份子),Start=1637	End=1637 count=1
+ data=1637(凑分子) 
+Handle=1639(笑眯咪),Start=1638	End=1638 count=1
+ data=1640(笑眯眯) 
+Handle=1640(笑眯眯),Start=1639	End=1639 count=1
+ data=1639(笑眯咪) 
+Handle=1641(炭酸钙),Start=1640	End=1640 count=1
+ data=1642(碳酸钙) 
+Handle=1642(碳酸钙),Start=1641	End=1641 count=1
+ data=1641(炭酸钙) 
+Handle=1643(水蒸汽),Start=1642	End=1642 count=1
+ data=1644(水蒸气) 
+Handle=1644(水蒸气),Start=1643	End=1643 count=1
+ data=1643(水蒸汽) 
+Handle=1645(一滩泥),Start=1644	End=1644 count=1
+ data=1646(一摊泥) 
+Handle=1646(一摊泥),Start=1645	End=1645 count=1
+ data=1645(一滩泥) 
+Handle=1647(荧莹光屏),Start=1646	End=1646 count=1
+ data=1648(荧莹)光屏) 
+Handle=1648(荧莹)光屏),Start=1647	End=1647 count=1
+ data=1647(荧莹光屏) 
+Handle=1649(爆羊肉),Start=1648	End=1648 count=1
+ data=1650(炮羊肉) 
+Handle=1650(炮羊肉),Start=1649	End=1649 count=1
+ data=1649(爆羊肉) 
+Handle=1651(主弦律),Start=1650	End=1650 count=1
+ data=1652(主旋律) 
+Handle=1652(主旋律),Start=1651	End=1651 count=1
+ data=1651(主弦律) 
+Handle=1653(璀灿),Start=1652	End=1652 count=1
+ data=1654(璀璨) 
+Handle=1654(璀璨),Start=1653	End=1653 count=1
+ data=1653(璀灿) 
+Handle=1655(勘與),Start=1654	End=1654 count=1
+ data=1656(堪與) 
+Handle=1656(堪與),Start=1655	End=1655 count=1
+ data=1655(勘與) 
+Handle=1657(堪乱),Start=1656	End=1656 count=1
+ data=1658(戡乱) 
+Handle=1658(戡乱),Start=1657	End=1657 count=1
+ data=1657(堪乱) 
+Handle=1659(棉蛉虫),Start=1658	End=1658 count=1
+ data=1660(棉铃虫) 
+Handle=1660(棉铃虫),Start=1659	End=1659 count=1
+ data=1659(棉蛉虫) 
+Handle=1661(高品味),Start=1660	End=1660 count=1
+ data=1662(高品位) 
+Handle=1662(高品位),Start=1661	End=1661 count=1
+ data=1661(高品味) 
+Handle=1663(一阙词),Start=1662	End=1662 count=1
+ data=1664(一阕词) 
+Handle=1664(一阕词),Start=1663	End=1663 count=1
+ data=1663(一阙词) 
+Handle=1665(爆发户),Start=1664	End=1664 count=1
+ data=1666(暴发户) 
+Handle=1666(暴发户),Start=1665	End=1665 count=1
+ data=1665(爆发户) 
+Handle=1667(麦绣病),Start=1666	End=1666 count=1
+ data=1668(麦锈病) 
+Handle=1668(麦锈病),Start=1667	End=1667 count=1
+ data=1667(麦绣病) 
+Handle=1669(检查院),Start=1668	End=1668 count=1
+ data=1670(检察院) 
+Handle=1670(检察院),Start=1669	End=1669 count=1
+ data=1669(检查院) 
+Handle=1671(百纳本),Start=1670	End=1670 count=1
+ data=1672(百衲本) 
+Handle=1672(百衲本),Start=1671	End=1671 count=1
+ data=1671(百纳本) 
+Handle=1673(暗然),Start=1672	End=1672 count=1
+ data=1674(黯然) 
+Handle=1674(黯然),Start=1673	End=1673 count=1
+ data=1673(暗然) 
+Handle=1675(堪探),Start=1674	End=1674 count=1
+ data=1676(勘探) 
+Handle=1676(勘探),Start=1675	End=1675 count=1
+ data=1675(堪探) 
+Handle=1677(惊咤),Start=1676	End=1676 count=1
+ data=1678(惊诧) 
+Handle=1678(惊诧),Start=1677	End=1677 count=1
+ data=1677(惊咤) 
+Handle=1679(辩析),Start=1678	End=1678 count=1
+ data=1680(辨析) 
+Handle=1680(辨析),Start=1679	End=1679 count=1
+ data=1679(辩析) 
+Handle=1681(黄莲),Start=1680	End=1680 count=1
+ data=1682(黄连) 
+Handle=1682(黄连),Start=1681	End=1681 count=1
+ data=1681(黄莲) 
+Handle=1683(窜门),Start=1682	End=1682 count=1
+ data=1684(串门) 
+Handle=1684(串门),Start=1683	End=1683 count=1
+ data=1683(窜门) 
+Handle=1685(了望),Start=1684	End=1684 count=1
+ data=1686(嘹望) 
+Handle=1686(嘹望),Start=1685	End=1685 count=1
+ data=1685(了望) 
+Handle=1687(度河),Start=1686	End=1686 count=1
+ data=1688(渡河) 
+Handle=1688(渡河),Start=1687	End=1687 count=1
+ data=1687(度河) 
+Handle=1689(蕃茄),Start=1688	End=1688 count=1
+ data=1690(番茄) 
+Handle=1690(番茄),Start=1689	End=1689 count=1
+ data=1689(蕃茄) 
+Handle=1691(份量),Start=1690	End=1690 count=1
+ data=1692(分量) 
+Handle=1692(分量),Start=1691	End=1691 count=1
+ data=1691(份量) 
+Handle=1693(神祗),Start=1692	End=1692 count=1
+ data=1694(神衹) 
+Handle=1694(神衹),Start=1693	End=1693 count=1
+ data=1693(神祗) 
+Handle=1695(赢弱),Start=1694	End=1694 count=1
+ data=1696(羸弱) 
+Handle=1696(羸弱),Start=1695	End=1695 count=1
+ data=1695(赢弱) 
+Handle=1697(河叉),Start=1696	End=1696 count=1
+ data=1698(河汉) 
+Handle=1698(河汉),Start=1697	End=1697 count=1
+ data=1697(河叉) 
+Handle=1699(马蹬),Start=1698	End=1698 count=1
+ data=1700(马镫) 
+Handle=1700(马镫),Start=1699	End=1699 count=1
+ data=1699(马蹬) 
+Handle=1701(缭草),Start=1700	End=1700 count=1
+ data=1702(潦草) 
+Handle=1702(潦草),Start=1701	End=1701 count=1
+ data=1701(缭草) 
+Handle=1703(纱绽),Start=1702	End=1702 count=1
+ data=1704(纱锭) 
+Handle=1704(纱锭),Start=1703	End=1703 count=1
+ data=1703(纱绽) 
+Handle=1705(麻疯),Start=1704	End=1704 count=1
+ data=1706(麻风) 
+Handle=1706(麻风),Start=1705	End=1705 count=1
+ data=1705(麻疯) 
+Handle=1707(床第),Start=1706	End=1706 count=1
+ data=1708(床笫) 
+Handle=1708(床笫),Start=1707	End=1707 count=1
+ data=1707(床第) 
+Handle=1709(辈份),Start=1708	End=1708 count=1
+ data=1710(辈分) 
+Handle=1710(辈分),Start=1709	End=1709 count=1
+ data=1709(辈份) 
+Handle=1711(膨涨),Start=1710	End=1710 count=1
+ data=1712(膨胀) 
+Handle=1712(膨胀),Start=1711	End=1711 count=1
+ data=1711(膨涨) 
+Handle=1713(支吱唔),Start=1712	End=1712 count=1
+ data=1714(支吾(吱唔)) 
+Handle=1714(支吾(吱唔)),Start=1713	End=1713 count=1
+ data=1713(支吱唔) 
+Handle=1715(沙轮),Start=1714	End=1714 count=1
+ data=1716(砂轮) 
+Handle=1716(砂轮),Start=1715	End=1715 count=1
+ data=1715(沙轮) 
+Handle=1717(内哄),Start=1716	End=1716 count=1
+ data=1718(内讧) 
+Handle=1718(内讧),Start=1717	End=1717 count=1
+ data=1717(内哄) 
+Handle=1719(麦杆),Start=1718	End=1718 count=1
+ data=1720(麦秆) 
+Handle=1720(麦秆),Start=1719	End=1719 count=1
+ data=1719(麦杆) 
+Handle=1721(坩锅),Start=1720	End=1720 count=1
+ data=1722(坩埚) 
+Handle=1722(坩埚),Start=1721	End=1721 count=1
+ data=1721(坩锅) 
+Handle=1723(慧星),Start=1722	End=1722 count=1
+ data=1724(彗星) 
+Handle=1724(彗星),Start=1723	End=1723 count=1
+ data=1723(慧星) 
+Handle=1725(循私),Start=1724	End=1724 count=1
+ data=1726(徇私) 
+Handle=1726(徇私),Start=1725	End=1725 count=1
+ data=1725(循私) 
+Handle=1727(绝不罢休),Start=1726	End=1726 count=1
+ data=1728(决不罢休) 
+Handle=1728(决不罢休),Start=1727	End=1727 count=1
+ data=1727(绝不罢休) 
+Handle=1729(鞭僻入里),Start=1728	End=1728 count=1
+ data=1730(鞭辟入里) 
+Handle=1730(鞭辟入里),Start=1729	End=1729 count=1
+ data=1729(鞭僻入里) 
+Handle=1731(杂揉),Start=1730	End=1730 count=1
+ data=1732(杂糅) 
+Handle=1732(杂糅),Start=1731	End=1731 count=1
+ data=1731(杂揉) 
+Handle=1733(刹时),Start=1732	End=1732 count=1
+ data=1734(霎时) 
+Handle=1734(霎时),Start=1733	End=1733 count=1
+ data=1733(刹时) 
+Handle=1735(竹杆),Start=1734	End=1734 count=1
+ data=1736(竹竿) 
+Handle=1736(竹竿),Start=1735	End=1735 count=1
+ data=1735(竹杆) 
+Handle=1737(后补),Start=1736	End=1736 count=1
+ data=1738(候补) 
+Handle=1738(候补),Start=1737	End=1737 count=1
+ data=1737(后补) 
+Handle=1739(魁武),Start=1738	End=1738 count=1
+ data=1740(魁梧) 
+Handle=1740(魁梧),Start=1739	End=1739 count=1
+ data=1739(魁武) 
+Handle=1741(浑号),Start=1740	End=1740 count=1
+ data=1742(诨号) 
+Handle=1742(诨号),Start=1741	End=1741 count=1
+ data=1741(浑号) 
+Handle=1743(排泻),Start=1742	End=1742 count=1
+ data=1744(排泄) 
+Handle=1744(排泄),Start=1743	End=1743 count=1
+ data=1743(排泻) 
+Handle=1745(蕴育),Start=1744	End=1744 count=1
+ data=1746(孕育) 
+Handle=1746(孕育),Start=1745	End=1745 count=1
+ data=1745(蕴育) 
+Handle=1747(罢绌百家),Start=1746	End=1746 count=1
+ data=1748(罢黜百家) 
+Handle=1748(罢黜百家),Start=1747	End=1747 count=1
+ data=1747(罢绌百家) 
+Handle=1749(百尺杆头),Start=1748	End=1748 count=1
+ data=1750(百尺竿头) 
+Handle=1750(百尺竿头),Start=1749	End=1749 count=1
+ data=1749(百尺杆头) 
+Handle=1751(标炳千古),Start=1750	End=1750 count=1
+ data=1752(彪炳千古) 
+Handle=1752(彪炳千古),Start=1751	End=1751 count=1
+ data=1751(标炳千古) 
+Handle=1753(兵慌马乱),Start=1752	End=1752 count=1
+ data=1754(兵荒马乱) 
+Handle=1754(兵荒马乱),Start=1753	End=1753 count=1
+ data=1753(兵慌马乱) 
+Handle=1755(独挡一面),Start=1754	End=1754 count=1
+ data=1756(独当一面) 
+Handle=1756(独当一面),Start=1755	End=1755 count=1
+ data=1755(独挡一面) 
+Handle=1757(愤闷不平),Start=1756	End=1756 count=1
+ data=1758(愤懑不平) 
+Handle=1758(愤懑不平),Start=1757	End=1757 count=1
+ data=1757(愤闷不平) 
+Handle=1759(后发治人),Start=1758	End=1758 count=1
+ data=1760(后发制人) 
+Handle=1760(后发制人),Start=1759	End=1759 count=1
+ data=1759(后发治人) 
+Handle=1761(甘之如怡),Start=1760	End=1760 count=1
+ data=1762(甘之如饴) 
+Handle=1762(甘之如饴),Start=1761	End=1761 count=1
+ data=1761(甘之如怡) 
+Handle=1763(幅圆辽阔),Start=1762	End=1762 count=1
+ data=1764(幅员辽阔) 
+Handle=1764(幅员辽阔),Start=1763	End=1763 count=1
+ data=1763(幅圆辽阔) 
+Handle=1765(惨绝人圜),Start=1764	End=1764 count=1
+ data=1766(惨绝人寰) 
+Handle=1766(惨绝人寰),Start=1765	End=1765 count=1
+ data=1765(惨绝人圜) 
+Handle=1767(不寒而立),Start=1766	End=1766 count=1
+ data=1768(不寒而栗) 
+Handle=1768(不寒而栗),Start=1767	End=1767 count=1
+ data=1767(不寒而立) 
+Handle=1769(自学成材),Start=1768	End=1768 count=1
+ data=1770(自学成才) 
+Handle=1770(自学成才),Start=1769	End=1769 count=1
+ data=1769(自学成材) 
+Handle=1771(蝉连冠军),Start=1770	End=1770 count=1
+ data=1772(蝉联冠军) 
+Handle=1772(蝉联冠军),Start=1771	End=1771 count=1
+ data=1771(蝉连冠军) 
+Handle=1773(断章取意),Start=1772	End=1772 count=1
+ data=1774(断章取义) 
+Handle=1774(断章取义),Start=1773	End=1773 count=1
+ data=1773(断章取意) 
+Handle=1775(凤冠霞披),Start=1774	End=1774 count=1
+ data=1776(凤冠霞帔) 
+Handle=1776(凤冠霞帔),Start=1775	End=1775 count=1
+ data=1775(凤冠霞披) 
+Handle=1777(划地为牢),Start=1776	End=1776 count=1
+ data=1778(画地为牢) 
+Handle=1778(画地为牢),Start=1777	End=1777 count=1
+ data=1777(划地为牢) 
+Handle=1779(卑恭屈膝),Start=1778	End=1778 count=1
+ data=1780(卑躬屈膝) 
+Handle=1780(卑躬屈膝),Start=1779	End=1780 count=2
+ data=1779(卑恭屈膝) 1781(卑躬曲膝) 
+Handle=1781(卑躬曲膝),Start=1781	End=1781 count=1
+ data=1780(卑躬屈膝) 
+Handle=1782(变本加历),Start=1782	End=1782 count=1
+ data=1783(变本加厉) 
+Handle=1783(变本加厉),Start=1783	End=1784 count=2
+ data=1782(变本加历) 1784(变本加利) 
+Handle=1784(变本加利),Start=1785	End=1785 count=1
+ data=1783(变本加厉) 
+Handle=1785(层峦迭嶂),Start=1786	End=1786 count=1
+ data=1786(层峦叠嶂) 
+Handle=1786(层峦叠嶂),Start=1787	End=1788 count=2
+ data=1785(层峦迭嶂) 1787(层峦叠障) 
+Handle=1787(层峦叠障),Start=1789	End=1789 count=1
+ data=1786(层峦叠嶂) 
+Handle=1788(粗制烂造),Start=1790	End=1790 count=1
+ data=1789(粗制滥造) 
+Handle=1789(粗制滥造),Start=1791	End=1792 count=2
+ data=1788(粗制烂造) 1790(粗制乱造) 
+Handle=1790(粗制乱造),Start=1793	End=1793 count=1
+ data=1789(粗制滥造) 
+Handle=1791(独占鳖头),Start=1794	End=1794 count=1
+ data=1792(独占鳌头) 
+Handle=1792(独占鳌头),Start=1795	End=1796 count=2
+ data=1791(独占鳖头) 1793(独占螯头) 
+Handle=1793(独占螯头),Start=1797	End=1797 count=1
+ data=1792(独占鳌头) 
+Handle=1794(繁琐),Start=1798	End=1798 count=1
+ data=1795(烦琐) 
+Handle=1795(烦琐),Start=1799	End=1800 count=2
+ data=1794(繁琐) 1796(烦锁) 
+Handle=1796(烦锁),Start=1801	End=1801 count=1
+ data=1795(烦琐) 
+Handle=1797(好高鹜远),Start=1802	End=1802 count=1
+ data=1798(好高骛远) 
+Handle=1798(好高骛远),Start=1803	End=1804 count=2
+ data=1797(好高鹜远) 1799(好高鶩远) 
+Handle=1799(好高鶩远),Start=1805	End=1805 count=1
+ data=1798(好高骛远) 
+Handle=1800(荟翠),Start=1806	End=1806 count=1
+ data=1801(荟萃) 
+Handle=1801(荟萃),Start=1807	End=1808 count=2
+ data=1800(荟翠) 1802(荟粹) 
+Handle=1802(荟粹),Start=1809	End=1809 count=1
+ data=1801(荟萃) 
+Handle=1803(积腋成裘),Start=1810	End=1810 count=1
+ data=1804(集腋成裘) 
+Handle=1804(集腋成裘),Start=1811	End=1812 count=2
+ data=1803(积腋成裘) 1805(集掖成裘) 
+Handle=1805(集掖成裘),Start=1813	End=1813 count=1
+ data=1804(集腋成裘) 
+Handle=1806(金璧辉煌),Start=1814	End=1814 count=1
+ data=1807(金碧辉煌) 
+Handle=1807(金碧辉煌),Start=1815	End=1816 count=2
+ data=1806(金璧辉煌) 1808(金壁辉煌) 
+Handle=1808(金壁辉煌),Start=1817	End=1817 count=1
+ data=1807(金碧辉煌) 
+Handle=1809(精萃),Start=1818	End=1818 count=1
+ data=1810(精粹) 
+Handle=1810(精粹),Start=1819	End=1819 count=1
+ data=1809(精萃) 
+Handle=1811(苦心孤旨),Start=1820	End=1820 count=1
+ data=1812(苦心孤诣) 
+Handle=1812(苦心孤诣),Start=1821	End=1822 count=2
+ data=1811(苦心孤旨) 1813(苦心孤脂) 
+Handle=1813(苦心孤脂),Start=1823	End=1823 count=1
+ data=1812(苦心孤诣) 
+Handle=1814(烩炙人口),Start=1824	End=1824 count=1
+ data=1815(脍炙人口) 
+Handle=1815(脍炙人口),Start=1825	End=1826 count=2
+ data=1814(烩炙人口) 1816(脍灸人口) 
+Handle=1816(脍灸人口),Start=1827	End=1827 count=1
+ data=1815(脍炙人口) 
+Handle=1817(烂芋充数),Start=1828	End=1828 count=1
+ data=1818(滥竽充数) 
+Handle=1818(滥竽充数),Start=1829	End=1830 count=2
+ data=1817(烂芋充数) 1819(滥芋充数) 
+Handle=1819(滥芋充数),Start=1831	End=1831 count=1
+ data=1818(滥竽充数) 
+Handle=1820(连篇累黩),Start=1832	End=1832 count=1
+ data=1821(连篇累牍) 
+Handle=1821(连篇累牍),Start=1833	End=1834 count=2
+ data=1820(连篇累黩) 1822(连篇累赎) 
+Handle=1822(连篇累赎),Start=1835	End=1835 count=1
+ data=1821(连篇累牍) 
+Handle=1823(缭原烈火),Start=1836	End=1836 count=1
+ data=1824(燎原烈火) 
+Handle=1824(燎原烈火),Start=1837	End=1838 count=2
+ data=1823(缭原烈火) 1825(撩原烈火) 
+Handle=1825(撩原烈火),Start=1839	End=1839 count=1
+ data=1824(燎原烈火) 
+Handle=1826(留恋忘返),Start=1840	End=1840 count=1
+ data=1827(流连忘返) 
+Handle=1827(流连忘返),Start=1841	End=1843 count=3
+ data=1826(留恋忘返) 1828(留连忘返) 1829(流恋忘返) 
+Handle=1828(留连忘返),Start=1844	End=1844 count=1
+ data=1827(流连忘返) 
+Handle=1829(流恋忘返),Start=1845	End=1845 count=1
+ data=1827(流连忘返) 
+Handle=1830(流言非语),Start=1846	End=1846 count=1
+ data=1831(流言蜚语) 
+Handle=1831(流言蜚语),Start=1847	End=1848 count=2
+ data=1830(流言非语) 1832(流言诽语) 
+Handle=1832(流言诽语),Start=1849	End=1849 count=1
+ data=1831(流言蜚语) 
+Handle=1833(录录无为),Start=1850	End=1850 count=1
+ data=1834(碌碌无为) 
+Handle=1834(碌碌无为),Start=1851	End=1852 count=2
+ data=1833(录录无为) 1835(禄禄无为) 
+Handle=1835(禄禄无为),Start=1853	End=1853 count=1
+ data=1834(碌碌无为) 
+Handle=1836(略见一般),Start=1854	End=1854 count=1
+ data=1837(略见一斑) 
+Handle=1837(略见一斑),Start=1855	End=1856 count=2
+ data=1836(略见一般) 1838(略见一班) 
+Handle=1838(略见一班),Start=1857	End=1857 count=1
+ data=1837(略见一斑) 
+Handle=1839(略胜一愁),Start=1858	End=1858 count=1
+ data=1840(略胜一筹) 
+Handle=1840(略胜一筹),Start=1859	End=1860 count=2
+ data=1839(略胜一愁) 1841(略胜一畴) 
+Handle=1841(略胜一畴),Start=1861	End=1861 count=1
+ data=1840(略胜一筹) 
+Handle=1842(买赎还珠),Start=1862	End=1862 count=1
+ data=1843(买椟还珠) 
+Handle=1843(买椟还珠),Start=1863	End=1864 count=2
+ data=1842(买赎还珠) 1844(买牍还珠) 
+Handle=1844(买牍还珠),Start=1865	End=1865 count=1
+ data=1843(买椟还珠) 
+Handle=1845(脉博),Start=1866	End=1866 count=1
+ data=1846(脉搏) 
+Handle=1846(脉搏),Start=1867	End=1868 count=2
+ data=1845(脉博) 1847(脉膊) 
+Handle=1847(脉膊),Start=1869	End=1869 count=1
+ data=1846(脉搏) 
+Handle=1848(密诀),Start=1870	End=1870 count=1
+ data=1849(秘诀) 
+Handle=1849(秘诀),Start=1871	End=1872 count=2
+ data=1848(密诀) 1850(秘决) 
+Handle=1850(秘决),Start=1873	End=1873 count=1
+ data=1849(秘诀) 
+Handle=1851(明辨事非),Start=1874	End=1874 count=1
+ data=1852(明辨是非) 
+Handle=1852(明辨是非),Start=1875	End=1876 count=2
+ data=1851(明辨事非) 1853(明辩是非) 
+Handle=1853(明辩是非),Start=1877	End=1877 count=1
+ data=1852(明辨是非) 
+Handle=1854(明火直仗),Start=1878	End=1878 count=1
+ data=1855(明火执仗) 
+Handle=1855(明火执仗),Start=1879	End=1880 count=2
+ data=1854(明火直仗) 1856(明火执杖) 
+Handle=1856(明火执杖),Start=1881	End=1881 count=1
+ data=1855(明火执仗) 
+Handle=1857(莫衷一事),Start=1882	End=1882 count=1
+ data=1858(莫衷一是) 
+Handle=1858(莫衷一是),Start=1883	End=1884 count=2
+ data=1857(莫衷一事) 1859(莫中一是) 
+Handle=1859(莫中一是),Start=1885	End=1885 count=1
+ data=1858(莫衷一是) 
+Handle=1860(默守成规),Start=1886	End=1886 count=1
+ data=1861(墨守成规) 
+Handle=1861(墨守成规),Start=1887	End=1888 count=2
+ data=1860(默守成规) 1862(墨守陈规) 
+Handle=1862(墨守陈规),Start=1889	End=1889 count=1
+ data=1861(墨守成规) 
+Handle=1863(沤心沥血),Start=1890	End=1890 count=1
+ data=1864(呕心沥血) 
+Handle=1864(呕心沥血),Start=1891	End=1892 count=2
+ data=1863(沤心沥血) 1865(讴心沥血) 
+Handle=1865(讴心沥血),Start=1893	End=1893 count=1
+ data=1864(呕心沥血) 
+Handle=1866(旁证博引),Start=1894	End=1894 count=1
+ data=1867(旁征博引) 
+Handle=1867(旁征博引),Start=1895	End=1896 count=2
+ data=1866(旁证博引) 1868(旁征博证) 
+Handle=1868(旁征博证),Start=1897	End=1897 count=1
+ data=1867(旁征博引) 
+Handle=1869(气式汹汹),Start=1898	End=1898 count=1
+ data=1870(气势汹汹) 
+Handle=1870(气势汹汹),Start=1899	End=1901 count=3
+ data=1869(气式汹汹) 1871(气势凶凶) 1872(气势汹凶) 
+Handle=1871(气势凶凶),Start=1902	End=1902 count=1
+ data=1870(气势汹汹) 
+Handle=1872(气势汹凶),Start=1903	End=1903 count=1
+ data=1870(气势汹汹) 
+Handle=1873(恰如其份),Start=1904	End=1904 count=1
+ data=1874(恰如其分) 
+Handle=1874(恰如其分),Start=1905	End=1906 count=2
+ data=1873(恰如其份) 1875(洽如其分) 
+Handle=1875(洽如其分),Start=1907	End=1907 count=1
+ data=1874(恰如其分) 
+Handle=1876(轻歌慢舞),Start=1908	End=1908 count=1
+ data=1877(轻歌曼舞) 
+Handle=1877(轻歌曼舞),Start=1909	End=1910 count=2
+ data=1876(轻歌慢舞) 1878(轻歌漫舞) 
+Handle=1878(轻歌漫舞),Start=1911	End=1911 count=1
+ data=1877(轻歌曼舞) 
+Handle=1879(清沏),Start=1912	End=1912 count=1
+ data=1880(清澈) 
+Handle=1880(清澈),Start=1913	End=1914 count=2
+ data=1879(清沏) 1881(清辙) 
+Handle=1881(清辙),Start=1915	End=1915 count=1
+ data=1880(清澈) 
+Handle=1882(融汇贯通),Start=1916	End=1916 count=1
+ data=1883(融会贯通) 
+Handle=1883(融会贯通),Start=1917	End=1918 count=2
+ data=1882(融汇贯通) 1884(溶会贯通) 
+Handle=1884(溶会贯通),Start=1919	End=1919 count=1
+ data=1883(融会贯通) 
+Handle=1885(梢纵即逝),Start=1920	End=1920 count=1
+ data=1886(稍纵即逝) 
+Handle=1886(稍纵即逝),Start=1921	End=1922 count=2
+ data=1885(梢纵即逝) 1887(少纵即逝) 
+Handle=1887(少纵即逝),Start=1923	End=1923 count=1
+ data=1886(稍纵即逝) 
+Handle=1888(神彩奕奕),Start=1924	End=1924 count=1
+ data=1889(神采奕奕) 
+Handle=1889(神采奕奕),Start=1925	End=1927 count=3
+ data=1888(神彩奕奕) 1890(神采弈弈) 1891(神采奕弈) 
+Handle=1890(神采弈弈),Start=1928	End=1928 count=1
+ data=1889(神采奕奕) 
+Handle=1891(神采奕弈),Start=1929	End=1929 count=1
+ data=1889(神采奕奕) 
+Handle=1892(手屈一指),Start=1930	End=1930 count=1
+ data=1893(首屈一指) 
+Handle=1893(首屈一指),Start=1931	End=1932 count=2
+ data=1892(手屈一指) 1894(首曲一指) 
+Handle=1894(首曲一指),Start=1933	End=1933 count=1
+ data=1893(首屈一指) 
+Handle=1895(肄无忌惮),Start=1934	End=1934 count=1
+ data=1896(肆无忌惮) 
+Handle=1896(肆无忌惮),Start=1935	End=1936 count=2
+ data=1895(肄无忌惮) 1897(肆无忌殚) 
+Handle=1897(肆无忌殚),Start=1937	End=1937 count=1
+ data=1896(肆无忌惮) 
+Handle=1898(提心调胆),Start=1938	End=1938 count=1
+ data=1899(提心吊胆) 
+Handle=1899(提心吊胆),Start=1939	End=1940 count=2
+ data=1898(提心调胆) 1900(提心掉胆) 
+Handle=1900(提心掉胆),Start=1941	End=1941 count=1
+ data=1899(提心吊胆) 
+Handle=1901(括不知耻),Start=1942	End=1942 count=1
+ data=1902(恬不知耻) 
+Handle=1902(恬不知耻),Start=1943	End=1944 count=2
+ data=1901(括不知耻) 1903(舔不知耻) 
+Handle=1903(舔不知耻),Start=1945	End=1945 count=1
+ data=1902(恬不知耻) 
+Handle=1904(为虎作账),Start=1946	End=1946 count=1
+ data=1905(为虎作伥) 
+Handle=1905(为虎作伥),Start=1947	End=1949 count=3
+ data=1904(为虎作账) 1906(为虎作怅) 1907(为虎作帐) 
+Handle=1906(为虎作怅),Start=1950	End=1950 count=1
+ data=1905(为虎作伥) 
+Handle=1907(为虎作帐),Start=1951	End=1951 count=1
+ data=1905(为虎作伥) 
+Handle=1908(诩诩如生),Start=1952	End=1952 count=1
+ data=1909(栩栩如生) 
+Handle=1909(栩栩如生),Start=1953	End=1954 count=2
+ data=1908(诩诩如生) 1910(栩诩如生) 
+Handle=1910(栩诩如生),Start=1955	End=1955 count=1
+ data=1909(栩栩如生) 
+Handle=1911(言简意该),Start=1956	End=1956 count=1
+ data=1912(言简意赅) 
+Handle=1912(言简意赅),Start=1957	End=1958 count=2
+ data=1911(言简意该) 1913(言简意骇) 
+Handle=1913(言简意骇),Start=1959	End=1959 count=1
+ data=1912(言简意赅) 
+Handle=1914(眼花了乱),Start=1960	End=1960 count=1
+ data=1915(眼花缭乱) 
+Handle=1915(眼花缭乱),Start=1961	End=1962 count=2
+ data=1914(眼花了乱) 1916(眼花燎乱) 
+Handle=1916(眼花燎乱),Start=1963	End=1963 count=1
+ data=1915(眼花缭乱) 
+Handle=1917(怡笑大方),Start=1964	End=1964 count=1
+ data=1918(贻笑大方) 
+Handle=1918(贻笑大方),Start=1965	End=1966 count=2
+ data=1917(怡笑大方) 1919(遗笑大方) 
+Handle=1919(遗笑大方),Start=1967	End=1967 count=1
+ data=1918(贻笑大方) 
+Handle=1920(怨天由人),Start=1968	End=1968 count=1
+ data=1921(怨天尤人) 
+Handle=1921(怨天尤人),Start=1969	End=1970 count=2
+ data=1920(怨天由人) 1922(怨天忧人) 
+Handle=1922(怨天忧人),Start=1971	End=1971 count=1
+ data=1921(怨天尤人) 
+Handle=1923(纭纭众生),Start=1972	End=1972 count=1
+ data=1924(芸芸众生) 
+Handle=1924(芸芸众生),Start=1973	End=1974 count=2
+ data=1923(纭纭众生) 1925(芸纭众生) 
+Handle=1925(芸纭众生),Start=1975	End=1975 count=1
+ data=1924(芸芸众生) 
+Handle=1926(再接再励),Start=1976	End=1976 count=1
+ data=1927(再接再厉) 
+Handle=1927(再接再厉),Start=1977	End=1979 count=3
+ data=1926(再接再励) 1928(再接再力) 1929(再接再历) 
+Handle=1928(再接再力),Start=1980	End=1980 count=1
+ data=1927(再接再厉) 
+Handle=1929(再接再历),Start=1981	End=1981 count=1
+ data=1927(再接再厉) 
+Handle=1930(趾高气昂),Start=1982	End=1982 count=1
+ data=1931(趾高气扬) 
+Handle=1931(趾高气扬),Start=1983	End=1984 count=2
+ data=1930(趾高气昂) 1932(指高气扬) 
+Handle=1932(指高气扬),Start=1985	End=1985 count=1
+ data=1931(趾高气扬) 
+Handle=1933(中流抵柱),Start=1986	End=1986 count=1
+ data=1934(中流砥柱) 
+Handle=1934(中流砥柱),Start=1987	End=1988 count=2
+ data=1933(中流抵柱) 1935(中流坻柱) 
+Handle=1935(中流坻柱),Start=1989	End=1989 count=1
+ data=1934(中流砥柱) 
+Handle=1936(揣揣不安),Start=1990	End=1990 count=1
+ data=1937(惴惴不安) 
+Handle=1937(惴惴不安),Start=1991	End=1993 count=3
+ data=1936(揣揣不安) 1938(喘喘不安) 1939(惴喘不安) 
+Handle=1938(喘喘不安),Start=1994	End=1994 count=1
+ data=1937(惴惴不安) 
+Handle=1939(惴喘不安),Start=1995	End=1995 count=1
+ data=1937(惴惴不安) 
+Handle=1940(自抱自弃),Start=1996	End=1996 count=1
+ data=1941(自暴自弃) 
+Handle=1941(自暴自弃),Start=1997	End=1998 count=2
+ data=1940(自抱自弃) 1942(自曝自弃) 
+Handle=1942(自曝自弃),Start=1999	End=1999 count=1
+ data=1941(自暴自弃) 
+Handle=1943(纵横俾阖),Start=2000	End=2000 count=1
+ data=1944(纵横捭阖) 
+Handle=1944(纵横捭阖),Start=2001	End=2002 count=2
+ data=1943(纵横俾阖) 1945(纵横稗阖) 
+Handle=1945(纵横稗阖),Start=2003	End=2003 count=1
+ data=1944(纵横捭阖) 
