@@ -186,9 +186,9 @@ class NLPIRBase(ABC):
         # in Windows machine is AMD64, linux is x86_64 as well
         if uname.system.startswith('Win'):
             if is_64bit:
-                lib = get_dll_prefix(["win", "lib64"], "", "64")
+                lib = get_dll_prefix(["win", "lib64"], "", "64.dll")
             else:
-                lib = get_dll_prefix(["win", "lib32"], "", "32")
+                lib = get_dll_prefix(["win", "lib32"], "", "32.dll")
         elif uname.system.startswith('Linux'):
             if platform.machine().startswith("x86"):
                 if is_64bit:
