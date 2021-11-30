@@ -119,4 +119,5 @@ def delete_rules(rule: int):
     for file in os.listdir(kgb_path):
         result = __kgb_rule_file_re__.search(file)
         if result is not None:
-            os.remove(os.path.join(kgb_path, file))
+            if int(result.group(1)) == rule:
+                os.remove(os.path.join(kgb_path, file))
