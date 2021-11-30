@@ -20,7 +20,7 @@ dependencies = [
 
 multi_arch_lib = {
     'any': ['lib/*/*', 'lib/*', 'lib/*/*/*'],
-    'win_amd64': ['lib/win/*'],
+    'win_amd64': ['lib/win/lib64/*'],
     'manylinux2014_x86_64': ['lib/linux/x86/lib64/*'],
     'manylinux2014_aarch64': ['lib/linux/aarch64/*'],
     'macosx_11_0_x86_64': ['lib/darwin/*'],
