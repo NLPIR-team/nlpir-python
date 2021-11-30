@@ -186,9 +186,13 @@ class NLPIRBase(ABC):
         # in Windows machine is AMD64, linux is x86_64 as well
         if uname.system.startswith('Win'):
             if is_64bit:
-                lib = get_dll_prefix(["win", "lib64"], "", "64.dll")
+                lib = get_dll_prefix(["win", "lib64"], "", "64")
             else:
-                lib = get_dll_prefix(["win", "lib32"], "", "32.dll")
+                lib = get_dll_prefix(["win", "lib32"], "", "32")
+            # add search path to fix the libcurl.dll not found bug on python <3.8
+            # same bugfix for python3.6, 3,7
+            if sys.version_info <= (3, 8):
+                os.environ["PATH"] += ";" + os.path.dirname(lib)
         elif uname.system.startswith('Linux'):
             if platform.machine().startswith("x86"):
                 if is_64bit:
