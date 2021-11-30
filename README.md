@@ -76,6 +76,7 @@ native call, make it easier to use.
 | Classify          |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | DeepClassify      |       ✔       |       ✔       |       ✍       |               |                   |                   |               |
 | Cluster           |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
+| EyeChecker        |       ✔       |       ✔       |       ✔       |       ✔       |         ✔         |         ✔         |               |
 | DocCompare        |               |               |               |               |                   |                   |               |
 | DocExtractor      |       ✔       |       ✔       |               |       ✔       |         ✔         |                   |               |
 | DocParser         |               |               |               |               |                   |                   |               |

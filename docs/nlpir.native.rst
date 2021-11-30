@@ -97,6 +97,15 @@ nlpir.native.text\_similarity module
    :undoc-members:
    :show-inheritance:
 
+nlpir.native.eye\_checker module
+-------------------------------------
+
+.. automodule:: nlpir.native.eye_checker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
 nlpir.native.nlpir\_base module
 ---------------------------------------
 

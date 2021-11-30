@@ -89,6 +89,14 @@ nlpir.sentiment_analysis module
    :undoc-members:
    :show-inheritance:
 
+nlpir.eye_checker module
+-------------------------------
+
+.. automodule:: nlpir.eye_checker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 
 nlpir.tools module
 --------------------
