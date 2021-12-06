@@ -97,6 +97,13 @@ nlpir.eye_checker module
    :undoc-members:
    :show-inheritance:
 
+nlpir.deep_classifier module
+-------------------------------
+
+.. automodule:: nlpir.deep_classifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 nlpir.tools module
 --------------------

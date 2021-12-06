@@ -89,7 +89,11 @@ class DeepClassifier(NLPIRBase):
         :param handler: classifier handler
         :return: add success or not
         """
-        return self.get_func("DeepClassifier_AddTrain", [c_char_p, c_char_p, POINTER(c_int)], c_bool)(classname, text, handler)
+        return self.get_func(
+            "DeepClassifier_AddTrain",
+            [c_char_p, c_char_p, POINTER(c_int)],
+            c_bool
+        )(classname, text, handler)
 
     @NLPIRBase.byte_str_transform
     def add_train_file(self, classname: str, filename: str, handler: int = 0) -> int:

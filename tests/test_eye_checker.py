@@ -1,3 +1,13 @@
+# coding=utf-8
+"""
+Tested function:
+
+- :func:`nlpir.eye_checker.import_kgb_rules`
+- :func:`nlpir.eye_checker.list_rules`
+- :func:`nlpir.eye_checker.delete_rules`
+- :func:`nlpir.eye_checker.extract_knowledge`
+"""
+
 import pytest
 
 from nlpir import eye_checker
@@ -15,7 +25,7 @@ def test_extract():
 
 @pytest.mark.run(order=1)
 def test_rule_manage():
-    from tests.strings import test_kgb_test_text, test_kgb_rules
+    from tests.strings import test_kgb_rules
     rule_set = {1, 2, 3, 4, 6, 7, 9}
     for rule in rule_set:
         assert eye_checker.import_kgb_rules(rule_text=test_kgb_rules, report_type=rule, overwrite=True)

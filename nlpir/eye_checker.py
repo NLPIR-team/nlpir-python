@@ -6,12 +6,9 @@ import json
 import os
 import re
 import typing
-from enum import Enum
-from pathlib import Path
 
 from pydantic import BaseModel
 
-import nlpir
 from nlpir import get_instance as __get_instance__
 from nlpir import native
 
