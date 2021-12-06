@@ -74,8 +74,11 @@ class NLPIRBase(ABC):
 
     __instance_lock__ = threading.Lock()
 
+    # 函数泛型, 用于支持在使用装饰器时, 目标函数获取正确的参数值
+    __T__ = typing.TypeVar("__T__", bound=typing.Callable[..., typing.Any])
+
     @staticmethod
-    def byte_str_transform(func: typing.Callable) -> typing.Callable:
+    def byte_str_transform(func: __T__) -> __T__:
         """
         一个包装器,作为装饰器使用,会自动将使用装饰器的函数的参数中的str转换为bytes, 在返回值中将bytes转换为str
 

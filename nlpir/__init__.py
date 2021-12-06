@@ -37,7 +37,11 @@ def clean_logs(data_path: typing.Optional[str] = None, include_current: bool = F
             logger.error(e)
 
 
-def get_instance(func: callable) -> callable:
+# 函数泛型, 用于支持在使用装饰器时, 目标函数获取正确的参数值
+__F__ = typing.TypeVar("__F__", bound=typing.Callable[..., typing.Any])
+
+
+def get_instance(func: __F__) -> __F__:
     """
     A wrapper to init instance when call the function
 
