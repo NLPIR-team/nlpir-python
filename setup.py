@@ -15,7 +15,8 @@ with open("README.md", encoding="utf-8") as f:
     readme = f.read()
 dependencies = [
     'requests',
-    'pydantic>=1.8.2'
+    'pydantic>=1.8.2',
+    'typing'
 ]
 
 multi_arch_lib = {
