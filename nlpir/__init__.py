@@ -7,7 +7,7 @@ import sys
 import functools
 from .exception import NLPIRException
 
-__version__ = "0.9.15b1"
+__version__ = "0.9.15"
 PACKAGE_DIR = os.path.abspath(os.path.dirname(__file__))
 logger = logging.getLogger("nlpir")
 
@@ -16,7 +16,7 @@ def clean_logs(data_path: typing.Optional[str] = None, include_current: bool = F
     """
     Clean logs
 
-    :param data_path: the cus
+    :param data_path: the cusi
     :param include_current: include current directory or not
     """
     if data_path is None:
