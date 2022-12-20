@@ -206,7 +206,7 @@ class ICTCLAS(NLPIRBase):
 
         Delete a word from the user dictionary, more info see :func:`add_user_word`
 
-        :param str word: the word to be delete
+        :param str word: the word to delete
         :return: -1, the word not exist in the user dictionary; else, the handle of the word deleted
         """
         return self.get_func('NLPIR_DelUsrWord', [c_char_p], c_int)(word)
